@@ -1,7 +1,7 @@
 # Script Plans
 <table>
 <tr><th>State</th><th>Type</th><th>Direction</th><th>Glyph Variants</th></tr>
-<tr><td>Current</td><td>Abugida</td><td>Right</td><td>Solo Consonant<br>Consonant + Vowel<br> Null-Consonant + Vowel</td>
+<tr><td>Current</td><td>Abugida</td><td>Right</td><td>Solo Consonant<hr>Consonant + Vowel<hr> Null-Consonant + Vowel</td>
 </tr>
 </table>
 
