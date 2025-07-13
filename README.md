@@ -9,12 +9,12 @@
     ```
     State: Current
 1. ```
-        Type: Alphabet
-        Direction: Down
-        Glyph Variants:
-                Solo
-                & Initial?
-                & Medial
-                & Final?
-        ```
-        State: Planned
+    Type: Alphabet
+    Direction: Down
+    Glyph Variants:
+            Solo
+            & Initial?
+            & Medial
+            & Final?
+    ```
+    State: Planned
