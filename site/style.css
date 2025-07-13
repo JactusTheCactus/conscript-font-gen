@@ -1,15 +1,8 @@
 @font-face {
 	font-family:
-		AbugidaRttf;
+		AbugidaR;
 	src:
-		url("../fonts/abugidaR/master_ttf/AbugidaR-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family:
-		AbugidaRotf;
-	src:
-		url("../fonts/abugidaR/master_otf/AbugidaR-Regular.otf") format("opentype");
+		url("../fonts/AbugidaR-Regular.ttf") format("opentype");
 }
 
 body {
@@ -32,8 +25,7 @@ table {
 
 .AbugidaR {
 	font-family:
-		AbugidaRotf,
-		AbugidaRttf;
+		AbugidaR,
 }
 
 h1,
