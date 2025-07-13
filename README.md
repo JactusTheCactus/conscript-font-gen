@@ -2,6 +2,9 @@
 <table>
 <tr>
 <th>State</th>
+<th>Type</th>
+<th>Direction</th>
+<th>Glyph Variants</th>
 </tr>
 <tr>
 <td>Current</td>
