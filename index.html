@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="site/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<script>
+		const urls = [
+			"ipa.html",
+			"ivlivs-caesar.html"
+		]; function resizeIframe(iframe) {
+			try {
+				iframe.style.height = iframe.contentWindow.document.body.scrollHeight * 1.1 + "px";
+			} catch (e) {
+				console.warn("Unable to access iframe content for resizing (likely cross-origin).");
+			}
+		} urls.forEach((url, index) => {
+			const iframe = document.createElement("iframe");
+			iframe.src = `site/html/${url}`;
+			iframe.id = `iframe-${index}`;
+			iframe.classList.add("page");
+			iframe.onload = () => resizeIframe(iframe);
+			document.body.appendChild(iframe);
+		});
+	</script>
+</body>
+
+</html>
