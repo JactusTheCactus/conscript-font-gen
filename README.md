@@ -1,4 +1,7 @@
 # Script Plans
+<table>
+</table>
+
 1.
     - ```
         Type: Abugida
