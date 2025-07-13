@@ -9,13 +9,14 @@
             & Null-Consonant + Vowel
         ```
     - State: Current
-1. ```
-    Type: Alphabet
-    Direction: Down
-    Glyph Variants:
+1. 
+    - ```
+        Type: Alphabet
+        Direction: Down
+        Glyph Variants:
             Solo
             & Initial?
             & Medial
             & Final?
-    ```
-    State: Planned
+        ```
+    - State: Planned
