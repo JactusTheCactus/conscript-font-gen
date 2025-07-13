@@ -1,5 +1,11 @@
 # Script Plans
 <table>
+<tr>
+<th>State</th>
+</tr>
+<tr>
+<td>Current</td>
+</tr>
 </table>
 
 1.
