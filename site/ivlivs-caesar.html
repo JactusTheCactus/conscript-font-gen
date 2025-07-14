@@ -3,6 +3,7 @@
 
 <head>
 	<link href="style.css" rel="stylesheet">
+	<script src="fmt.js"></script>
 </head>
 
 <body></body>
@@ -11,7 +12,7 @@
 	array.push(
 		{
 			title: "Unnamed Abugida",
-			type: "Abugida",
+			type: "AbugidaR",
 			text: `frenz, róminz, kuncrímen, lend mí yór írz.
 aí kum tú berí sízur, not tú préz him.
 ðu ívul ðat men dú livz aftur ðem.
@@ -116,6 +117,7 @@ Act III, Scene II
 			.replace(/\n/g, "<br>")
 			.trim();
 		item.body.style.fontFamily = item.type;
+		item.body.classList.add(item.type === "AbugidaR" ? item.type : "Verdana");
 		item.div.appendChild(item.head);
 		item.div.appendChild(item.body);
 		document.body.appendChild(item.div);

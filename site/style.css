@@ -5,6 +5,12 @@
 		url("../fonts/AbugidaR-Regular.ttf") format("opentype");
 }
 
+.AbugidaR {
+	font-family:
+		AbugidaR,
+		Verdana;
+}
+
 body {
 	font-size:
 		20px;
@@ -21,11 +27,6 @@ body {
 table {
 	white-space:
 		nowrap;
-}
-
-.AbugidaR {
-	font-family:
-		AbugidaR,
 }
 
 h1,
@@ -65,14 +66,7 @@ iframe {
 		20px;
 }
 
-.table tr:nth-child(even) {
-	font-family:
-		AbugidaR;
-	white-space:
-		pre;
-}
-
-.table tr:nth-child(odd) {
+.ipa {
 	font-family:
 		Arial;
 }

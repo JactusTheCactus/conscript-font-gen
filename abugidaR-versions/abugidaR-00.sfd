@@ -9,23 +9,29 @@ Version: 001.000
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
-Ascent: 800
-Descent: 200
+Ascent: 1000
+Descent: 0
 InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
 XUID: [1021 583 -294313556 16685745]
+FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1752363677
-ModificationTime: 1752363677
+ModificationTime: 1752493952
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 90
+VLineGap: 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
 OS2TypoDOffset: 1
-OS2TypoLinegap: 0
+OS2TypoLinegap: 90
 OS2WinAscent: 0
 OS2WinAOffset: 1
 OS2WinDescent: 0
@@ -35,15 +41,1312 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
+Lookup: 1 0 0 "'liga' Standard Ligatures lookup 0" { "'liga' Standard Ligatures lookup 0 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
+Lookup: 6 0 0 "'liga' Standard Ligatures lookup 1" { "'liga' Standard Ligatures lookup 1 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 2" { "Single Substitution lookup 2 subtable"  } []
+Lookup: 4 0 1 "'liga' Standard Ligatures lookup 3" { "'liga' Standard Ligatures lookup 3 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
-Encoding: ISO8859-1
+ChainSub2: coverage "'liga' Standard Ligatures lookup 1 subtable" 0 0 0 1
+ 1 0 1
+  Coverage: 17 D N S T Z E I O U
+  FCoverage: 7 special
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+LangName: 1033
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -48
+DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 16 8
-OnlyBitmaps: 1
-BeginChars: 256 0
+WinInfo: 0 14 6
+BeginPrivate: 0
+EndPrivate
+TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
+BeginChars: 78 78
+
+StartChar: comma
+Encoding: 1 44 0
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+350 0 m 25
+ 350 1000 l 25
+ 450 1000 l 17
+ 450 200 l 1
+ 500 300 l 1
+ 600 300 l 1
+ 450 0 l 9
+ 350 0 l 25
+150 0 m 25
+ 150 1000 l 25
+ 250 1000 l 25
+ 250 0 l 25
+ 150 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: hyphen
+Encoding: 2 45 1
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+350 0 m 17
+ 350 450 l 1
+ 250 450 l 1
+ 250 0 l 1
+ 150 0 l 1
+ 150 1000 l 1
+ 250 1000 l 1
+ 250 550 l 1
+ 350 550 l 1
+ 350 1000 l 9
+ 450 1000 l 25
+ 450 0 l 25
+ 350 0 l 17
+EndSplineSet
+EndChar
+
+StartChar: period
+Encoding: 3 46 2
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+350 0 m 25
+ 350 1000 l 25
+ 450 1000 l 25
+ 450 0 l 25
+ 350 0 l 25
+150 0 m 25
+ 150 1000 l 25
+ 250 1000 l 25
+ 250 0 l 25
+ 150 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: special
+Encoding: 4 59 3
+Width: 600
+Flags: H
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 0 l 25
+ 0 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: question
+Encoding: 5 63 4
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+350 0 m 25
+ 350 1000 l 25
+ 450 1000 l 1
+ 600 700 l 1
+ 500 700 l 1
+ 450 800 l 1
+ 450 0 l 1
+ 350 0 l 25
+150 0 m 25
+ 150 1000 l 25
+ 250 1000 l 25
+ 250 0 l 25
+ 150 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: A
+Encoding: 7 65 5
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+EndChar
+
+StartChar: B
+Encoding: 8 66 6
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: C
+Encoding: 9 67 7
+Width: 600
+Flags: H
+LayerCount: 2
+Fore
+SplineSet
+600 700 m 25
+ 500 700 l 25
+ 500 400 l 29
+ 0 400 l 25
+ 0 0 l 25
+ 600 0 l 25
+ 600 100 l 25
+ 100 100 l 25
+ 100 300 l 25
+ 600 300 l 25
+ 600 700 l 25
+EndSplineSet
+EndChar
+
+StartChar: D
+Encoding: 10 68 8
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Eth
+EndChar
+
+StartChar: E
+Encoding: 11 69 9
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Eacute
+EndChar
+
+StartChar: F
+Encoding: 12 70 10
+Width: 600
+Flags: H
+LayerCount: 2
+Fore
+SplineSet
+100 600 m 25
+ 100 500 l 25
+ 500 500 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25
+ 600 400 l 25
+ 100 400 l 25
+ 100 0 l 25
+ 0 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: G
+Encoding: 13 71 11
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: H
+Encoding: 14 72 12
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: I
+Encoding: 15 73 13
+Width: 600
+Flags: W
+HStem: 800 200<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Iacute
+EndChar
+
+StartChar: J
+Encoding: 16 74 14
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: K
+Encoding: 17 75 15
+Width: 600
+Flags: H
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 1
+ 0 700 l 29
+ 600 700 l 1
+ 600 600 l 1
+ 100 600 l 1
+ 100 0 l 1
+ 0 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: L
+Encoding: 18 76 16
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: M
+Encoding: 19 77 17
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: N
+Encoding: 20 78 18
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Eng
+EndChar
+
+StartChar: O
+Encoding: 21 79 19
+Width: 600
+Flags: W
+HStem: 800 200<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Oacute
+EndChar
+
+StartChar: P
+Encoding: 22 80 20
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: R
+Encoding: 23 82 21
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: S
+Encoding: 24 83 22
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Esh
+EndChar
+
+StartChar: T
+Encoding: 25 84 23
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Thorn
+EndChar
+
+StartChar: U
+Encoding: 26 85 24
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Uacute
+EndChar
+
+StartChar: V
+Encoding: 27 86 25
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: W
+Encoding: 28 87 26
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: X
+Encoding: 29 88 27
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: Y
+Encoding: 30 89 28
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: Z
+Encoding: 31 90 29
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "Single Substitution lookup 2 subtable" Zhed
+EndChar
+
+StartChar: Eacute
+Encoding: 32 201 30
+Width: 600
+Flags: W
+HStem: 800 200<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+EndChar
+
+StartChar: Iacute
+Encoding: 33 205 31
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+EndChar
+
+StartChar: Eth
+Encoding: 34 208 32
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: Uacute
+Encoding: 36 218 33
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+EndChar
+
+StartChar: Thorn
+Encoding: 37 222 34
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: .notdef
+Encoding: 38 -1 35
+Width: 600
+HStem: 0 21G<0 600> 680 20G<0 600> 680 20G<0 600> 800 200<0 600>
+VStem: 0 600<0 700 800 1000>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 29x98
+ 0 1000 l 29
+ 600 1000 l 29
+ 600 800 l 29
+ 0 800 l 29x98
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: Oacute
+Encoding: 35 211 36
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+EndChar
+
+StartChar: space
+Encoding: 0 32 37
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+250 0 m 29
+ 250 1000 l 25
+ 350 1000 l 25
+ 350 0 l 25
+ 250 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: start
+Encoding: 6 94 38
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 0 l 25
+ 0 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: Eng
+Encoding: 39 330 39
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: Esh
+Encoding: 40 346 40
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: Zhed
+Encoding: 41 377 41
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+EndChar
+
+StartChar: emphasis
+Encoding: 42 39 42
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 0 l 25
+ 0 0 l 25
+EndSplineSet
+EndChar
+
+StartChar: ellipsis
+Encoding: 43 8230 43
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+50 0 m 1
+ 50 1000 l 25
+ 150 1000 l 1
+ 150 0 l 25
+ 50 0 l 1
+450 0 m 25
+ 450 1000 l 25
+ 550 1000 l 25
+ 550 0 l 25
+ 450 0 l 25
+250 0 m 25
+ 250 1000 l 25
+ 350 1000 l 25
+ 350 0 l 25
+ 250 0 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures lookup 3 subtable" period period period
+LCarets2: 2 0 0
+EndChar
+
+StartChar: a
+Encoding: 44 97 44
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" A
+EndChar
+
+StartChar: b
+Encoding: 45 98 45
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" B
+EndChar
+
+StartChar: c
+Encoding: 46 99 46
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" C
+EndChar
+
+StartChar: d
+Encoding: 47 100 47
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" D
+EndChar
+
+StartChar: e
+Encoding: 48 101 48
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" E
+EndChar
+
+StartChar: f
+Encoding: 49 102 49
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" F
+EndChar
+
+StartChar: g
+Encoding: 50 103 50
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" G
+EndChar
+
+StartChar: h
+Encoding: 51 104 51
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" H
+EndChar
+
+StartChar: i
+Encoding: 52 105 52
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" I
+EndChar
+
+StartChar: j
+Encoding: 53 106 53
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" J
+EndChar
+
+StartChar: k
+Encoding: 54 107 54
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" K
+EndChar
+
+StartChar: l
+Encoding: 55 108 55
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" L
+EndChar
+
+StartChar: m
+Encoding: 56 109 56
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" M
+EndChar
+
+StartChar: n
+Encoding: 57 110 57
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" N
+EndChar
+
+StartChar: o
+Encoding: 58 111 58
+Width: 600
+Flags: W
+HStem: 800 200<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" O
+EndChar
+
+StartChar: p
+Encoding: 59 112 59
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" P
+EndChar
+
+StartChar: r
+Encoding: 60 114 60
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" R
+EndChar
+
+StartChar: s
+Encoding: 61 115 61
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" S
+EndChar
+
+StartChar: t
+Encoding: 62 116 62
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" T
+EndChar
+
+StartChar: u
+Encoding: 63 117 63
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" U
+EndChar
+
+StartChar: v
+Encoding: 64 118 64
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" V
+EndChar
+
+StartChar: w
+Encoding: 65 119 65
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" W
+EndChar
+
+StartChar: x
+Encoding: 66 120 66
+Width: 600
+Flags: W
+HStem: 0 21G<0 600> 680 20G<0 600> 680 20G<0 600>
+VStem: 0 600<0 700>
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29xd0
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29xd0
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" X
+EndChar
+
+StartChar: y
+Encoding: 67 121 67
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Y
+EndChar
+
+StartChar: z
+Encoding: 68 122 68
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Z
+EndChar
+
+StartChar: eacute
+Encoding: 69 233 69
+Width: 600
+Flags: W
+HStem: 800 200<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eacute
+EndChar
+
+StartChar: iacute
+Encoding: 70 237 70
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Iacute
+EndChar
+
+StartChar: eth
+Encoding: 71 240 71
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eth
+EndChar
+
+StartChar: oacute
+Encoding: 72 243 72
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Oacute
+EndChar
+
+StartChar: uacute
+Encoding: 73 250 73
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 800 m 25
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Uacute
+EndChar
+
+StartChar: thorn
+Encoding: 74 254 74
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Thorn
+EndChar
+
+StartChar: eng
+Encoding: 75 331 75
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eng
+EndChar
+
+StartChar: esh
+Encoding: 76 347 76
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Esh
+EndChar
+
+StartChar: zhed
+Encoding: 77 378 77
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 0 m 29
+ 0 700 l 29
+ 600 700 l 29
+ 600 0 l 29
+ 0 0 l 29
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Zhed
+EndChar
 EndChars
 EndSplineFont

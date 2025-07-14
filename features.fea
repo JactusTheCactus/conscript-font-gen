@@ -1,53 +1,32 @@
-# Classes
-	# Invisible Logic Characters
-		@start = [ start ]; # Start Character = "^". Inserted at the start of a string by a program separate from the font (JS in an HTML)
-		@sp = [ special ]; # Special Character = "/"
-		@log = [ @start @sp ]; # Logic Class
-	# Letters
-		# Consonants
-			@c = [ B C D EDH F G H J K L M N ENG P R S ESH T THORN V W X Y Z ZHED ]; # Uppercase
-			@c.l = [ b c d edh f g h j k l m n eng p r s esh t thorn v w x y z zhed ]; # Lowercase
-			@null = [ X ]; # Null Consonant
-		# Vowels
-			@v = [ A E EACUTE I IACUTE O OACUTE U UACUTE ]; # Uppercase
-			@v.l = [ a e eacute i iacute o oacute u uacute ]; # Lowercase
-		# All Letters
-			@ltr = [ @c @v ]; # Uppercase
-			@ltr.l = [ @c.l @v.l ]; # Lowercase
-			@ltr.vy = [ EDH ENG ESH THORN ZHED EACUTE IACUTE OACUTE UACUTE ]; # Letters With Variants: With
-			@ltr.vn = [ D N S T Z E I O U ]; # Letters With Variants: Without
-	# Punctuation
-		@em = [ emphasis ]; # "emphasis" = "'"
-		@punc = [ dot comma space dash question ellipsis @log ];
-	# @punc + @letterClass
-		@c.n = [ @v @punc ]; # Non-Consonants
-		@v.n = [ @c @punc ]; # Non-Vowels
-# Lookups
-	lookup ltrFMT { # Letter Formatting
-		sub @ltr.l by @ltr; # Convert Every Lowercase Letter To Uppercase, As This Script Is Unicameral
-		sub @ltr.vn @sp by @ltr.vy; # character + "/" = specialCharacter Conversions For Keyboards Without Non-Standard Latin Characters
-		# Prefix Lone Vowels With "X" (This is an Abugida. Vowels cannot exist without a consonant)
-			sub @punc @v' by @X @v;
-			sub @start @v.n by @v.n;
-			sub @start @punc' by NULL;
-	} ltrFMT;
-	lookup puncFMT { # Punctuation Formatting
-		# Remove Leading/Tailing Whitespace
-			sub space' @punc by NULL;
-			sub @punc space' by NULL;
-		sub dot dot dot by ellipsis;
-		sub @punc' @punc by NULL; # Remove repeated punctuation
-	} puncFMT;
-# Features
-	feature calt {
-		lookup ltrFMT;
-		lookup puncFMT;
-	} calt;
-	feature rlig {
-		lookup ltrFMT;
-		lookup puncFMT;
-	} rlig;
-	feature rclt {
-		lookup ltrFMT;
-		lookup puncFMT;
-	} rclt;
+@log = [start special]; # Logic Class
+# Letters
+	# Consonants
+		@con.u = [B C D Eth F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed]; # Uppercase
+		@con.l = [b c d eth f g h j k l m n eng p r s esh t thorn v w x y z zhed]; # Lowercase
+	# Vowels
+		@vow.u = [A E Eacute I Iacute O Oacute U Uacute]; # Uppercase
+		@vow.l = [a e eacute i iacute o oacute u uacute]; # Lowercase
+	# All Letters
+		@ltr.u = [@con.u @vow.u]; # Uppercase
+		@ltr.l = [@con.l @vow.l]; # Lowercase
+		@ltr.vy = [Eth Eng Esh Thorn Zhed Eacute Iacute Oacute Uacute]; # Letters With Variants: With
+		@ltr.vn = [D N S T Z E I O U]; # Letters With Variants: Without
+# Punctuation
+	@em = [emphasis]; # "emphasis" = "'"
+	@punc = [period comma space hyphen question ellipsis @log];
+	@punc2 = [@punc];
+# @punc + @letterClass
+	@con.n = [@vow.u @punc]; # Non-Consonants
+	@vow.n = [@con.u @punc]; # Non-Vowels
+feature liga {
+	sub @ltr.l by @ltr.u; # Convert Every Lowercase Letter To Uppercase, As This Script Is Unicameral
+	sub @ltr.vn' special by @ltr.vy; # character + ";" = specialCharacter Conversions For Keyboards Without Non-Standard Latin Characters
+	# Prefix Lone Vowels With "X" (This is an Abugida. Vowels cannot exist without a consonant)
+#=>		sub @punc @vow.u' by X @vow.u;
+#=>		sub start @vow.n' by NULL;
+	# Remove Leading/Tailing Whitespace
+#=>			sub space' @punc by NULL;
+#=>			rsub @punc space' by NULL;
+	sub period period period by ellipsis;
+#=>	sub @punc @punc2 by @punc; # Remove repeated punctuation
+} liga;
