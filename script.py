@@ -6,13 +6,12 @@ for c in consonants:
 	if c not in font:
 		print(c, "does not exist")
 	else:
-		print(c)
 		for v in vowels:
 			if v not in font:
 				print(v, "does not exist")
 			else:
-				print(v)
 				lig_name = f"{c}_{v}"
+				print(lig_name)
 				if lig_name not in font:
 					lig = font.createChar(-1, lig_name)
 					c_glyph = font[c]
