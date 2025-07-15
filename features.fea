@@ -44,40 +44,7 @@ feature liga {
 	sub N special by Eng;
 	sub S special by Esh;
 	sub T special by Thorn;
-
-	sub start period by period;
-	sub start comma by comma;
-	sub start space by space;
-	sub start hyphen by hyphen;
-	sub start question by question;
-	sub start ellipsis by ellipsis;
-	sub start start by start;
-	sub start special by special;
-	sub start B by B;
-	sub start C by C;
-	sub start D by D;
-	sub start Edh by Edh;
-	sub start F by F;
-	sub start G by G;
-	sub start H by H;
-	sub start J by J;
-	sub start K by K;
-	sub start L by L;
-	sub start M by M;
-	sub start N by N;
-	sub start Eng by Eng;
-	sub start P by P;
-	sub start R by R;
-	sub start S by S;
-	sub start Esh by Esh;
-	sub start T by T;
-	sub start Thorn by Thorn;
-	sub start V by V;
-	sub start W by W;
-	sub start X by X;
-	sub start Y by Y;
-	sub start Z by Z;
-	sub start Zhed by Zhed;
+	sub Z special by Zhed;
 
 	sub period A' by X A;
 	sub period E' by X E;
@@ -151,6 +118,50 @@ feature liga {
 	sub special Oacute' by X Oacute;
 	sub special U' by X U;
 	sub special Uacute' by X Uacute;
+	sub emphasis A' by X A;
+	sub emphasis E' by X E;
+	sub emphasis Eacute' by X Eacute;
+	sub emphasis I' by X I;
+	sub emphasis Iacute' by X Iacute;
+	sub emphasis O' by X O;
+	sub emphasis Oacute' by X Oacute;
+	sub emphasis U' by X U;
+	sub emphasis Uacute' by X Uacute;
+
+	sub start period by period;
+	sub start comma by comma;
+	sub start space by space;
+	sub start hyphen by hyphen;
+	sub start question by question;
+	sub start ellipsis by ellipsis;
+	sub start start by start;
+	sub start special by special;
+	sub start emphasis by emphasis;
+	sub start B by B;
+	sub start C by C;
+	sub start D by D;
+	sub start Edh by Edh;
+	sub start F by F;
+	sub start G by G;
+	sub start H by H;
+	sub start J by J;
+	sub start K by K;
+	sub start L by L;
+	sub start M by M;
+	sub start N by N;
+	sub start Eng by Eng;
+	sub start P by P;
+	sub start R by R;
+	sub start S by S;
+	sub start Esh by Esh;
+	sub start T by T;
+	sub start Thorn by Thorn;
+	sub start V by V;
+	sub start W by W;
+	sub start X by X;
+	sub start Y by Y;
+	sub start Z by Z;
+	sub start Zhed by Zhed;
 
 	sub A A' by X A;
 	sub A E' by X E;
@@ -693,6 +704,7 @@ feature liga {
 	sub period ellipsis by period;
 	sub period start by period;
 	sub period special by period;
+	sub period emphasis by period;
 	sub comma period by comma;
 	sub comma comma by comma;
 	sub comma space by comma;
@@ -701,6 +713,7 @@ feature liga {
 	sub comma ellipsis by comma;
 	sub comma start by comma;
 	sub comma special by comma;
+	sub comma emphasis by comma;
 	sub space period by space;
 	sub space comma by space;
 	sub space space by space;
@@ -709,6 +722,7 @@ feature liga {
 	sub space ellipsis by space;
 	sub space start by space;
 	sub space special by space;
+	sub space emphasis by space;
 	sub hyphen period by hyphen;
 	sub hyphen comma by hyphen;
 	sub hyphen space by hyphen;
@@ -717,6 +731,7 @@ feature liga {
 	sub hyphen ellipsis by hyphen;
 	sub hyphen start by hyphen;
 	sub hyphen special by hyphen;
+	sub hyphen emphasis by hyphen;
 	sub question period by question;
 	sub question comma by question;
 	sub question space by question;
@@ -725,6 +740,7 @@ feature liga {
 	sub question ellipsis by question;
 	sub question start by question;
 	sub question special by question;
+	sub question emphasis by question;
 	sub ellipsis period by ellipsis;
 	sub ellipsis comma by ellipsis;
 	sub ellipsis space by ellipsis;
@@ -733,6 +749,7 @@ feature liga {
 	sub ellipsis ellipsis by ellipsis;
 	sub ellipsis start by ellipsis;
 	sub ellipsis special by ellipsis;
+	sub ellipsis emphasis by ellipsis;
 	sub start period by start;
 	sub start comma by start;
 	sub start space by start;
@@ -741,6 +758,7 @@ feature liga {
 	sub start ellipsis by start;
 	sub start start by start;
 	sub start special by start;
+	sub start emphasis by start;
 	sub special period by special;
 	sub special comma by special;
 	sub special space by special;
@@ -749,6 +767,16 @@ feature liga {
 	sub special ellipsis by special;
 	sub special start by special;
 	sub special special by special;
+	sub special emphasis by special;
+	sub emphasis period by emphasis;
+	sub emphasis comma by emphasis;
+	sub emphasis space by emphasis;
+	sub emphasis hyphen by emphasis;
+	sub emphasis question by emphasis;
+	sub emphasis ellipsis by emphasis;
+	sub emphasis start by emphasis;
+	sub emphasis special by emphasis;
+	sub emphasis emphasis by emphasis;
 
 	sub period space by period;
 	sub space period by period;
@@ -766,6 +794,8 @@ feature liga {
 	sub space start by start;
 	sub special space by special;
 	sub space special by special;
+	sub emphasis space by emphasis;
+	sub space emphasis by emphasis;
 
 	sub period period period by ellipsis;
 } liga;

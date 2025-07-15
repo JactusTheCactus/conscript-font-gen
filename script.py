@@ -1,12 +1,17 @@
+"""
+TESTS:
+	^he'lo;, ma'i; ne;'m i'z de'vin.
+	^a' e' e;' i' i;' o' o;' u' u;'
+"""
 import fontforge
 font = fontforge.open("abugidaR-main.sfd")
 consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
-punctuation = "period comma space hyphen question ellipsis start special".split()
+punctuation = "period comma space hyphen question ellipsis start special emphasis".split()
 letters = consonants + vowels
 nonC = punctuation + vowels
 nonV = punctuation + consonants
-lvn = "E I O U D N S T Z".split()
+lvn = "E      I      O      U      D   N   S   T     Z   ".split()
 lvy = "Eacute Iacute Oacute Uacute Edh Eng Esh Thorn Zhed".split()
 for e in ["emphasis",""]:
 	for c in consonants:
@@ -41,12 +46,12 @@ if True:
 	for l in range(len(punctuation)):
 		liga.append(f"\tsub {lvn[l]} special by {lvy[l]};")
 	liga.append("")
-	for non in nonV:
-		liga.append(f"\tsub start {non} by {non};")
-	liga.append("")
 	for p in punctuation:
 		for v in vowels:
 			liga.append(f"\tsub {p} {v}' by X {v};")
+	liga.append("")
+	for non in nonV:
+		liga.append(f"\tsub start {non} by {non};")
 	liga.append("")
 	for v1 in vowels:
 		for v2 in vowels:
