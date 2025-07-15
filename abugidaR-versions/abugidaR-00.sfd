@@ -235,7 +235,7 @@ SplineSet
  600 0 l 29
  0 0 l 29
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Eth
+Substitution2: "Single Substitution lookup 2 subtable" Edh
 EndChar
 
 StartChar: E
@@ -603,7 +603,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Eth
+StartChar: Edh
 Encoding: 34 208 32
 Width: 600
 Flags: HW
@@ -1237,7 +1237,7 @@ EndSplineSet
 Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Iacute
 EndChar
 
-StartChar: eth
+StartChar: edh
 Encoding: 71 240 71
 Width: 600
 Flags: HW
@@ -1250,7 +1250,7 @@ SplineSet
  600 0 l 29
  0 0 l 29
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eth
+Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Edh
 EndChar
 
 StartChar: oacute
