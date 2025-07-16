@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1752363677
-ModificationTime: 1752654340
+ModificationTime: 1752709745
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -212,17 +212,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-600 700 m 25
- 500 700 l 25
- 500 400 l 29
- 0 400 l 25
- 0 0 l 25
- 600 0 l 25
- 600 100 l 25
- 100 100 l 25
- 100 300 l 25
- 600 300 l 25
- 600 700 l 25
+600 700 m 1
+ 600 300 l 1
+ 100 300 l 1
+ 100 100 l 1
+ 600 100 l 1
+ 600 0 l 1
+ 0 0 l 1
+ 0 400 l 1
+ 500 400 l 1
+ 500 700 l 1
+ 600 700 l 1
 EndSplineSet
 EndChar
 
@@ -343,11 +343,11 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-600 500 m 1
- 600 600 l 1
+100 500 m 1
  100 600 l 1
- 100 500 l 1
+ 600 600 l 5
  600 500 l 1
+ 100 500 l 1
 EndSplineSet
 Refer: 7 67 N 1 0 0 1 0 0 2
 EndChar
