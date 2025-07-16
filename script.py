@@ -5,6 +5,7 @@ TESTS:
 """
 import fontforge
 import json
+import re
 font = fontforge.open("abugidaR-main.sfd")
 consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
@@ -14,27 +15,6 @@ nonC = punctuation + vowels
 nonV = punctuation + consonants
 lvn = "E      I      O      U      D   N   S   T     Z   ".split()
 lvy = "Eacute Iacute Oacute Uacute Edh Eng Esh Thorn Zhed".split()
-for e in ["emphasis", ""]:
-	for c in consonants:
-		if c not in font:
-			print(c, "does not exist")
-		else:
-			for v in vowels:
-				if v not in font:
-					print(v, "does not exist")
-				else:
-					lig_name = "_".join(filter(bool, [c, v, e]))
-					lig = font.createChar(-1, lig_name)
-					c_glyph = font[c]
-					v_glyph = font[v]
-					lig.clear()
-					lig.addReference(c, (1, 0, 0, 1, 0, 0))
-					lig.addReference(v, (1, 0, 0, 1, 0, 0))
-					if e:
-						lig.addReference(e, (1, 0, 0, 1, 0, 0))
-					lig.width = c_glyph.width
-					lig.build()
-font.save("abugidaR-lig.sfd")
 liga = [
 	"languagesystem DFLT dflt;",
 	"languagesystem latn dflt;"
@@ -68,6 +48,41 @@ liga.append("} liga;")
 liga = "\n".join(liga)
 with open("features.fea","w") as f:
 	f.write(liga)
+for e in ["emphasis", ""]:
+	for c in consonants:
+		if c not in font:
+			print(c, "does not exist")
+		else:
+			for v in vowels:
+				if v not in font:
+					print(v, "does not exist")
+				else:
+					lig_name = "_".join(filter(bool, [c, v, e]))
+					lig = font.createChar(-1, lig_name)
+					c_glyph = font[c]
+					v_glyph = font[v]
+					dx = (c_glyph.width - v_glyph.width) / 2
+					lig.clear()
+					lig.addReference(c, (1, 0, 0, 1, 0, 0))
+					lig.addReference(v, (1, 0, 0, 1, dx, 0))
+					if e:
+						lig.addReference(e, (1, 0, 0, 1, 0, 0))
+					lig.width = c_glyph.width
+					lig.build()
+font.mergeFeature("features.fea")
+sideBearing = 75
+glyphList = []
+for glyph in font.glyphs():
+	if glyph.isWorthOutputting():
+		glyph.unlinkRef()
+		glyphList.append(glyph)
+for glyph in glyphList:
+	width = glyph.width
+	glyph.left_side_bearing = sideBearing
+	glyph.right_side_bearing = sideBearing
+	glyph.width = int(width + (sideBearing * 2))
+font.save("abugidaR-lig.sfd")
+font.generate("abugidaR.otf")
 with open("readmeData.json", "r") as f:
 	data = json.load(f)
 readme = ":::mermaid\nmindmap\n\t((Script Plan))"

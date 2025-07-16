@@ -2,13 +2,16 @@
 	font-family:
 		AbugidaR;
 	src:
-		url("../fonts/AbugidaR-Regular.ttf") format("opentype");
+		url("../abugidaR.otf") format("opentype");
 }
 
 .AbugidaR {
-	font-family:
+	font:
+		2em
 		AbugidaR,
 		Verdana;
+	font-weight:
+		bold;
 }
 
 body {

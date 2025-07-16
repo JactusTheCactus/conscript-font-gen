@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1752363677
-ModificationTime: 1752575687
+ModificationTime: 1752654340
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -41,19 +41,8 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 1 0 0 "'liga' Standard Ligatures lookup 0" { "'liga' Standard Ligatures lookup 0 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
-Lookup: 6 0 0 "'liga' Standard Ligatures lookup 1" { "'liga' Standard Ligatures lookup 1 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "Single Substitution lookup 2" { "Single Substitution lookup 2 subtable"  } []
-Lookup: 4 0 1 "'liga' Standard Ligatures lookup 3" { "'liga' Standard Ligatures lookup 3 subtable"  } ['liga' ('DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-ChainSub2: coverage "'liga' Standard Ligatures lookup 1 subtable" 0 0 0 1
- 1 0 1
-  Coverage: 17 D N S T Z E I O U
-  FCoverage: 7 special
- 1
-  SeqLookup: 0 "Single Substitution lookup 2"
-EndFPST
 LangName: 1033
 Encoding: Custom
 Compacted: 1
@@ -66,74 +55,74 @@ WinInfo: 0 14 6
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 303 78
+BeginChars: 79 78
 
 StartChar: comma
 Encoding: 1 44 0
-Width: 600
+Width: 450
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-350 0 m 25
- 350 1000 l 25
- 450 1000 l 17
- 450 200 l 1
- 500 300 l 1
- 600 300 l 1
- 450 0 l 9
- 350 0 l 25
-150 0 m 25
- 150 1000 l 25
- 250 1000 l 25
- 250 0 l 25
- 150 0 l 25
+200 0 m 25
+ 200 1000 l 25
+ 300 1000 l 17
+ 300 200 l 1
+ 350 300 l 1
+ 450 300 l 1
+ 300 0 l 9
+ 200 0 l 25
+0 0 m 25
+ 0 1000 l 25
+ 100 1000 l 25
+ 100 0 l 25
+ 0 0 l 25
 EndSplineSet
 EndChar
 
 StartChar: hyphen
 Encoding: 2 45 1
-Width: 600
+Width: 300
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-350 0 m 17
- 350 450 l 1
- 250 450 l 1
- 250 0 l 1
- 150 0 l 1
- 150 1000 l 1
- 250 1000 l 1
- 250 550 l 1
- 350 550 l 1
- 350 1000 l 9
- 450 1000 l 25
- 450 0 l 25
- 350 0 l 17
+200 0 m 17
+ 200 450 l 1
+ 100 450 l 1
+ 100 0 l 1
+ 0 0 l 1
+ 0 1000 l 1
+ 100 1000 l 1
+ 100 550 l 1
+ 200 550 l 1
+ 200 1000 l 9
+ 300 1000 l 25
+ 300 0 l 25
+ 200 0 l 17
 EndSplineSet
 EndChar
 
 StartChar: period
 Encoding: 3 46 2
-Width: 600
+Width: 300
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-350 0 m 25
- 350 1000 l 25
- 450 1000 l 25
- 450 0 l 25
- 350 0 l 25
-150 0 m 25
- 150 1000 l 25
- 250 1000 l 25
- 250 0 l 25
- 150 0 l 25
+200 0 m 25
+ 200 1000 l 25
+ 300 1000 l 25
+ 300 0 l 25
+ 200 0 l 25
+0 0 m 25
+ 0 1000 l 25
+ 100 1000 l 25
+ 100 0 l 25
+ 0 0 l 25
 EndSplineSet
 EndChar
 
@@ -160,25 +149,25 @@ EndChar
 
 StartChar: question
 Encoding: 5 63 4
-Width: 600
+Width: 450
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-350 0 m 25
- 350 1000 l 25
- 450 1000 l 1
- 600 700 l 1
- 500 700 l 1
- 450 800 l 1
- 450 0 l 1
- 350 0 l 25
-150 0 m 25
- 150 1000 l 25
- 250 1000 l 25
- 250 0 l 25
- 150 0 l 25
+200 0 m 25
+ 200 1000 l 25
+ 300 1000 l 1
+ 450 700 l 1
+ 350 700 l 1
+ 300 800 l 1
+ 300 0 l 1
+ 200 0 l 25
+0 0 m 25
+ 0 1000 l 25
+ 100 1000 l 25
+ 100 0 l 25
+ 0 0 l 25
 EndSplineSet
 EndChar
 
@@ -200,18 +189,19 @@ EndChar
 
 StartChar: B
 Encoding: 8 66 6
-Width: 461
-VWidth: 769
+Width: 600
+VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 538 l 29
- 462 538 l 29
- 462 0 l 29
- 0 0 l 29
+250 600 m 25
+ 350 600 l 25
+ 350 500 l 25
+ 250 500 l 29
+ 250 600 l 25
 EndSplineSet
+Refer: 20 80 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: C
@@ -244,13 +234,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+200 250 m 29
+ 200 350 l 25
+ 400 350 l 25
+ 400 250 l 25
+ 200 250 l 29
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Edh
+Refer: 23 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: E
@@ -267,7 +257,6 @@ SplineSet
  600 900 l 29
  0 800 l 25
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Eacute
 EndChar
 
 StartChar: F
@@ -301,12 +290,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 300 m 25
+ 0 400 l 29
+ 400 400 l 25
+ 400 300 l 25
+ 0 300 l 25
 EndSplineSet
+Refer: 15 75 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: H
@@ -317,30 +307,32 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 500 m 9
+ 0 700 l 1
+ 600 700 l 25
+ 600 0 l 1
+ 500 0 l 1
+ 500 600 l 1
+ 100 600 l 1
+ 100 500 l 1
+ 0 500 l 9
 EndSplineSet
 EndChar
 
 StartChar: I
 Encoding: 15 73 13
-Width: 600
+Width: 100
 VWidth: 1000
 Flags: HW
-HStem: 800 200<0 600>
 LayerCount: 2
 Fore
 SplineSet
-250 800 m 25
- 250 1000 l 25
- 350 1000 l 25
- 350 800 l 25
- 250 800 l 25
+0 800 m 29
+ 0 1000 l 29
+ 100 1000 l 29
+ 100 800 l 29
+ 0 800 l 29
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Iacute
 EndChar
 
 StartChar: J
@@ -351,12 +343,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+600 500 m 1
+ 600 600 l 1
+ 100 600 l 1
+ 100 500 l 1
+ 600 500 l 1
 EndSplineSet
+Refer: 7 67 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: K
@@ -385,11 +378,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 13
+ 0 700 l 17
+ 100 700 l 1
+ 500 500 l 1
+ 500 700 l 1
+ 600 700 l 1
+ 600 400 l 1
+ 500 400 l 1
+ 100 600 l 1
+ 100 0 l 1
+ 0 0 l 13
 EndSplineSet
 EndChar
 
@@ -401,11 +400,14 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 1
+ 250 700 l 1
+ 350 700 l 1
+ 600 0 l 1
+ 500 0 l 1
+ 300 600 l 1
+ 100 0 l 5
+ 0 0 l 1
 EndSplineSet
 EndChar
 
@@ -417,13 +419,15 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+250 0 m 5
+ 0 700 l 1
+ 100 700 l 1
+ 300 100 l 1
+ 500 700 l 1
+ 600 700 l 1
+ 350 0 l 1
+ 250 0 l 5
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Eng
 EndChar
 
 StartChar: O
@@ -431,22 +435,20 @@ Encoding: 21 79 19
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 800 200<0 600>
 LayerCount: 2
 Fore
 SplineSet
-100 950 m 25
- 100 850 l 25
- 500 850 l 25
+100 950 m 29
+ 100 850 l 29
+ 500 850 l 29
  500 950 l 29
- 100 950 l 25
-0 800 m 25
- 0 1000 l 25
- 600 1000 l 25
- 600 800 l 25
- 0 800 l 25
+ 100 950 l 29
+0 800 m 29
+ 0 1000 l 29
+ 600 1000 l 29
+ 600 800 l 29
+ 0 800 l 29
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Oacute
 EndChar
 
 StartChar: P
@@ -457,11 +459,20 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 500 m 25
+ 500 500 l 25
+ 500 600 l 25
+ 100 600 l 25
+ 100 500 l 25
+0 0 m 17
+ 0 100 l 1
+ 500 100 l 1
+ 500 400 l 1
+ 0 400 l 5
+ 0 700 l 9
+ 600 700 l 25
+ 600 0 l 25
+ 0 0 l 17
 EndSplineSet
 EndChar
 
@@ -473,11 +484,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 1
+ 0 100 l 1
+ 500 300 l 1
+ 0 500 l 1
+ 0 700 l 9
+ 600 700 l 17
+ 600 600 l 1
+ 100 600 l 1
+ 600 400 l 1
+ 600 200 l 1
+ 0 0 l 1
 EndSplineSet
 EndChar
 
@@ -489,13 +506,18 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 1
+ 450 300 l 1
+ 0 300 l 1
+ 0 400 l 1
+ 500 700 l 9
+ 600 700 l 1
+ 150 400 l 1
+ 600 400 l 1
+ 600 300 l 1
+ 100 0 l 9
+ 0 0 l 1
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Esh
 EndChar
 
 StartChar: T
@@ -506,13 +528,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+150 100 m 25
+ 450 100 l 25
+ 300 550 l 29
+ 150 100 l 25
+0 0 m 1
+ 250 700 l 1
+ 350 700 l 1
+ 600 0 l 1
+ 0 0 l 1
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Thorn
 EndChar
 
 StartChar: U
@@ -531,7 +556,6 @@ SplineSet
  300 800 l 1
  0 900 l 13
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Uacute
 EndChar
 
 StartChar: V
@@ -542,12 +566,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+250 600 m 29
+ 350 600 l 29
+ 350 500 l 29
+ 250 500 l 29
+ 250 600 l 29
 EndSplineSet
+Refer: 10 70 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: W
@@ -558,11 +583,18 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+500 0 m 17
+ 100 600 l 1
+ 100 100 l 1
+ 250 100 l 1
+ 150 250 l 1
+ 150 400 l 1
+ 400 0 l 1
+ 0 0 l 1
+ 0 700 l 5
+ 150 700 l 25
+ 600 0 l 1
+ 500 0 l 17
 EndSplineSet
 EndChar
 
@@ -574,11 +606,19 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 1
+ 250 350 l 1
+ 0 700 l 1
+ 100 700 l 1
+ 300 400 l 1
+ 500 700 l 1
+ 600 700 l 1
+ 350 350 l 1
+ 600 0 l 1
+ 500 0 l 1
+ 300 300 l 1
+ 100 0 l 1
+ 0 0 l 1
 EndSplineSet
 EndChar
 
@@ -590,11 +630,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 400 m 25
+ 0 500 l 25
+ 600 500 l 25
+ 600 400 l 25
+ 0 400 l 25
+0 200 m 1
+ 0 300 l 1
+ 600 300 l 1
+ 600 200 l 5
+ 0 200 l 1
 EndSplineSet
 EndChar
 
@@ -606,13 +651,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 500 m 29
+ 0 600 l 29
+ 600 600 l 29
+ 600 500 l 29
+ 0 500 l 29
 EndSplineSet
-Substitution2: "Single Substitution lookup 2 subtable" Zhed
+Refer: 22 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Eacute
@@ -620,15 +665,14 @@ Encoding: 32 201 30
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 800 200<0 600>
 LayerCount: 2
 Fore
 SplineSet
-0 900 m 25
- 0 1000 l 25
+0 900 m 29
+ 0 1000 l 29
  600 900 l 29
- 600 800 l 25
- 0 900 l 25
+ 600 800 l 29
+ 0 900 l 29
 EndSplineSet
 EndChar
 
@@ -658,12 +702,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 500 m 25
+ 0 600 l 29
+ 600 600 l 25
+ 600 500 l 25
+ 0 500 l 25
 EndSplineSet
+Refer: 34 222 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Uacute
@@ -694,11 +739,24 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 0 m 29
+ 150 100 l 25
+ 500 100 l 25
+ 500 300 l 25
+ 600 300 l 25
+ 600 0 l 25
+ 100 0 l 29
+0 0 m 1
+ 450 300 l 1
+ 0 300 l 1
+ 0 400 l 1
+ 500 700 l 9
+ 600 700 l 1
+ 150 400 l 1
+ 600 400 l 1
+ 600 300 l 1
+ 100 0 l 9
+ 0 0 l 1
 EndSplineSet
 EndChar
 
@@ -707,16 +765,24 @@ Encoding: 38 -1 35
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 0 21G<0 600> 680 20G<0 600> 680 20G<0 600> 800 200<0 600>
-VStem: 0 600<0 700 800 1000>
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 29x98
- 0 1000 l 29
- 600 1000 l 29
- 600 800 l 29
- 0 800 l 29x98
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 800 m 25x98
+ 0 1000 l 25
+ 600 1000 l 25
+ 600 800 l 25
+ 0 800 l 25x98
 0 0 m 25
  0 700 l 25
  600 700 l 25xd8
@@ -747,17 +813,17 @@ EndChar
 
 StartChar: space
 Encoding: 0 32 37
-Width: 600
+Width: 100
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-250 0 m 29
- 250 1000 l 25
- 350 1000 l 25
- 350 0 l 25
- 250 0 l 29
+0 0 m 29
+ 0 1000 l 25
+ 100 1000 l 25
+ 100 0 l 25
+ 0 0 l 29
 EndSplineSet
 EndChar
 
@@ -790,11 +856,15 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 0 m 17
+ 0 100 l 1
+ 250 100 l 1
+ 250 700 l 1
+ 350 700 l 1
+ 350 100 l 1
+ 600 100 l 5
+ 600 0 l 9
+ 0 0 l 17
 EndSplineSet
 EndChar
 
@@ -806,12 +876,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 200 m 29
+ 600 600 l 29
+ 600 500 l 29
+ 0 100 l 29
+ 0 200 l 29
 EndSplineSet
+Refer: 22 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Zhed
@@ -822,12 +893,13 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+0 200 m 29
+ 600 600 l 29
+ 600 500 l 29
+ 0 100 l 29
+ 0 200 l 29
 EndSplineSet
+Refer: 29 90 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: emphasis
@@ -850,29 +922,28 @@ EndChar
 
 StartChar: ellipsis
 Encoding: 43 8230 43
-Width: 600
+Width: 500
 VWidth: 1000
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-50 0 m 1
- 50 1000 l 25
- 150 1000 l 1
- 150 0 l 25
- 50 0 l 1
-450 0 m 25
- 450 1000 l 25
- 550 1000 l 25
- 550 0 l 25
- 450 0 l 25
-250 0 m 25
- 250 1000 l 25
- 350 1000 l 25
- 350 0 l 25
- 250 0 l 25
+0 0 m 1
+ 0 1000 l 25
+ 100 1000 l 1
+ 100 0 l 25
+ 0 0 l 1
+400 0 m 25
+ 400 1000 l 25
+ 500 1000 l 25
+ 500 0 l 25
+ 400 0 l 25
+200 0 m 25
+ 200 1000 l 25
+ 300 1000 l 25
+ 300 0 l 25
+ 200 0 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures lookup 3 subtable" period period period
 LCarets2: 2 0 0
 EndChar
 
@@ -884,13 +955,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" A
 EndChar
 
 StartChar: b
@@ -901,13 +976,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" B
 EndChar
 
 StartChar: c
@@ -918,13 +997,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" C
 EndChar
 
 StartChar: d
@@ -935,13 +1018,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" D
 EndChar
 
 StartChar: e
@@ -952,13 +1039,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" E
 EndChar
 
 StartChar: f
@@ -969,13 +1060,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" F
 EndChar
 
 StartChar: g
@@ -986,13 +1081,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" G
 EndChar
 
 StartChar: h
@@ -1003,13 +1102,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" H
 EndChar
 
 StartChar: i
@@ -1020,13 +1123,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" I
 EndChar
 
 StartChar: j
@@ -1037,13 +1144,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" J
 EndChar
 
 StartChar: k
@@ -1054,13 +1165,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" K
 EndChar
 
 StartChar: l
@@ -1071,13 +1186,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" L
 EndChar
 
 StartChar: m
@@ -1088,13 +1207,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" M
 EndChar
 
 StartChar: n
@@ -1105,13 +1228,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" N
 EndChar
 
 StartChar: o
@@ -1119,17 +1246,20 @@ Encoding: 58 111 58
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 800 200<0 600>
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" O
 EndChar
 
 StartChar: p
@@ -1140,13 +1270,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" P
 EndChar
 
 StartChar: r
@@ -1157,13 +1291,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" R
 EndChar
 
 StartChar: s
@@ -1174,13 +1312,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" S
 EndChar
 
 StartChar: t
@@ -1191,13 +1333,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" T
 EndChar
 
 StartChar: u
@@ -1208,13 +1354,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" U
 EndChar
 
 StartChar: v
@@ -1225,13 +1375,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" V
 EndChar
 
 StartChar: w
@@ -1242,13 +1396,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" W
 EndChar
 
 StartChar: x
@@ -1256,18 +1414,20 @@ Encoding: 66 120 66
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 0 21G<0 600> 680 20G<0 600> 680 20G<0 600>
-VStem: 0 600<0 700>
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29xd0
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29xd0
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" X
 EndChar
 
 StartChar: y
@@ -1278,13 +1438,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Y
 EndChar
 
 StartChar: z
@@ -1295,13 +1459,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Z
 EndChar
 
 StartChar: eacute
@@ -1309,17 +1477,20 @@ Encoding: 69 233 69
 Width: 600
 VWidth: 1000
 Flags: HW
-HStem: 800 200<0 600>
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eacute
 EndChar
 
 StartChar: iacute
@@ -1330,13 +1501,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Iacute
 EndChar
 
 StartChar: edh
@@ -1347,13 +1522,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Edh
 EndChar
 
 StartChar: oacute
@@ -1364,13 +1543,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Oacute
 EndChar
 
 StartChar: uacute
@@ -1381,13 +1564,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 800 m 25
+100 950 m 25
+ 100 850 l 25
+ 500 850 l 25
+ 500 950 l 25
+ 100 950 l 25
+0 800 m 25x98
  0 1000 l 25
  600 1000 l 25
  600 800 l 25
- 0 800 l 25
+ 0 800 l 25x98
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Uacute
 EndChar
 
 StartChar: thorn
@@ -1398,13 +1585,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Thorn
 EndChar
 
 StartChar: eng
@@ -1415,13 +1606,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Eng
 EndChar
 
 StartChar: esh
@@ -1432,13 +1627,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Esh
 EndChar
 
 StartChar: zhed
@@ -1449,13 +1648,17 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-0 0 m 29
- 0 700 l 29
- 600 700 l 29
- 600 0 l 29
- 0 0 l 29
+100 600 m 25
+ 100 100 l 25
+ 500 100 l 25
+ 500 600 l 25
+ 100 600 l 25
+0 0 m 25
+ 0 700 l 25
+ 600 700 l 25xd8
+ 600 0 l 25
+ 0 0 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures lookup 0 subtable" Zhed
 EndChar
 EndChars
 EndSplineFont

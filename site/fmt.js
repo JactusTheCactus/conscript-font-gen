@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		el.innerHTML = el.innerHTML
 			.split('<br>')
 			.map(line => `^${line}`)
+			.map(line => line.replace("^ "," "))
 			.join('<br>');
 	});
 });
