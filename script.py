@@ -4,6 +4,7 @@ TESTS:
 	^a' e' e;' i' i;' o' o;' u' u;'
 """
 import fontforge
+import json
 font = fontforge.open("abugidaR-main.sfd")
 consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
@@ -23,7 +24,6 @@ for e in ["emphasis", ""]:
 					print(v, "does not exist")
 				else:
 					lig_name = "_".join(filter(bool, [c, v, e]))
-					print(lig_name)
 					lig = font.createChar(-1, lig_name)
 					c_glyph = font[c]
 					v_glyph = font[v]
@@ -68,3 +68,15 @@ liga.append("} liga;")
 liga = "\n".join(liga)
 with open("features.fea","w") as f:
 	f.write(liga)
+with open("readmeData.json", "r") as f:
+	data = json.load(f)
+readme = ":::mermaid\nmindmap\n\t((Script Plan))"
+for x in data:
+	readme += f"\n\t\t{x['type']}_{x['direction'][0]}"
+	for y in ["state","type","direction","variants"]:
+		readme += f"\n\t\t\t{{{{{y.capitalize()}}}}}"
+		if type(x[y]) == list:
+			x[y] = ")\n\t\t\t\t(".join(x[y])
+		readme += f"\n\t\t\t\t({x[y]})"
+with open("README.md", "w") as f:
+	f.write(readme)

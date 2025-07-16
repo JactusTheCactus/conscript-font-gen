@@ -1,0 +1,23 @@
+[
+	{
+		"state": "In-Progress",
+		"type": "Abugida",
+		"direction": "Right",
+		"variants": [
+			"Solo Consonant",
+			"Consonant + Vowel",
+			"Null-Consonant + Vowel"
+		]
+	},
+	{
+		"state": "Planned",
+		"type": "Alphabet",
+		"direction": "Down",
+		"variants": [
+			"Solo",
+			"Initial",
+			"Medial",
+			"Final"
+		]
+	}
+]
