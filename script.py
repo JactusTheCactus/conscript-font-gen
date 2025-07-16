@@ -13,7 +13,7 @@ nonC = punctuation + vowels
 nonV = punctuation + consonants
 lvn = "E      I      O      U      D   N   S   T     Z   ".split()
 lvy = "Eacute Iacute Oacute Uacute Edh Eng Esh Thorn Zhed".split()
-for e in ["emphasis",""]:
+for e in ["emphasis", ""]:
 	for c in consonants:
 		if c not in font:
 			print(c, "does not exist")
@@ -22,7 +22,8 @@ for e in ["emphasis",""]:
 				if v not in font:
 					print(v, "does not exist")
 				else:
-					lig_name = f"{c}_{v}{f'_{e}' if e else ''}"
+					lig_name = "_".join(filter(bool, [c, v, e]))
+					print(lig_name)
 					lig = font.createChar(-1, lig_name)
 					c_glyph = font[c]
 					v_glyph = font[v]

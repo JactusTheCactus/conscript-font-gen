@@ -35,7 +35,6 @@ feature liga {
 	sub oacute by Oacute;
 	sub u by U;
 	sub uacute by Uacute;
-
 	sub E special by Eacute;
 	sub I special by Iacute;
 	sub O special by Oacute;
@@ -45,7 +44,6 @@ feature liga {
 	sub S special by Esh;
 	sub T special by Thorn;
 	sub Z special by Zhed;
-
 	sub period A' by X A;
 	sub period E' by X E;
 	sub period Eacute' by X Eacute;
@@ -127,7 +125,6 @@ feature liga {
 	sub emphasis Oacute' by X Oacute;
 	sub emphasis U' by X U;
 	sub emphasis Uacute' by X Uacute;
-
 	sub start period by period;
 	sub start comma by comma;
 	sub start space by space;
@@ -162,7 +159,6 @@ feature liga {
 	sub start Y by Y;
 	sub start Z by Z;
 	sub start Zhed by Zhed;
-
 	sub A A' by X A;
 	sub A E' by X E;
 	sub A Eacute' by X Eacute;
@@ -244,7 +240,6 @@ feature liga {
 	sub Uacute Oacute' by X Oacute;
 	sub Uacute U' by X U;
 	sub Uacute Uacute' by X Uacute;
-
 	sub B A by B_A;
 	sub B A emphasis by B_A_emphasis;
 	sub B E by B_E;
@@ -695,7 +690,6 @@ feature liga {
 	sub Zhed U emphasis by Zhed_U_emphasis;
 	sub Zhed Uacute by Zhed_Uacute;
 	sub Zhed Uacute emphasis by Zhed_Uacute_emphasis;
-
 	sub period period by period;
 	sub period comma by period;
 	sub period space by period;
@@ -777,7 +771,6 @@ feature liga {
 	sub emphasis start by emphasis;
 	sub emphasis special by emphasis;
 	sub emphasis emphasis by emphasis;
-
 	sub period space by period;
 	sub space period by period;
 	sub comma space by comma;
@@ -796,6 +789,5 @@ feature liga {
 	sub space special by special;
 	sub emphasis space by emphasis;
 	sub space emphasis by emphasis;
-
 	sub period period period by ellipsis;
 } liga;
