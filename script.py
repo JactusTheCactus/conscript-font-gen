@@ -26,7 +26,7 @@ if True:
 	for l in range(len(punctuation)):
 		liga.append(f"\tsub {lvn[l]} special by {lvy[l]};")
 	for p in punctuation:
-		for v in vowels:
+		for v in vowels + ["emphasis"]:
 			liga.append(f"\tsub {p} {v}' by X {v};")
 	for non in nonV:
 		liga.append(f"\tsub start {non} by {non};")
@@ -37,6 +37,7 @@ if True:
 		for v in vowels:
 			liga.append(f"\tsub {c} {v} by {c}_{v};")
 			liga.append(f"\tsub {c} {v} emphasis by {c}_{v}_emphasis;")
+	liga.append(f"\tsub X emphasis by X_emphasis;")
 	for p1 in punctuation:
 		for p2 in punctuation:
 			liga.append(f"\tsub {p1} {p2} by {p1};")
@@ -69,6 +70,17 @@ for e in ["emphasis", ""]:
 						lig.addReference(e, (1, 0, 0, 1, 0, 0))
 					lig.width = c_glyph.width
 					lig.build()
+set = ["X","emphasis"]
+lig_name = "_".join(filter(bool, set))
+lig = font.createChar(-1, lig_name)
+c_glyph = font["X"]
+v_glyph = font["emphasis"]
+dx = (c_glyph.width - v_glyph.width) / 2
+lig.clear()
+lig.addReference("X", (1, 0, 0, 1, 0, 0))
+lig.addReference("emphasis", (1, 0, 0, 1, dx, 0))
+lig.width = c_glyph.width
+lig.build()
 font.mergeFeature("features.fea")
 sideBearing = 75
 glyphList = []

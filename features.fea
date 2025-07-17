@@ -53,6 +53,7 @@ feature liga {
 	sub period Oacute' by X Oacute;
 	sub period U' by X U;
 	sub period Uacute' by X Uacute;
+	sub period emphasis' by X emphasis;
 	sub comma A' by X A;
 	sub comma E' by X E;
 	sub comma Eacute' by X Eacute;
@@ -62,6 +63,7 @@ feature liga {
 	sub comma Oacute' by X Oacute;
 	sub comma U' by X U;
 	sub comma Uacute' by X Uacute;
+	sub comma emphasis' by X emphasis;
 	sub space A' by X A;
 	sub space E' by X E;
 	sub space Eacute' by X Eacute;
@@ -71,6 +73,7 @@ feature liga {
 	sub space Oacute' by X Oacute;
 	sub space U' by X U;
 	sub space Uacute' by X Uacute;
+	sub space emphasis' by X emphasis;
 	sub hyphen A' by X A;
 	sub hyphen E' by X E;
 	sub hyphen Eacute' by X Eacute;
@@ -80,6 +83,7 @@ feature liga {
 	sub hyphen Oacute' by X Oacute;
 	sub hyphen U' by X U;
 	sub hyphen Uacute' by X Uacute;
+	sub hyphen emphasis' by X emphasis;
 	sub question A' by X A;
 	sub question E' by X E;
 	sub question Eacute' by X Eacute;
@@ -89,6 +93,7 @@ feature liga {
 	sub question Oacute' by X Oacute;
 	sub question U' by X U;
 	sub question Uacute' by X Uacute;
+	sub question emphasis' by X emphasis;
 	sub ellipsis A' by X A;
 	sub ellipsis E' by X E;
 	sub ellipsis Eacute' by X Eacute;
@@ -98,6 +103,7 @@ feature liga {
 	sub ellipsis Oacute' by X Oacute;
 	sub ellipsis U' by X U;
 	sub ellipsis Uacute' by X Uacute;
+	sub ellipsis emphasis' by X emphasis;
 	sub start A' by X A;
 	sub start E' by X E;
 	sub start Eacute' by X Eacute;
@@ -107,6 +113,7 @@ feature liga {
 	sub start Oacute' by X Oacute;
 	sub start U' by X U;
 	sub start Uacute' by X Uacute;
+	sub start emphasis' by X emphasis;
 	sub special A' by X A;
 	sub special E' by X E;
 	sub special Eacute' by X Eacute;
@@ -116,6 +123,7 @@ feature liga {
 	sub special Oacute' by X Oacute;
 	sub special U' by X U;
 	sub special Uacute' by X Uacute;
+	sub special emphasis' by X emphasis;
 	sub emphasis A' by X A;
 	sub emphasis E' by X E;
 	sub emphasis Eacute' by X Eacute;
@@ -125,6 +133,7 @@ feature liga {
 	sub emphasis Oacute' by X Oacute;
 	sub emphasis U' by X U;
 	sub emphasis Uacute' by X Uacute;
+	sub emphasis emphasis' by X emphasis;
 	sub start period by period;
 	sub start comma by comma;
 	sub start space by space;
@@ -690,6 +699,7 @@ feature liga {
 	sub Zhed U emphasis by Zhed_U_emphasis;
 	sub Zhed Uacute by Zhed_Uacute;
 	sub Zhed Uacute emphasis by Zhed_Uacute_emphasis;
+	sub X emphasis by X_emphasis;
 	sub period period by period;
 	sub period comma by period;
 	sub period space by period;
