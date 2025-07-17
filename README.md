@@ -1,6 +1,7 @@
+# Planned Conscripts
 ```mermaid
 mindmap
-	((Script Plan))
+	((Conscripts))
 		Abugida_R
 			{{State}}
 				(In-Progress)

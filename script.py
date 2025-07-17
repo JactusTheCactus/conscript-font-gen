@@ -97,7 +97,8 @@ font.save("abugidaR-lig.sfd")
 font.generate("abugidaR.otf")
 with open("readmeData.json", "r") as f:
 	data = json.load(f)
-readme = "```mermaid\nmindmap\n\t((Script Plan))"
+readme = "# Planned Conscripts"
+readme += "\n```mermaid\nmindmap\n\t((Conscripts))"
 for x in data:
 	readme += f"\n\t\t{x['type']}_{x['direction'][0]}"
 	for y in ["state","type","direction","variants"]:
