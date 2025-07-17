@@ -7,7 +7,12 @@
 			"Solo Consonant",
 			"Consonant + Vowel",
 			"Null-Consonant + Vowel"
-		]
+		],
+"notes": [
+"Add Curves",
+"Add Heads, Risers & Descenders",
+"Keep it 'Lowercase'"
+]
 	},
 	{
 		"state": "Planned",
