@@ -13,6 +13,10 @@ mindmap
 				(Solo Consonant)
 				(Consonant + Vowel)
 				(Null-Consonant + Vowel)
+			{{Notes}}
+				(Add Curves)
+				(Add Heads, Risers & Descenders)
+				(Keep it 'Lowercase')
 		Alphabet_D
 			{{State}}
 				(Planned)
