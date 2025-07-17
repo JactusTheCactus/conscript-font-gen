@@ -25,3 +25,4 @@ mindmap
 				(Initial)
 				(Medial)
 				(Final)
+```
