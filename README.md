@@ -1,4 +1,4 @@
-:::mermaid
+```mermaid
 mindmap
 	((Script Plan))
 		Abugida_R
