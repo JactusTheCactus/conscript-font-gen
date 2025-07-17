@@ -121,6 +121,7 @@ Act III, Scene II
 			.replace(/\n/g, "<br>")
 			.trim();
 		item.body.style.fontFamily = item.type;
+		item.body.style.whiteSpace = "pre";
 		item.body.classList.add(item.type === "AbugidaR" ? item.type : "Verdana");
 		item.div.appendChild(item.head);
 		item.div.appendChild(item.body);
