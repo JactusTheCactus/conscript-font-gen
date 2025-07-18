@@ -3,9 +3,7 @@ TESTS:
 	^he'lo;, ma'i; ne;'m i'z de'vin.
 	^a' e' e;' i' i;' o' o;' u' u;'
 """
-import fontforge
-import json
-import re
+import fontforge, json, re
 font = fontforge.open("abugidaR-main.sfd")
 consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
@@ -98,13 +96,53 @@ font.generate("abugidaR.otf")
 with open("readmeData.json", "r") as f:
 	data = json.load(f)
 readme = "# Planned Conscripts"
-readme += "\n```mermaid\nmindmap\n\t((Conscripts))"
-for x in data:
-	readme += f"\n\t\t{x['type']}_{x['direction'][0]}"
-	for y in ["state","type","direction","variants"]:
-		readme += f"\n\t\t\t{{{{{y.capitalize()}}}}}"
-		if type(x[y]) == list:
-			x[y] = ")\n\t\t\t\t(".join(x[y])
-		readme += f"\n\t\t\t\t({x[y]})"
+tree = ""
+tree += "\n```mermaid"
+tree += "\nmindmap"
+tree += "\n\t((Conscripts))"
+for con in data:
+	tree += f"\n\t\t{con['type']}_{con['direction'][0]}"
+	for branch in ["state","type","direction","variants","notes"]:
+		try:
+			tree += f"\n\t\t\t((\"`{branch.capitalize()}`\"))"
+			if type(con[branch]) == list:
+				for i in range(len(con[branch])):
+					con[branch][i] = re.sub(r"\n+", "\n" + "\t" * 4, con[branch][i])
+				con[branch] = "`\")\n\t\t\t\t(\"`".join(con[branch])
+			tree += f"\n\t\t\t\t(\"`{con[branch]}`\")"
+		except:
+			continue
+tree += "\n```"
+#readme += tree
+list = re.sub(r"```mermaid\nmindmap\n([\s\S]*)\n```", r"\1", tree)
+replacements = {
+	"replace": [
+		r"^\t",
+		r"\(\(?\"?`?([\s\S]*?)`?\"?\)?\)",
+		r"^\t(\b.*\b)",
+		r"(\t+)([A-Za-z*])"
+	],
+	"with": [
+		r"",
+		r"- \1",
+		r"\t- \1",
+		r"\1\t- \2"
+	],
+	"flags":[
+		re.MULTILINE,
+		re.NOFLAG,
+		re.MULTILINE,
+		re.MULTILINE
+	]
+}
+for i in range(len(replacements["replace"])):
+	list = re.sub(
+		replacements["replace"][i],
+		replacements["with"][i],
+		list,
+		flags=replacements["flags"][i] if replacements["flags"][i] else re.NOFLAG
+	)
+print(list)
+readme += list
 with open("README.md", "w") as f:
 	f.write(readme)
