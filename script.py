@@ -113,7 +113,7 @@ for con in data:
 		except:
 			continue
 tree += "\n```"
-#readme += tree
+readme += tree
 list = re.sub(r"```mermaid\nmindmap\n([\s\S]*)\n```", r"\1", tree)
 replacements = {
 	"replace": [
