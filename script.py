@@ -142,7 +142,6 @@ for i in range(len(replacements["replace"])):
 		list,
 		flags=replacements["flags"][i] if replacements["flags"][i] else re.NOFLAG
 	)
-print(list)
 readme += list
 with open("README.md", "w") as f:
 	f.write(readme)
