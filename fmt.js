@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				.split('<br>')
 				.map(line => `^${line}`)
 				.map(line => line.replace(/\^ /, " "))
-				.map(line => line.replace(/[^.,?-]$/, "."))
 				.join('<br>');
 		});
 	document
@@ -14,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		.forEach(el => {
 			el.innerHTML = el.innerHTML
 				.split('<br>')
-				/* Formatting
 				.map(line => `${line}`)
+				/* Formatting
 				.map(line => line.replace(/ /, " "))
 				*/
 				.join('<br>');

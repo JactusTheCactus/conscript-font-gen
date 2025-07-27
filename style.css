@@ -2,14 +2,14 @@
 	font-family:
 		AbugidaR;
 	src:
-		url("../abugidaR.otf") format("opentype");
+		url("AbugidaR/abugidaR.otf") format("opentype");
 }
 
 @font-face {
 	font-family:
 		AlphabetD;
 	src:
-		url("../alphabetD.otf") format("opentype");
+		url("AlphabetD/alphabetD.otf") format("opentype");
 }
 
 .AbugidaR {
