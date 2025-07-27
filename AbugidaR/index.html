@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<link href="site/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<script src="fmt.js"></script>
 </head>
 
@@ -20,7 +20,7 @@
 			}
 		} urls.forEach((url, index) => {
 			const iframe = document.createElement("iframe");
-			iframe.src = `site/${url}.html`;
+			iframe.src = `${url}.html`;
 			iframe.id = `iframe-${index}`;
 			iframe.classList.add("page");
 			iframe.onload = () => resizeIframe(iframe);

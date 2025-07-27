@@ -4,7 +4,7 @@ mindmap
 	((Conscripts))
 		Abugida_R
 			(("`State`"))
-				("`In-Progress`")
+				("`Done`")
 			(("`Type`"))
 				("`Abugida`")
 			(("`Direction`"))
@@ -22,7 +22,7 @@ mindmap
 				*u/IJriccan*`")
 		Alphabet_D
 			(("`State`"))
-				("`Planned`")
+				("`In-Progress`")
 			(("`Type`"))
 				("`Alphabet`")
 			(("`Direction`"))
@@ -37,7 +37,7 @@ mindmap
 - Conscripts
 	- Abugida_R
 		- State
-			- In-Progress
+			- Done
 		- Type
 			- Abugida
 		- Direction
@@ -55,7 +55,7 @@ mindmap
 				- *u/IJriccan*
 	- Alphabet_D
 		- State
-			- Planned
+			- In-Progress
 		- Type
 			- Alphabet
 		- Direction

@@ -1,6 +1,6 @@
 [
 	{
-		"state": "In-Progress",
+		"state": "Done",
 		"type": "Abugida",
 		"direction": "Right",
 		"variants": [
@@ -15,7 +15,7 @@
 		]
 	},
 	{
-		"state": "Planned",
+		"state": "In-Progress",
 		"type": "Alphabet",
 		"direction": "Down",
 		"variants": [
