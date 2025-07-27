@@ -5,9 +5,22 @@
 		url("../abugidaR.otf") format("opentype");
 }
 
+@font-face {
+	font-family:
+		AlphabetD;
+	src:
+		url("../alphabetD.otf") format("opentype");
+}
+
 .AbugidaR {
 	font-family:
 		AbugidaR,
+		Verdana;
+}
+
+.AlphabetD {
+	font-family:
+		AlphabetD,
 		Verdana;
 }
 
