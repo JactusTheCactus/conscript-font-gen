@@ -90,8 +90,35 @@ def genFont(s):
 			glyph.width = int(width + (sideBearing * 2))
 		font.save(os.path.join(s,"abugidaR-lig.sfd"))
 		font.generate(os.path.join(s,"abugidaR.otf"))
+	elif s == "AlphabetD":
+		letterList = [
+			"A B C D Ð E É F G H".split(),
+			"I Í J K L M N Ŋ O Ó".split(),
+			"P R S Ś T Þ U Ú Ű V".split(),
+			"W Y Z Ź".split()
+		]
+		letters = [item for sublist in letterList for item in sublist]
+		nameList = [
+			"A B C D Edh E Eacute F G H".split(),
+			"I Iacute J K L M N Eng O Oacute".split(),
+			"P R S Sacute T Thorn U Uacute Udoubleacute V".split(),
+			"W Y Z Zacute".split()
+		]
+		names = [item for sublist in nameList for item in sublist]
+		table = ""
+		table += "|Letter|Glyph|\n"
+		table += "|:-:|:-:|\n"
+		for i in range(len(letters if len(letters) <= len(names) else names)):
+			l = letters[i]
+			n = names[i]
+			letter = l + l.lower()
+			#print(f"{letter} => {n}")
+			table += f"|{letter}|![{letter}]({os.path.join(s,"",n)})|\n"
+		with open(os.path.join(s,"data.md"), "w", encoding="utf-8") as f:
+			f.write(table)
 for i in [
-	"AbugidaR"
+	"AbugidaR",
+	"AlphabetD"
 ]:
 	genFont(i)
 with open("readmeData.json", "r") as f:

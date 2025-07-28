@@ -1,36 +1,36 @@
-| Letter | Glyph   |
-|:------:|:-------:|
-| Aa     | ![Aa]() |
-| Bb     | ![Bb]() |
-| Cc     | ![Cc]() |
-| Dd     | ![Dd]() |
-| Ðð     | ![Ðð]() |
-| Ee     | ![Ee]() |
-| Éé     | ![Éé]() |
-| Ff     | ![Ff]() |
-| Gg     | ![Gg]() |
-| Hh     | ![Hh]() |
-| Ii     | ![Ii]() |
-| Íí     | ![Íí]() |
-| Jj     | ![Jj]() |
-| Kk     | ![Kk]() |
-| Ll     | ![Ll]() |
-| Mm     | ![Mm]() |
-| Nn     | ![Nn]() |
-| Ŋŋ     | ![Ŋŋ]() |
-| Oo     | ![Oo]() |
-| Óó     | ![Óó]() |
-| Pp     | ![Pp]() |
-| Rr     | ![Rr]() |
-| Ss     | ![Ss]() |
-| Śś     | ![Śś]() |
-| Tt     | ![Tt]() |
-| Þþ     | ![Þþ]() |
-| Uu     | ![Uu]() |
-| Úú     | ![Úú]() |
-| Űű     | ![Űű]() |
-| Vv     | ![Vv]() |
-| Ww     | ![Ww]() |
-| Yy     | ![Yy]() |
-| Zz     | ![Zz]() |
-| Źź     | ![Źź]() |
+|Letter|Glyph|
+|:-:|:-:|
+|Aa|![Aa](AlphabetD/A)|
+|Bb|![Bb](AlphabetD/B)|
+|Cc|![Cc](AlphabetD/C)|
+|Dd|![Dd](AlphabetD/D)|
+|Ðð|![Ðð](AlphabetD/Edh)|
+|Ee|![Ee](AlphabetD/E)|
+|Éé|![Éé](AlphabetD/Eacute)|
+|Ff|![Ff](AlphabetD/F)|
+|Gg|![Gg](AlphabetD/G)|
+|Hh|![Hh](AlphabetD/H)|
+|Ii|![Ii](AlphabetD/I)|
+|Íí|![Íí](AlphabetD/Iacute)|
+|Jj|![Jj](AlphabetD/J)|
+|Kk|![Kk](AlphabetD/K)|
+|Ll|![Ll](AlphabetD/L)|
+|Mm|![Mm](AlphabetD/M)|
+|Nn|![Nn](AlphabetD/N)|
+|Ŋŋ|![Ŋŋ](AlphabetD/Eng)|
+|Oo|![Oo](AlphabetD/O)|
+|Óó|![Óó](AlphabetD/Oacute)|
+|Pp|![Pp](AlphabetD/P)|
+|Rr|![Rr](AlphabetD/R)|
+|Ss|![Ss](AlphabetD/S)|
+|Śś|![Śś](AlphabetD/Sacute)|
+|Tt|![Tt](AlphabetD/T)|
+|Þþ|![Þþ](AlphabetD/Thorn)|
+|Uu|![Uu](AlphabetD/U)|
+|Úú|![Úú](AlphabetD/Uacute)|
+|Űű|![Űű](AlphabetD/Udoubleacute)|
+|Vv|![Vv](AlphabetD/V)|
+|Ww|![Ww](AlphabetD/W)|
+|Yy|![Yy](AlphabetD/Y)|
+|Zz|![Zz](AlphabetD/Z)|
+|Źź|![Źź](AlphabetD/Zacute)|
