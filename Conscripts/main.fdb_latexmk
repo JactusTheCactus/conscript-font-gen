@@ -1,0 +1,25 @@
+# Fdb version 4
+["pdflatex"] 1753961477.1347 "/home/devin/projects/conscript-font-gen/Conscripts/main.tex" "main.pdf" "main" 1753961477.41704 2
+  "/etc/texmf/web2c/texmf.cnf" 1753955759.73566 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/devin/projects/conscript-font-gen/Conscripts/main.tex" 1753984302 88 bf4366cdee0afab3ce0aca76aaf46533 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty" 1705352648 2581 8e0df574a0fdf7d67e300be743ad323e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls" 1137110130 20602 3112294ba237d94ce4a1502cfef3594f ""
+  "/usr/share/texlive/texmf-dist/tex/latex/extsizes/size20.clo" 1184601865 6196 c353d70618088c3532f0550963b53892 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1696969620 9327 c30c00c0072edba199ede5889311aaa9 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1753955867 8213059 d0328839f08e9a02fb52ca72fb222139 ""
+  "main.aux" 1753961477.1305 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1753984302 88 bf4366cdee0afab3ce0aca76aaf46533 ""
+  "packages.tex" 1753984302 433 a2c0d9207ee896ccce8621fd6dadbef0 ""
+  "pre.tex" 1753984302 80 81b96d223b8547cae6bfd0fb31ecbb0d ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)
