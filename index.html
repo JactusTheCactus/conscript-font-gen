@@ -36,10 +36,7 @@
 					link.style.color = "#000"
 					link.title = m;
 					link.removeAttribute("href");
-					link.innerHTML += `<span style="${[
-						"font-size: 0.5em;",
-						"vertical-align: top;"
-					].join(" ")}">*`;
+					link.innerHTML += `*`;
 				}
 			})();
 			const ul = document.createElement("ul");
