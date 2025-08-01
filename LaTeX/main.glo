@@ -1,1 +1,4 @@
-(indexentry :tkey (("Null Consonant" "\\glossentry{Null-Consonant}") ) :locref "{}{4}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Null Consonant" "\\glossentry{nullc}") ) :locref "{}{4}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Alphabet" "\\glossentry{Alphabet}") ) :locref "{}{15}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Abugida" "\\glossentry{Abugida}") ) :locref "{}{15}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Abjad" "\\glossentry{Abjad}") ) :locref "{}{15}" :attr "pageglsnumberformat" ) 

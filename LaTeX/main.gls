@@ -23,7 +23,14 @@
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
 \providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax\glsresetentrylist
+\glossentry{Abjad}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
+\glossentry{Abugida}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
+\glossentry{Alphabet}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{14}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
-\glossentry{Null-Consonant}{\glossaryentrynumbers{\relax 
+\glossentry{nullc}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{4}}}%
 \end{theglossary}\glossarypostamble

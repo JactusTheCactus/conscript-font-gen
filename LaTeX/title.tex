@@ -1,3 +1,54 @@
-\title{My Conscripts}
-\author{\getname{0}\thanks{Find me on \hyper{BlueSky}, \hyper{GitHub} \& \hyper{Reddit}}}
-\date{\DTMmonthname{\DTMfetchmonth{start}} \DTMfetchday{start} -- \DTMmonthname{\number\month} \number\day, \number\year}
+\newcommand{\dash}{\textbf{\_}}
+\newcommand{\emphasize}[1]{\diacritic{-}{#1}{\detokenize{^}}}
+\title{%
+	\abg{Devin}\\
+	My
+	Conscripts\\
+	\emphasize{%
+		\diacritic{+}{%
+			\diacritic{=}{--}{$\Delta$}%
+		}{/}%
+	}%
+	\diacritic{+}{%
+		\diacritic{=}{-}{P}%
+	}{|}%
+	V%
+	|%
+	\diacritic{+}{%
+		\diacritic{=}{-}{9}%
+	}{\dash}%
+	\diacritic{+}{%
+		\raisebox{0.25em}{%
+			\scalebox{1.25}[0.75]{%
+				\rotatebox{-30}{\char"03DF}%
+			}%
+		}%
+	}{\dash}%
+	\emphasize{\diacritic{+}{%
+		\raisebox{0.7em}{%
+			\rotatebox{180}{%
+				\reflectbox{2}%
+			}%
+		}%
+	}{\dash}}%
+	\diacritic{+}{%
+		\diacritic{=}{-}{9}%
+	}{\dash}%
+	||%
+}
+\author{%
+	\getname{0}\thanks{%
+		Find me on
+			\hyper{BlueSky},
+			\hyper{GitHub} \&
+			\hyper{Reddit}%
+	}%
+}
+\date{%
+	\DTMmonthname{\DTMfetchmonth{start}}
+	\DTMfetchday{start}
+	--
+	\DTMmonthname{\number\month}
+	\number\day,
+	\number\year%
+}
