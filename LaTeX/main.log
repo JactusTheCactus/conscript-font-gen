@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.31)  31 JUL 2025 17:39
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.31)  31 JUL 2025 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,7 +334,7 @@ Package cleveref Info: no abbreviation of names on input line 7852.
 ) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2023/07/27 v1.04 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -343,7 +343,9 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (./config.tex
+))) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (./config.tex
 
 Package fontspec Info: Font family 'segoe-ui(0)' created for font 'segoe-ui'
 (fontspec)             with options [Ligatures=TeX,Path =
@@ -491,15 +493,15 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
 ) (./body.tex [2]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <29.86> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
- (./AbugidaR/main.tex [3] (./AbugidaR/consonants.tex
-LaTeX Font Info:    Trying to load font information for OML+segoe-ui(0) on input line 9.
-LaTeX Font Info:    No file OMLsegoe-ui(0).fd. on input line 9.
+ (./AbugidaR/main.tex [3] [4] (./AbugidaR/consonants.tex
+LaTeX Font Info:    Trying to load font information for OML+segoe-ui(0) on input line 6.
+LaTeX Font Info:    No file OMLsegoe-ui(0).fd. on input line 6.
 
 
 LaTeX Font Warning: Font shape `OML/segoe-ui(0)/m/n' undefined
-(Font)              using `OML/cmm/m/it' instead on input line 9.
+(Font)              using `OML/cmm/m/it' instead on input line 6.
 
-) [4] (./AbugidaR/vowels.tex) [5] (./AbugidaR/grammar.tex)) [6] (./AlphabetD/main.tex [7] (./AlphabetD/consonants.tex) [8] (./AlphabetD/vowels.tex) [9] (./AlphabetD/grammar.tex))) (./foot.tex [10] [11] (./main.bbl))) [12] (./main.aux)
+) [5] (./AbugidaR/vowels.tex) [6] (./AbugidaR/grammar.tex)) [7] (./AlphabetD/main.tex [8] [9] (./AlphabetD/consonants.tex) [10] (./AlphabetD/vowels.tex) [11] (./AlphabetD/grammar.tex))) (./foot.tex [12] [13] (./main.bbl))) [14] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -512,12 +514,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DD81EE4F1DD322ACC3E23CE1FB63622E;932.
  ) 
 Here is how much of TeX's memory you used:
- 18377 strings out of 474878
- 383561 string characters out of 5762516
+ 18401 strings out of 474878
+ 383973 string characters out of 5762516
  1926627 words of memory out of 5000000
- 40106 multiletter control sequences out of 15000+600000
- 570623 words of font info for 123 fonts, out of 8000000 for 9000
+ 40129 multiletter control sequences out of 15000+600000
+ 570607 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 91i,15n,99p,487b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,14n,99p,487b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (12 pages).
+Output written on main.pdf (14 pages).
