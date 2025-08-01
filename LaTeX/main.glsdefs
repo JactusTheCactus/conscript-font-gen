@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{Null-Consonant}%
+{%
+name={Null-Consonant},%
+sort={Null-Consonant},%
+type={main},%
+first={Null-Consonant},%
+firstplural={Null-Consonants},%
+text={Null-Consonant},%
+plural={Null-Consonants},%
+description={The \emph {Null Consonant} is \anglebracket {\AbR {X}} or \anglebracket {X}; \ipa {\nullc }},%
+descriptionplural={The \emph {Null Consonant} is \anglebracket {\AbR {X}} or \anglebracket {X}; \ipa {\nullc }},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
