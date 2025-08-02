@@ -123,3 +123,15 @@
 		\IfEq{\tempchar}{;}{*}{}%
 	\endgroup%
 }
+\newcommand{\inlinesinglequote}[1]{\textit{`#1'}}%
+\newcommand{\inlinedoublequote}[1]{``#1''}%
+\newcommand{\quoteauthor}[2]{%
+	\begin{quote}
+		\textbf{%
+			\inlinedoublequote{#2}%
+		}%
+		\par\hfill
+		---
+		\textit{#1}
+	\end{quote}%
+}
