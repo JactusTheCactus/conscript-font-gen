@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.31)  1 AUG 2025 06:40
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.31)  1 AUG 2025 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -894,6 +894,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package hyperref Info: Link coloring ON on input line 3.
  (./doc.tex
 (./head.tex
+Overfull \hbox (652.90942pt too wide) in paragraph at lines 2--2
+ \TU/segoe-ui(0)/m/n/35.83 <M><R><S><W><X><Y><Z><DH><NG><SH><TH><ZH>......*.*.*
+.* 
+ []
+
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <35.83> not available
 (Font)              size <24.88> substituted on input line 2.
@@ -945,11 +950,11 @@ LaTeX Font Warning: Font shape `OML/segoe-ui(0)/m/n' undefined
 (./AlphabetD/main.tex [8] (./AlphabetD/consonants.tex) [9]
 (./AlphabetD/vowels.tex) [10] (./AlphabetD/grammar.tex))) (./foot.tex [11]
 [12] (./notes.tex) [13] (./main.gls
-Overfull \hbox (19.96811pt too wide) in paragraph at lines 32--32
+Overfull \hbox (19.96811pt too wide) in paragraph at lines 30--30
 []\TU/segoe-ui(0)/m/n/20.74 A writing system where Consonants & Vow-
  []
 
-))) [14] [15] (./main.aux)
+))) [14] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -964,12 +969,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23539 strings out of 474878
- 468947 string characters out of 5762516
+ 23550 strings out of 474878
+ 469470 string characters out of 5762516
  1926627 words of memory out of 5000000
- 45135 multiletter control sequences out of 15000+600000
- 571562 words of font info for 128 fonts, out of 8000000 for 9000
+ 45141 multiletter control sequences out of 15000+600000
+ 571602 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,20n,99p,2373b,373s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,21n,99p,2373b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (15 pages).
+Output written on main.pdf (14 pages).

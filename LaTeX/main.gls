@@ -24,12 +24,10 @@
 \providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax\glsresetentrylist
-\glossentry{Abjad}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
 \glossentry{Abugida}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{4}}}\relax\glsresetentrylist
 \glossentry{Alphabet}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{14}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{nullc}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{4}}}%

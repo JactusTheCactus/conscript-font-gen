@@ -51,6 +51,12 @@
 		}%
 	}%
 }
+\ExplSyntaxOn
+\NewExpandableDocumentCommand{\UppercaseString}{m}
+ {
+   \tl_upper_case:n {#1}
+ }
+\ExplSyntaxOff
 \DeclareRobustCommand{\abg}[1]{%
 	\abgloop{#1}%
 }
@@ -74,50 +80,46 @@
 }
 \newcommand{\abgmapcompose}[2]{%
 	\begingroup%
-		\edef\tempchar{#1}%
-		\uppercase{\edef\tempchar{\tempchar}}%
-		\IfEq{\tempchar}{D}{<D;>}{}%
-		\IfEq{\tempchar}{N}{<N;>}{}%
-		\IfEq{\tempchar}{S}{<S;>}{}%
-		\IfEq{\tempchar}{T}{<T;>}{}%
-		\IfEq{\tempchar}{Z}{<Z;>}{}%
-		\IfEq{\tempchar}{E}{<E;>}{}%
-		\IfEq{\tempchar}{I}{<I;>}{}%
-		\IfEq{\tempchar}{O}{<O;>}{}%
-		\IfEq{\tempchar}{U}{<U;>}{}%
+		\edef\tempchar{\UppercaseString{#1}}%
+		\IfEq{\tempchar}{D}{<DH>}{}%
+		\IfEq{\tempchar}{N}{<NG>}{}%
+		\IfEq{\tempchar}{S}{<SH>}{}%
+		\IfEq{\tempchar}{T}{<TH>}{}%
+		\IfEq{\tempchar}{Z}{<ZH>}{}%
+		\IfEq{\tempchar}{E}{.*}{}%
+		\IfEq{\tempchar}{I}{.*}{}%
+		\IfEq{\tempchar}{O}{.*}{}%
+		\IfEq{\tempchar}{U}{.*}{}%
 	\endgroup%
 }
-
-% Map single characters
 \newcommand{\abgmapchar}[1]{%
 	\begingroup
-		\edef\tempchar{#1}%
-		\uppercase{\edef\tempchar{\tempchar}}%
-		\IfEq{\tempchar}{B}{<B>}{}%
-		\IfEq{\tempchar}{C}{<C>}{}%
-		\IfEq{\tempchar}{D}{<D>}{}%
-		\IfEq{\tempchar}{F}{<F>}{}%
-		\IfEq{\tempchar}{G}{<G>}{}%
-		\IfEq{\tempchar}{H}{<H>}{}%
-		\IfEq{\tempchar}{J}{<J>}{}%
-		\IfEq{\tempchar}{K}{<K>}{}%
-		\IfEq{\tempchar}{L}{<L>}{}%
+		\edef\tempchar{\UppercaseString{#1}}%
+		\IfEq{\tempchar}{B}{\diacritic{=}{\diacritic{+}{}{\diacritic{+}{}{\diacritic{+}{}{\textbf{|}}}}}{9}}{}%
+		\IfEq{\tempchar}{C}{\diacritic{=}{\hspace{0.25em}\raisebox{1em}{\scalebox{1}[0.5]{|}}}{c}}{}%
+		\IfEq{\tempchar}{D}{\diacritic{=}{--}{$\Delta$}}{}%
+		\IfEq{\tempchar}{F}{P}{}%
+		\IfEq{\tempchar}{G}{\diacritic{=}{-}{\rotatebox{180}{\reflectbox{\raisebox{-0.7em}{L}}}}}{}%
+		\IfEq{\tempchar}{H}{\diacritic{=}{\textbf{\scalebox{1}[0.75]{\hspace{0.3em}|}}}{\scalebox{0.75}[0.5]{\textbf{\raisebox{1.5em}{\rotatebox{180}{U}}}}}}{}%
+		\IfEq{\tempchar}{J}{\diacritic{=}{\hspace{0.25em}\raisebox{1em}{\scalebox{1}[0.5]{|}}}{\diacritic{=}{\raisebox{0.75em}{-}}{c}}}{}%
+		\IfEq{\tempchar}{K}{\rotatebox{180}{\reflectbox{\raisebox{-0.7em}{L}}}}{}%
+		\IfEq{\tempchar}{L}{\diacritic{=}{\raisebox{1em}{\hspace{0.5em}N}}{|}}{}%
 		\IfEq{\tempchar}{M}{<M>}{}%
-		\IfEq{\tempchar}{N}{<N>}{}%
-		\IfEq{\tempchar}{P}{<P>}{}%
+		\IfEq{\tempchar}{N}{V}{}%
+		\IfEq{\tempchar}{P}{9}{}%
 		\IfEq{\tempchar}{R}{<R>}{}%
 		\IfEq{\tempchar}{S}{<S>}{}%
-		\IfEq{\tempchar}{T}{<T>}{}%
-		\IfEq{\tempchar}{V}{<V>}{}%
+		\IfEq{\tempchar}{T}{$\Delta$}{}%
+		\IfEq{\tempchar}{V}{\diacritic{=}{-}{P}}{}%
 		\IfEq{\tempchar}{W}{<W>}{}%
 		\IfEq{\tempchar}{X}{<X>}{}%
 		\IfEq{\tempchar}{Y}{<Y>}{}%
 		\IfEq{\tempchar}{Z}{<Z>}{}%
-		\IfEq{\tempchar}{A}{<A>}{}%
-		\IfEq{\tempchar}{E}{<E>}{}%
-		\IfEq{\tempchar}{I}{<I>}{}%
-		\IfEq{\tempchar}{O}{<O>}{}%
-		\IfEq{\tempchar}{U}{<U>}{}%
-		\IfEq{\tempchar}{;}{<;>}{}%
+		\IfEq{\tempchar}{A}{.}{}%
+		\IfEq{\tempchar}{E}{.}{}%
+		\IfEq{\tempchar}{I}{.}{}%
+		\IfEq{\tempchar}{O}{.}{}%
+		\IfEq{\tempchar}{U}{.}{}%
+		\IfEq{\tempchar}{;}{*}{}%
 	\endgroup%
 }
