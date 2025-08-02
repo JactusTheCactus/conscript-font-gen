@@ -1,3 +1,5 @@
+![LaTeX Doc](LaTeX/main.pdf)
+
 # Planned Conscripts
 ```mermaid
 mindmap
