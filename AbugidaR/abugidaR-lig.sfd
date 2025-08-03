@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1752363677
-ModificationTime: 1753685590
+ModificationTime: 1754205720
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -1428,7 +1428,7 @@ FitToEm: 0
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 530 529
+BeginChars: 554 553
 
 StartChar: comma
 Encoding: 1 44 0
@@ -3638,11 +3638,11 @@ SplineSet
  675 700 l 25
  675 0 l 25
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -3886,8 +3886,46 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B Uacute emphasis
 EndChar
 
-StartChar: C_A_emphasis
+StartChar: B_emphasis
 Encoding: 88 -1 87
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+325 600 m 25
+ 425 600 l 25
+ 425 500 l 25
+ 325 500 l 29
+ 325 600 l 25
+175 500 m 25
+ 575 500 l 25
+ 575 600 l 25
+ 175 600 l 25
+ 175 500 l 25
+75 0 m 17
+ 75 100 l 1
+ 575 100 l 1
+ 575 400 l 1
+ 75 400 l 5
+ 75 700 l 9
+ 675 700 l 25
+ 675 0 l 25
+ 75 0 l 17
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B emphasis
+EndChar
+
+StartChar: C_A_emphasis
+Encoding: 89 -1 88
 Width: 750
 VWidth: 0
 Flags: HW
@@ -3922,7 +3960,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C A emphasis
 EndChar
 
 StartChar: C_E_emphasis
-Encoding: 89 -1 88
+Encoding: 90 -1 89
 Width: 750
 VWidth: 0
 Flags: HW
@@ -3957,7 +3995,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C E emphasis
 EndChar
 
 StartChar: C_Eacute_emphasis
-Encoding: 90 -1 89
+Encoding: 91 -1 90
 Width: 750
 VWidth: 0
 Flags: HW
@@ -3992,7 +4030,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Eacute emp
 EndChar
 
 StartChar: C_I_emphasis
-Encoding: 91 -1 90
+Encoding: 92 -1 91
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4010,11 +4048,11 @@ SplineSet
  575 400 l 1
  575 700 l 1
  675 700 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -4027,7 +4065,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C I emphasis
 EndChar
 
 StartChar: C_Iacute_emphasis
-Encoding: 92 -1 91
+Encoding: 93 -1 92
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4064,7 +4102,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Iacute emp
 EndChar
 
 StartChar: C_O_emphasis
-Encoding: 93 -1 92
+Encoding: 94 -1 93
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4104,7 +4142,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C O emphasis
 EndChar
 
 StartChar: C_Oacute_emphasis
-Encoding: 94 -1 93
+Encoding: 95 -1 94
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4143,7 +4181,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Oacute emp
 EndChar
 
 StartChar: C_U_emphasis
-Encoding: 95 -1 94
+Encoding: 96 -1 95
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4180,7 +4218,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C U emphasis
 EndChar
 
 StartChar: C_Uacute_emphasis
-Encoding: 96 -1 95
+Encoding: 97 -1 96
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4218,8 +4256,38 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Uacute emphasis
 EndChar
 
+StartChar: C_emphasis
+Encoding: 98 -1 97
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+675 700 m 1
+ 675 300 l 1
+ 175 300 l 1
+ 175 100 l 1
+ 675 100 l 1
+ 675 0 l 1
+ 75 0 l 1
+ 75 400 l 1
+ 575 400 l 1
+ 575 700 l 1
+ 675 700 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C emphasis
+EndChar
+
 StartChar: D_A_emphasis
-Encoding: 97 -1 96
+Encoding: 99 -1 98
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4257,7 +4325,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D A emphasis
 EndChar
 
 StartChar: D_E_emphasis
-Encoding: 98 -1 97
+Encoding: 100 -1 99
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4295,7 +4363,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D E emphasis
 EndChar
 
 StartChar: D_Eacute_emphasis
-Encoding: 99 -1 98
+Encoding: 101 -1 100
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4333,7 +4401,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Eacute emp
 EndChar
 
 StartChar: D_I_emphasis
-Encoding: 100 -1 99
+Encoding: 102 -1 101
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4354,11 +4422,11 @@ SplineSet
  425 700 l 1
  675 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -4371,7 +4439,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D I emphasis
 EndChar
 
 StartChar: D_Iacute_emphasis
-Encoding: 101 -1 100
+Encoding: 103 -1 102
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4411,7 +4479,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Iacute emp
 EndChar
 
 StartChar: D_O_emphasis
-Encoding: 102 -1 101
+Encoding: 104 -1 103
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4454,7 +4522,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D O emphasis
 EndChar
 
 StartChar: D_Oacute_emphasis
-Encoding: 103 -1 102
+Encoding: 105 -1 104
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4496,7 +4564,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Oacute emp
 EndChar
 
 StartChar: D_U_emphasis
-Encoding: 104 -1 103
+Encoding: 106 -1 105
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4536,7 +4604,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D U emphasis
 EndChar
 
 StartChar: D_Uacute_emphasis
-Encoding: 105 -1 104
+Encoding: 107 -1 106
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4577,8 +4645,41 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Uacute emphasis
 EndChar
 
+StartChar: D_emphasis
+Encoding: 108 -1 107
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+275 250 m 29
+ 275 350 l 25
+ 475 350 l 25
+ 475 250 l 25
+ 275 250 l 29
+225 100 m 25
+ 525 100 l 25
+ 375 550 l 29
+ 225 100 l 25
+75 0 m 1
+ 325 700 l 1
+ 425 700 l 1
+ 675 0 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D emphasis
+EndChar
+
 StartChar: Edh_A_emphasis
-Encoding: 106 -1 105
+Encoding: 109 -1 108
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4625,7 +4726,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh A emphas
 EndChar
 
 StartChar: Edh_E_emphasis
-Encoding: 107 -1 106
+Encoding: 110 -1 109
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4672,7 +4773,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh E emphas
 EndChar
 
 StartChar: Edh_Eacute_emphasis
-Encoding: 108 -1 107
+Encoding: 111 -1 110
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4719,7 +4820,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Eacute e
 EndChar
 
 StartChar: Edh_I_emphasis
-Encoding: 109 -1 108
+Encoding: 112 -1 111
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4749,11 +4850,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -4766,7 +4867,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh I emphas
 EndChar
 
 StartChar: Edh_Iacute_emphasis
-Encoding: 110 -1 109
+Encoding: 113 -1 112
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4815,7 +4916,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Iacute e
 EndChar
 
 StartChar: Edh_O_emphasis
-Encoding: 111 -1 110
+Encoding: 114 -1 113
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4867,7 +4968,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh O emphas
 EndChar
 
 StartChar: Edh_Oacute_emphasis
-Encoding: 112 -1 111
+Encoding: 115 -1 114
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4918,7 +5019,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Oacute e
 EndChar
 
 StartChar: Edh_U_emphasis
-Encoding: 113 -1 112
+Encoding: 116 -1 115
 Width: 750
 VWidth: 0
 Flags: HW
@@ -4967,7 +5068,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh U emphas
 EndChar
 
 StartChar: Edh_Uacute_emphasis
-Encoding: 114 -1 113
+Encoding: 117 -1 116
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5017,8 +5118,50 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Uacute emphasis
 EndChar
 
+StartChar: Edh_emphasis
+Encoding: 118 -1 117
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 500 m 25
+ 75 600 l 29
+ 675 600 l 25
+ 675 500 l 25
+ 75 500 l 25
+175 0 m 29
+ 225 100 l 25
+ 575 100 l 25
+ 575 300 l 25
+ 675 300 l 25
+ 675 0 l 25
+ 175 0 l 29
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh emphasis
+EndChar
+
 StartChar: F_A_emphasis
-Encoding: 115 -1 114
+Encoding: 119 -1 118
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5054,7 +5197,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F A emphasis
 EndChar
 
 StartChar: F_E_emphasis
-Encoding: 116 -1 115
+Encoding: 120 -1 119
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5090,7 +5233,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F E emphasis
 EndChar
 
 StartChar: F_Eacute_emphasis
-Encoding: 117 -1 116
+Encoding: 121 -1 120
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5126,7 +5269,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Eacute emp
 EndChar
 
 StartChar: F_I_emphasis
-Encoding: 118 -1 117
+Encoding: 122 -1 121
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5145,11 +5288,11 @@ SplineSet
  175 400 l 25
  175 0 l 25
  75 0 l 25
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -5162,7 +5305,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F I emphasis
 EndChar
 
 StartChar: F_Iacute_emphasis
-Encoding: 119 -1 118
+Encoding: 123 -1 122
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5200,7 +5343,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Iacute emp
 EndChar
 
 StartChar: F_O_emphasis
-Encoding: 120 -1 119
+Encoding: 124 -1 123
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5241,7 +5384,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F O emphasis
 EndChar
 
 StartChar: F_Oacute_emphasis
-Encoding: 121 -1 120
+Encoding: 125 -1 124
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5281,7 +5424,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Oacute emp
 EndChar
 
 StartChar: F_U_emphasis
-Encoding: 122 -1 121
+Encoding: 126 -1 125
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5319,7 +5462,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F U emphasis
 EndChar
 
 StartChar: F_Uacute_emphasis
-Encoding: 123 -1 122
+Encoding: 127 -1 126
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5358,8 +5501,39 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Uacute emphasis
 EndChar
 
+StartChar: F_emphasis
+Encoding: 128 -1 127
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+175 600 m 25
+ 175 500 l 25
+ 575 500 l 25
+ 575 600 l 25
+ 175 600 l 25
+75 0 m 25
+ 75 700 l 25
+ 675 700 l 25
+ 675 400 l 25
+ 175 400 l 25
+ 175 0 l 25
+ 75 0 l 25
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F emphasis
+EndChar
+
 StartChar: G_A_emphasis
-Encoding: 124 -1 123
+Encoding: 129 -1 128
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5395,7 +5569,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G A emphasis
 EndChar
 
 StartChar: G_E_emphasis
-Encoding: 125 -1 124
+Encoding: 130 -1 129
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5431,7 +5605,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G E emphasis
 EndChar
 
 StartChar: G_Eacute_emphasis
-Encoding: 126 -1 125
+Encoding: 131 -1 130
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5467,7 +5641,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Eacute emp
 EndChar
 
 StartChar: G_I_emphasis
-Encoding: 127 -1 126
+Encoding: 132 -1 131
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5486,11 +5660,11 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -5503,7 +5677,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G I emphasis
 EndChar
 
 StartChar: G_Iacute_emphasis
-Encoding: 128 -1 127
+Encoding: 133 -1 132
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5541,7 +5715,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Iacute emp
 EndChar
 
 StartChar: G_O_emphasis
-Encoding: 129 -1 128
+Encoding: 134 -1 133
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5582,7 +5756,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G O emphasis
 EndChar
 
 StartChar: G_Oacute_emphasis
-Encoding: 130 -1 129
+Encoding: 135 -1 134
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5622,7 +5796,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Oacute emp
 EndChar
 
 StartChar: G_U_emphasis
-Encoding: 131 -1 130
+Encoding: 136 -1 135
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5660,7 +5834,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G U emphasis
 EndChar
 
 StartChar: G_Uacute_emphasis
-Encoding: 132 -1 131
+Encoding: 137 -1 136
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5699,8 +5873,39 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Uacute emphasis
 EndChar
 
+StartChar: G_emphasis
+Encoding: 138 -1 137
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 300 m 25
+ 75 400 l 29
+ 475 400 l 25
+ 475 300 l 25
+ 75 300 l 25
+75 0 m 1
+ 75 700 l 29
+ 675 700 l 1
+ 675 600 l 1
+ 175 600 l 1
+ 175 0 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G emphasis
+EndChar
+
 StartChar: H_A_emphasis
-Encoding: 133 -1 132
+Encoding: 139 -1 138
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5733,7 +5938,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H A emphasis
 EndChar
 
 StartChar: H_E_emphasis
-Encoding: 134 -1 133
+Encoding: 140 -1 139
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5766,7 +5971,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H E emphasis
 EndChar
 
 StartChar: H_Eacute_emphasis
-Encoding: 135 -1 134
+Encoding: 141 -1 140
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5799,7 +6004,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Eacute emp
 EndChar
 
 StartChar: H_I_emphasis
-Encoding: 136 -1 135
+Encoding: 142 -1 141
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5815,11 +6020,11 @@ SplineSet
  175 600 l 1
  175 500 l 1
  75 500 l 9
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -5832,7 +6037,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H I emphasis
 EndChar
 
 StartChar: H_Iacute_emphasis
-Encoding: 137 -1 136
+Encoding: 143 -1 142
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5867,7 +6072,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Iacute emp
 EndChar
 
 StartChar: H_O_emphasis
-Encoding: 138 -1 137
+Encoding: 144 -1 143
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5905,7 +6110,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H O emphasis
 EndChar
 
 StartChar: H_Oacute_emphasis
-Encoding: 139 -1 138
+Encoding: 145 -1 144
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5942,7 +6147,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Oacute emp
 EndChar
 
 StartChar: H_U_emphasis
-Encoding: 140 -1 139
+Encoding: 146 -1 145
 Width: 750
 VWidth: 0
 Flags: HW
@@ -5977,7 +6182,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H U emphasis
 EndChar
 
 StartChar: H_Uacute_emphasis
-Encoding: 141 -1 140
+Encoding: 147 -1 146
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6013,8 +6218,36 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Uacute emphasis
 EndChar
 
+StartChar: H_emphasis
+Encoding: 148 -1 147
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 500 m 9
+ 75 700 l 1
+ 675 700 l 25
+ 675 0 l 1
+ 575 0 l 1
+ 575 600 l 1
+ 175 600 l 1
+ 175 500 l 1
+ 75 500 l 9
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H emphasis
+EndChar
+
 StartChar: J_A_emphasis
-Encoding: 142 -1 141
+Encoding: 149 -1 148
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6054,7 +6287,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J A emphasis
 EndChar
 
 StartChar: J_E_emphasis
-Encoding: 143 -1 142
+Encoding: 150 -1 149
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6094,7 +6327,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J E emphasis
 EndChar
 
 StartChar: J_Eacute_emphasis
-Encoding: 144 -1 143
+Encoding: 151 -1 150
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6134,7 +6367,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Eacute emp
 EndChar
 
 StartChar: J_I_emphasis
-Encoding: 145 -1 144
+Encoding: 152 -1 151
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6157,11 +6390,11 @@ SplineSet
  575 400 l 1
  575 700 l 1
  675 700 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -6174,7 +6407,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J I emphasis
 EndChar
 
 StartChar: J_Iacute_emphasis
-Encoding: 146 -1 145
+Encoding: 153 -1 152
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6216,7 +6449,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Iacute emp
 EndChar
 
 StartChar: J_O_emphasis
-Encoding: 147 -1 146
+Encoding: 154 -1 153
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6261,7 +6494,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J O emphasis
 EndChar
 
 StartChar: J_Oacute_emphasis
-Encoding: 148 -1 147
+Encoding: 155 -1 154
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6305,7 +6538,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Oacute emp
 EndChar
 
 StartChar: J_U_emphasis
-Encoding: 149 -1 148
+Encoding: 156 -1 155
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6347,7 +6580,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J U emphasis
 EndChar
 
 StartChar: J_Uacute_emphasis
-Encoding: 150 -1 149
+Encoding: 157 -1 156
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6390,8 +6623,43 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Uacute emphasis
 EndChar
 
+StartChar: J_emphasis
+Encoding: 158 -1 157
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+175 500 m 1
+ 175 600 l 1
+ 675 600 l 5
+ 675 500 l 1
+ 175 500 l 1
+675 700 m 1
+ 675 300 l 1
+ 175 300 l 1
+ 175 100 l 1
+ 675 100 l 1
+ 675 0 l 1
+ 75 0 l 1
+ 75 400 l 1
+ 575 400 l 1
+ 575 700 l 1
+ 675 700 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J emphasis
+EndChar
+
 StartChar: K_A_emphasis
-Encoding: 151 -1 150
+Encoding: 159 -1 158
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6422,7 +6690,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K A emphasis
 EndChar
 
 StartChar: K_E_emphasis
-Encoding: 152 -1 151
+Encoding: 160 -1 159
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6453,7 +6721,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K E emphasis
 EndChar
 
 StartChar: K_Eacute_emphasis
-Encoding: 153 -1 152
+Encoding: 161 -1 160
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6484,7 +6752,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Eacute emp
 EndChar
 
 StartChar: K_I_emphasis
-Encoding: 154 -1 153
+Encoding: 162 -1 161
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6498,11 +6766,11 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -6515,7 +6783,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K I emphasis
 EndChar
 
 StartChar: K_Iacute_emphasis
-Encoding: 155 -1 154
+Encoding: 163 -1 162
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6548,7 +6816,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Iacute emp
 EndChar
 
 StartChar: K_O_emphasis
-Encoding: 156 -1 155
+Encoding: 164 -1 163
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6584,7 +6852,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K O emphasis
 EndChar
 
 StartChar: K_Oacute_emphasis
-Encoding: 157 -1 156
+Encoding: 165 -1 164
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6619,7 +6887,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Oacute emp
 EndChar
 
 StartChar: K_U_emphasis
-Encoding: 158 -1 157
+Encoding: 166 -1 165
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6652,7 +6920,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K U emphasis
 EndChar
 
 StartChar: K_Uacute_emphasis
-Encoding: 159 -1 158
+Encoding: 167 -1 166
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6686,8 +6954,34 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Uacute emphasis
 EndChar
 
+StartChar: K_emphasis
+Encoding: 168 -1 167
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 1
+ 75 700 l 29
+ 675 700 l 1
+ 675 600 l 1
+ 175 600 l 1
+ 175 0 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K emphasis
+EndChar
+
 StartChar: L_A_emphasis
-Encoding: 160 -1 159
+Encoding: 169 -1 168
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6722,7 +7016,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L A emphasis
 EndChar
 
 StartChar: L_E_emphasis
-Encoding: 161 -1 160
+Encoding: 170 -1 169
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6757,7 +7051,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L E emphasis
 EndChar
 
 StartChar: L_Eacute_emphasis
-Encoding: 162 -1 161
+Encoding: 171 -1 170
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6792,7 +7086,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Eacute emp
 EndChar
 
 StartChar: L_I_emphasis
-Encoding: 163 -1 162
+Encoding: 172 -1 171
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6810,11 +7104,11 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 13
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -6827,7 +7121,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L I emphasis
 EndChar
 
 StartChar: L_Iacute_emphasis
-Encoding: 164 -1 163
+Encoding: 173 -1 172
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6864,7 +7158,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Iacute emp
 EndChar
 
 StartChar: L_O_emphasis
-Encoding: 165 -1 164
+Encoding: 174 -1 173
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6904,7 +7198,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L O emphasis
 EndChar
 
 StartChar: L_Oacute_emphasis
-Encoding: 166 -1 165
+Encoding: 175 -1 174
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6943,7 +7237,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Oacute emp
 EndChar
 
 StartChar: L_U_emphasis
-Encoding: 167 -1 166
+Encoding: 176 -1 175
 Width: 750
 VWidth: 0
 Flags: HW
@@ -6980,7 +7274,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L U emphasis
 EndChar
 
 StartChar: L_Uacute_emphasis
-Encoding: 168 -1 167
+Encoding: 177 -1 176
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7018,8 +7312,38 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Uacute emphasis
 EndChar
 
+StartChar: L_emphasis
+Encoding: 178 -1 177
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 13
+ 75 700 l 17
+ 175 700 l 1
+ 575 500 l 1
+ 575 700 l 1
+ 675 700 l 1
+ 675 400 l 1
+ 575 400 l 1
+ 175 600 l 1
+ 175 0 l 1
+ 75 0 l 13
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L emphasis
+EndChar
+
 StartChar: M_A_emphasis
-Encoding: 169 -1 168
+Encoding: 179 -1 178
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7051,7 +7375,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M A emphasis
 EndChar
 
 StartChar: M_E_emphasis
-Encoding: 170 -1 169
+Encoding: 180 -1 179
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7083,7 +7407,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M E emphasis
 EndChar
 
 StartChar: M_Eacute_emphasis
-Encoding: 171 -1 170
+Encoding: 181 -1 180
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7115,7 +7439,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Eacute emp
 EndChar
 
 StartChar: M_I_emphasis
-Encoding: 172 -1 171
+Encoding: 182 -1 181
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7130,11 +7454,11 @@ SplineSet
  375 600 l 1
  175 0 l 5
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -7147,7 +7471,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M I emphasis
 EndChar
 
 StartChar: M_Iacute_emphasis
-Encoding: 173 -1 172
+Encoding: 183 -1 182
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7181,7 +7505,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Iacute emp
 EndChar
 
 StartChar: M_O_emphasis
-Encoding: 174 -1 173
+Encoding: 184 -1 183
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7218,7 +7542,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M O emphasis
 EndChar
 
 StartChar: M_Oacute_emphasis
-Encoding: 175 -1 174
+Encoding: 185 -1 184
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7254,7 +7578,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Oacute emp
 EndChar
 
 StartChar: M_U_emphasis
-Encoding: 176 -1 175
+Encoding: 186 -1 185
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7288,7 +7612,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M U emphasis
 EndChar
 
 StartChar: M_Uacute_emphasis
-Encoding: 177 -1 176
+Encoding: 187 -1 186
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7323,8 +7647,35 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Uacute emphasis
 EndChar
 
+StartChar: M_emphasis
+Encoding: 188 -1 187
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 1
+ 325 700 l 1
+ 425 700 l 1
+ 675 0 l 1
+ 575 0 l 1
+ 375 600 l 1
+ 175 0 l 5
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M emphasis
+EndChar
+
 StartChar: N_A_emphasis
-Encoding: 178 -1 177
+Encoding: 189 -1 188
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7356,7 +7707,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N A emphasis
 EndChar
 
 StartChar: N_E_emphasis
-Encoding: 179 -1 178
+Encoding: 190 -1 189
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7388,7 +7739,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N E emphasis
 EndChar
 
 StartChar: N_Eacute_emphasis
-Encoding: 180 -1 179
+Encoding: 191 -1 190
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7420,7 +7771,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Eacute emp
 EndChar
 
 StartChar: N_I_emphasis
-Encoding: 181 -1 180
+Encoding: 192 -1 191
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7435,11 +7786,11 @@ SplineSet
  675 700 l 1
  425 0 l 1
  325 0 l 5
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -7452,7 +7803,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N I emphasis
 EndChar
 
 StartChar: N_Iacute_emphasis
-Encoding: 182 -1 181
+Encoding: 193 -1 192
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7486,7 +7837,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Iacute emp
 EndChar
 
 StartChar: N_O_emphasis
-Encoding: 183 -1 182
+Encoding: 194 -1 193
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7523,7 +7874,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N O emphasis
 EndChar
 
 StartChar: N_Oacute_emphasis
-Encoding: 184 -1 183
+Encoding: 195 -1 194
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7559,7 +7910,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Oacute emp
 EndChar
 
 StartChar: N_U_emphasis
-Encoding: 185 -1 184
+Encoding: 196 -1 195
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7593,7 +7944,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N U emphasis
 EndChar
 
 StartChar: N_Uacute_emphasis
-Encoding: 186 -1 185
+Encoding: 197 -1 196
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7628,8 +7979,35 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Uacute emphasis
 EndChar
 
+StartChar: N_emphasis
+Encoding: 198 -1 197
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+325 0 m 5
+ 75 700 l 1
+ 175 700 l 1
+ 375 100 l 1
+ 575 700 l 1
+ 675 700 l 1
+ 425 0 l 1
+ 325 0 l 5
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N emphasis
+EndChar
+
 StartChar: Eng_A_emphasis
-Encoding: 187 -1 186
+Encoding: 199 -1 198
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7662,7 +8040,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng A emphas
 EndChar
 
 StartChar: Eng_E_emphasis
-Encoding: 188 -1 187
+Encoding: 200 -1 199
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7695,7 +8073,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng E emphas
 EndChar
 
 StartChar: Eng_Eacute_emphasis
-Encoding: 189 -1 188
+Encoding: 201 -1 200
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7728,7 +8106,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Eacute e
 EndChar
 
 StartChar: Eng_I_emphasis
-Encoding: 190 -1 189
+Encoding: 202 -1 201
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7744,11 +8122,11 @@ SplineSet
  675 100 l 5
  675 0 l 9
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -7761,7 +8139,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng I emphas
 EndChar
 
 StartChar: Eng_Iacute_emphasis
-Encoding: 191 -1 190
+Encoding: 203 -1 202
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7796,7 +8174,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Iacute e
 EndChar
 
 StartChar: Eng_O_emphasis
-Encoding: 192 -1 191
+Encoding: 204 -1 203
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7834,7 +8212,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng O emphas
 EndChar
 
 StartChar: Eng_Oacute_emphasis
-Encoding: 193 -1 192
+Encoding: 205 -1 204
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7871,7 +8249,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Oacute e
 EndChar
 
 StartChar: Eng_U_emphasis
-Encoding: 194 -1 193
+Encoding: 206 -1 205
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7906,7 +8284,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng U emphas
 EndChar
 
 StartChar: Eng_Uacute_emphasis
-Encoding: 195 -1 194
+Encoding: 207 -1 206
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7942,8 +8320,36 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Uacute emphasis
 EndChar
 
+StartChar: Eng_emphasis
+Encoding: 208 -1 207
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 17
+ 75 100 l 1
+ 325 100 l 1
+ 325 700 l 1
+ 425 700 l 1
+ 425 100 l 1
+ 675 100 l 5
+ 675 0 l 9
+ 75 0 l 17
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng emphasis
+EndChar
+
 StartChar: P_A_emphasis
-Encoding: 196 -1 195
+Encoding: 209 -1 208
 Width: 750
 VWidth: 0
 Flags: HW
@@ -7981,7 +8387,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P A emphasis
 EndChar
 
 StartChar: P_E_emphasis
-Encoding: 197 -1 196
+Encoding: 210 -1 209
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8019,7 +8425,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P E emphasis
 EndChar
 
 StartChar: P_Eacute_emphasis
-Encoding: 198 -1 197
+Encoding: 211 -1 210
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8057,7 +8463,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Eacute emp
 EndChar
 
 StartChar: P_I_emphasis
-Encoding: 199 -1 198
+Encoding: 212 -1 211
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8078,11 +8484,11 @@ SplineSet
  675 700 l 25
  675 0 l 25
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -8095,7 +8501,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P I emphasis
 EndChar
 
 StartChar: P_Iacute_emphasis
-Encoding: 200 -1 199
+Encoding: 213 -1 212
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8135,7 +8541,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Iacute emp
 EndChar
 
 StartChar: P_O_emphasis
-Encoding: 201 -1 200
+Encoding: 214 -1 213
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8178,7 +8584,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P O emphasis
 EndChar
 
 StartChar: P_Oacute_emphasis
-Encoding: 202 -1 201
+Encoding: 215 -1 214
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8220,7 +8626,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Oacute emp
 EndChar
 
 StartChar: P_U_emphasis
-Encoding: 203 -1 202
+Encoding: 216 -1 215
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8260,7 +8666,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P U emphasis
 EndChar
 
 StartChar: P_Uacute_emphasis
-Encoding: 204 -1 203
+Encoding: 217 -1 216
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8301,8 +8707,41 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Uacute emphasis
 EndChar
 
+StartChar: P_emphasis
+Encoding: 218 -1 217
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+175 500 m 25
+ 575 500 l 25
+ 575 600 l 25
+ 175 600 l 25
+ 175 500 l 25
+75 0 m 17
+ 75 100 l 1
+ 575 100 l 1
+ 575 400 l 1
+ 75 400 l 5
+ 75 700 l 9
+ 675 700 l 25
+ 675 0 l 25
+ 75 0 l 17
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P emphasis
+EndChar
+
 StartChar: R_A_emphasis
-Encoding: 205 -1 204
+Encoding: 219 -1 218
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8337,7 +8776,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R A emphasis
 EndChar
 
 StartChar: R_E_emphasis
-Encoding: 206 -1 205
+Encoding: 220 -1 219
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8372,7 +8811,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R E emphasis
 EndChar
 
 StartChar: R_Eacute_emphasis
-Encoding: 207 -1 206
+Encoding: 221 -1 220
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8407,7 +8846,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Eacute emp
 EndChar
 
 StartChar: R_I_emphasis
-Encoding: 208 -1 207
+Encoding: 222 -1 221
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8425,11 +8864,11 @@ SplineSet
  675 400 l 1
  675 200 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -8442,7 +8881,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R I emphasis
 EndChar
 
 StartChar: R_Iacute_emphasis
-Encoding: 209 -1 208
+Encoding: 223 -1 222
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8479,7 +8918,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Iacute emp
 EndChar
 
 StartChar: R_O_emphasis
-Encoding: 210 -1 209
+Encoding: 224 -1 223
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8519,7 +8958,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R O emphasis
 EndChar
 
 StartChar: R_Oacute_emphasis
-Encoding: 211 -1 210
+Encoding: 225 -1 224
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8558,7 +8997,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Oacute emp
 EndChar
 
 StartChar: R_U_emphasis
-Encoding: 212 -1 211
+Encoding: 226 -1 225
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8595,7 +9034,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R U emphasis
 EndChar
 
 StartChar: R_Uacute_emphasis
-Encoding: 213 -1 212
+Encoding: 227 -1 226
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8633,8 +9072,38 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Uacute emphasis
 EndChar
 
+StartChar: R_emphasis
+Encoding: 228 -1 227
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 1
+ 75 100 l 1
+ 575 300 l 1
+ 75 500 l 1
+ 75 700 l 9
+ 675 700 l 17
+ 675 600 l 1
+ 175 600 l 1
+ 675 400 l 1
+ 675 200 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R emphasis
+EndChar
+
 StartChar: S_A_emphasis
-Encoding: 214 -1 213
+Encoding: 229 -1 228
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8669,7 +9138,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S A emphasis
 EndChar
 
 StartChar: S_E_emphasis
-Encoding: 215 -1 214
+Encoding: 230 -1 229
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8704,7 +9173,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S E emphasis
 EndChar
 
 StartChar: S_Eacute_emphasis
-Encoding: 216 -1 215
+Encoding: 231 -1 230
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8739,7 +9208,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Eacute emp
 EndChar
 
 StartChar: S_I_emphasis
-Encoding: 217 -1 216
+Encoding: 232 -1 231
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8757,11 +9226,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -8774,7 +9243,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S I emphasis
 EndChar
 
 StartChar: S_Iacute_emphasis
-Encoding: 218 -1 217
+Encoding: 233 -1 232
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8811,7 +9280,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Iacute emp
 EndChar
 
 StartChar: S_O_emphasis
-Encoding: 219 -1 218
+Encoding: 234 -1 233
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8851,7 +9320,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S O emphasis
 EndChar
 
 StartChar: S_Oacute_emphasis
-Encoding: 220 -1 219
+Encoding: 235 -1 234
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8890,7 +9359,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Oacute emp
 EndChar
 
 StartChar: S_U_emphasis
-Encoding: 221 -1 220
+Encoding: 236 -1 235
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8927,7 +9396,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S U emphasis
 EndChar
 
 StartChar: S_Uacute_emphasis
-Encoding: 222 -1 221
+Encoding: 237 -1 236
 Width: 750
 VWidth: 0
 Flags: HW
@@ -8965,8 +9434,38 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Uacute emphasis
 EndChar
 
+StartChar: S_emphasis
+Encoding: 238 -1 237
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S emphasis
+EndChar
+
 StartChar: Esh_A_emphasis
-Encoding: 223 -1 222
+Encoding: 239 -1 238
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9006,7 +9505,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh A emphas
 EndChar
 
 StartChar: Esh_E_emphasis
-Encoding: 224 -1 223
+Encoding: 240 -1 239
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9046,7 +9545,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh E emphas
 EndChar
 
 StartChar: Esh_Eacute_emphasis
-Encoding: 225 -1 224
+Encoding: 241 -1 240
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9086,7 +9585,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Eacute e
 EndChar
 
 StartChar: Esh_I_emphasis
-Encoding: 226 -1 225
+Encoding: 242 -1 241
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9109,11 +9608,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -9126,7 +9625,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh I emphas
 EndChar
 
 StartChar: Esh_Iacute_emphasis
-Encoding: 227 -1 226
+Encoding: 243 -1 242
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9168,7 +9667,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Iacute e
 EndChar
 
 StartChar: Esh_O_emphasis
-Encoding: 228 -1 227
+Encoding: 244 -1 243
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9213,7 +9712,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh O emphas
 EndChar
 
 StartChar: Esh_Oacute_emphasis
-Encoding: 229 -1 228
+Encoding: 245 -1 244
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9257,7 +9756,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Oacute e
 EndChar
 
 StartChar: Esh_U_emphasis
-Encoding: 230 -1 229
+Encoding: 246 -1 245
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9299,7 +9798,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh U emphas
 EndChar
 
 StartChar: Esh_Uacute_emphasis
-Encoding: 231 -1 230
+Encoding: 247 -1 246
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9342,8 +9841,43 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Uacute emphasis
 EndChar
 
+StartChar: Esh_emphasis
+Encoding: 248 -1 247
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 200 m 29
+ 675 600 l 29
+ 675 500 l 29
+ 75 100 l 29
+ 75 200 l 29
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh emphasis
+EndChar
+
 StartChar: T_A_emphasis
-Encoding: 232 -1 231
+Encoding: 249 -1 248
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9376,7 +9910,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T A emphasis
 EndChar
 
 StartChar: T_E_emphasis
-Encoding: 233 -1 232
+Encoding: 250 -1 249
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9409,7 +9943,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T E emphasis
 EndChar
 
 StartChar: T_Eacute_emphasis
-Encoding: 234 -1 233
+Encoding: 251 -1 250
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9442,7 +9976,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Eacute emp
 EndChar
 
 StartChar: T_I_emphasis
-Encoding: 235 -1 234
+Encoding: 252 -1 251
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9458,11 +9992,11 @@ SplineSet
  425 700 l 1
  675 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -9475,7 +10009,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T I emphasis
 EndChar
 
 StartChar: T_Iacute_emphasis
-Encoding: 236 -1 235
+Encoding: 253 -1 252
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9510,7 +10044,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Iacute emp
 EndChar
 
 StartChar: T_O_emphasis
-Encoding: 237 -1 236
+Encoding: 254 -1 253
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9548,7 +10082,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T O emphasis
 EndChar
 
 StartChar: T_Oacute_emphasis
-Encoding: 238 -1 237
+Encoding: 255 -1 254
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9585,7 +10119,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Oacute emp
 EndChar
 
 StartChar: T_U_emphasis
-Encoding: 239 -1 238
+Encoding: 256 -1 255
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9620,7 +10154,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T U emphasis
 EndChar
 
 StartChar: T_Uacute_emphasis
-Encoding: 240 -1 239
+Encoding: 257 -1 256
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9656,8 +10190,36 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Uacute emphasis
 EndChar
 
+StartChar: T_emphasis
+Encoding: 258 -1 257
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+225 100 m 25
+ 525 100 l 25
+ 375 550 l 29
+ 225 100 l 25
+75 0 m 1
+ 325 700 l 1
+ 425 700 l 1
+ 675 0 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T emphasis
+EndChar
+
 StartChar: Thorn_A_emphasis
-Encoding: 241 -1 240
+Encoding: 259 -1 258
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9699,7 +10261,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn A emph
 EndChar
 
 StartChar: Thorn_E_emphasis
-Encoding: 242 -1 241
+Encoding: 260 -1 259
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9741,7 +10303,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn E emph
 EndChar
 
 StartChar: Thorn_Eacute_emphasis
-Encoding: 243 -1 242
+Encoding: 261 -1 260
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9783,7 +10345,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Eacute
 EndChar
 
 StartChar: Thorn_I_emphasis
-Encoding: 244 -1 243
+Encoding: 262 -1 261
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9808,11 +10370,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -9825,7 +10387,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn I emph
 EndChar
 
 StartChar: Thorn_Iacute_emphasis
-Encoding: 245 -1 244
+Encoding: 263 -1 262
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9869,7 +10431,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Iacute
 EndChar
 
 StartChar: Thorn_O_emphasis
-Encoding: 246 -1 245
+Encoding: 264 -1 263
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9916,7 +10478,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn O emph
 EndChar
 
 StartChar: Thorn_Oacute_emphasis
-Encoding: 247 -1 246
+Encoding: 265 -1 264
 Width: 750
 VWidth: 0
 Flags: HW
@@ -9962,7 +10524,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Oacute
 EndChar
 
 StartChar: Thorn_U_emphasis
-Encoding: 248 -1 247
+Encoding: 266 -1 265
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10006,7 +10568,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn U emph
 EndChar
 
 StartChar: Thorn_Uacute_emphasis
-Encoding: 249 -1 248
+Encoding: 267 -1 266
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10051,8 +10613,45 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Uacute emphasis
 EndChar
 
+StartChar: Thorn_emphasis
+Encoding: 268 -1 267
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+175 0 m 29
+ 225 100 l 25
+ 575 100 l 25
+ 575 300 l 25
+ 675 300 l 25
+ 675 0 l 25
+ 175 0 l 29
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn emphasis
+EndChar
+
 StartChar: V_A_emphasis
-Encoding: 250 -1 249
+Encoding: 269 -1 268
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10093,7 +10692,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V A emphasis
 EndChar
 
 StartChar: V_E_emphasis
-Encoding: 251 -1 250
+Encoding: 270 -1 269
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10134,7 +10733,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V E emphasis
 EndChar
 
 StartChar: V_Eacute_emphasis
-Encoding: 252 -1 251
+Encoding: 271 -1 270
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10175,7 +10774,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Eacute emp
 EndChar
 
 StartChar: V_I_emphasis
-Encoding: 253 -1 252
+Encoding: 272 -1 271
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10199,11 +10798,11 @@ SplineSet
  175 400 l 25
  175 0 l 25
  75 0 l 25
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -10216,7 +10815,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V I emphasis
 EndChar
 
 StartChar: V_Iacute_emphasis
-Encoding: 254 -1 253
+Encoding: 273 -1 272
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10259,7 +10858,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Iacute emp
 EndChar
 
 StartChar: V_O_emphasis
-Encoding: 255 -1 254
+Encoding: 274 -1 273
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10305,7 +10904,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V O emphasis
 EndChar
 
 StartChar: V_Oacute_emphasis
-Encoding: 256 -1 255
+Encoding: 275 -1 274
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10350,7 +10949,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Oacute emp
 EndChar
 
 StartChar: V_U_emphasis
-Encoding: 257 -1 256
+Encoding: 276 -1 275
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10393,7 +10992,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V U emphasis
 EndChar
 
 StartChar: V_Uacute_emphasis
-Encoding: 258 -1 257
+Encoding: 277 -1 276
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10437,8 +11036,44 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Uacute emphasis
 EndChar
 
+StartChar: V_emphasis
+Encoding: 278 -1 277
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+325 600 m 29
+ 425 600 l 29
+ 425 500 l 29
+ 325 500 l 29
+ 325 600 l 29
+175 600 m 25
+ 175 500 l 25
+ 575 500 l 25
+ 575 600 l 25
+ 175 600 l 25
+75 0 m 25
+ 75 700 l 25
+ 675 700 l 25
+ 675 400 l 25
+ 175 400 l 25
+ 175 0 l 25
+ 75 0 l 25
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V emphasis
+EndChar
+
 StartChar: W_A_emphasis
-Encoding: 259 -1 258
+Encoding: 279 -1 278
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10474,7 +11109,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W A emphasis
 EndChar
 
 StartChar: W_E_emphasis
-Encoding: 260 -1 259
+Encoding: 280 -1 279
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10510,7 +11145,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W E emphasis
 EndChar
 
 StartChar: W_Eacute_emphasis
-Encoding: 261 -1 260
+Encoding: 281 -1 280
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10546,7 +11181,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Eacute emp
 EndChar
 
 StartChar: W_I_emphasis
-Encoding: 262 -1 261
+Encoding: 282 -1 281
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10565,11 +11200,11 @@ SplineSet
  225 700 l 25
  675 0 l 1
  575 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -10582,7 +11217,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W I emphasis
 EndChar
 
 StartChar: W_Iacute_emphasis
-Encoding: 263 -1 262
+Encoding: 283 -1 282
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10620,7 +11255,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Iacute emp
 EndChar
 
 StartChar: W_O_emphasis
-Encoding: 264 -1 263
+Encoding: 284 -1 283
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10661,7 +11296,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W O emphasis
 EndChar
 
 StartChar: W_Oacute_emphasis
-Encoding: 265 -1 264
+Encoding: 285 -1 284
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10701,7 +11336,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Oacute emp
 EndChar
 
 StartChar: W_U_emphasis
-Encoding: 266 -1 265
+Encoding: 286 -1 285
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10739,7 +11374,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W U emphasis
 EndChar
 
 StartChar: W_Uacute_emphasis
-Encoding: 267 -1 266
+Encoding: 287 -1 286
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10778,8 +11413,39 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Uacute emphasis
 EndChar
 
+StartChar: W_emphasis
+Encoding: 288 -1 287
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+575 0 m 17
+ 175 600 l 1
+ 175 100 l 1
+ 325 100 l 1
+ 225 250 l 1
+ 225 400 l 1
+ 475 0 l 1
+ 75 0 l 1
+ 75 700 l 5
+ 225 700 l 25
+ 675 0 l 1
+ 575 0 l 17
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W emphasis
+EndChar
+
 StartChar: X_A_emphasis
-Encoding: 268 -1 267
+Encoding: 289 -1 288
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10816,7 +11482,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X A emphasis
 EndChar
 
 StartChar: X_E_emphasis
-Encoding: 269 -1 268
+Encoding: 290 -1 289
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10853,7 +11519,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X E emphasis
 EndChar
 
 StartChar: X_Eacute_emphasis
-Encoding: 270 -1 269
+Encoding: 291 -1 290
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10890,7 +11556,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Eacute emp
 EndChar
 
 StartChar: X_I_emphasis
-Encoding: 271 -1 270
+Encoding: 292 -1 291
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10910,11 +11576,11 @@ SplineSet
  375 300 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -10927,7 +11593,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X I emphasis
 EndChar
 
 StartChar: X_Iacute_emphasis
-Encoding: 272 -1 271
+Encoding: 293 -1 292
 Width: 750
 VWidth: 0
 Flags: HW
@@ -10966,7 +11632,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Iacute emp
 EndChar
 
 StartChar: X_O_emphasis
-Encoding: 273 -1 272
+Encoding: 294 -1 293
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11008,7 +11674,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X O emphasis
 EndChar
 
 StartChar: X_Oacute_emphasis
-Encoding: 274 -1 273
+Encoding: 295 -1 294
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11049,7 +11715,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Oacute emp
 EndChar
 
 StartChar: X_U_emphasis
-Encoding: 275 -1 274
+Encoding: 296 -1 295
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11088,7 +11754,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X U emphasis
 EndChar
 
 StartChar: X_Uacute_emphasis
-Encoding: 276 -1 275
+Encoding: 297 -1 296
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11128,8 +11794,39 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Uacute emphasis
 EndChar
 
+StartChar: X_emphasis
+Encoding: 298 -1 297
+Width: 750
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 0 m 1
+ 325 350 l 1
+ 75 700 l 1
+ 175 700 l 1
+ 375 400 l 1
+ 575 700 l 1
+ 675 700 l 1
+ 425 350 l 1
+ 675 0 l 1
+ 575 0 l 1
+ 375 300 l 1
+ 175 0 l 1
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X emphasis
+EndChar
+
 StartChar: Y_A_emphasis
-Encoding: 277 -1 276
+Encoding: 299 -1 298
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11163,7 +11860,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y A emphasis
 EndChar
 
 StartChar: Y_E_emphasis
-Encoding: 278 -1 277
+Encoding: 300 -1 299
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11197,7 +11894,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y E emphasis
 EndChar
 
 StartChar: Y_Eacute_emphasis
-Encoding: 279 -1 278
+Encoding: 301 -1 300
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11231,7 +11928,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Eacute emp
 EndChar
 
 StartChar: Y_I_emphasis
-Encoding: 280 -1 279
+Encoding: 302 -1 301
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11248,11 +11945,11 @@ SplineSet
  675 300 l 1
  675 200 l 5
  75 200 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -11265,7 +11962,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y I emphasis
 EndChar
 
 StartChar: Y_Iacute_emphasis
-Encoding: 281 -1 280
+Encoding: 303 -1 302
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11301,7 +11998,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Iacute emp
 EndChar
 
 StartChar: Y_O_emphasis
-Encoding: 282 -1 281
+Encoding: 304 -1 303
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11340,7 +12037,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y O emphasis
 EndChar
 
 StartChar: Y_Oacute_emphasis
-Encoding: 283 -1 282
+Encoding: 305 -1 304
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11378,7 +12075,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Oacute emp
 EndChar
 
 StartChar: Y_U_emphasis
-Encoding: 284 -1 283
+Encoding: 306 -1 305
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11414,7 +12111,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y U emphasis
 EndChar
 
 StartChar: Y_Uacute_emphasis
-Encoding: 285 -1 284
+Encoding: 307 -1 306
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11451,8 +12148,37 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Uacute emphasis
 EndChar
 
+StartChar: Y_emphasis
+Encoding: 308 -1 307
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 400 m 25
+ 75 500 l 25
+ 675 500 l 25
+ 675 400 l 25
+ 75 400 l 25
+75 200 m 1
+ 75 300 l 1
+ 675 300 l 1
+ 675 200 l 5
+ 75 200 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y emphasis
+EndChar
+
 StartChar: Z_A_emphasis
-Encoding: 286 -1 285
+Encoding: 309 -1 308
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11492,7 +12218,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z A emphasis
 EndChar
 
 StartChar: Z_E_emphasis
-Encoding: 287 -1 286
+Encoding: 310 -1 309
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11532,7 +12258,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z E emphasis
 EndChar
 
 StartChar: Z_Eacute_emphasis
-Encoding: 288 -1 287
+Encoding: 311 -1 310
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11572,7 +12298,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Eacute emp
 EndChar
 
 StartChar: Z_I_emphasis
-Encoding: 289 -1 288
+Encoding: 312 -1 311
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11595,11 +12321,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -11612,7 +12338,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z I emphasis
 EndChar
 
 StartChar: Z_Iacute_emphasis
-Encoding: 290 -1 289
+Encoding: 313 -1 312
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11654,7 +12380,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Iacute emp
 EndChar
 
 StartChar: Z_O_emphasis
-Encoding: 291 -1 290
+Encoding: 314 -1 313
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11699,7 +12425,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z O emphasis
 EndChar
 
 StartChar: Z_Oacute_emphasis
-Encoding: 292 -1 291
+Encoding: 315 -1 314
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11743,7 +12469,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Oacute emp
 EndChar
 
 StartChar: Z_U_emphasis
-Encoding: 293 -1 292
+Encoding: 316 -1 315
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11785,7 +12511,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z U emphasis
 EndChar
 
 StartChar: Z_Uacute_emphasis
-Encoding: 294 -1 293
+Encoding: 317 -1 316
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11828,8 +12554,43 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Uacute emphasis
 EndChar
 
+StartChar: Z_emphasis
+Encoding: 318 -1 317
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 500 m 29
+ 75 600 l 29
+ 675 600 l 29
+ 675 500 l 29
+ 75 500 l 29
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z emphasis
+EndChar
+
 StartChar: Zhed_A_emphasis
-Encoding: 295 -1 294
+Encoding: 319 -1 318
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11874,7 +12635,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed A empha
 EndChar
 
 StartChar: Zhed_E_emphasis
-Encoding: 296 -1 295
+Encoding: 320 -1 319
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11919,7 +12680,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed E empha
 EndChar
 
 StartChar: Zhed_Eacute_emphasis
-Encoding: 297 -1 296
+Encoding: 321 -1 320
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11964,7 +12725,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Eacute 
 EndChar
 
 StartChar: Zhed_I_emphasis
-Encoding: 298 -1 297
+Encoding: 322 -1 321
 Width: 750
 VWidth: 0
 Flags: HW
@@ -11992,11 +12753,11 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 75 -300 m 25
  75 -200 l 25
  375 -100 l 25
@@ -12009,7 +12770,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed I empha
 EndChar
 
 StartChar: Zhed_Iacute_emphasis
-Encoding: 299 -1 298
+Encoding: 323 -1 322
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12056,7 +12817,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Iacute 
 EndChar
 
 StartChar: Zhed_O_emphasis
-Encoding: 300 -1 299
+Encoding: 324 -1 323
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12106,7 +12867,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed O empha
 EndChar
 
 StartChar: Zhed_Oacute_emphasis
-Encoding: 301 -1 300
+Encoding: 325 -1 324
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12155,7 +12916,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Oacute 
 EndChar
 
 StartChar: Zhed_U_emphasis
-Encoding: 302 -1 301
+Encoding: 326 -1 325
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12202,7 +12963,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed U empha
 EndChar
 
 StartChar: Zhed_Uacute_emphasis
-Encoding: 303 -1 302
+Encoding: 327 -1 326
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12250,8 +13011,48 @@ EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Uacute emphasis
 EndChar
 
+StartChar: Zhed_emphasis
+Encoding: 328 -1 327
+Width: 750
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+75 200 m 29
+ 675 600 l 29
+ 675 500 l 29
+ 75 100 l 29
+ 75 200 l 29
+75 500 m 29
+ 75 600 l 29
+ 675 600 l 29
+ 675 500 l 29
+ 75 500 l 29
+75 0 m 1
+ 525 300 l 1
+ 75 300 l 1
+ 75 400 l 1
+ 575 700 l 9
+ 675 700 l 1
+ 225 400 l 1
+ 675 400 l 1
+ 675 300 l 1
+ 175 0 l 9
+ 75 0 l 1
+75 -300 m 25
+ 75 -200 l 25
+ 375 -100 l 25
+ 675 -200 l 25
+ 675 -300 l 25
+ 375 -200 l 25
+ 75 -300 l 25
+EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed emphasis
+EndChar
+
 StartChar: B_A
-Encoding: 304 -1 303
+Encoding: 329 -1 328
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12287,7 +13088,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B A
 EndChar
 
 StartChar: B_E
-Encoding: 305 -1 304
+Encoding: 330 -1 329
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12323,7 +13124,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B E
 EndChar
 
 StartChar: B_Eacute
-Encoding: 306 -1 305
+Encoding: 331 -1 330
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12359,7 +13160,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B Eacute
 EndChar
 
 StartChar: B_I
-Encoding: 307 -1 306
+Encoding: 332 -1 331
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12385,17 +13186,17 @@ SplineSet
  675 700 l 25
  675 0 l 25
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B I
 EndChar
 
 StartChar: B_Iacute
-Encoding: 308 -1 307
+Encoding: 333 -1 332
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12433,7 +13234,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B Iacute
 EndChar
 
 StartChar: B_O
-Encoding: 309 -1 308
+Encoding: 334 -1 333
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12474,7 +13275,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B O
 EndChar
 
 StartChar: B_Oacute
-Encoding: 310 -1 309
+Encoding: 335 -1 334
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12514,7 +13315,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B Oacute
 EndChar
 
 StartChar: B_U
-Encoding: 311 -1 310
+Encoding: 336 -1 335
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12552,7 +13353,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B U
 EndChar
 
 StartChar: B_Uacute
-Encoding: 312 -1 311
+Encoding: 337 -1 336
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12592,7 +13393,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" B Uacute
 EndChar
 
 StartChar: C_A
-Encoding: 313 -1 312
+Encoding: 338 -1 337
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12620,7 +13421,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C A
 EndChar
 
 StartChar: C_E
-Encoding: 314 -1 313
+Encoding: 339 -1 338
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12648,7 +13449,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C E
 EndChar
 
 StartChar: C_Eacute
-Encoding: 315 -1 314
+Encoding: 340 -1 339
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12676,7 +13477,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Eacute
 EndChar
 
 StartChar: C_I
-Encoding: 316 -1 315
+Encoding: 341 -1 340
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12694,17 +13495,17 @@ SplineSet
  575 400 l 1
  575 700 l 1
  675 700 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C I
 EndChar
 
 StartChar: C_Iacute
-Encoding: 317 -1 316
+Encoding: 342 -1 341
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12734,7 +13535,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Iacute
 EndChar
 
 StartChar: C_O
-Encoding: 318 -1 317
+Encoding: 343 -1 342
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12767,7 +13568,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C O
 EndChar
 
 StartChar: C_Oacute
-Encoding: 319 -1 318
+Encoding: 344 -1 343
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12799,7 +13600,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Oacute
 EndChar
 
 StartChar: C_U
-Encoding: 320 -1 319
+Encoding: 345 -1 344
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12829,7 +13630,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C U
 EndChar
 
 StartChar: C_Uacute
-Encoding: 321 -1 320
+Encoding: 346 -1 345
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12861,7 +13662,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" C Uacute
 EndChar
 
 StartChar: D_A
-Encoding: 322 -1 321
+Encoding: 347 -1 346
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12892,7 +13693,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D A
 EndChar
 
 StartChar: D_E
-Encoding: 323 -1 322
+Encoding: 348 -1 347
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12923,7 +13724,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D E
 EndChar
 
 StartChar: D_Eacute
-Encoding: 324 -1 323
+Encoding: 349 -1 348
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12954,7 +13755,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Eacute
 EndChar
 
 StartChar: D_I
-Encoding: 325 -1 324
+Encoding: 350 -1 349
 Width: 750
 VWidth: 0
 Flags: HW
@@ -12975,17 +13776,17 @@ SplineSet
  425 700 l 1
  675 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D I
 EndChar
 
 StartChar: D_Iacute
-Encoding: 326 -1 325
+Encoding: 351 -1 350
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13018,7 +13819,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Iacute
 EndChar
 
 StartChar: D_O
-Encoding: 327 -1 326
+Encoding: 352 -1 351
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13054,7 +13855,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D O
 EndChar
 
 StartChar: D_Oacute
-Encoding: 328 -1 327
+Encoding: 353 -1 352
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13089,7 +13890,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Oacute
 EndChar
 
 StartChar: D_U
-Encoding: 329 -1 328
+Encoding: 354 -1 353
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13122,7 +13923,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D U
 EndChar
 
 StartChar: D_Uacute
-Encoding: 330 -1 329
+Encoding: 355 -1 354
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13157,7 +13958,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" D Uacute
 EndChar
 
 StartChar: Edh_A
-Encoding: 331 -1 330
+Encoding: 356 -1 355
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13197,7 +13998,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh A
 EndChar
 
 StartChar: Edh_E
-Encoding: 332 -1 331
+Encoding: 357 -1 356
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13237,7 +14038,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh E
 EndChar
 
 StartChar: Edh_Eacute
-Encoding: 333 -1 332
+Encoding: 358 -1 357
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13277,7 +14078,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Eacute
 EndChar
 
 StartChar: Edh_I
-Encoding: 334 -1 333
+Encoding: 359 -1 358
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13307,17 +14108,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh I
 EndChar
 
 StartChar: Edh_Iacute
-Encoding: 335 -1 334
+Encoding: 360 -1 359
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13359,7 +14160,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Iacute
 EndChar
 
 StartChar: Edh_O
-Encoding: 336 -1 335
+Encoding: 361 -1 360
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13404,7 +14205,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh O
 EndChar
 
 StartChar: Edh_Oacute
-Encoding: 337 -1 336
+Encoding: 362 -1 361
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13448,7 +14249,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Oacute
 EndChar
 
 StartChar: Edh_U
-Encoding: 338 -1 337
+Encoding: 363 -1 362
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13490,7 +14291,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh U
 EndChar
 
 StartChar: Edh_Uacute
-Encoding: 339 -1 338
+Encoding: 364 -1 363
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13534,7 +14335,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Edh Uacute
 EndChar
 
 StartChar: F_A
-Encoding: 340 -1 339
+Encoding: 365 -1 364
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13563,7 +14364,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F A
 EndChar
 
 StartChar: F_E
-Encoding: 341 -1 340
+Encoding: 366 -1 365
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13592,7 +14393,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F E
 EndChar
 
 StartChar: F_Eacute
-Encoding: 342 -1 341
+Encoding: 367 -1 366
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13621,7 +14422,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Eacute
 EndChar
 
 StartChar: F_I
-Encoding: 343 -1 342
+Encoding: 368 -1 367
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13640,17 +14441,17 @@ SplineSet
  175 400 l 25
  175 0 l 25
  75 0 l 25
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F I
 EndChar
 
 StartChar: F_Iacute
-Encoding: 344 -1 343
+Encoding: 369 -1 368
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13681,7 +14482,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Iacute
 EndChar
 
 StartChar: F_O
-Encoding: 345 -1 344
+Encoding: 370 -1 369
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13715,7 +14516,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F O
 EndChar
 
 StartChar: F_Oacute
-Encoding: 346 -1 345
+Encoding: 371 -1 370
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13748,7 +14549,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Oacute
 EndChar
 
 StartChar: F_U
-Encoding: 347 -1 346
+Encoding: 372 -1 371
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13779,7 +14580,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F U
 EndChar
 
 StartChar: F_Uacute
-Encoding: 348 -1 347
+Encoding: 373 -1 372
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13812,7 +14613,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" F Uacute
 EndChar
 
 StartChar: G_A
-Encoding: 349 -1 348
+Encoding: 374 -1 373
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13841,7 +14642,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G A
 EndChar
 
 StartChar: G_E
-Encoding: 350 -1 349
+Encoding: 375 -1 374
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13870,7 +14671,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G E
 EndChar
 
 StartChar: G_Eacute
-Encoding: 351 -1 350
+Encoding: 376 -1 375
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13899,7 +14700,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Eacute
 EndChar
 
 StartChar: G_I
-Encoding: 352 -1 351
+Encoding: 377 -1 376
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13918,17 +14719,17 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G I
 EndChar
 
 StartChar: G_Iacute
-Encoding: 353 -1 352
+Encoding: 378 -1 377
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13959,7 +14760,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Iacute
 EndChar
 
 StartChar: G_O
-Encoding: 354 -1 353
+Encoding: 379 -1 378
 Width: 750
 VWidth: 0
 Flags: HW
@@ -13993,7 +14794,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G O
 EndChar
 
 StartChar: G_Oacute
-Encoding: 355 -1 354
+Encoding: 380 -1 379
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14026,7 +14827,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Oacute
 EndChar
 
 StartChar: G_U
-Encoding: 356 -1 355
+Encoding: 381 -1 380
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14057,7 +14858,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G U
 EndChar
 
 StartChar: G_Uacute
-Encoding: 357 -1 356
+Encoding: 382 -1 381
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14090,7 +14891,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" G Uacute
 EndChar
 
 StartChar: H_A
-Encoding: 358 -1 357
+Encoding: 383 -1 382
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14116,7 +14917,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H A
 EndChar
 
 StartChar: H_E
-Encoding: 359 -1 358
+Encoding: 384 -1 383
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14142,7 +14943,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H E
 EndChar
 
 StartChar: H_Eacute
-Encoding: 360 -1 359
+Encoding: 385 -1 384
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14168,7 +14969,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Eacute
 EndChar
 
 StartChar: H_I
-Encoding: 361 -1 360
+Encoding: 386 -1 385
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14184,17 +14985,17 @@ SplineSet
  175 600 l 1
  175 500 l 1
  75 500 l 9
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H I
 EndChar
 
 StartChar: H_Iacute
-Encoding: 362 -1 361
+Encoding: 387 -1 386
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14222,7 +15023,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Iacute
 EndChar
 
 StartChar: H_O
-Encoding: 363 -1 362
+Encoding: 388 -1 387
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14253,7 +15054,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H O
 EndChar
 
 StartChar: H_Oacute
-Encoding: 364 -1 363
+Encoding: 389 -1 388
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14283,7 +15084,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Oacute
 EndChar
 
 StartChar: H_U
-Encoding: 365 -1 364
+Encoding: 390 -1 389
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14311,7 +15112,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H U
 EndChar
 
 StartChar: H_Uacute
-Encoding: 366 -1 365
+Encoding: 391 -1 390
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14341,7 +15142,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" H Uacute
 EndChar
 
 StartChar: J_A
-Encoding: 367 -1 366
+Encoding: 392 -1 391
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14374,7 +15175,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J A
 EndChar
 
 StartChar: J_E
-Encoding: 368 -1 367
+Encoding: 393 -1 392
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14407,7 +15208,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J E
 EndChar
 
 StartChar: J_Eacute
-Encoding: 369 -1 368
+Encoding: 394 -1 393
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14440,7 +15241,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Eacute
 EndChar
 
 StartChar: J_I
-Encoding: 370 -1 369
+Encoding: 395 -1 394
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14463,17 +15264,17 @@ SplineSet
  575 400 l 1
  575 700 l 1
  675 700 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J I
 EndChar
 
 StartChar: J_Iacute
-Encoding: 371 -1 370
+Encoding: 396 -1 395
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14508,7 +15309,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Iacute
 EndChar
 
 StartChar: J_O
-Encoding: 372 -1 371
+Encoding: 397 -1 396
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14546,7 +15347,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J O
 EndChar
 
 StartChar: J_Oacute
-Encoding: 373 -1 372
+Encoding: 398 -1 397
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14583,7 +15384,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Oacute
 EndChar
 
 StartChar: J_U
-Encoding: 374 -1 373
+Encoding: 399 -1 398
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14618,7 +15419,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J U
 EndChar
 
 StartChar: J_Uacute
-Encoding: 375 -1 374
+Encoding: 400 -1 399
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14655,7 +15456,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" J Uacute
 EndChar
 
 StartChar: K_A
-Encoding: 376 -1 375
+Encoding: 401 -1 400
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14679,7 +15480,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K A
 EndChar
 
 StartChar: K_E
-Encoding: 377 -1 376
+Encoding: 402 -1 401
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14703,7 +15504,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K E
 EndChar
 
 StartChar: K_Eacute
-Encoding: 378 -1 377
+Encoding: 403 -1 402
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14727,7 +15528,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Eacute
 EndChar
 
 StartChar: K_I
-Encoding: 379 -1 378
+Encoding: 404 -1 403
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14741,17 +15542,17 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K I
 EndChar
 
 StartChar: K_Iacute
-Encoding: 380 -1 379
+Encoding: 405 -1 404
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14777,7 +15578,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Iacute
 EndChar
 
 StartChar: K_O
-Encoding: 381 -1 380
+Encoding: 406 -1 405
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14806,7 +15607,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K O
 EndChar
 
 StartChar: K_Oacute
-Encoding: 382 -1 381
+Encoding: 407 -1 406
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14834,7 +15635,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Oacute
 EndChar
 
 StartChar: K_U
-Encoding: 383 -1 382
+Encoding: 408 -1 407
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14860,7 +15661,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K U
 EndChar
 
 StartChar: K_Uacute
-Encoding: 384 -1 383
+Encoding: 409 -1 408
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14888,7 +15689,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" K Uacute
 EndChar
 
 StartChar: L_A
-Encoding: 385 -1 384
+Encoding: 410 -1 409
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14916,7 +15717,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L A
 EndChar
 
 StartChar: L_E
-Encoding: 386 -1 385
+Encoding: 411 -1 410
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14944,7 +15745,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L E
 EndChar
 
 StartChar: L_Eacute
-Encoding: 387 -1 386
+Encoding: 412 -1 411
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14972,7 +15773,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Eacute
 EndChar
 
 StartChar: L_I
-Encoding: 388 -1 387
+Encoding: 413 -1 412
 Width: 750
 VWidth: 0
 Flags: HW
@@ -14990,17 +15791,17 @@ SplineSet
  175 600 l 1
  175 0 l 1
  75 0 l 13
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L I
 EndChar
 
 StartChar: L_Iacute
-Encoding: 389 -1 388
+Encoding: 414 -1 413
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15030,7 +15831,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Iacute
 EndChar
 
 StartChar: L_O
-Encoding: 390 -1 389
+Encoding: 415 -1 414
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15063,7 +15864,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L O
 EndChar
 
 StartChar: L_Oacute
-Encoding: 391 -1 390
+Encoding: 416 -1 415
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15095,7 +15896,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Oacute
 EndChar
 
 StartChar: L_U
-Encoding: 392 -1 391
+Encoding: 417 -1 416
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15125,7 +15926,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L U
 EndChar
 
 StartChar: L_Uacute
-Encoding: 393 -1 392
+Encoding: 418 -1 417
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15157,7 +15958,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" L Uacute
 EndChar
 
 StartChar: M_A
-Encoding: 394 -1 393
+Encoding: 419 -1 418
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15182,7 +15983,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M A
 EndChar
 
 StartChar: M_E
-Encoding: 395 -1 394
+Encoding: 420 -1 419
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15207,7 +16008,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M E
 EndChar
 
 StartChar: M_Eacute
-Encoding: 396 -1 395
+Encoding: 421 -1 420
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15232,7 +16033,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Eacute
 EndChar
 
 StartChar: M_I
-Encoding: 397 -1 396
+Encoding: 422 -1 421
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15247,17 +16048,17 @@ SplineSet
  375 600 l 1
  175 0 l 5
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M I
 EndChar
 
 StartChar: M_Iacute
-Encoding: 398 -1 397
+Encoding: 423 -1 422
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15284,7 +16085,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Iacute
 EndChar
 
 StartChar: M_O
-Encoding: 399 -1 398
+Encoding: 424 -1 423
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15314,7 +16115,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M O
 EndChar
 
 StartChar: M_Oacute
-Encoding: 400 -1 399
+Encoding: 425 -1 424
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15343,7 +16144,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Oacute
 EndChar
 
 StartChar: M_U
-Encoding: 401 -1 400
+Encoding: 426 -1 425
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15370,7 +16171,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M U
 EndChar
 
 StartChar: M_Uacute
-Encoding: 402 -1 401
+Encoding: 427 -1 426
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15399,7 +16200,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" M Uacute
 EndChar
 
 StartChar: N_A
-Encoding: 403 -1 402
+Encoding: 428 -1 427
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15424,7 +16225,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N A
 EndChar
 
 StartChar: N_E
-Encoding: 404 -1 403
+Encoding: 429 -1 428
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15449,7 +16250,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N E
 EndChar
 
 StartChar: N_Eacute
-Encoding: 405 -1 404
+Encoding: 430 -1 429
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15474,7 +16275,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Eacute
 EndChar
 
 StartChar: N_I
-Encoding: 406 -1 405
+Encoding: 431 -1 430
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15489,17 +16290,17 @@ SplineSet
  675 700 l 1
  425 0 l 1
  325 0 l 5
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N I
 EndChar
 
 StartChar: N_Iacute
-Encoding: 407 -1 406
+Encoding: 432 -1 431
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15526,7 +16327,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Iacute
 EndChar
 
 StartChar: N_O
-Encoding: 408 -1 407
+Encoding: 433 -1 432
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15556,7 +16357,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N O
 EndChar
 
 StartChar: N_Oacute
-Encoding: 409 -1 408
+Encoding: 434 -1 433
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15585,7 +16386,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Oacute
 EndChar
 
 StartChar: N_U
-Encoding: 410 -1 409
+Encoding: 435 -1 434
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15612,7 +16413,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N U
 EndChar
 
 StartChar: N_Uacute
-Encoding: 411 -1 410
+Encoding: 436 -1 435
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15641,7 +16442,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" N Uacute
 EndChar
 
 StartChar: Eng_A
-Encoding: 412 -1 411
+Encoding: 437 -1 436
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15667,7 +16468,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng A
 EndChar
 
 StartChar: Eng_E
-Encoding: 413 -1 412
+Encoding: 438 -1 437
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15693,7 +16494,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng E
 EndChar
 
 StartChar: Eng_Eacute
-Encoding: 414 -1 413
+Encoding: 439 -1 438
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15719,7 +16520,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Eacute
 EndChar
 
 StartChar: Eng_I
-Encoding: 415 -1 414
+Encoding: 440 -1 439
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15735,17 +16536,17 @@ SplineSet
  675 100 l 5
  675 0 l 9
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng I
 EndChar
 
 StartChar: Eng_Iacute
-Encoding: 416 -1 415
+Encoding: 441 -1 440
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15773,7 +16574,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Iacute
 EndChar
 
 StartChar: Eng_O
-Encoding: 417 -1 416
+Encoding: 442 -1 441
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15804,7 +16605,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng O
 EndChar
 
 StartChar: Eng_Oacute
-Encoding: 418 -1 417
+Encoding: 443 -1 442
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15834,7 +16635,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Oacute
 EndChar
 
 StartChar: Eng_U
-Encoding: 419 -1 418
+Encoding: 444 -1 443
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15862,7 +16663,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng U
 EndChar
 
 StartChar: Eng_Uacute
-Encoding: 420 -1 419
+Encoding: 445 -1 444
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15892,7 +16693,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Eng Uacute
 EndChar
 
 StartChar: P_A
-Encoding: 421 -1 420
+Encoding: 446 -1 445
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15923,7 +16724,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P A
 EndChar
 
 StartChar: P_E
-Encoding: 422 -1 421
+Encoding: 447 -1 446
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15954,7 +16755,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P E
 EndChar
 
 StartChar: P_Eacute
-Encoding: 423 -1 422
+Encoding: 448 -1 447
 Width: 750
 VWidth: 0
 Flags: HW
@@ -15985,7 +16786,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Eacute
 EndChar
 
 StartChar: P_I
-Encoding: 424 -1 423
+Encoding: 449 -1 448
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16006,17 +16807,17 @@ SplineSet
  675 700 l 25
  675 0 l 25
  75 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P I
 EndChar
 
 StartChar: P_Iacute
-Encoding: 425 -1 424
+Encoding: 450 -1 449
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16049,7 +16850,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Iacute
 EndChar
 
 StartChar: P_O
-Encoding: 426 -1 425
+Encoding: 451 -1 450
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16085,7 +16886,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P O
 EndChar
 
 StartChar: P_Oacute
-Encoding: 427 -1 426
+Encoding: 452 -1 451
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16120,7 +16921,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Oacute
 EndChar
 
 StartChar: P_U
-Encoding: 428 -1 427
+Encoding: 453 -1 452
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16153,7 +16954,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P U
 EndChar
 
 StartChar: P_Uacute
-Encoding: 429 -1 428
+Encoding: 454 -1 453
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16188,7 +16989,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" P Uacute
 EndChar
 
 StartChar: R_A
-Encoding: 430 -1 429
+Encoding: 455 -1 454
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16216,7 +17017,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R A
 EndChar
 
 StartChar: R_E
-Encoding: 431 -1 430
+Encoding: 456 -1 455
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16244,7 +17045,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R E
 EndChar
 
 StartChar: R_Eacute
-Encoding: 432 -1 431
+Encoding: 457 -1 456
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16272,7 +17073,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Eacute
 EndChar
 
 StartChar: R_I
-Encoding: 433 -1 432
+Encoding: 458 -1 457
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16290,17 +17091,17 @@ SplineSet
  675 400 l 1
  675 200 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R I
 EndChar
 
 StartChar: R_Iacute
-Encoding: 434 -1 433
+Encoding: 459 -1 458
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16330,7 +17131,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Iacute
 EndChar
 
 StartChar: R_O
-Encoding: 435 -1 434
+Encoding: 460 -1 459
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16363,7 +17164,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R O
 EndChar
 
 StartChar: R_Oacute
-Encoding: 436 -1 435
+Encoding: 461 -1 460
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16395,7 +17196,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Oacute
 EndChar
 
 StartChar: R_U
-Encoding: 437 -1 436
+Encoding: 462 -1 461
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16425,7 +17226,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R U
 EndChar
 
 StartChar: R_Uacute
-Encoding: 438 -1 437
+Encoding: 463 -1 462
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16457,7 +17258,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" R Uacute
 EndChar
 
 StartChar: S_A
-Encoding: 439 -1 438
+Encoding: 464 -1 463
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16485,7 +17286,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S A
 EndChar
 
 StartChar: S_E
-Encoding: 440 -1 439
+Encoding: 465 -1 464
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16513,7 +17314,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S E
 EndChar
 
 StartChar: S_Eacute
-Encoding: 441 -1 440
+Encoding: 466 -1 465
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16541,7 +17342,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Eacute
 EndChar
 
 StartChar: S_I
-Encoding: 442 -1 441
+Encoding: 467 -1 466
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16559,17 +17360,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S I
 EndChar
 
 StartChar: S_Iacute
-Encoding: 443 -1 442
+Encoding: 468 -1 467
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16599,7 +17400,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Iacute
 EndChar
 
 StartChar: S_O
-Encoding: 444 -1 443
+Encoding: 469 -1 468
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16632,7 +17433,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S O
 EndChar
 
 StartChar: S_Oacute
-Encoding: 445 -1 444
+Encoding: 470 -1 469
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16664,7 +17465,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Oacute
 EndChar
 
 StartChar: S_U
-Encoding: 446 -1 445
+Encoding: 471 -1 470
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16694,7 +17495,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S U
 EndChar
 
 StartChar: S_Uacute
-Encoding: 447 -1 446
+Encoding: 472 -1 471
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16726,7 +17527,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" S Uacute
 EndChar
 
 StartChar: Esh_A
-Encoding: 448 -1 447
+Encoding: 473 -1 472
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16759,7 +17560,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh A
 EndChar
 
 StartChar: Esh_E
-Encoding: 449 -1 448
+Encoding: 474 -1 473
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16792,7 +17593,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh E
 EndChar
 
 StartChar: Esh_Eacute
-Encoding: 450 -1 449
+Encoding: 475 -1 474
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16825,7 +17626,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Eacute
 EndChar
 
 StartChar: Esh_I
-Encoding: 451 -1 450
+Encoding: 476 -1 475
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16848,17 +17649,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh I
 EndChar
 
 StartChar: Esh_Iacute
-Encoding: 452 -1 451
+Encoding: 477 -1 476
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16893,7 +17694,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Iacute
 EndChar
 
 StartChar: Esh_O
-Encoding: 453 -1 452
+Encoding: 478 -1 477
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16931,7 +17732,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh O
 EndChar
 
 StartChar: Esh_Oacute
-Encoding: 454 -1 453
+Encoding: 479 -1 478
 Width: 750
 VWidth: 0
 Flags: HW
@@ -16968,7 +17769,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Oacute
 EndChar
 
 StartChar: Esh_U
-Encoding: 455 -1 454
+Encoding: 480 -1 479
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17003,7 +17804,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh U
 EndChar
 
 StartChar: Esh_Uacute
-Encoding: 456 -1 455
+Encoding: 481 -1 480
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17040,7 +17841,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Esh Uacute
 EndChar
 
 StartChar: T_A
-Encoding: 457 -1 456
+Encoding: 482 -1 481
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17066,7 +17867,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T A
 EndChar
 
 StartChar: T_E
-Encoding: 458 -1 457
+Encoding: 483 -1 482
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17092,7 +17893,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T E
 EndChar
 
 StartChar: T_Eacute
-Encoding: 459 -1 458
+Encoding: 484 -1 483
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17118,7 +17919,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Eacute
 EndChar
 
 StartChar: T_I
-Encoding: 460 -1 459
+Encoding: 485 -1 484
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17134,17 +17935,17 @@ SplineSet
  425 700 l 1
  675 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T I
 EndChar
 
 StartChar: T_Iacute
-Encoding: 461 -1 460
+Encoding: 486 -1 485
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17172,7 +17973,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Iacute
 EndChar
 
 StartChar: T_O
-Encoding: 462 -1 461
+Encoding: 487 -1 486
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17203,7 +18004,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T O
 EndChar
 
 StartChar: T_Oacute
-Encoding: 463 -1 462
+Encoding: 488 -1 487
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17233,7 +18034,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Oacute
 EndChar
 
 StartChar: T_U
-Encoding: 464 -1 463
+Encoding: 489 -1 488
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17261,7 +18062,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T U
 EndChar
 
 StartChar: T_Uacute
-Encoding: 465 -1 464
+Encoding: 490 -1 489
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17291,7 +18092,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" T Uacute
 EndChar
 
 StartChar: Thorn_A
-Encoding: 466 -1 465
+Encoding: 491 -1 490
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17326,7 +18127,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn A
 EndChar
 
 StartChar: Thorn_E
-Encoding: 467 -1 466
+Encoding: 492 -1 491
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17361,7 +18162,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn E
 EndChar
 
 StartChar: Thorn_Eacute
-Encoding: 468 -1 467
+Encoding: 493 -1 492
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17396,7 +18197,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Eacute
 EndChar
 
 StartChar: Thorn_I
-Encoding: 469 -1 468
+Encoding: 494 -1 493
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17421,17 +18222,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn I
 EndChar
 
 StartChar: Thorn_Iacute
-Encoding: 470 -1 469
+Encoding: 495 -1 494
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17468,7 +18269,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Iacute
 EndChar
 
 StartChar: Thorn_O
-Encoding: 471 -1 470
+Encoding: 496 -1 495
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17508,7 +18309,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn O
 EndChar
 
 StartChar: Thorn_Oacute
-Encoding: 472 -1 471
+Encoding: 497 -1 496
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17547,7 +18348,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Oacute
 EndChar
 
 StartChar: Thorn_U
-Encoding: 473 -1 472
+Encoding: 498 -1 497
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17584,7 +18385,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn U
 EndChar
 
 StartChar: Thorn_Uacute
-Encoding: 474 -1 473
+Encoding: 499 -1 498
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17623,7 +18424,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Thorn Uacute
 EndChar
 
 StartChar: V_A
-Encoding: 475 -1 474
+Encoding: 500 -1 499
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17657,7 +18458,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V A
 EndChar
 
 StartChar: V_E
-Encoding: 476 -1 475
+Encoding: 501 -1 500
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17691,7 +18492,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V E
 EndChar
 
 StartChar: V_Eacute
-Encoding: 477 -1 476
+Encoding: 502 -1 501
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17725,7 +18526,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Eacute
 EndChar
 
 StartChar: V_I
-Encoding: 478 -1 477
+Encoding: 503 -1 502
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17749,17 +18550,17 @@ SplineSet
  175 400 l 25
  175 0 l 25
  75 0 l 25
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V I
 EndChar
 
 StartChar: V_Iacute
-Encoding: 479 -1 478
+Encoding: 504 -1 503
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17795,7 +18596,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Iacute
 EndChar
 
 StartChar: V_O
-Encoding: 480 -1 479
+Encoding: 505 -1 504
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17834,7 +18635,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V O
 EndChar
 
 StartChar: V_Oacute
-Encoding: 481 -1 480
+Encoding: 506 -1 505
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17872,7 +18673,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Oacute
 EndChar
 
 StartChar: V_U
-Encoding: 482 -1 481
+Encoding: 507 -1 506
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17908,7 +18709,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V U
 EndChar
 
 StartChar: V_Uacute
-Encoding: 483 -1 482
+Encoding: 508 -1 507
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17946,7 +18747,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" V Uacute
 EndChar
 
 StartChar: W_A
-Encoding: 484 -1 483
+Encoding: 509 -1 508
 Width: 750
 VWidth: 0
 Flags: HW
@@ -17975,7 +18776,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W A
 EndChar
 
 StartChar: W_E
-Encoding: 485 -1 484
+Encoding: 510 -1 509
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18004,7 +18805,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W E
 EndChar
 
 StartChar: W_Eacute
-Encoding: 486 -1 485
+Encoding: 511 -1 510
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18033,7 +18834,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Eacute
 EndChar
 
 StartChar: W_I
-Encoding: 487 -1 486
+Encoding: 512 -1 511
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18052,17 +18853,17 @@ SplineSet
  225 700 l 25
  675 0 l 1
  575 0 l 17
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W I
 EndChar
 
 StartChar: W_Iacute
-Encoding: 488 -1 487
+Encoding: 513 -1 512
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18093,7 +18894,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Iacute
 EndChar
 
 StartChar: W_O
-Encoding: 489 -1 488
+Encoding: 514 -1 513
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18127,7 +18928,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W O
 EndChar
 
 StartChar: W_Oacute
-Encoding: 490 -1 489
+Encoding: 515 -1 514
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18160,7 +18961,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Oacute
 EndChar
 
 StartChar: W_U
-Encoding: 491 -1 490
+Encoding: 516 -1 515
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18191,7 +18992,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W U
 EndChar
 
 StartChar: W_Uacute
-Encoding: 492 -1 491
+Encoding: 517 -1 516
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18224,7 +19025,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" W Uacute
 EndChar
 
 StartChar: X_A
-Encoding: 493 -1 492
+Encoding: 518 -1 517
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18254,7 +19055,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X A
 EndChar
 
 StartChar: X_E
-Encoding: 494 -1 493
+Encoding: 519 -1 518
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18284,7 +19085,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X E
 EndChar
 
 StartChar: X_Eacute
-Encoding: 495 -1 494
+Encoding: 520 -1 519
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18314,7 +19115,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Eacute
 EndChar
 
 StartChar: X_I
-Encoding: 496 -1 495
+Encoding: 521 -1 520
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18334,17 +19135,17 @@ SplineSet
  375 300 l 1
  175 0 l 1
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X I
 EndChar
 
 StartChar: X_Iacute
-Encoding: 497 -1 496
+Encoding: 522 -1 521
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18376,7 +19177,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Iacute
 EndChar
 
 StartChar: X_O
-Encoding: 498 -1 497
+Encoding: 523 -1 522
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18411,7 +19212,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X O
 EndChar
 
 StartChar: X_Oacute
-Encoding: 499 -1 498
+Encoding: 524 -1 523
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18445,7 +19246,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Oacute
 EndChar
 
 StartChar: X_U
-Encoding: 500 -1 499
+Encoding: 525 -1 524
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18477,7 +19278,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X U
 EndChar
 
 StartChar: X_Uacute
-Encoding: 501 -1 500
+Encoding: 526 -1 525
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18511,7 +19312,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X Uacute
 EndChar
 
 StartChar: Y_A
-Encoding: 502 -1 501
+Encoding: 527 -1 526
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18538,7 +19339,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y A
 EndChar
 
 StartChar: Y_E
-Encoding: 503 -1 502
+Encoding: 528 -1 527
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18565,7 +19366,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y E
 EndChar
 
 StartChar: Y_Eacute
-Encoding: 504 -1 503
+Encoding: 529 -1 528
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18592,7 +19393,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Eacute
 EndChar
 
 StartChar: Y_I
-Encoding: 505 -1 504
+Encoding: 530 -1 529
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18609,17 +19410,17 @@ SplineSet
  675 300 l 1
  675 200 l 5
  75 200 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y I
 EndChar
 
 StartChar: Y_Iacute
-Encoding: 506 -1 505
+Encoding: 531 -1 530
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18648,7 +19449,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Iacute
 EndChar
 
 StartChar: Y_O
-Encoding: 507 -1 506
+Encoding: 532 -1 531
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18680,7 +19481,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y O
 EndChar
 
 StartChar: Y_Oacute
-Encoding: 508 -1 507
+Encoding: 533 -1 532
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18711,7 +19512,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Oacute
 EndChar
 
 StartChar: Y_U
-Encoding: 509 -1 508
+Encoding: 534 -1 533
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18740,7 +19541,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y U
 EndChar
 
 StartChar: Y_Uacute
-Encoding: 510 -1 509
+Encoding: 535 -1 534
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18771,7 +19572,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Y Uacute
 EndChar
 
 StartChar: Z_A
-Encoding: 511 -1 510
+Encoding: 536 -1 535
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18804,7 +19605,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z A
 EndChar
 
 StartChar: Z_E
-Encoding: 512 -1 511
+Encoding: 537 -1 536
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18837,7 +19638,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z E
 EndChar
 
 StartChar: Z_Eacute
-Encoding: 513 -1 512
+Encoding: 538 -1 537
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18870,7 +19671,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Eacute
 EndChar
 
 StartChar: Z_I
-Encoding: 514 -1 513
+Encoding: 539 -1 538
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18893,17 +19694,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z I
 EndChar
 
 StartChar: Z_Iacute
-Encoding: 515 -1 514
+Encoding: 540 -1 539
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18938,7 +19739,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Iacute
 EndChar
 
 StartChar: Z_O
-Encoding: 516 -1 515
+Encoding: 541 -1 540
 Width: 750
 VWidth: 0
 Flags: HW
@@ -18976,7 +19777,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z O
 EndChar
 
 StartChar: Z_Oacute
-Encoding: 517 -1 516
+Encoding: 542 -1 541
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19013,7 +19814,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Oacute
 EndChar
 
 StartChar: Z_U
-Encoding: 518 -1 517
+Encoding: 543 -1 542
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19048,7 +19849,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z U
 EndChar
 
 StartChar: Z_Uacute
-Encoding: 519 -1 518
+Encoding: 544 -1 543
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19085,7 +19886,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Z Uacute
 EndChar
 
 StartChar: Zhed_A
-Encoding: 520 -1 519
+Encoding: 545 -1 544
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19123,7 +19924,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed A
 EndChar
 
 StartChar: Zhed_E
-Encoding: 521 -1 520
+Encoding: 546 -1 545
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19161,7 +19962,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed E
 EndChar
 
 StartChar: Zhed_Eacute
-Encoding: 522 -1 521
+Encoding: 547 -1 546
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19199,7 +20000,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Eacute
 EndChar
 
 StartChar: Zhed_I
-Encoding: 523 -1 522
+Encoding: 548 -1 547
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19227,17 +20028,17 @@ SplineSet
  675 300 l 1
  175 0 l 9
  75 0 l 1
-325 800 m 29
- 325 1000 l 29
- 425 1000 l 29
- 425 800 l 29
- 325 800 l 29
+575 800 m 29
+ 575 1000 l 29
+ 675 1000 l 29
+ 675 800 l 29
+ 575 800 l 29
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed I
 EndChar
 
 StartChar: Zhed_Iacute
-Encoding: 524 -1 523
+Encoding: 549 -1 548
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19277,7 +20078,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Iacute
 EndChar
 
 StartChar: Zhed_O
-Encoding: 525 -1 524
+Encoding: 550 -1 549
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19320,7 +20121,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed O
 EndChar
 
 StartChar: Zhed_Oacute
-Encoding: 526 -1 525
+Encoding: 551 -1 550
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19362,7 +20163,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Oacute
 EndChar
 
 StartChar: Zhed_U
-Encoding: 527 -1 526
+Encoding: 552 -1 551
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19402,7 +20203,7 @@ Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed U
 EndChar
 
 StartChar: Zhed_Uacute
-Encoding: 528 -1 527
+Encoding: 553 -1 552
 Width: 750
 VWidth: 0
 Flags: HW
@@ -19441,38 +20242,6 @@ SplineSet
  75 800 l 9
 EndSplineSet
 Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" Zhed Uacute
-EndChar
-
-StartChar: X_emphasis
-Encoding: 529 -1 528
-Width: 750
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-75 0 m 1
- 325 350 l 1
- 75 700 l 1
- 175 700 l 1
- 375 400 l 1
- 575 700 l 1
- 675 700 l 1
- 425 350 l 1
- 675 0 l 1
- 575 0 l 1
- 375 300 l 1
- 175 0 l 1
- 75 0 l 1
-75 -300 m 25
- 75 -200 l 25
- 375 -100 l 25
- 675 -200 l 25
- 675 -300 l 25
- 375 -200 l 25
- 75 -300 l 25
-EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 176 subtable" X emphasis
 EndChar
 EndChars
 EndSplineFont

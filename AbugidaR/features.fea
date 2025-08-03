@@ -267,6 +267,7 @@ feature liga {
 	sub B U emphasis by B_U_emphasis;
 	sub B Uacute by B_Uacute;
 	sub B Uacute emphasis by B_Uacute_emphasis;
+	sub B emphasis by B_emphasis;
 	sub C A by C_A;
 	sub C A emphasis by C_A_emphasis;
 	sub C E by C_E;
@@ -285,6 +286,7 @@ feature liga {
 	sub C U emphasis by C_U_emphasis;
 	sub C Uacute by C_Uacute;
 	sub C Uacute emphasis by C_Uacute_emphasis;
+	sub C emphasis by C_emphasis;
 	sub D A by D_A;
 	sub D A emphasis by D_A_emphasis;
 	sub D E by D_E;
@@ -303,6 +305,7 @@ feature liga {
 	sub D U emphasis by D_U_emphasis;
 	sub D Uacute by D_Uacute;
 	sub D Uacute emphasis by D_Uacute_emphasis;
+	sub D emphasis by D_emphasis;
 	sub Edh A by Edh_A;
 	sub Edh A emphasis by Edh_A_emphasis;
 	sub Edh E by Edh_E;
@@ -321,6 +324,7 @@ feature liga {
 	sub Edh U emphasis by Edh_U_emphasis;
 	sub Edh Uacute by Edh_Uacute;
 	sub Edh Uacute emphasis by Edh_Uacute_emphasis;
+	sub Edh emphasis by Edh_emphasis;
 	sub F A by F_A;
 	sub F A emphasis by F_A_emphasis;
 	sub F E by F_E;
@@ -339,6 +343,7 @@ feature liga {
 	sub F U emphasis by F_U_emphasis;
 	sub F Uacute by F_Uacute;
 	sub F Uacute emphasis by F_Uacute_emphasis;
+	sub F emphasis by F_emphasis;
 	sub G A by G_A;
 	sub G A emphasis by G_A_emphasis;
 	sub G E by G_E;
@@ -357,6 +362,7 @@ feature liga {
 	sub G U emphasis by G_U_emphasis;
 	sub G Uacute by G_Uacute;
 	sub G Uacute emphasis by G_Uacute_emphasis;
+	sub G emphasis by G_emphasis;
 	sub H A by H_A;
 	sub H A emphasis by H_A_emphasis;
 	sub H E by H_E;
@@ -375,6 +381,7 @@ feature liga {
 	sub H U emphasis by H_U_emphasis;
 	sub H Uacute by H_Uacute;
 	sub H Uacute emphasis by H_Uacute_emphasis;
+	sub H emphasis by H_emphasis;
 	sub J A by J_A;
 	sub J A emphasis by J_A_emphasis;
 	sub J E by J_E;
@@ -393,6 +400,7 @@ feature liga {
 	sub J U emphasis by J_U_emphasis;
 	sub J Uacute by J_Uacute;
 	sub J Uacute emphasis by J_Uacute_emphasis;
+	sub J emphasis by J_emphasis;
 	sub K A by K_A;
 	sub K A emphasis by K_A_emphasis;
 	sub K E by K_E;
@@ -411,6 +419,7 @@ feature liga {
 	sub K U emphasis by K_U_emphasis;
 	sub K Uacute by K_Uacute;
 	sub K Uacute emphasis by K_Uacute_emphasis;
+	sub K emphasis by K_emphasis;
 	sub L A by L_A;
 	sub L A emphasis by L_A_emphasis;
 	sub L E by L_E;
@@ -429,6 +438,7 @@ feature liga {
 	sub L U emphasis by L_U_emphasis;
 	sub L Uacute by L_Uacute;
 	sub L Uacute emphasis by L_Uacute_emphasis;
+	sub L emphasis by L_emphasis;
 	sub M A by M_A;
 	sub M A emphasis by M_A_emphasis;
 	sub M E by M_E;
@@ -447,6 +457,7 @@ feature liga {
 	sub M U emphasis by M_U_emphasis;
 	sub M Uacute by M_Uacute;
 	sub M Uacute emphasis by M_Uacute_emphasis;
+	sub M emphasis by M_emphasis;
 	sub N A by N_A;
 	sub N A emphasis by N_A_emphasis;
 	sub N E by N_E;
@@ -465,6 +476,7 @@ feature liga {
 	sub N U emphasis by N_U_emphasis;
 	sub N Uacute by N_Uacute;
 	sub N Uacute emphasis by N_Uacute_emphasis;
+	sub N emphasis by N_emphasis;
 	sub Eng A by Eng_A;
 	sub Eng A emphasis by Eng_A_emphasis;
 	sub Eng E by Eng_E;
@@ -483,6 +495,7 @@ feature liga {
 	sub Eng U emphasis by Eng_U_emphasis;
 	sub Eng Uacute by Eng_Uacute;
 	sub Eng Uacute emphasis by Eng_Uacute_emphasis;
+	sub Eng emphasis by Eng_emphasis;
 	sub P A by P_A;
 	sub P A emphasis by P_A_emphasis;
 	sub P E by P_E;
@@ -501,6 +514,7 @@ feature liga {
 	sub P U emphasis by P_U_emphasis;
 	sub P Uacute by P_Uacute;
 	sub P Uacute emphasis by P_Uacute_emphasis;
+	sub P emphasis by P_emphasis;
 	sub R A by R_A;
 	sub R A emphasis by R_A_emphasis;
 	sub R E by R_E;
@@ -519,6 +533,7 @@ feature liga {
 	sub R U emphasis by R_U_emphasis;
 	sub R Uacute by R_Uacute;
 	sub R Uacute emphasis by R_Uacute_emphasis;
+	sub R emphasis by R_emphasis;
 	sub S A by S_A;
 	sub S A emphasis by S_A_emphasis;
 	sub S E by S_E;
@@ -537,6 +552,7 @@ feature liga {
 	sub S U emphasis by S_U_emphasis;
 	sub S Uacute by S_Uacute;
 	sub S Uacute emphasis by S_Uacute_emphasis;
+	sub S emphasis by S_emphasis;
 	sub Esh A by Esh_A;
 	sub Esh A emphasis by Esh_A_emphasis;
 	sub Esh E by Esh_E;
@@ -555,6 +571,7 @@ feature liga {
 	sub Esh U emphasis by Esh_U_emphasis;
 	sub Esh Uacute by Esh_Uacute;
 	sub Esh Uacute emphasis by Esh_Uacute_emphasis;
+	sub Esh emphasis by Esh_emphasis;
 	sub T A by T_A;
 	sub T A emphasis by T_A_emphasis;
 	sub T E by T_E;
@@ -573,6 +590,7 @@ feature liga {
 	sub T U emphasis by T_U_emphasis;
 	sub T Uacute by T_Uacute;
 	sub T Uacute emphasis by T_Uacute_emphasis;
+	sub T emphasis by T_emphasis;
 	sub Thorn A by Thorn_A;
 	sub Thorn A emphasis by Thorn_A_emphasis;
 	sub Thorn E by Thorn_E;
@@ -591,6 +609,7 @@ feature liga {
 	sub Thorn U emphasis by Thorn_U_emphasis;
 	sub Thorn Uacute by Thorn_Uacute;
 	sub Thorn Uacute emphasis by Thorn_Uacute_emphasis;
+	sub Thorn emphasis by Thorn_emphasis;
 	sub V A by V_A;
 	sub V A emphasis by V_A_emphasis;
 	sub V E by V_E;
@@ -609,6 +628,7 @@ feature liga {
 	sub V U emphasis by V_U_emphasis;
 	sub V Uacute by V_Uacute;
 	sub V Uacute emphasis by V_Uacute_emphasis;
+	sub V emphasis by V_emphasis;
 	sub W A by W_A;
 	sub W A emphasis by W_A_emphasis;
 	sub W E by W_E;
@@ -627,6 +647,7 @@ feature liga {
 	sub W U emphasis by W_U_emphasis;
 	sub W Uacute by W_Uacute;
 	sub W Uacute emphasis by W_Uacute_emphasis;
+	sub W emphasis by W_emphasis;
 	sub X A by X_A;
 	sub X A emphasis by X_A_emphasis;
 	sub X E by X_E;
@@ -645,6 +666,7 @@ feature liga {
 	sub X U emphasis by X_U_emphasis;
 	sub X Uacute by X_Uacute;
 	sub X Uacute emphasis by X_Uacute_emphasis;
+	sub X emphasis by X_emphasis;
 	sub Y A by Y_A;
 	sub Y A emphasis by Y_A_emphasis;
 	sub Y E by Y_E;
@@ -663,6 +685,7 @@ feature liga {
 	sub Y U emphasis by Y_U_emphasis;
 	sub Y Uacute by Y_Uacute;
 	sub Y Uacute emphasis by Y_Uacute_emphasis;
+	sub Y emphasis by Y_emphasis;
 	sub Z A by Z_A;
 	sub Z A emphasis by Z_A_emphasis;
 	sub Z E by Z_E;
@@ -681,6 +704,7 @@ feature liga {
 	sub Z U emphasis by Z_U_emphasis;
 	sub Z Uacute by Z_Uacute;
 	sub Z Uacute emphasis by Z_Uacute_emphasis;
+	sub Z emphasis by Z_emphasis;
 	sub Zhed A by Zhed_A;
 	sub Zhed A emphasis by Zhed_A_emphasis;
 	sub Zhed E by Zhed_E;
@@ -699,7 +723,7 @@ feature liga {
 	sub Zhed U emphasis by Zhed_U_emphasis;
 	sub Zhed Uacute by Zhed_Uacute;
 	sub Zhed Uacute emphasis by Zhed_Uacute_emphasis;
-	sub X emphasis by X_emphasis;
+	sub Zhed emphasis by Zhed_emphasis;
 	sub period period by period;
 	sub period comma by period;
 	sub period space by period;
