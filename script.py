@@ -62,11 +62,11 @@ def genFont(s):
 								lig.addReference(c, (1, 0, 0, 1, 0, 0))
 								if v:
 									v_glyph = font[v]
-									v_dx = (c_glyph.width - v_glyph.width)
+									v_dx = (c_glyph.width - v_glyph.width) / 2
 									lig.addReference(v, (1, 0, 0, 1, v_dx, 0))
 								if e:
 									e_glyph = font[e]
-									e_dx = (c_glyph.width - e_glyph.width)
+									e_dx = (c_glyph.width - e_glyph.width) / 2
 									lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
 								lig.width = c_glyph.width
 								lig.build()
