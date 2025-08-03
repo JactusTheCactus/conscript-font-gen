@@ -34,104 +34,108 @@
 \ExplSyntaxOff
 \renewcommand*{\glossarysection}[2][]{}
 \newcommand{\diacritic}[3]{%
-	\ifthenelse{\equal{#1}{+}}{%
-		$\overset{\text{#3}}{\text{#2}}$%
-	}{%
-		\ifthenelse{\equal{#1}{-}}{%
-			$\underset{\text{#3}}{\text{#2}}$%
-		}{%
-			\ifthenelse{\equal{#1}{=}}{%
-				\stackinset{c}{0ex}{c}{0ex}{\text{#2}}{\text{#3}}%
-			}{%
-				\texttt{%
-					#2\{#3\}%
-				}%
-				\GenericWarning{diacritic}{'#1' is an Invalid direction. use '+' or '-'}%
-			}%
-		}%
-	}%
+	\IfEq{#1}{+}{$\overset{\text{#3}}{\text{#2}}$}{}%
+	\IfEq{#1}{-}{$\underset{\text{#3}}{\text{#2}}$}{}%
+	\IfEq{#1}{=}{\stackinset{c}{0ex}{c}{0ex}{\text{#3}}{\text{#2}}}{}%
 }
 \ExplSyntaxOn
-\NewExpandableDocumentCommand{\UppercaseString}{m}
- {
-   \tl_upper_case:n {#1}
- }
+\NewExpandableDocumentCommand{\UppercaseString}{m}{
+	\tl_upper_case:n {#1}
+}
 \ExplSyntaxOff
 \DeclareRobustCommand{\abg}[1]{%
-	%\abgloop{#1}%
+	\abgloop{#1}%
 }
 \newcommand{\abgloop}[1]{%
 	\StrLen{#1}[\stringlen]
 	\abgloopaux{#1}{1}{\stringlen}%
 }
 \newcommand{\abgloopaux}[3]{%
-	\ifnumcomp{#2}{>}{#3}{%    <- note the three separate args
+	\ifnumcomp{#2}{>}{#3}{%
 	}{%
 		\StrChar{#1}{#2}[\thischar]%
 		\StrChar{#1}{\numexpr#2+1\relax}[\nextchar]%
-		\IfEq{\nextchar}{;}{%  modifier follows
+		\IfEq{\nextchar}{;}{%
 			\abgmapcompose{\thischar}{;}%
 			\abgloopaux{#1}{\numexpr#2+2\relax}{#3}%
-		}{%  no modifier
+		}{%
 			\abgmapchar{\thischar}%
 			\abgloopaux{#1}{\numexpr#2+1\relax}{#3}%
 		}%
 	}%
 }
+\NewDocumentCommand{\AbRC}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{c}{\hspace{0.25em}\raisebox{1em}{\scalebox{1}[0.5]{|}}}}}
+\NewDocumentCommand{\AbRF}{s}{\IfBooleanTF{#1}{<*>}{P}}
+\NewDocumentCommand{\AbRH}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{\scalebox{0.75}[0.5]{\textbf{\raisebox{1.5em}{\rotatebox{180}{U}}}}}{\textbf{\scalebox{1}[0.75]{\hspace{0.3em}|}}}}}
+\NewDocumentCommand{\AbRK}{s}{\IfBooleanTF{#1}{<*>}{\rotatebox{180}{\reflectbox{\raisebox{-0.7em}{L}}}}}
+\NewDocumentCommand{\AbRN}{s}{\IfBooleanTF{#1}{\texttt{<N*>}}{V}}
+\NewDocumentCommand{\AbRP}{s}{\IfBooleanTF{#1}{<*>}{9}}
+\NewDocumentCommand{\AbRT}{s}{\IfBooleanTF{#1}{\texttt{<T*>}}{$\Delta$}}
+\NewDocumentCommand{\AbRB}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{\AbRP}{\diacritic{+}{}{\diacritic{+}{}{\diacritic{+}{}{\raisebox{0.5em}{\textbf{|}}}}}}}}
+\NewDocumentCommand{\AbRD}{s}{\IfBooleanTF{#1}{\texttt{<D*>}}{\diacritic{=}{\AbRT}{--}}}
+\NewDocumentCommand{\AbRG}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{\AbRK}{-}}}
+\NewDocumentCommand{\AbRJ}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{\diacritic{=}{c}{\raisebox{0.75em}{-}}}{\AbRC}}}
+\NewDocumentCommand{\AbRL}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{|}{\raisebox{1em}{\hspace{0.5em}N}}}}
+\NewDocumentCommand{\AbRV}{s}{\IfBooleanTF{#1}{<*>}{\diacritic{=}{\AbRF}{-}}}
+\NewDocumentCommand{\AbRM}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<M>}}}
+\NewDocumentCommand{\AbRR}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<R>}}}
+\NewDocumentCommand{\AbRS}{s}{\IfBooleanTF{#1}{\texttt{<S*>}}{\texttt{<S>}}}
+\NewDocumentCommand{\AbRW}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<W>}}}
+\NewDocumentCommand{\AbRX}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<X>}}}
+\NewDocumentCommand{\AbRY}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<Y>}}}
+\NewDocumentCommand{\AbRZ}{s}{\IfBooleanTF{#1}{\texttt{<Z*>}}{\texttt{<Z>}}}
+\NewDocumentCommand{\AbRA}{s}{\IfBooleanTF{#1}{<*>}{\texttt{<A>}}}
+\NewDocumentCommand{\AbRE}{s}{\IfBooleanTF{#1}{\texttt{<E*>}}{\texttt{<E>}}}
+\NewDocumentCommand{\AbRI}{s}{\IfBooleanTF{#1}{\texttt{<I*>}}{\texttt{<I>}}}
+\NewDocumentCommand{\AbRO}{s}{\IfBooleanTF{#1}{\texttt{<O*>}}{\texttt{<O>}}}
+\NewDocumentCommand{\AbRU}{s}{\IfBooleanTF{#1}{\texttt{<U*>}}{\texttt{<U>}}}
 \newcommand{\abgmapcompose}[2]{%
 	\begingroup%
 		\edef\tempchar{\UppercaseString{#1}}%
-		\IfEq{\tempchar}{D}{<DH>}{}%
-		\IfEq{\tempchar}{N}{<NG>}{}%
-		\IfEq{\tempchar}{S}{<SH>}{}%
-		\IfEq{\tempchar}{T}{<TH>}{}%
-		\IfEq{\tempchar}{Z}{<ZH>}{}%
-		\IfEq{\tempchar}{E}{.*}{}%
-		\IfEq{\tempchar}{I}{.*}{}%
-		\IfEq{\tempchar}{O}{.*}{}%
-		\IfEq{\tempchar}{U}{.*}{}%
+		\IfEq{\tempchar}{D}{\AbRD*}{}%
+		\IfEq{\tempchar}{N}{\AbRN*}{}%
+		\IfEq{\tempchar}{S}{\AbRS*}{}%
+		\IfEq{\tempchar}{T}{\AbRT*}{}%
+		\IfEq{\tempchar}{Z}{\AbRZ*}{}%
+		\IfEq{\tempchar}{E}{\AbRE*}{}%
+		\IfEq{\tempchar}{I}{\AbRI*}{}%
+		\IfEq{\tempchar}{O}{\AbRO*}{}%
+		\IfEq{\tempchar}{U}{\AbRU*}{}%
 	\endgroup%
 }
 \newcommand{\abgmapchar}[1]{%
 	\begingroup
 		\edef\tempchar{\UppercaseString{#1}}%
-		\IfEq{\tempchar}{B}{\diacritic{=}{\diacritic{+}{}{\diacritic{+}{}{\diacritic{+}{}{\textbf{|}}}}}{9}}{}%
-		\IfEq{\tempchar}{C}{\diacritic{=}{\hspace{0.25em}\raisebox{1em}{\scalebox{1}[0.5]{|}}}{c}}{}%
-		\IfEq{\tempchar}{D}{\diacritic{=}{--}{$\Delta$}}{}%
-		\IfEq{\tempchar}{F}{P}{}%
-		\IfEq{\tempchar}{G}{\diacritic{=}{-}{\rotatebox{180}{\reflectbox{\raisebox{-0.7em}{L}}}}}{}%
-		\IfEq{\tempchar}{H}{\diacritic{=}{\textbf{\scalebox{1}[0.75]{\hspace{0.3em}|}}}{\scalebox{0.75}[0.5]{\textbf{\raisebox{1.5em}{\rotatebox{180}{U}}}}}}{}%
-		\IfEq{\tempchar}{J}{\diacritic{=}{\hspace{0.25em}\raisebox{1em}{\scalebox{1}[0.5]{|}}}{\diacritic{=}{\raisebox{0.75em}{-}}{c}}}{}%
-		\IfEq{\tempchar}{K}{\rotatebox{180}{\reflectbox{\raisebox{-0.7em}{L}}}}{}%
-		\IfEq{\tempchar}{L}{\diacritic{=}{\raisebox{1em}{\hspace{0.5em}N}}{|}}{}%
-		\IfEq{\tempchar}{M}{<M>}{}%
-		\IfEq{\tempchar}{N}{V}{}%
-		\IfEq{\tempchar}{P}{9}{}%
-		\IfEq{\tempchar}{R}{<R>}{}%
-		\IfEq{\tempchar}{S}{<S>}{}%
-		\IfEq{\tempchar}{T}{$\Delta$}{}%
-		\IfEq{\tempchar}{V}{\diacritic{=}{-}{P}}{}%
-		\IfEq{\tempchar}{W}{<W>}{}%
-		\IfEq{\tempchar}{X}{<X>}{}%
-		\IfEq{\tempchar}{Y}{<Y>}{}%
-		\IfEq{\tempchar}{Z}{<Z>}{}%
-		\IfEq{\tempchar}{A}{.}{}%
-		\IfEq{\tempchar}{E}{.}{}%
-		\IfEq{\tempchar}{I}{.}{}%
-		\IfEq{\tempchar}{O}{.}{}%
-		\IfEq{\tempchar}{U}{.}{}%
-		\IfEq{\tempchar}{;}{*}{}%
+		\IfEq{\tempchar}{B}{\AbRB}{}%
+		\IfEq{\tempchar}{C}{\AbRC}{}%
+		\IfEq{\tempchar}{D}{\AbRD}{}%
+		\IfEq{\tempchar}{F}{\AbRF}{}%
+		\IfEq{\tempchar}{G}{\AbRG}{}%
+		\IfEq{\tempchar}{H}{\AbRH}{}%
+		\IfEq{\tempchar}{J}{\AbRJ}{}%
+		\IfEq{\tempchar}{K}{\AbRK}{}%
+		\IfEq{\tempchar}{L}{\AbRL}{}%
+		\IfEq{\tempchar}{M}{\AbRM}{}%
+		\IfEq{\tempchar}{N}{\AbRN}{}%
+		\IfEq{\tempchar}{P}{\AbRP}{}%
+		\IfEq{\tempchar}{R}{\AbRR}{}%
+		\IfEq{\tempchar}{S}{\AbRS}{}%
+		\IfEq{\tempchar}{T}{\AbRT}{}%
+		\IfEq{\tempchar}{V}{\AbRV}{}%
+		\IfEq{\tempchar}{W}{\AbRW}{}%
+		\IfEq{\tempchar}{X}{\AbRX}{}%
+		\IfEq{\tempchar}{Y}{\AbRY}{}%
+		\IfEq{\tempchar}{Z}{\AbRZ}{}%
+		\IfEq{\tempchar}{A}{\AbRA}{}%
+		\IfEq{\tempchar}{E}{\AbRE}{}%
+		\IfEq{\tempchar}{I}{\AbRI}{}%
+		\IfEq{\tempchar}{O}{\AbRO}{}%
+		\IfEq{\tempchar}{U}{\AbRU}{}%
 	\endgroup%
 }
-\newcommand{\inlinesinglequote}[1]{\textit{`#1'}}%
-\newcommand{\inlinedoublequote}[1]{``#1''}%
-\newcommand{\quoteauthor}[2]{%
-	\begin{quote}
-		\textbf{%
-			\inlinedoublequote{#2}%
-		}%
-		\par\hfill
-		---
-		\textit{#1}
-	\end{quote}%
-}
+\newcommand{\inlinesinglequote}[1]{\textit{`#1'}}
+\newcommand{\inlinedoublequote}[1]{``#1''}
+\newcommand{\quoteauthor}[2]{\begin{quote}%
+	\textbf{\inlinedoublequote{#2}}\par
+	\hfill---~\texttt{#1}%
+\end{quote}}
