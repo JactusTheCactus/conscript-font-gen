@@ -1,6 +1,8 @@
 import fontforge, json, re, os
 def genFont(s):
-	if s == "AbugidaR":
+	if not s:
+		print(f"genFont():\n\tInvalid Input <{s}>")
+	elif s == "AbugidaR":
 		font = fontforge.open(os.path.join(s,"abugidaR-main.sfd"))
 		consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 		vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
@@ -32,7 +34,7 @@ def genFont(s):
 				for v in vowels:
 					liga.append(f"\tsub {c} {v} by {c}_{v};")
 					liga.append(f"\tsub {c} {v} emphasis by {c}_{v}_emphasis;")
-			liga.append(f"\tsub X emphasis by X_emphasis;")
+				liga.append(f"\tsub {c} emphasis by {c}_emphasis;")
 			for p1 in punctuation:
 				for p2 in punctuation:
 					liga.append(f"\tsub {p1} {p2} by {p1};")
@@ -49,22 +51,27 @@ def genFont(s):
 				if c not in font:
 					print(c, "does not exist")
 				else:
-					for v in vowels:
-						if v not in font:
-							print(v, "does not exist")
-						else:
-							lig_name = "_".join(filter(bool, [c, v, e]))
-							lig = font.createChar(-1, lig_name)
-							c_glyph = font[c]
-							v_glyph = font[v]
-							dx = (c_glyph.width - v_glyph.width) / 2
-							lig.clear()
-							lig.addReference(c, (1, 0, 0, 1, 0, 0))
-							lig.addReference(v, (1, 0, 0, 1, dx, 0))
-							if e:
-								lig.addReference(e, (1, 0, 0, 1, 0, 0))
-							lig.width = c_glyph.width
-							lig.build()
+					for v in vowels + [""]:
+						lig_name = "_".join(filter(bool, [c, v, e]))
+						if e or v:
+							try:
+								print(f"trying <{lig_name}>")
+								lig = font.createChar(-1, lig_name)
+								c_glyph = font[c]
+								lig.clear()
+								lig.addReference(c, (1, 0, 0, 1, 0, 0))
+								if v:
+									v_glyph = font[v]
+									v_dx = (c_glyph.width - v_glyph.width)
+									lig.addReference(v, (1, 0, 0, 1, v_dx, 0))
+								if e:
+									e_glyph = font[e]
+									e_dx = (c_glyph.width - e_glyph.width)
+									lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
+								lig.width = c_glyph.width
+								lig.build()
+							except:
+								print(f"Failed to build ligature <{lig_name}>")
 		set = ["X","emphasis"]
 		lig_name = "_".join(filter(bool, set))
 		lig = font.createChar(-1, lig_name)
@@ -92,16 +99,16 @@ def genFont(s):
 		font.generate(os.path.join(s,"abugidaR.otf"))
 	elif s == "AlphabetD":
 		letterList = [
-			"A B C D Ð E É F G H".split(),
-			"I Í J K L M N Ŋ O Ó".split(),
-			"P R S Ś T Þ U Ú Ű V".split(),
-			"W Y Z Ź".split()
+			"A	B		C	D		Ð	E		É		F		G				H".split(),
+			"I	Í		J	K		L	M		N		Ŋ		O				Ó".split(),
+			"P	R		S	Ś		T	Þ		U		Ú		Ű				V".split(),
+			"W	Y		Z	Ź".split()
 		]
 		letters = [item for sublist in letterList for item in sublist]
 		nameList = [
-			"A B C D Edh E Eacute F G H".split(),
-			"I Iacute J K L M N Eng O Oacute".split(),
-			"P R S Sacute T Thorn U Uacute Udoubleacute V".split(),
+			"A	B		C	D		Edh	E		Eacute	F		G				H".split(),
+			"I	Iacute	J	K		L	M		N		Eng		O				Oacute".split(),
+			"P	R		S	Sacute	T	Thorn	U		Uacute	Udoubleacute	V".split(),
 			"W Y Z Zacute".split()
 		]
 		names = [item for sublist in nameList for item in sublist]
@@ -112,8 +119,7 @@ def genFont(s):
 			l = letters[i]
 			n = names[i]
 			letter = l + l.lower()
-			#print(f"{letter} => {n}")
-			table += f"|{letter}|![{letter}]({os.path.join(s,"",n)})|\n"
+			table += f"|{letter}|![{letter}]({os.path.join(s,"img",n)})|\n"
 		with open(os.path.join(s,"data.md"), "w", encoding="utf-8") as f:
 			f.write(table)
 for i in [
