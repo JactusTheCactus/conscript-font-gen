@@ -24,10 +24,11 @@ lastCompile() {
 }
 main() {
 	cd LaTeX
-	rm -f main.pdf
+	rm -f main.aux main.glg main.glo main.gls main.log main.pdf main.toc main.xdy > /dev/null 2>&1
 	if firstCompile && glossCompile && lastCompile; then
 		echo -e "\nClearing Logs..."
 		rm -f main.aux main.glg main.glo main.gls main.log main.toc main.xdy > /dev/null 2>&1
+		code main.pdf
 	else
 		echo -e "\nSomething went wrong\nPlease check the logs"
 		exit 1
