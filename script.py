@@ -55,7 +55,6 @@ def genFont(s):
 						lig_name = "_".join(filter(bool, [c, v, e]))
 						if e or v:
 							try:
-								print(f"trying <{lig_name}>")
 								lig = font.createChar(-1, lig_name)
 								c_glyph = font[c]
 								lig.clear()
