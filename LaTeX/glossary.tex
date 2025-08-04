@@ -1,4 +1,54 @@
-\newglossaryentry{nullc}{name={Null Consonant},description={\ipa{\nullc}, written as \anglebracket{\AbR{X}} or \anglebracket{X}}}
-\newglossaryentry{Alphabet}{name={Alphabet},description={A writing system where Consonants \& Vowels are \emph{separate} characters.\\\hspace*{1em}\anglebracket{Dog}\ipa{d{\char"0254}g}\\\hspace*{1em}\anglebracket{Cat}\ipa{k{\char"00E6}t}\\\hspace*{1em}\anglebracket{Mouse}\ipa{m\t{a{\char"028A}}s}}}
-\newglossaryentry{Abugida}{name={Abugida},description={A writing system where Vowels are \emph{modifier} characters on Consonants.\\\hspace*{1em}\anglebracket{\diacritic{+}{D}{o}g}\anglebracket{\diacritic{-}{D}{o}g}\ipa{d{\char"0254}g}\\\hspace*{1em}\anglebracket{\diacritic{+}{C}{a}t}\anglebracket{\diacritic{-}{C}{a}t}\ipa{k{\char"00E6}t}\\\hspace*{1em}\anglebracket{\diacritic{+}{M}{ou}\diacritic{+}{s}{e}}\anglebracket{\diacritic{-}{M}{ou}\diacritic{-}{s}{e}}\ipa{m\t{a{\char"028A}}s}}}
-\newglossaryentry{Abjad}{name={Abjad},description={A writing system where Vowels are \emph{omitted}, but \emph{inferred} from context.\\\hspace*{1em}\anglebracket{Dg}\ipa{d{\char"0254}g}\\\hspace*{1em}\anglebracket{Ct}\ipa{k{\char"00E6}t}\\\hspace*{1em}\anglebracket{Ms}\ipa{m\t{a{\char"028A}}s}}}
+\newglossaryentry{nullc}{
+	name={Null Consonant},
+	description={%
+		\ipa{\nullc}, written as \super{\anglebracket{\AbR{X}}}{\cref{AbR}}%
+	}
+}
+\newglossaryentry{Alphabet}{
+	name={Alphabet},
+	description={%
+		A writing system where Consonants \& Vowels are \emph{separate} characters.\\
+		\hspace*{1em}
+			\anglebracket{Dog}
+			\ipa{d{\char"0254}g}\\
+		\hspace*{1em}
+			\anglebracket{Cat}
+			\ipa{k{\char"00E6}t}\\
+		\hspace*{1em}
+			\anglebracket{Mouse}
+			\ipa{m\t{a{\char"028A}}s}%
+	}%
+}
+\newglossaryentry{Abugida}{
+	name={Abugida},
+	description={%
+		A writing system where Vowels are \emph{modifier} characters on Consonants.\\
+		\hspace*{1em}
+			\anglebracket{\diacritic{+}{D}{o}g}
+			\anglebracket{\diacritic{-}{D}{o}g}
+			\ipa{d{\char"0254}g}\\
+		\hspace*{1em}
+			\anglebracket{\diacritic{+}{C}{a}t}
+			\anglebracket{\diacritic{-}{C}{a}t}
+			\ipa{k{\char"00E6}t}\\
+		\hspace*{1em}
+			\anglebracket{\diacritic{+}{M}{ou}\diacritic{+}{s}{e}}
+			\anglebracket{\diacritic{-}{M}{ou}\diacritic{-}{s}{e}}
+			\ipa{m\t{a{\char"028A}}s}%
+	}%
+}
+\newglossaryentry{Abjad}{
+	name={Abjad},
+	description={%
+		A writing system where Vowels are \emph{omitted}, but \emph{inferred} from context.\\
+		\hspace*{1em}
+			\anglebracket{Dg}
+			\ipa{d{\char"0254}g}\\
+		\hspace*{1em}
+			\anglebracket{Ct}
+			\ipa{k{\char"00E6}t}\\
+		\hspace*{1em}
+			\anglebracket{Ms}
+			\ipa{m\t{a{\char"028A}}s}%
+	}%
+}

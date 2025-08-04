@@ -18,44 +18,57 @@ POST=(
 	toc
 	xdy
 )
-firstCompile() {
-	echo "Step 1..."
-	xelatex -interaction=nonstopmode main.tex > /dev/null 2>&1
+DIR="LaTeX"
+FILE="main"
+R="\033[0;91m"
+G="\033[0;92m"
+B="\033[0;94m"
+C="\033[0m"
+echoColour() {
+	echo -e "$B>\t$1$C"
+}
+errorColour() {
+	echo -e "$R!\t$1$C"
+}
+echoHighlight() {	# Only used to highlight a word inside `echoColour`
+	echo "$G$1$B"
+}
+errorHighlight() {	# Only used to highlight a word inside `errorColour`
+	echo "$G$1$R"
+}
+genError() {
+	errorColour "ERROR!"
+}
+XeTeX() {
+	echoColour "$(echoHighlight "XeTeX")..."
+	xelatex -interaction=nonstopmode "$FILE.tex" > /dev/null 2>&1
 	if [ $? -ne 0 ]; then
-		echo -e "\tERROR!"
+		genError
 		return 1
 	fi
 }
-glossCompile() {
-	echo "Step 2..."
-	makeglossaries main > /dev/null 2>&1
+MakeGloss() {
+	echoColour "Making $(echoHighlight "Glossaries")..."
+	makeglossaries "$FILE" > /dev/null 2>&1
 	if [ $? -ne 0 ]; then
-		echo -e "\tERROR!"
-		return 1
-	fi
-}
-lastCompile() {
-	echo "Step 3..."
-	xelatex -interaction=nonstopmode main.tex > /dev/null 2>&1
-	if [ $? -ne 0 ]; then
-		echo -e "\tERROR!"
+		genError
 		return 1
 	fi
 }
 main() {
-	cd LaTeX
+	cd "$DIR"
 	for EXT in "${PRE[@]}"; do
 		rm -f *."$EXT" > /dev/null 2>&1
 	done
-	rm -f main.aux main.glg main.glo main.gls main.log main.pdf main.toc main.xdy > /dev/null 2>&1
-	if firstCompile && glossCompile && lastCompile; then
-		echo -e "\nClearing Logs..."
+	if XeTeX && MakeGloss && XeTeX; then
+		echoColour "Clearing $(echoHighlight "Logs")..."
 		for EXT in "${POST[@]}"; do
 			rm -f *."$EXT" > /dev/null 2>&1
 		done
-		code main.pdf
+		#code "$FILE.pdf"
 	else
-		echo -e "\nSomething went wrong\nPlease check the logs"
+		errorColour "Something went wrong"
+		errorColour "Please check the $(errorHighlight "Logs")!"
 		exit 1
 	fi
 	echo
