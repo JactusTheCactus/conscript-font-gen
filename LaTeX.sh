@@ -23,17 +23,16 @@ FILE="main"
 R="\033[0;91m"
 G="\033[0;92m"
 B="\033[0;94m"
-C="\033[0m"
 echoColour() {
-	echo -e "$B>\t$1$C"
+	echo -e "$B>\t$1"
 }
 errorColour() {
-	echo -e "$R!\t$1$C"
+	echo -e "$R!\t$1"
 }
-echoHighlight() {	# Only used to highlight a word inside `echoColour`
+echoHighlight() {
 	echo "$G$1$B"
 }
-errorHighlight() {	# Only used to highlight a word inside `errorColour`
+errorHighlight() {
 	echo "$G$1$R"
 }
 genError() {
@@ -49,7 +48,7 @@ XeTeX() {
 }
 MakeGloss() {
 	echoColour "Making $(echoHighlight "Glossaries")..."
-	makeglossaries "$FILE" > /dev/null 2>&1
+	makeglossaries $FILE > /dev/null 2>&1
 	if [ $? -ne 0 ]; then
 		genError
 		return 1
@@ -65,7 +64,7 @@ main() {
 		for EXT in "${POST[@]}"; do
 			rm -f *."$EXT" > /dev/null 2>&1
 		done
-		#code "$FILE.pdf"
+		code "$FILE.pdf"
 	else
 		errorColour "Something went wrong"
 		errorColour "Please check the $(errorHighlight "Logs")!"
