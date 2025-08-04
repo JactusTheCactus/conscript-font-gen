@@ -10,7 +10,8 @@
 }
 \date{%
 	\DTMmonthname{\DTMfetchmonth{start}}
-	\DTMfetchday{start}
+	\DTMfetchday{start},
+	\IfEq{\DTMfetchyear{start}}{\number\year}{\DTMfetchyear{start}}{~}
 	--
 	\DTMmonthname{\number\month}
 	\number\day,
