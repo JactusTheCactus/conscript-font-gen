@@ -67,9 +67,7 @@ pythonBuild() {
 	python "$FONT.py" > /dev/null 2>&1
 }
 main() {
-	if pythonBuild; then
-		:
-	else
+	if ! pythonBuild; then
 		errorColour "Failed to build $(errorHighlight "Fonts")!"
 	fi
 	cd "$DIR"
@@ -81,7 +79,7 @@ main() {
 		for EXT in "${POST[@]}"; do
 			rm -f *."$EXT" > /dev/null 2>&1
 		done
-#		code "$LATEX.pdf"
+		code "$LATEX.pdf"
 	else
 		errorColour "Something went wrong"
 		errorColour "Please check the $(errorHighlight "Logs")!"
