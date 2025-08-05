@@ -15,11 +15,11 @@ mindmap
 				("`Null-Consonant + Vowel`")
 			(("`Notes`"))
 				("`Add Curves
-				*u/IJriccan*`")
+				**u/IJriccan**`")
 				("`Add Heads, Risers & Descenders
-				*u/IJriccan*`")
-				("`Keep it 'Lowercase'
-				*u/IJriccan*`")
+				**u/IJriccan**`")
+				("`Keep it *'Lowercase'*
+				**u/IJriccan**`")
 		Alphabet_D
 			(("`State`"))
 				("`In-Progress`")
@@ -48,11 +48,11 @@ mindmap
 			- Null-Consonant + Vowel
 		- Notes
 			- Add Curves
-				- *u/IJriccan*
+				- **u/IJriccan**
 			- Add Heads, Risers & Descenders
-				- *u/IJriccan*
-			- Keep it 'Lowercase'
-				- *u/IJriccan*
+				- **u/IJriccan**
+			- Keep it *'Lowercase'*
+				- **u/IJriccan**
 	- Alphabet_D
 		- State
 			- In-Progress
