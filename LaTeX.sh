@@ -55,6 +55,7 @@ MakeGloss() {
 	fi
 }
 main() {
+	python script.py
 	cd "$DIR"
 	for EXT in "${PRE[@]}"; do
 		rm -f *."$EXT" > /dev/null 2>&1
