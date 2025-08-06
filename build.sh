@@ -14,16 +14,16 @@ KEEP=(
 )
 POST=()
 for ITEM in "${PRE[@]}"; do
-    SKIP=false
-    for RM in "${KEEP[@]}"; do
-        if [[ "$ITEM" == "$RM" ]]; then
-            SKIP=true
-            break
-        fi
-    done
-    if ! $SKIP; then
-        POST+=("$ITEM")
-    fi
+	SKIP=false
+	for RM in "${KEEP[@]}"; do
+		if [[ "$ITEM" == "$RM" ]]; then
+			SKIP=true
+			break
+		fi
+	done
+	if ! $SKIP; then
+		POST+=("$ITEM")
+	fi
 done
 DIR="LaTeX"
 LATEX="main"

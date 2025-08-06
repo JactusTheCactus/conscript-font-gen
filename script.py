@@ -10,8 +10,8 @@ def genFont(s):
 		letters = consonants + vowels
 		nonC = punctuation + vowels
 		nonV = punctuation + consonants
-		lvn = "E      I      O      U      D   N   S   T     Z   ".split()
-		lvy = "Eacute Iacute Oacute Uacute Edh Eng Esh Thorn Zhed".split()
+		lvn =	"E		I		O		U		D	N	S	T		Z	".split()
+		lvy =	"Eacute	Iacute	Oacute	Uacute	Edh	Eng	Esh	Thorn	Zhed".split()
 		liga = [
 			"languagesystem DFLT dflt;",
 			"languagesystem latn dflt;"
@@ -98,17 +98,17 @@ def genFont(s):
 		font.generate(os.path.join(s,"abugidaR.otf"))
 	elif s == "AlphabetD":
 		letterList = [
-			"A	B		C	D		Ð	E		É		F		G				H".split(),
-			"I	Í		J	K		L	M		N		Ŋ		O				Ó".split(),
-			"P	R		S	Ś		T	Þ		U		Ú		Ű				V".split(),
-			"W	Y		Z	Ź".split()
+			"	A	B		C	D		Ð	E		É		F		G				H		".split(),
+			"	I	Í		J	K		L	M		N		Ŋ		O				Ó		".split(),
+			"	P	R		S	Ś		T	Þ		U		Ú		Ű				V		".split(),
+			"	W	Y		Z	Ź															".split()
 		]
 		letters = [item for sublist in letterList for item in sublist]
 		nameList = [
-			"A	B		C	D		Edh	E		Eacute	F		G				H".split(),
-			"I	Iacute	J	K		L	M		N		Eng		O				Oacute".split(),
-			"P	R		S	Sacute	T	Thorn	U		Uacute	Udoubleacute	V".split(),
-			"W Y Z Zacute".split()
+			"	A	B		C	D		Edh	E		Eacute	F		G				H		".split(),
+			"	I	Iacute	J	K		L	M		N		Eng		O				Oacute	".split(),
+			"	P	R		S	Sacute	T	Thorn	U		Uacute	Udoubleacute	V		".split(),
+			"	W	Y		Z	Zacute														".split()
 		]
 		names = [item for sublist in nameList for item in sublist]
 		table = ""
