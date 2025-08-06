@@ -7,30 +7,7 @@
 \newcommand{\super}[2]{#1\textsuperscript{#2}}
 \ExplSyntaxOn
 \int_new:N \l_tmpc_int
-\NewDocumentCommand{\namerefrange}{m}
-	{
-		\clist_set:Nn \l_tmpa_clist { #1 }
-		\int_compare:nNnTF { \clist_count:N \l_tmpa_clist } = {1}
-			{
-				\nameref{\clist_item:Nn \l_tmpa_clist {1}}
-			}
-			{
-				\int_set:Nn \l_tmpb_int { \clist_count:N \l_tmpa_clist }
-				\int_zero:N \l_tmpc_int
-				\clist_map_inline:Nn \l_tmpa_clist
-					{
-						\int_incr:N \l_tmpc_int
-						\nameref{##1}
-						\int_compare:nNnTF {\l_tmpc_int} < {\l_tmpb_int - 1}
-							{,~}
-							{
-								\int_compare:nNnTF {\l_tmpc_int} = {\l_tmpb_int - 1}
-									{~\&~}
-									{}
-							}
-					}
-			}
-	}
+\NewDocumentCommand{\namerefrange}{m}{\clist_set:Nn\l_tmpa_clist{#1}\int_compare:nNnTF{\clist_count:N\l_tmpa_clist}={1}{\nameref{\clist_item:Nn \l_tmpa_clist {1}}}{\int_set:Nn\l_tmpb_int{\clist_count:N\l_tmpa_clist}\int_zero:N\l_tmpc_int\clist_map_inline:Nn\l_tmpa_clist{\int_incr:N\l_tmpc_int\nameref{##1}\int_compare:nNnTF{\l_tmpc_int}<{\l_tmpb_int-1}{,~}{\int_compare:nNnTF{\l_tmpc_int}={\l_tmpb_int-1}{~\&~}{}}}}}
 \ExplSyntaxOff
 \renewcommand*{\glossarysection}[2][]{}
 \newcommand{\diacritic}[3]{\IfEq{#1}{+}{$\overset{\text{#3}}{\text{#2}}$}{}\IfEq{#1}{-}{$\underset{\text{#3}}{\text{#2}}$}{}\IfEq{#1}{=}{\stackinset{c}{0ex}{c}{0ex}{\text{#3}}{\text{#2}}}{}}
@@ -38,3 +15,4 @@
 \newcommand{\inlinesinglequote}[1]{\textit{`#1'}}
 \newcommand{\inlinedoublequote}[1]{``#1''}
 \newcommand{\quoteauthor}[2]{\begin{quote}\textbf{\inlinedoublequote{#2}}\par\hfill---~\texttt{#1}\end{quote}}
+\ExplSyntaxOn\cs_new_protected:Nn\nested_process_items:nn{\tl_set:Nn\l_tmpa_tl{#2}\regex_replace_all:nnN{\\item\{([^\}]*)\}}{\\item~#1\{\1\}}\l_tmpa_tl}\NewDocumentCommand\nested{mm+m}{\begin{#1}\nested_process_items:nn{#2}{#3}\l_tmpa_tl\end{#1}\tl_set:Nx\l_tmpb_tl{\tl_to_str:N\l_tmpa_tl}\iow_term:x{<<\l_tmpb_tl>>}}\ExplSyntaxOff
