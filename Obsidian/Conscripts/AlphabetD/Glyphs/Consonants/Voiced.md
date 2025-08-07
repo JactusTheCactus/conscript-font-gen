@@ -1,0 +1,8 @@
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/J]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/V]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/G]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/B]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/Z]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/Z1]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/D]]
+- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced/D1]]
