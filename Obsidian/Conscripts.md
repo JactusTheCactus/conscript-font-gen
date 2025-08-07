@@ -1,0 +1,2 @@
+- ![[AbugidaR]]
+- ![[AlphabetD]]
