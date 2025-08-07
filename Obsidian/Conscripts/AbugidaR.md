@@ -1,0 +1,1 @@
+- ![[Obsidian/Conscripts/AbugidaR/Glyphs]]
