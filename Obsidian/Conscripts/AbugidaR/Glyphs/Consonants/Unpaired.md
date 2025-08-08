@@ -5,5 +5,5 @@
 - ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired/Ŋ|AbR.N1]]
 - ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired/R|AbR.R]]
 - ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired/W|AbR.W]]
-- ![[Null|AbR.X]]
+- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired/Null|AbR.X]]
 - ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired/Y|AbR.Y]]
