@@ -18,7 +18,7 @@ POST=()
 for ITEM in "${PRE[@]}"; do
 	SKIP=false
 	for RM in "${KEEP[@]}"; do
-		if [[ "$ITEM" == "$RM" ]]; then
+		if ![[ "$ITEM" == "$RM" ]]; then
 			SKIP=true
 			break
 		fi
