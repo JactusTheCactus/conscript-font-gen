@@ -11,7 +11,21 @@ def exportGlyphs(parent: str, file: str, size: int, types: list[str]):
 		if glyph.isWorthOutputting():
 			name = glyph.glyphname
 			if all([
-				name == name.upper() or len(name) > 1
+				any([
+					name == name.upper(),
+					len(name) > 1
+				]),
+				name not in [
+					"eacute",
+					"edh",
+					"eng",
+					"esh",
+					"iacute",
+					"oacute",
+					"thorn",
+					"uacute",
+					"zhed"
+				]
 			]):
 				for ext in types:
 					os.makedirs(os.path.join(OUTPUT_DIR, ext), exist_ok=True)
