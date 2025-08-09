@@ -11,22 +11,23 @@ def exportGlyphs(parent: str, file: str, size: int, types: list[str]):
 		if glyph.isWorthOutputting():
 			name = glyph.glyphname
 			if all([
-				any([
-					name == name.upper(),
-					len(name) > 1
-				]),
+				len(name) > 1,
 				name not in [
-					"eacute",
 					"edh",
 					"eng",
 					"esh",
-					"iacute",
-					"oacute",
 					"thorn",
-					"uacute",
 					"zhed"
-				]
+				] + [f"{x}acute" for x in "e i o u".split()]
 			]):
+				nameList = name.split("_")
+				for n in range(len(nameList)):
+					if nameList[n][0] == ".":
+						nameList[n] = f".{nameList[n][1:].capitalize()}"
+					else:
+						nameList[n] = f"{nameList[n][0].upper()}{nameList[n][1:]}"
+				name = "_".join(nameList)
+				print(name)
 				for ext in types:
 					os.makedirs(os.path.join(OUTPUT_DIR, ext), exist_ok=True)
 					if ext == "png":
