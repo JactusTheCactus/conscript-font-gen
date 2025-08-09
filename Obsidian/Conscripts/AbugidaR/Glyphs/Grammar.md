@@ -1,7 +1,8 @@
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Space|AbR.Space]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Stop|AbR.Stop]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Comma|AbR.Comma]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Question|AbR.Question]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Ellipsis|AbR.Ellipsis]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Dash|AbR.Dash]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Grammar/Emphasis|AbR.Emphasis]]
+| ![[AbugidaR/exports/svg/Comma.svg]]    |
+| :------------------------------------- |
+| ![[AbugidaR/exports/svg/Hyphen.svg]]   |
+| ![[AbugidaR/exports/svg/Ellipsis.svg]] |
+| ![[AbugidaR/exports/svg/Emphasis.svg]] |
+| ![[AbugidaR/exports/svg/Question.svg]] |
+| ![[AbugidaR/exports/svg/Space.svg]]    |
+| ![[AbugidaR/exports/svg/Period.svg]]   |

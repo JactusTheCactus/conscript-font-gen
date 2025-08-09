@@ -1,7 +1,8 @@
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Space|AlD.Space]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Stop|AlD.Stop]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Comma|AlD.Comma]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Question|AlD.Question]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Ellipsis|AlD.Ellipsis]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Dash|AlD.Dash]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Grammar/Emphasis|AlD.Emphasis]]
+| AlD.Space    |
+| :----------- |
+| AlD.Stop     |
+| AlD.Comma    |
+| AlD.Question |
+| AlD.Ellipsis |
+| AlD.Dash     |
+| AlD.Emphasis |

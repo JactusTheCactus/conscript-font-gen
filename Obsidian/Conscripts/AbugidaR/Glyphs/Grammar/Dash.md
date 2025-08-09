@@ -1,4 +1,0 @@
----
-Script: AbR
-Type: G
----

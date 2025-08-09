@@ -1,8 +1,0 @@
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/H|AlD.H]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/L|AlD.L]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/M|AlD.M]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/N|AlD.N]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/Ŋ|AlD.N1]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/R|AlD.R]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/W|AlD.W]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired/Y|AlD.Y]]

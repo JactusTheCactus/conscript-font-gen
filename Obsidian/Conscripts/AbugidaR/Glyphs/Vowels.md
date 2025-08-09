@@ -1,9 +1,10 @@
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/A|AbR.A]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/E|AbR.E]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/É|AbR.E1]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/I|AbR.I]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/Í|AbR.I1]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/O|AbR.O]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/Ó|AbR.O1]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/U|AbR.U]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Vowels/Ú|AbR.U1]]
+| ![[AbugidaR/exports/svg/X_A.svg]]      |
+| :------------------------------------- |
+| ![[AbugidaR/exports/svg/X_E.svg]]      |
+| ![[AbugidaR/exports/svg/X_Eacute.svg]] |
+| ![[AbugidaR/exports/svg/X_I.svg]]      |
+| ![[AbugidaR/exports/svg/X_Iacute.svg]] |
+| ![[AbugidaR/exports/svg/X_O.svg]]      |
+| ![[AbugidaR/exports/svg/X_Oacute.svg]] |
+| ![[AbugidaR/exports/svg/X_U.svg]]      |
+| ![[AbugidaR/exports/svg/X_Uacute.svg]] |

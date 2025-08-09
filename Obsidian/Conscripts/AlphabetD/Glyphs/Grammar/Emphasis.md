@@ -1,4 +1,0 @@
----
-Script: AlD
-Type: G
----

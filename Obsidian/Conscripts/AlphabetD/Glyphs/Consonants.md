@@ -1,3 +1,10 @@
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unpaired]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Unvoiced]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Consonants/Voiced]]
+| Unpaired  |     Unvoiced | Voiced       |
+| :-------: | -----------: | :----------- |
+|   AlD.H   |        AlD.C | AlD.J        |
+|   AlD.L   |        AlD.F | AlD.V        |
+|   AlD.M   |        AlD.K | AlD.G        |
+|   AlD.N   |        AlD.P | AlD.B        |
+| AlD.&ENG; |        AlD.S | AlD.Z        |
+|   AlD.R   | AlD.&Sacute; | AlD.&Zacute; |
+|   AlD.W   |        AlD.T | AlD.D        |
+|   AlD.Y   |  AlD.&THORN; | AlD.&ETH;    |

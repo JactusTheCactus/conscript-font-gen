@@ -1,3 +1,10 @@
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unpaired]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Unvoiced]]
-- ![[Obsidian/Conscripts/AbugidaR/Glyphs/Consonants/Voiced]]
+|             Unpaired              |                            Unvoiced | Voiced                             |
+| :-------------------------------: | ----------------------------------: | :--------------------------------- |
+|  ![[AbugidaR/exports/svg/H.svg]]  |     ![[AbugidaR/exports/svg/C.svg]] | ![[AbugidaR/exports/svg/J.svg]]    |
+|  ![[AbugidaR/exports/svg/L.svg]]  |     ![[AbugidaR/exports/svg/F.svg]] | ![[AbugidaR/exports/svg/V.svg]]    |
+|  ![[AbugidaR/exports/svg/M.svg]]  |     ![[AbugidaR/exports/svg/K.svg]] | ![[AbugidaR/exports/svg/G.svg]]    |
+|  ![[AbugidaR/exports/svg/N.svg]]  |     ![[AbugidaR/exports/svg/P.svg]] | ![[AbugidaR/exports/svg/B.svg]]    |
+| ![[AbugidaR/exports/svg/Eng.svg]] |     ![[AbugidaR/exports/svg/S.svg]] | ![[AbugidaR/exports/svg/Z.svg]]    |
+|  ![[AbugidaR/exports/svg/R.svg]]  |   ![[AbugidaR/exports/svg/Esh.svg]] | ![[AbugidaR/exports/svg/Zhed.svg]] |
+|  ![[AbugidaR/exports/svg/W.svg]]  |     ![[AbugidaR/exports/svg/T.svg]] | ![[AbugidaR/exports/svg/D.svg]]    |
+|  ![[AbugidaR/exports/svg/Y.svg]]  | ![[AbugidaR/exports/svg/Thorn.svg]] | ![[AbugidaR/exports/svg/Edh.svg]]  |

@@ -1,10 +1,11 @@
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/A|AlD.A]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/E|AlD.E]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/É|AlD.E1]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/I|AlD.I]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/Í|AlD.I1]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/O|AlD.O]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/Ó|AlD.O1]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/U|AlD.U]]
-- ![[Obsidian/Conscripts/AlphabetD/Glyphs/Vowels/Ú|AlD.U1]]
-- ![[Ű|AlD.U2]]
+| AlD.A        |
+| :----------- |
+| AlD.E        |
+| AlD.&Eacute; |
+| AlD.I        |
+| AlD.&Iacute; |
+| AlD.O        |
+| AlD.&Oacute; |
+| AlD.U        |
+| AlD.&Uacute; |
+| AlD.&#368;   |

@@ -1,2 +1,2 @@
-- ![[Obsidian/Conscripts/AbugidaR]]
-- ![[Obsidian/Conscripts/AlphabetD]]
+![[Obsidian/Conscripts/AbugidaR]]
+![[Obsidian/Conscripts/AlphabetD]]

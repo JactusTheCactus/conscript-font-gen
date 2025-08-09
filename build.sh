@@ -16,16 +16,16 @@ KEEP=(
 )
 POST=()
 for ITEM in "${PRE[@]}"; do
-	SKIP=false
-	for RM in "${KEEP[@]}"; do
-		if ![[ "$ITEM" == "$RM" ]]; then
-			SKIP=true
-			break
-		fi
-	done
-	if ! $SKIP; then
-		POST+=("$ITEM")
-	fi
+    SKIP=false
+    for RM in "${KEEP[@]}"; do
+        if [[ "$ITEM" == "$RM" ]]; then
+            SKIP=true
+            break
+        fi
+    done
+    if ! $SKIP; then
+        POST+=("$ITEM")
+    fi
 done
 DIR="LaTeX"
 LATEX="main"
@@ -67,6 +67,7 @@ MakeGloss() {
 pythonBuild() {
 	echoColour "Building $(echoHighlight "Fonts")..."
 	python "$FONT.py" > /dev/null 2>&1
+	python glyphExport.py > /dev/null 2>&1
 }
 main() {
 	if ! pythonBuild; then
@@ -81,39 +82,7 @@ main() {
 		for EXT in "${POST[@]}"; do
 			rm -f *."$EXT" > /dev/null 2>&1
 		done
-		code "$LATEX.pdf"
-		echo "$(awk '
-		/<<[^>]*/ { 
-			capture = 1
-			buffer = substr($0, index($0, "<<") + 2)
-			next 
-		}
-		/>>/ && capture {
-			buffer = buffer $0
-			gsub(/\s+/, " ", buffer)
-			gsub(/^ | $/, "", buffer)
-			print buffer "\n"
-			capture = 0
-			next 
-		}
-		capture {
-			buffer = buffer $0
-		}
-		' "$LATEX.log")" > log.txt
-		rm -f *."log" > /dev/null 2>&1
-		sed -i 's/>>\s*$//g' log.txt
-		sed -i 's/{\s*/{/g' log.txt
-		sed -i 's/\s*}/}/g' log.txt
-		sed -i 's/\\item\s*{/\\item{/g' log.txt
-		sed -i 's/\\item/\n\\item/g' log.txt
-		sed -i 's/\\nested\s*{/\\nested{/g' log.txt
-		sed -i 's/\\nested/\n\\nested/g' log.txt
-		sed -i 's/}}/}\n}/g' log.txt
-		sed -i 's/}}/}\n}/g' log.txt
-		
-		sed -i 's/^\s*//g' log.txt
-		sed -i 's/\s*$//g' log.txt
-		#code log.txt
+		#code "$LATEX.pdf"
 	else
 		errorColour "Something went wrong"
 		errorColour "Please check the $(errorHighlight "Logs")!"
