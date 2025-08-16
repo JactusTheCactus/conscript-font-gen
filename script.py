@@ -1,9 +1,41 @@
-import fontforge, json, re, os
+import fontforge, json, re, os, shutil
+def exportGlyphs(folder: str):
+	FONT_FILE = os.path.join(folder,f"{folder}-{'lig' if os.path.exists(os.path.join(folder,f"{folder}-lig.sfd")) else 'main'}.sfd")
+	if not os.path.exists(FONT_FILE):
+		print(f";-;\t{FONT_FILE} does not exist")
+		return
+	OUTPUT_DIR = os.path.join(folder,"exports")
+	SVG_DIR = os.path.join(OUTPUT_DIR,"svg")
+	shutil.rmtree(SVG_DIR, ignore_errors=True)
+	os.makedirs(SVG_DIR)
+	font = fontforge.open(FONT_FILE)
+	for glyph in filter(bool, [
+		g for g in font.glyphs()
+		if g.isWorthOutputting()
+	]):
+		assert glyph is not None
+		name = glyph.glyphname
+		if all([
+			len(name) > (1 if folder == "AbugidaR" else 0),
+			name not in "edh eng esh thorn zhed".split() + [f"{x}acute" for x in "e i o u".split()]
+		]):
+			nameList = name.split("_")
+			for n in range(len(nameList)):
+				try:
+					if nameList[n][0] == ".":
+						nameList[n] = f".{nameList[n][1:].capitalize()}"
+					else:
+						nameList[n] = f"{nameList[n][0].upper()}{nameList[n][1:]}"
+				except:
+					nameList[n] = f"_{nameList[n][1:].capitalize()}"
+			name = "_".join(nameList).replace("__","_")
+			print(name)
+			glyph.export(os.path.join(OUTPUT_DIR, "svg", f"{name}.svg"))
 def genFont(s):
 	if not s:
 		print(f"genFont():\n\tInvalid Input <{s}>")
 	elif s == "AbugidaR":
-		font = fontforge.open(os.path.join(s,"abugidaR-main.sfd"))
+		font = fontforge.open(os.path.join(s,f"{s}-main.sfd"))
 		consonants = "B C D Edh F G H J K L M N Eng P R S Esh T Thorn V W X Y Z Zhed".split()
 		vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
 		punctuation = "period comma space hyphen question ellipsis start special emphasis".split()
@@ -32,9 +64,9 @@ def genFont(s):
 					liga.append(f"\tsub {v1} {v2}' by X {v2};")
 			for c in consonants:
 				for v in vowels:
-					liga.append(f"\tsub {c} {v} by {c}_{v};")
-					liga.append(f"\tsub {c} {v} emphasis by {c}_{v}_emphasis;")
-				liga.append(f"\tsub {c} emphasis by {c}_emphasis;")
+					liga.append(f"\tsub {c} {v} by {'_'.join([c, v])};")
+					liga.append(f"\tsub {c} {v} emphasis by {'_'.join([c, v, 'emphasis'])};")
+				liga.append(f"\tsub {c} emphasis by {'_'.join([c, 'emphasis'])};")
 			for p1 in punctuation:
 				for p2 in punctuation:
 					liga.append(f"\tsub {p1} {p2} by {p1};")
@@ -94,8 +126,8 @@ def genFont(s):
 			glyph.left_side_bearing = sideBearing
 			glyph.right_side_bearing = sideBearing
 			glyph.width = int(width + (sideBearing * 2))
-		font.save(os.path.join(s,"abugidaR-lig.sfd"))
-		font.generate(os.path.join(s,"abugidaR.otf"))
+		font.save(os.path.join(s,"AbugidaR-lig.sfd"))
+		font.generate(os.path.join(s,"AbugidaR.otf"))
 	elif s == "AlphabetD":
 		letterList = [
 			"	A	B		C	D		Ð	E		É		F		G				H		".split(),
@@ -126,6 +158,7 @@ for i in [
 	"AlphabetD"
 ]:
 	genFont(i)
+	exportGlyphs(i)
 with open("readmeData.json", "r") as f:
 	data = json.load(f)
 readme = "# Planned Conscripts"

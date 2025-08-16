@@ -1,0 +1,386 @@
+SplineFontDB: 3.2
+FontName: AlphabetD
+FullName: AlphabetD
+FamilyName: AlphabetD
+Weight: Regular
+Copyright: Copyright (c) 2025, 
+UComments: "2025-8-15: Created with FontForge (http://fontforge.org)"
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: -60
+UnderlineWidth: 30
+Ascent: 600
+Descent: 0
+InvalidEm: 0
+LayerCount: 2
+Layer: 0 0 "Back" 1
+Layer: 1 0 "Fore" 0
+XUID: [1021 528 -737890285 16270241]
+FSType: 0
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1755327341
+ModificationTime: 1755329748
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 32
+VLineGap: 0
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 32
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+OS2Vendor: 'PfEd'
+MarkAttachClasses: 1
+DEI: 91125
+LangName: 1033
+Encoding: Custom
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -128
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 0 14 6
+BeginPrivate: 0
+EndPrivate
+Grid
+-779.5 900 m 0
+ -779.5 -300 l 1024
+-600 790 m 0
+ 1200 790 l 1024
+EndSplineSet
+TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
+BeginChars: 35 35
+
+StartChar: _BASE
+Encoding: 24 95 0
+Width: 1000
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: A
+Encoding: 0 65 1
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: C
+Encoding: 2 67 2
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: E
+Encoding: 4 69 3
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: F
+Encoding: 5 70 4
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: H
+Encoding: 7 72 5
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: I
+Encoding: 8 73 6
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: K
+Encoding: 10 75 7
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: L
+Encoding: 11 76 8
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: M
+Encoding: 12 77 9
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: N
+Encoding: 13 78 10
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: O
+Encoding: 14 79 11
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: P
+Encoding: 15 80 12
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: R
+Encoding: 16 82 13
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: S
+Encoding: 17 83 14
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: T
+Encoding: 18 84 15
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: U
+Encoding: 19 85 16
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: W
+Encoding: 21 87 17
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Y
+Encoding: 22 89 18
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: B
+Encoding: 1 66 19
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 12 80 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: D
+Encoding: 3 68 20
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 15 84 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: G
+Encoding: 6 71 21
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7 75 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: J
+Encoding: 9 74 22
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2 67 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: V
+Encoding: 20 86 23
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4 70 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Z
+Encoding: 23 90 24
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 14 83 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Eacute
+Encoding: 25 201 25
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Iacute
+Encoding: 26 205 26
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Oacute
+Encoding: 28 211 27
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Uacute
+Encoding: 29 218 28
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Eth
+Encoding: 27 208 29
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 30 222 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Thorn
+Encoding: 30 222 30
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Eng
+Encoding: 31 330 31
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Esh
+Encoding: 32 346 32
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Zhed
+Encoding: 33 377 33
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 32 346 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Udoubleacute
+Encoding: 34 368 34
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+EndChars
+EndSplineFont
