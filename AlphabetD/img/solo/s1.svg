@@ -7,13 +7,14 @@
    viewBox="0 0 264.58333 158.75"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="template.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="s1.svg"
+   xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
      id="namedview1"
      pagecolor="#505050"
      bordercolor="#ffffff"
@@ -25,19 +26,24 @@
      inkscape:document-units="px"
      showguides="false"
      inkscape:zoom="0.97386897"
-     inkscape:cx="435.37685"
-     inkscape:cy="277.75811"
+     inkscape:cx="436.40368"
+     inkscape:cy="279.81177"
      inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="983"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs1" />
-  <g
+     inkscape:current-layer="layer1"
+     showgrid="false" /><defs
+     id="defs1" /><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-  </g>
-</svg>
+     id="layer1"><image
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="96"
+       width="264.58334"
+       height="158.75"
+       xlink:href="_base.svg"
+       id="image1726"
+       x="0"
+       y="0" /></g></svg>
