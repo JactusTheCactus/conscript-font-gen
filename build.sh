@@ -66,8 +66,7 @@ MakeGloss() {
 }
 pythonBuild() {
 	echoColour "Building $(echoHighlight "Fonts")..."
-	python "$FONT.py" > /dev/null 2>&1
-	python glyphExport.py > /dev/null 2>&1
+	python3 "$FONT.py" > /dev/null 2>&1
 }
 main() {
 	if ! pythonBuild; then

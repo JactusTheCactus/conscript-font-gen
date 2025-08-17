@@ -1,4 +1,6 @@
 import fontforge, json, re, os, shutil
+def flattenList(inputList):
+	return [item for sublist in inputList for item in sublist]
 def exportGlyphs(folder: str):
 	FONT_FILE = os.path.join(folder,f"{folder}-{'lig' if os.path.exists(os.path.join(folder,f"{folder}-lig.sfd")) else 'main'}.sfd")
 	if not os.path.exists(FONT_FILE):
@@ -29,7 +31,7 @@ def exportGlyphs(folder: str):
 				except:
 					nameList[n] = f"_{nameList[n][1:].capitalize()}"
 			name = "_".join(nameList).replace("__","_")
-			print(name)
+			#print(name)
 			glyph.export(os.path.join(OUTPUT_DIR, "svg", f"{name}.svg"))
 def genFont(s):
 	if not s:
@@ -129,30 +131,87 @@ def genFont(s):
 		font.save(os.path.join(s,"AbugidaR-lig.sfd"))
 		font.generate(os.path.join(s,"AbugidaR.otf"))
 	elif s == "AlphabetD":
-		letterList = [
-			"	A	B		C	D		Ð	E		É		F		G				H		".split(),
-			"	I	Í		J	K		L	M		N		Ŋ		O				Ó		".split(),
-			"	P	R		S	Ś		T	Þ		U		Ú		Ű				V		".split(),
-			"	W	Y		Z	Ź															".split()
+		font = fontforge.open(os.path.join(s,f"{s}-main.sfd"))
+		letters = flattenList([
+			"	A	B	C	D	Ð	E	É	F	G	H	".split(),
+			"	I	Í	J	K	L	M	N	Ŋ	O	Ó	".split(),
+			"	P	R	S	Ś	T	Þ	U	Ú	Ű	V	".split(),
+			"	W	Y	Z	Ź							".split()
+		])
+		baseLetters = flattenList([
+			"	A	B	C	D	E	F	G	H	I	J	".split(),
+			"	K	L	M	N	O	P	R	S	T	U	".split(),
+			"	V	W	Y	Z							".split()
+		])
+		specialLettersBase = [
+			flattenList([
+				"	D	E	I	N	O	".split(),
+				"	S	T	U	Z		".split()
+			]),
+			flattenList([
+				"	U	".split()
+			])
 		]
-		letters = [item for sublist in letterList for item in sublist]
-		nameList = [
-			"	A	B		C	D		Edh	E		Eacute	F		G				H		".split(),
-			"	I	Iacute	J	K		L	M		N		Eng		O				Oacute	".split(),
-			"	P	R		S	Sacute	T	Thorn	U		Uacute	Udoubleacute	V		".split(),
-			"	W	Y		Z	Zacute														".split()
+		specialLetters = [
+			flattenList([
+				"	Edh	Eacute	Iacute	Eng		Oacute	".split(),
+				"	Esh	Thorn	Uacute	Zhed			".split()
+			]),
+			flattenList([
+				"	Udoubleacute	".split()
+			])
 		]
-		names = [item for sublist in nameList for item in sublist]
-		table = ""
-		table += "|Letter|Glyph|\n"
-		table += "|:-:|:-:|\n"
-		for i in range(len(letters if len(letters) <= len(names) else names)):
-			l = letters[i]
-			n = names[i]
-			letter = l + l.lower()
-			table += f"|{letter}|![{letter}]({os.path.join(s,"img",n)})|\n"
-		with open(os.path.join(s,"data.md"), "w", encoding="utf-8") as f:
-			f.write(table)
+		names = flattenList(baseLetters + flattenList(specialLetters))
+		liga = [
+			"languagesystem DFLT dflt;",
+			"languagesystem latn dflt;"
+		]
+		liga.append("feature liga {")
+		if True:
+			for b in baseLetters:
+				liga.append(f"\tsub {b.lower()} by {b};")
+			for x in range(len(specialLetters)):
+				x = len(specialLetters) - x - 1
+				for y in range(len(specialLetters[x])):
+					liga.append(f"\tsub {specialLettersBase[x][y]} {' '.join(['special' for i in range(x+1)])} by {specialLetters[x][y]};")
+		liga.append("} liga;")
+		liga = "\n".join(liga)
+		with open(os.path.join(s,"features.fea"),"w") as f:
+			f.write(liga)
+		for e in ["emphasis", ""]:
+			for n in names:
+				if n not in font:
+					print(n, "does not exist")
+				else:
+					lig_name = "_".join(filter(bool, [n, e]))
+					if e:
+						try:
+							lig = font.createChar(-1, lig_name)
+							n_glyph = font[n]
+							lig.clear()
+							lig.addReference(n, (1, 0, 0, 1, 0, 0))
+							if e:
+								e_glyph = font[e]
+								e_dx = (n_glyph.width - e_glyph.width) / 2
+								lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
+							lig.width = n_glyph.width
+							lig.build()
+						except:
+							print(f"Failed to build ligature <{lig_name}>")
+		font.mergeFeature(os.path.join(s,"features.fea"))
+		sideBearing = 75
+		glyphList = []
+		for glyph in font.glyphs():
+			if glyph.isWorthOutputting():
+				glyph.unlinkRef()
+				glyphList.append(glyph)
+		for glyph in glyphList:
+			width = glyph.width
+			glyph.left_side_bearing = sideBearing
+			glyph.right_side_bearing = sideBearing
+			glyph.width = int(width + (sideBearing * 2))
+		font.save(os.path.join(s,f"{s}-lig.sfd"))
+		font.generate(os.path.join(s,f"{s}.otf"))
 for i in [
 	"AbugidaR",
 	"AlphabetD"
