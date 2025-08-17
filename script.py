@@ -47,40 +47,40 @@ def genFont(s):
 		nonV = punctuation + consonants
 		lvn =	"E		I		O		U		D	N	S	T		Z	".split()
 		lvy =	"Eacute	Iacute	Oacute	Uacute	Edh	Eng	Esh	Thorn	Zhed".split()
-		liga = [
+		fea = [
 			"languagesystem DFLT dflt;",
 			"languagesystem latn dflt;"
 		]
-		liga.append("feature liga {")
+		fea.append("feature liga {")
 		if True:
 			for l in letters:
-				liga.append(f"\tsub {l.lower()} by {l};")
+				fea.append(f"\tsub {l.lower()} by {l};")
 			for l in range(len(punctuation)):
-				liga.append(f"\tsub {lvn[l]} special by {lvy[l]};")
+				fea.append(f"\tsub {lvn[l]} special by {lvy[l]};")
 			for p in punctuation:
 				for v in vowels + ["emphasis"]:
-					liga.append(f"\tsub {p} {v}' by X {v};")
+					fea.append(f"\tsub {p} {v}' by X {v};")
 			for non in nonV:
-				liga.append(f"\tsub start {non} by {non};")
+				fea.append(f"\tsub start {non} by {non};")
 			for v1 in vowels:
 				for v2 in vowels:
-					liga.append(f"\tsub {v1} {v2}' by X {v2};")
+					fea.append(f"\tsub {v1} {v2}' by X {v2};")
 			for c in consonants:
 				for v in vowels:
-					liga.append(f"\tsub {c} {v} by {'_'.join([c, v])};")
-					liga.append(f"\tsub {c} {v} emphasis by {'_'.join([c, v, 'emphasis'])};")
-				liga.append(f"\tsub {c} emphasis by {'_'.join([c, 'emphasis'])};")
+					fea.append(f"\tsub {c} {v} by {'_'.join([c, v])};")
+					fea.append(f"\tsub {c} {v} emphasis by {'_'.join([c, v, 'emphasis'])};")
+				fea.append(f"\tsub {c} emphasis by {'_'.join([c, 'emphasis'])};")
 			for p1 in punctuation:
 				for p2 in punctuation:
-					liga.append(f"\tsub {p1} {p2} by {p1};")
+					fea.append(f"\tsub {p1} {p2} by {p1};")
 			for p in punctuation:
-				liga.append(f"\tsub {p} space by {p};")
-				liga.append(f"\tsub space {p} by {p};")
-			liga.append(f"\tsub period period period by ellipsis;")
-		liga.append("} liga;")
-		liga = "\n".join(liga)
+				fea.append(f"\tsub {p} space by {p};")
+				fea.append(f"\tsub space {p} by {p};")
+			fea.append(f"\tsub period period period by ellipsis;")
+		fea.append("} liga;")
+		fea = "\n".join(fea)
 		with open(os.path.join(s,"features.fea"),"w") as f:
-			f.write(liga)
+			f.write(fea)
 		for e in ["emphasis", ""]:
 			for c in consonants:
 				if c not in font:
@@ -167,26 +167,39 @@ def genFont(s):
 			"	Emphasis	Special		Space	Stop	Comma	".split(),
 			"	Question	Ellipsis	Hyphen	Start			".split()
 		]))
-		liga = [
-			"languagesystem DFLT dflt;",
-			"languagesystem latn dflt;"
-		]
-		liga.append("feature liga {")
 		if True:
+			fea = [
+				"languagesystem DFLT dflt;",
+				"languagesystem latn dflt;"
+			]
+			fea.append("feature liga {")
 			for n in names:
-				liga.append(f"\tsub {n.lower()} by {n};")
+				fea.append(f"\tsub {n.lower()} by {n};")
 			for x in range(len(specialLetters)):
 				for i in ["Start",""]:
 					x = len(specialLetters) - x - 1
 					for y in range(len(specialLetters[x])):
-						liga.append(f"\tsub {' '.join(filter(bool,[i,specialLettersBase[x][y]]))} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
-					liga.append(f"\tsub {' '.join(sorted([i] + ['Stop' for f in range(3)]))} by Ellipsis;")
+						fea.append(f"\tsub {' '.join(filter(bool,[i,specialLettersBase[x][y]]))} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
+					fea.append(f"\tsub {' '.join(sorted([i] + ['Stop' for f in range(3)]))} by Ellipsis;")
 			for l in flattenList(sorted([names + punctuation])):
-				liga.append(f"\tsub Start {l} by {l};")
-		liga.append("} liga;")
-		liga = "\n".join(liga)
-		with open(os.path.join(s,"features.fea"),"w") as f:
-			f.write(liga)
+				fea.append(f"\tsub Start {l} by {l};")
+			fea.append("} liga;")
+			fea.append("feature vert {")
+			for n in names:
+				fea.append(f"\tsub {n} by {n}.solo;")
+			fea.append("} vert;")
+			fea.append("feature clig {")
+			for pre in names:
+				for post in names:
+					for n in names:
+						pass
+						#fea.append(f"\tsub {pre}.solo {n}.solo' {post}.solo by {n}.medi;")
+						#fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
+						#fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
+			fea.append("} clig;")
+			fea = "\n".join(fea)
+			with open(os.path.join(s,"features.fea"),"w") as f:
+				f.write(fea)
 		for e in ["Emphasis", ""]:
 			for n in names:
 				if n not in font:

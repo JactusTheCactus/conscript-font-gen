@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755406119
+ModificationTime: 1755461059
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -41,16 +41,18 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
+Lookup: 3 0 0 "Alternate Substitution in Latin lookup 0" { "Alternate Substitution in Latin lookup 0-1"  } ['    ' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033
 Encoding: Custom
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 14 6
+WinInfo: 28 14 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -60,7 +62,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 78 78
+BeginChars: 183 112
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -763,6 +765,312 @@ EndChar
 
 StartChar: udoubleacute
 Encoding: 77 369 77
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: A.solo
+Encoding: 78 -1 78
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: B.solo
+Encoding: 79 -1 79
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: C.solo
+Encoding: 80 -1 80
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: D.solo
+Encoding: 81 -1 81
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: E.solo
+Encoding: 82 -1 82
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Eacute.solo
+Encoding: 83 -1 83
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Edh.solo
+Encoding: 84 -1 84
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Eng.solo
+Encoding: 85 -1 85
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Esh.solo
+Encoding: 86 -1 86
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: F.solo
+Encoding: 87 -1 87
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: G.solo
+Encoding: 88 -1 88
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: H.solo
+Encoding: 89 -1 89
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: I.solo
+Encoding: 90 -1 90
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Iacute.solo
+Encoding: 91 -1 91
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: J.solo
+Encoding: 92 -1 92
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: K.solo
+Encoding: 93 -1 93
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: L.solo
+Encoding: 94 -1 94
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: M.solo
+Encoding: 95 -1 95
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: N.solo
+Encoding: 96 -1 96
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: O.solo
+Encoding: 97 -1 97
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Oacute.solo
+Encoding: 98 -1 98
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: P.solo
+Encoding: 99 -1 99
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: R.solo
+Encoding: 100 -1 100
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: S.solo
+Encoding: 101 -1 101
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: T.solo
+Encoding: 102 -1 102
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Thorn.solo
+Encoding: 103 -1 103
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: U.solo
+Encoding: 104 -1 104
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Uacute.solo
+Encoding: 105 -1 105
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Udoubleacute.solo
+Encoding: 106 -1 106
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: V.solo
+Encoding: 107 -1 107
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: W.solo
+Encoding: 108 -1 108
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Y.solo
+Encoding: 109 -1 109
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Z.solo
+Encoding: 110 -1 110
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: Zhed.solo
+Encoding: 111 -1 111
 Width: 1000
 Flags: HW
 LayerCount: 2

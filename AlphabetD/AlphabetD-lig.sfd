@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755407828
+ModificationTime: 1755461073
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -41,17 +41,21 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 1 0 0 "'liga' Standard Ligatures in Latin lookup 0" { "'liga' Standard Ligatures in Latin lookup 0 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 1" { "'liga' Standard Ligatures in Latin lookup 1 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 3 0 0 "Alternate Substitution in Latin lookup 0" { "Alternate Substitution in Latin lookup 0-1"  } ['    ' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'liga' Standard Ligatures in Latin lookup 1" { "'liga' Standard Ligatures in Latin lookup 1 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 2" { "'liga' Standard Ligatures in Latin lookup 2 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 3" { "'vert' Vertical Alternates in Latin lookup 3 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033
 Encoding: Custom
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
+WinInfo: 28 14 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -61,7 +65,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 112 112
+BeginChars: 217 146
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -91,7 +95,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start A
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" A.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start A
 EndChar
 
 StartChar: C
@@ -107,7 +112,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start C
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" C.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start C
 EndChar
 
 StartChar: E
@@ -123,7 +129,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start E
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" E.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start E
 EndChar
 
 StartChar: F
@@ -139,7 +146,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start F
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" F.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start F
 EndChar
 
 StartChar: H
@@ -155,7 +163,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start H
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" H.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start H
 EndChar
 
 StartChar: I
@@ -171,7 +180,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start I
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" I.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start I
 EndChar
 
 StartChar: K
@@ -187,7 +197,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start K
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" K.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start K
 EndChar
 
 StartChar: L
@@ -203,7 +214,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start L
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" L.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start L
 EndChar
 
 StartChar: M
@@ -219,7 +231,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start M
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" M.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start M
 EndChar
 
 StartChar: N
@@ -235,7 +248,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start N
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" N.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start N
 EndChar
 
 StartChar: O
@@ -251,7 +265,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start O
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" O.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start O
 EndChar
 
 StartChar: P
@@ -267,7 +282,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start P
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" P.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start P
 EndChar
 
 StartChar: R
@@ -283,7 +299,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start R
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" R.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start R
 EndChar
 
 StartChar: S
@@ -299,7 +316,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start S
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" S.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start S
 EndChar
 
 StartChar: T
@@ -315,7 +333,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start T
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" T.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start T
 EndChar
 
 StartChar: U
@@ -331,7 +350,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" U.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U
 EndChar
 
 StartChar: W
@@ -347,7 +367,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start W
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" W.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start W
 EndChar
 
 StartChar: Y
@@ -363,7 +384,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Y
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Y.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Y
 EndChar
 
 StartChar: B
@@ -379,7 +401,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start B
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" B.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start B
 EndChar
 
 StartChar: D
@@ -395,7 +418,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start D
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" D.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start D
 EndChar
 
 StartChar: G
@@ -411,7 +435,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start G
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" G.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start G
 EndChar
 
 StartChar: J
@@ -427,7 +452,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start J
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" J.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start J
 EndChar
 
 StartChar: V
@@ -443,7 +469,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start V
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" V.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start V
 EndChar
 
 StartChar: Z
@@ -459,7 +486,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Z
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Z.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Z
 EndChar
 
 StartChar: Eacute
@@ -475,9 +503,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Eacute
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start E Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" E Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Eacute.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Eacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start E Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" E Special
 EndChar
 
 StartChar: Iacute
@@ -493,9 +522,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Iacute
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start I Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" I Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Iacute.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Iacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start I Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" I Special
 EndChar
 
 StartChar: Oacute
@@ -511,9 +541,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Oacute
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start O Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" O Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Oacute.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Oacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start O Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" O Special
 EndChar
 
 StartChar: Uacute
@@ -529,9 +560,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Uacute
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" U Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Uacute.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Uacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" U Special
 EndChar
 
 StartChar: Edh
@@ -547,9 +579,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Edh
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start D Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" D Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Edh.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Edh
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start D Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" D Special
 EndChar
 
 StartChar: Thorn
@@ -565,9 +598,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Thorn
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start T Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" T Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Thorn.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Thorn
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start T Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" T Special
 EndChar
 
 StartChar: Eng
@@ -583,9 +617,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Eng
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start N Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" N Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Eng.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Eng
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start N Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" N Special
 EndChar
 
 StartChar: Esh
@@ -601,9 +636,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Esh
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start S Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" S Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Esh.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Esh
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start S Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" S Special
 EndChar
 
 StartChar: Zhed
@@ -619,9 +655,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Zhed
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Z Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Z Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Zhed.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Zhed
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Z Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Z Special
 EndChar
 
 StartChar: Udoubleacute
@@ -637,9 +674,10 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Udoubleacute
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" U Special Special
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U Special Special
+Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Udoubleacute.solo
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Udoubleacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" U Special Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U Special Special
 EndChar
 
 StartChar: Emphasis
@@ -655,7 +693,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Emphasis
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Emphasis
 EndChar
 
 StartChar: a
@@ -665,7 +703,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" A
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" A
 EndChar
 
 StartChar: b
@@ -675,7 +713,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" B
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" B
 EndChar
 
 StartChar: c
@@ -685,7 +723,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" C
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" C
 EndChar
 
 StartChar: d
@@ -695,7 +733,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" D
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" D
 EndChar
 
 StartChar: e
@@ -705,7 +743,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" E
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" E
 EndChar
 
 StartChar: f
@@ -715,7 +753,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" F
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" F
 EndChar
 
 StartChar: g
@@ -725,7 +763,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" G
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" G
 EndChar
 
 StartChar: h
@@ -735,7 +773,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" H
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" H
 EndChar
 
 StartChar: i
@@ -745,7 +783,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" I
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" I
 EndChar
 
 StartChar: j
@@ -755,7 +793,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" J
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" J
 EndChar
 
 StartChar: k
@@ -765,7 +803,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" K
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" K
 EndChar
 
 StartChar: l
@@ -775,7 +813,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" L
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" L
 EndChar
 
 StartChar: m
@@ -785,7 +823,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" M
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" M
 EndChar
 
 StartChar: n
@@ -795,7 +833,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" N
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" N
 EndChar
 
 StartChar: o
@@ -805,7 +843,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" O
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" O
 EndChar
 
 StartChar: p
@@ -815,7 +853,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" P
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" P
 EndChar
 
 StartChar: r
@@ -825,7 +863,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" R
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" R
 EndChar
 
 StartChar: s
@@ -835,7 +873,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" S
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" S
 EndChar
 
 StartChar: t
@@ -845,7 +883,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" T
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" T
 EndChar
 
 StartChar: u
@@ -855,7 +893,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" U
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" U
 EndChar
 
 StartChar: v
@@ -865,7 +903,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" V
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" V
 EndChar
 
 StartChar: w
@@ -875,7 +913,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" W
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" W
 EndChar
 
 StartChar: y
@@ -885,7 +923,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Y
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Y
 EndChar
 
 StartChar: z
@@ -895,7 +933,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Z
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Z
 EndChar
 
 StartChar: Special
@@ -911,7 +949,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Special
 EndChar
 
 StartChar: Space
@@ -927,7 +965,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Space
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Space
 EndChar
 
 StartChar: Stop
@@ -943,7 +981,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Stop
 EndChar
 
 StartChar: Comma
@@ -959,7 +997,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Comma
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Comma
 EndChar
 
 StartChar: Question
@@ -975,7 +1013,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Question
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Question
 EndChar
 
 StartChar: Ellipsis
@@ -991,11 +1029,11 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Ellipsis
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Stop Stop Stop
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop Stop Stop
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Stop Stop Stop
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Ellipsis
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Stop Stop Stop
 EndChar
 
 StartChar: Hyphen
@@ -1011,7 +1049,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Hyphen
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Hyphen
 EndChar
 
 StartChar: Start
@@ -1027,7 +1065,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Start
+Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Start
 EndChar
 
 StartChar: eacute
@@ -1043,7 +1081,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Eacute
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Eacute
 EndChar
 
 StartChar: iacute
@@ -1059,7 +1097,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Iacute
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Iacute
 EndChar
 
 StartChar: edh
@@ -1075,7 +1113,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Edh
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Edh
 EndChar
 
 StartChar: oacute
@@ -1091,7 +1129,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Oacute
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Oacute
 EndChar
 
 StartChar: uacute
@@ -1107,7 +1145,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Uacute
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Uacute
 EndChar
 
 StartChar: thorn
@@ -1123,7 +1161,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Thorn
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Thorn
 EndChar
 
 StartChar: eng
@@ -1139,7 +1177,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Eng
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Eng
 EndChar
 
 StartChar: esh
@@ -1155,7 +1193,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Esh
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Esh
 EndChar
 
 StartChar: zhed
@@ -1171,7 +1209,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Zhed
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Zhed
 EndChar
 
 StartChar: udoubleacute
@@ -1187,11 +1225,521 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Udoubleacute
+Substitution2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Udoubleacute
+EndChar
+
+StartChar: A.solo
+Encoding: 78 -1 78
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: B.solo
+Encoding: 79 -1 79
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: C.solo
+Encoding: 80 -1 80
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: D.solo
+Encoding: 81 -1 81
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: E.solo
+Encoding: 82 -1 82
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Eacute.solo
+Encoding: 83 -1 83
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Edh.solo
+Encoding: 84 -1 84
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Eng.solo
+Encoding: 85 -1 85
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Esh.solo
+Encoding: 86 -1 86
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: F.solo
+Encoding: 87 -1 87
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: G.solo
+Encoding: 88 -1 88
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: H.solo
+Encoding: 89 -1 89
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: I.solo
+Encoding: 90 -1 90
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Iacute.solo
+Encoding: 91 -1 91
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: J.solo
+Encoding: 92 -1 92
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: K.solo
+Encoding: 93 -1 93
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: L.solo
+Encoding: 94 -1 94
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: M.solo
+Encoding: 95 -1 95
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: N.solo
+Encoding: 96 -1 96
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: O.solo
+Encoding: 97 -1 97
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Oacute.solo
+Encoding: 98 -1 98
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: P.solo
+Encoding: 99 -1 99
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: R.solo
+Encoding: 100 -1 100
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: S.solo
+Encoding: 101 -1 101
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: T.solo
+Encoding: 102 -1 102
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Thorn.solo
+Encoding: 103 -1 103
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: U.solo
+Encoding: 104 -1 104
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Uacute.solo
+Encoding: 105 -1 105
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Udoubleacute.solo
+Encoding: 106 -1 106
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: V.solo
+Encoding: 107 -1 107
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: W.solo
+Encoding: 108 -1 108
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Y.solo
+Encoding: 109 -1 109
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Z.solo
+Encoding: 110 -1 110
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Zhed.solo
+Encoding: 111 -1 111
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
 EndChar
 
 StartChar: A_Emphasis
-Encoding: 78 -1 78
+Encoding: 183 -1 112
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1212,7 +1760,7 @@ EndSplineSet
 EndChar
 
 StartChar: B_Emphasis
-Encoding: 79 -1 79
+Encoding: 184 -1 113
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1233,7 +1781,7 @@ EndSplineSet
 EndChar
 
 StartChar: C_Emphasis
-Encoding: 80 -1 80
+Encoding: 185 -1 114
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1254,7 +1802,7 @@ EndSplineSet
 EndChar
 
 StartChar: D_Emphasis
-Encoding: 81 -1 81
+Encoding: 186 -1 115
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1275,7 +1823,7 @@ EndSplineSet
 EndChar
 
 StartChar: E_Emphasis
-Encoding: 82 -1 82
+Encoding: 187 -1 116
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1296,7 +1844,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eacute_Emphasis
-Encoding: 83 -1 83
+Encoding: 188 -1 117
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1317,7 +1865,7 @@ EndSplineSet
 EndChar
 
 StartChar: Edh_Emphasis
-Encoding: 84 -1 84
+Encoding: 189 -1 118
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1338,7 +1886,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eng_Emphasis
-Encoding: 85 -1 85
+Encoding: 190 -1 119
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1359,7 +1907,7 @@ EndSplineSet
 EndChar
 
 StartChar: Esh_Emphasis
-Encoding: 86 -1 86
+Encoding: 191 -1 120
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1380,7 +1928,7 @@ EndSplineSet
 EndChar
 
 StartChar: F_Emphasis
-Encoding: 87 -1 87
+Encoding: 192 -1 121
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1401,7 +1949,7 @@ EndSplineSet
 EndChar
 
 StartChar: G_Emphasis
-Encoding: 88 -1 88
+Encoding: 193 -1 122
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1422,7 +1970,7 @@ EndSplineSet
 EndChar
 
 StartChar: H_Emphasis
-Encoding: 89 -1 89
+Encoding: 194 -1 123
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1443,7 +1991,7 @@ EndSplineSet
 EndChar
 
 StartChar: I_Emphasis
-Encoding: 90 -1 90
+Encoding: 195 -1 124
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1464,7 +2012,7 @@ EndSplineSet
 EndChar
 
 StartChar: Iacute_Emphasis
-Encoding: 91 -1 91
+Encoding: 196 -1 125
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1485,7 +2033,7 @@ EndSplineSet
 EndChar
 
 StartChar: J_Emphasis
-Encoding: 92 -1 92
+Encoding: 197 -1 126
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1506,7 +2054,7 @@ EndSplineSet
 EndChar
 
 StartChar: K_Emphasis
-Encoding: 93 -1 93
+Encoding: 198 -1 127
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1527,7 +2075,7 @@ EndSplineSet
 EndChar
 
 StartChar: L_Emphasis
-Encoding: 94 -1 94
+Encoding: 199 -1 128
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1548,7 +2096,7 @@ EndSplineSet
 EndChar
 
 StartChar: M_Emphasis
-Encoding: 95 -1 95
+Encoding: 200 -1 129
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1569,7 +2117,7 @@ EndSplineSet
 EndChar
 
 StartChar: N_Emphasis
-Encoding: 96 -1 96
+Encoding: 201 -1 130
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1590,7 +2138,7 @@ EndSplineSet
 EndChar
 
 StartChar: O_Emphasis
-Encoding: 97 -1 97
+Encoding: 202 -1 131
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1611,7 +2159,7 @@ EndSplineSet
 EndChar
 
 StartChar: Oacute_Emphasis
-Encoding: 98 -1 98
+Encoding: 203 -1 132
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1632,7 +2180,7 @@ EndSplineSet
 EndChar
 
 StartChar: P_Emphasis
-Encoding: 99 -1 99
+Encoding: 204 -1 133
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1653,7 +2201,7 @@ EndSplineSet
 EndChar
 
 StartChar: R_Emphasis
-Encoding: 100 -1 100
+Encoding: 205 -1 134
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1674,7 +2222,7 @@ EndSplineSet
 EndChar
 
 StartChar: S_Emphasis
-Encoding: 101 -1 101
+Encoding: 206 -1 135
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1695,7 +2243,7 @@ EndSplineSet
 EndChar
 
 StartChar: T_Emphasis
-Encoding: 102 -1 102
+Encoding: 207 -1 136
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1716,7 +2264,7 @@ EndSplineSet
 EndChar
 
 StartChar: Thorn_Emphasis
-Encoding: 103 -1 103
+Encoding: 208 -1 137
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1737,7 +2285,7 @@ EndSplineSet
 EndChar
 
 StartChar: U_Emphasis
-Encoding: 104 -1 104
+Encoding: 209 -1 138
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1758,7 +2306,7 @@ EndSplineSet
 EndChar
 
 StartChar: Uacute_Emphasis
-Encoding: 105 -1 105
+Encoding: 210 -1 139
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1779,7 +2327,7 @@ EndSplineSet
 EndChar
 
 StartChar: Udoubleacute_Emphasis
-Encoding: 106 -1 106
+Encoding: 211 -1 140
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1800,7 +2348,7 @@ EndSplineSet
 EndChar
 
 StartChar: V_Emphasis
-Encoding: 107 -1 107
+Encoding: 212 -1 141
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1821,7 +2369,7 @@ EndSplineSet
 EndChar
 
 StartChar: W_Emphasis
-Encoding: 108 -1 108
+Encoding: 213 -1 142
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1842,7 +2390,7 @@ EndSplineSet
 EndChar
 
 StartChar: Y_Emphasis
-Encoding: 109 -1 109
+Encoding: 214 -1 143
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1863,7 +2411,7 @@ EndSplineSet
 EndChar
 
 StartChar: Z_Emphasis
-Encoding: 110 -1 110
+Encoding: 215 -1 144
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1884,7 +2432,7 @@ EndSplineSet
 EndChar
 
 StartChar: Zhed_Emphasis
-Encoding: 111 -1 111
+Encoding: 216 -1 145
 Width: 1000
 VWidth: 0
 Flags: HW
