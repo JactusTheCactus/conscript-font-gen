@@ -14,7 +14,7 @@ def exportGlyphs(folder: str):
 		g for g in font.glyphs()
 		if
 			g.isWorthOutputting()
-			and not re.match(r".*_Emphasis",g.glyphname)
+			and not re.match(r".*_Emphasis",g.glyphname, re.I)
 	]):
 		assert glyph is not None
 		name = glyph.glyphname
@@ -133,18 +133,18 @@ def genFont(s):
 		font.generate(os.path.join(s,"AbugidaR.otf"))
 	elif s == "AlphabetD":
 		font = fontforge.open(os.path.join(s,f"{s}-main.sfd"))
-		letters = flattenList([
+		letters = sorted(flattenList([
 			"	A	B	C	D	Ð	E	É	F	G	H	".split(),
 			"	I	Í	J	K	L	M	N	Ŋ	O	Ó	".split(),
 			"	P	R	S	Ś	T	Þ	U	Ú	Ű	V	".split(),
 			"	W	Y	Z	Ź							".split()
-		])
-		baseLetters = flattenList([
+		]))
+		baseLetters = sorted(flattenList([
 			"	A	B	C	D	E	F	G	H	I	J	".split(),
 			"	K	L	M	N	O	P	R	S	T	U	".split(),
 			"	V	W	Y	Z							".split()
-		])
-		specialLettersBase = [
+		]))
+		specialLettersBase = sorted([
 			flattenList([
 				"	D	E	I	N	O	".split(),
 				"	S	T	U	Z		".split()
@@ -152,8 +152,8 @@ def genFont(s):
 			flattenList([
 				"	U	".split()
 			])
-		]
-		specialLetters = [
+		])
+		specialLetters = sorted([
 			flattenList([
 				"	Edh	Eacute	Iacute	Eng		Oacute	".split(),
 				"	Esh	Thorn	Uacute	Zhed			".split()
@@ -161,20 +161,28 @@ def genFont(s):
 			flattenList([
 				"	Udoubleacute	".split()
 			])
-		]
-		names = flattenList(baseLetters + flattenList(specialLetters))
+		])
+		names = sorted(flattenList(baseLetters + specialLetters))
+		punctuation = sorted(flattenList([
+			"	Emphasis	Special		Space	Stop	Comma	".split(),
+			"	Question	Ellipsis	Hyphen	Start			".split()
+		]))
 		liga = [
 			"languagesystem DFLT dflt;",
 			"languagesystem latn dflt;"
 		]
 		liga.append("feature liga {")
 		if True:
-			for b in baseLetters:
-				liga.append(f"\tsub {b.lower()} by {b};")
+			for n in names:
+				liga.append(f"\tsub {n.lower()} by {n};")
 			for x in range(len(specialLetters)):
-				x = len(specialLetters) - x - 1
-				for y in range(len(specialLetters[x])):
-					liga.append(f"\tsub {specialLettersBase[x][y]} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
+				for i in ["Start",""]:
+					x = len(specialLetters) - x - 1
+					for y in range(len(specialLetters[x])):
+						liga.append(f"\tsub {' '.join(filter(bool,[i,specialLettersBase[x][y]]))} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
+					liga.append(f"\tsub {' '.join(sorted([i] + ['Stop' for f in range(3)]))} by Ellipsis;")
+			for l in flattenList(sorted([names + punctuation])):
+				liga.append(f"\tsub Start {l} by {l};")
 		liga.append("} liga;")
 		liga = "\n".join(liga)
 		with open(os.path.join(s,"features.fea"),"w") as f:
@@ -226,7 +234,7 @@ def genFont(s):
 		font.save(os.path.join(s,f"{s}-lig.sfd"))
 		font.generate(os.path.join(s,f"{s}.otf"))
 		for i in [g.glyphname for g in list(font.glyphs())]:
-			print(i)
+			pass#print(i)
 for i in [
 	"AbugidaR",
 	"AlphabetD"

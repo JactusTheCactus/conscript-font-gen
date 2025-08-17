@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755402739
+ModificationTime: 1755407828
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -61,7 +61,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 92 92
+BeginChars: 112 112
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -91,6 +91,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start A
 EndChar
 
 StartChar: C
@@ -106,6 +107,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start C
 EndChar
 
 StartChar: E
@@ -121,6 +123,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start E
 EndChar
 
 StartChar: F
@@ -136,6 +139,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start F
 EndChar
 
 StartChar: H
@@ -151,6 +155,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start H
 EndChar
 
 StartChar: I
@@ -166,6 +171,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start I
 EndChar
 
 StartChar: K
@@ -181,6 +187,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start K
 EndChar
 
 StartChar: L
@@ -196,6 +203,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start L
 EndChar
 
 StartChar: M
@@ -211,6 +219,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start M
 EndChar
 
 StartChar: N
@@ -226,6 +235,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start N
 EndChar
 
 StartChar: O
@@ -241,6 +251,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start O
 EndChar
 
 StartChar: P
@@ -256,6 +267,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start P
 EndChar
 
 StartChar: R
@@ -271,6 +283,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start R
 EndChar
 
 StartChar: S
@@ -286,6 +299,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start S
 EndChar
 
 StartChar: T
@@ -301,6 +315,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start T
 EndChar
 
 StartChar: U
@@ -316,6 +331,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U
 EndChar
 
 StartChar: W
@@ -331,6 +347,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start W
 EndChar
 
 StartChar: Y
@@ -346,6 +363,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Y
 EndChar
 
 StartChar: B
@@ -361,6 +379,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start B
 EndChar
 
 StartChar: D
@@ -376,6 +395,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start D
 EndChar
 
 StartChar: G
@@ -391,6 +411,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start G
 EndChar
 
 StartChar: J
@@ -406,6 +427,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start J
 EndChar
 
 StartChar: V
@@ -421,6 +443,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start V
 EndChar
 
 StartChar: Z
@@ -436,6 +459,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Z
 EndChar
 
 StartChar: Eacute
@@ -451,6 +475,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Eacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start E Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" E Special
 EndChar
 
@@ -467,6 +493,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Iacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start I Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" I Special
 EndChar
 
@@ -483,6 +511,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Oacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start O Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" O Special
 EndChar
 
@@ -499,6 +529,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Uacute
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" U Special
 EndChar
 
@@ -515,6 +547,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Edh
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start D Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" D Special
 EndChar
 
@@ -531,6 +565,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Thorn
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start T Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" T Special
 EndChar
 
@@ -547,6 +583,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Eng
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start N Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" N Special
 EndChar
 
@@ -563,6 +601,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Esh
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start S Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" S Special
 EndChar
 
@@ -579,6 +619,8 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Zhed
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Z Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Z Special
 EndChar
 
@@ -595,7 +637,9 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Udoubleacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" U Special Special
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start U Special Special
 EndChar
 
 StartChar: Emphasis
@@ -611,6 +655,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Emphasis
 EndChar
 
 StartChar: a
@@ -866,6 +911,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Special
 EndChar
 
 StartChar: Space
@@ -881,6 +927,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Space
 EndChar
 
 StartChar: Stop
@@ -896,6 +943,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop
 EndChar
 
 StartChar: Comma
@@ -911,6 +959,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Comma
 EndChar
 
 StartChar: Question
@@ -926,6 +975,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Question
 EndChar
 
 StartChar: Ellipsis
@@ -941,6 +991,11 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Ellipsis
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Stop Stop Stop
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Stop Stop Stop
 EndChar
 
 StartChar: Hyphen
@@ -956,6 +1011,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Hyphen
 EndChar
 
 StartChar: Start
@@ -971,217 +1027,170 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'liga' Standard Ligatures in Latin lookup 1 subtable" Start Start
+EndChar
+
+StartChar: eacute
+Encoding: 68 233 68
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Eacute
+EndChar
+
+StartChar: iacute
+Encoding: 69 237 69
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Iacute
+EndChar
+
+StartChar: edh
+Encoding: 70 240 70
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Edh
+EndChar
+
+StartChar: oacute
+Encoding: 71 243 71
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Oacute
+EndChar
+
+StartChar: uacute
+Encoding: 72 250 72
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Uacute
+EndChar
+
+StartChar: thorn
+Encoding: 73 254 73
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Thorn
+EndChar
+
+StartChar: eng
+Encoding: 74 331 74
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Eng
+EndChar
+
+StartChar: esh
+Encoding: 75 347 75
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Esh
+EndChar
+
+StartChar: zhed
+Encoding: 76 378 76
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Zhed
+EndChar
+
+StartChar: udoubleacute
+Encoding: 77 369 77
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+Substitution2: "'liga' Standard Ligatures in Latin lookup 0 subtable" Udoubleacute
 EndChar
 
 StartChar: A_Emphasis
-Encoding: 68 -1 68
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: B_Emphasis
-Encoding: 69 -1 69
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: C_Emphasis
-Encoding: 70 -1 70
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: D_Emphasis
-Encoding: 71 -1 71
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: E_Emphasis
-Encoding: 72 -1 72
-Width: 1000
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: F_Emphasis
-Encoding: 73 -1 73
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: G_Emphasis
-Encoding: 74 -1 74
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: H_Emphasis
-Encoding: 75 -1 75
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: I_Emphasis
-Encoding: 76 -1 76
-Width: 1000
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: J_Emphasis
-Encoding: 77 -1 77
-Width: 1000
-VWidth: 0
-Flags: HW
-LayerCount: 2
-Fore
-SplineSet
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-475 600 m 25
- 525 600 l 25
- 525 0 l 25
- 475 0 l 29
- 475 600 l 25
-EndSplineSet
-EndChar
-
-StartChar: K_Emphasis
 Encoding: 78 -1 78
 Width: 1000
 VWidth: 0
@@ -1202,7 +1211,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: L_Emphasis
+StartChar: B_Emphasis
 Encoding: 79 -1 79
 Width: 1000
 VWidth: 0
@@ -1223,7 +1232,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: M_Emphasis
+StartChar: C_Emphasis
 Encoding: 80 -1 80
 Width: 1000
 VWidth: 0
@@ -1244,7 +1253,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: N_Emphasis
+StartChar: D_Emphasis
 Encoding: 81 -1 81
 Width: 1000
 VWidth: 0
@@ -1265,9 +1274,10 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: O_Emphasis
+StartChar: E_Emphasis
 Encoding: 82 -1 82
 Width: 1000
+VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
@@ -1285,7 +1295,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: P_Emphasis
+StartChar: Eacute_Emphasis
 Encoding: 83 -1 83
 Width: 1000
 VWidth: 0
@@ -1306,7 +1316,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: R_Emphasis
+StartChar: Edh_Emphasis
 Encoding: 84 -1 84
 Width: 1000
 VWidth: 0
@@ -1327,7 +1337,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: S_Emphasis
+StartChar: Eng_Emphasis
 Encoding: 85 -1 85
 Width: 1000
 VWidth: 0
@@ -1348,9 +1358,10 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: T_Emphasis
+StartChar: Esh_Emphasis
 Encoding: 86 -1 86
 Width: 1000
+VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
@@ -1368,9 +1379,10 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: U_Emphasis
+StartChar: F_Emphasis
 Encoding: 87 -1 87
 Width: 1000
+VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
@@ -1388,7 +1400,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: V_Emphasis
+StartChar: G_Emphasis
 Encoding: 88 -1 88
 Width: 1000
 VWidth: 0
@@ -1409,7 +1421,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: W_Emphasis
+StartChar: H_Emphasis
 Encoding: 89 -1 89
 Width: 1000
 VWidth: 0
@@ -1430,7 +1442,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Y_Emphasis
+StartChar: I_Emphasis
 Encoding: 90 -1 90
 Width: 1000
 VWidth: 0
@@ -1451,9 +1463,430 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Z_Emphasis
+StartChar: Iacute_Emphasis
 Encoding: 91 -1 91
 Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: J_Emphasis
+Encoding: 92 -1 92
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: K_Emphasis
+Encoding: 93 -1 93
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: L_Emphasis
+Encoding: 94 -1 94
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: M_Emphasis
+Encoding: 95 -1 95
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: N_Emphasis
+Encoding: 96 -1 96
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: O_Emphasis
+Encoding: 97 -1 97
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Oacute_Emphasis
+Encoding: 98 -1 98
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: P_Emphasis
+Encoding: 99 -1 99
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: R_Emphasis
+Encoding: 100 -1 100
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: S_Emphasis
+Encoding: 101 -1 101
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: T_Emphasis
+Encoding: 102 -1 102
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Thorn_Emphasis
+Encoding: 103 -1 103
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: U_Emphasis
+Encoding: 104 -1 104
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Uacute_Emphasis
+Encoding: 105 -1 105
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Udoubleacute_Emphasis
+Encoding: 106 -1 106
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: V_Emphasis
+Encoding: 107 -1 107
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: W_Emphasis
+Encoding: 108 -1 108
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Y_Emphasis
+Encoding: 109 -1 109
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Z_Emphasis
+Encoding: 110 -1 110
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+EndSplineSet
+EndChar
+
+StartChar: Zhed_Emphasis
+Encoding: 111 -1 111
+Width: 1000
+VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore

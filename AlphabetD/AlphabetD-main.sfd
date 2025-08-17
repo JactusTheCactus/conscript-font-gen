@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755400955
+ModificationTime: 1755406119
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -60,7 +60,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 68 68
+BeginChars: 78 78
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -673,6 +673,96 @@ EndChar
 
 StartChar: Start
 Encoding: 67 94 67
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eacute
+Encoding: 68 233 68
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: iacute
+Encoding: 69 237 69
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: edh
+Encoding: 70 240 70
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: oacute
+Encoding: 71 243 71
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uacute
+Encoding: 72 250 72
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: thorn
+Encoding: 73 254 73
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eng
+Encoding: 74 331 74
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: esh
+Encoding: 75 347 75
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zhed
+Encoding: 76 378 76
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: udoubleacute
+Encoding: 77 369 77
 Width: 1000
 Flags: HW
 LayerCount: 2
