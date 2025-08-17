@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.31)  8 AUG 2025 20:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.16)  16 AUG 2025 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -166,9 +166,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 105.
+(babel)             (\language44). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 108.
+(babel)             (\language44). Reported on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
@@ -819,7 +819,7 @@ flt;mapping=tex-text;"
 flt;+smcp;mapping=tex-text;"
 
 
-Package fontspec Info: Font family 'abugidaR(0)' created for font 'abugidaR'
+Package fontspec Info: Font family 'AbugidaR(0)' created for font 'AbugidaR'
 (fontspec)             with options [Path = ../AbugidaR/,Extension =
 (fontspec)             .otf,UprightFont = *].
 (fontspec)              
@@ -827,15 +827,28 @@ Package fontspec Info: Font family 'abugidaR(0)' created for font 'abugidaR'
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[../AbugidaR/abugidaR.otf]/OT:script=latn;language=d
+(fontspec)             <->"[../AbugidaR/AbugidaR.otf]/OT:script=latn;language=d
 flt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'AlphabetD(0)' created for font 'AlphabetD'
+(fontspec)             with options [Path = ../AlphabetD/,Extension =
+(fontspec)             .otf,UprightFont = *].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[../AlphabetD/AlphabetD.otf]/OT:script=latn;language
+=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 \glswrite=\write3
 \glo@main@file=\write4
 \openout4 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 14.
+Package glossaries Info: Writing glossary file main.glo on input line 19.
  (./glossary.tex)) (./title.tex) (./commands.tex
 \l_tmpc_int=\count352
 ) (./variables.tex)) (./main.aux)
@@ -970,21 +983,8 @@ LaTeX Font Warning: Font shape `OML/segoe-ui(0)/m/n' undefined
 ) [6] (./AbugidaR/vowels.tex) [7] (./AbugidaR/grammar.tex)) [8]
 (./AlphabetD/main.tex [9] [10] (./AlphabetD/consonants.tex) [11]
 (./AlphabetD/vowels.tex) [12] (./AlphabetD/grammar.tex) [13]
-(./AlphabetD/plan.tex
-<< \item {Vertical line through characters} \nested {itemize}{}{ \item {Like th
-e \emph {\'Sirorekh\=a} in \emph {Devan\=agar\=i}} } \item {Consonants \& Vowel
-s are styled differently} \item {All characters have \emph {4} variations} \nes
-ted {itemize}{}{ \item {Like \emph {Arabic}} \nested {enumerate}{\textit }{ \it
-em {Solo} \item {Initial} \item {Medial} \item {Final} } } >>
-<< \item {Like \emph {Arabic}} \nested {enumerate}{\textit }{ \item {Solo} \ite
-m {Initial} \item {Medial} \item {Final} } >>
-<< \item {Vertical line through characters} \nested {itemize}{}{ \item {Like th
-e \emph {\'Sirorekh\=a} in \emph {Devan\=agar\=i}} } \item {Consonants \& Vowel
-s are styled differently} \item {All characters have \emph {4} variations} \nes
-ted {itemize}{}{ \item {Like \emph {Arabic}} \nested {enumerate}{\textit }{ \it
-em {Solo} \item {Initial} \item {Medial} \item {Final} } } >>
-<<>>
-))) (./foot.tex [14] [15] (./feedback.tex) [16] (./main.gls
+(./AlphabetD/plan.tex))) (./foot.tex [14] [15] (./feedback.tex) [16]
+(./main.gls
 Overfull \hbox (19.96811pt too wide) in paragraph at lines 30--30
 []\TU/segoe-ui(0)/m/n/20.74 A writing system where Consonants & Vow-
  []
@@ -1000,11 +1000,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24180 strings out of 474878
- 478983 string characters out of 5762516
+ 24194 strings out of 474878
+ 479364 string characters out of 5762516
  1925627 words of memory out of 5000000
- 45756 multiletter control sequences out of 15000+600000
- 570623 words of font info for 123 fonts, out of 8000000 for 9000
+ 45766 multiletter control sequences out of 15000+600000
+ 570647 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,13n,99p,2373b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
