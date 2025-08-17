@@ -7,9 +7,8 @@ def exportGlyphs(folder: str):
 		print(f";-;\t{FONT_FILE} does not exist")
 		return
 	OUTPUT_DIR = os.path.join(folder,"exports")
-	SVG_DIR = os.path.join(OUTPUT_DIR,"svg")
-	shutil.rmtree(SVG_DIR, ignore_errors=True)
-	os.makedirs(SVG_DIR)
+	shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
+	os.makedirs(OUTPUT_DIR)
 	font = fontforge.open(FONT_FILE)
 	for glyph in filter(bool, [
 		g for g in font.glyphs()
@@ -34,7 +33,7 @@ def exportGlyphs(folder: str):
 					nameList[n] = f"_{nameList[n][1:].capitalize()}"
 			name = "_".join(nameList).replace("__","_")
 			#print(name)
-			glyph.export(os.path.join(OUTPUT_DIR, "svg", f"{name}.svg"))
+			glyph.export(os.path.join(OUTPUT_DIR, f"{name}.svg"))
 def genFont(s):
 	if not s:
 		print(f"genFont():\n\tInvalid Input <{s}>")
