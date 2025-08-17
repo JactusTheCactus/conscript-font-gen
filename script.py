@@ -13,7 +13,9 @@ def exportGlyphs(folder: str):
 	font = fontforge.open(FONT_FILE)
 	for glyph in filter(bool, [
 		g for g in font.glyphs()
-		if g.isWorthOutputting()
+		if
+			g.isWorthOutputting()
+			and not re.match(r".*_Emphasis",g.glyphname)
 	]):
 		assert glyph is not None
 		name = glyph.glyphname
@@ -173,100 +175,62 @@ def genFont(s):
 			for x in range(len(specialLetters)):
 				x = len(specialLetters) - x - 1
 				for y in range(len(specialLetters[x])):
-					liga.append(f"\tsub {specialLettersBase[x][y]} {' '.join(['special' for i in range(x+1)])} by {specialLetters[x][y]};")
+					liga.append(f"\tsub {specialLettersBase[x][y]} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
 		liga.append("} liga;")
 		liga = "\n".join(liga)
 		with open(os.path.join(s,"features.fea"),"w") as f:
 			f.write(liga)
-		for e in ["emphasis", ""]:
+		for e in ["Emphasis", ""]:
 			for n in names:
 				if n not in font:
 					print(n, "does not exist")
 				else:
-					lig_name = "_".join(filter(bool, [n, e]))
-					if e:
-						try:
-							lig = font.createChar(-1, lig_name)
-							n_glyph = font[n]
-							lig.clear()
-							lig.addReference(n, (1, 0, 0, 1, 0, 0))
-							if e:
-								e_glyph = font[e]
-								e_dx = (n_glyph.width - e_glyph.width) / 2
-								lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
-							lig.width = n_glyph.width
-							lig.build()
-						except:
-							print(f"Failed to build ligature <{lig_name}>")
+					if any([
+						len(n) > 1,
+						n == n.capitalize()
+					]):
+						lig_name = "_".join(filter(bool, [n, e]))
+						if e:
+							try:
+								lig = font.createChar(-1, lig_name)
+								n_glyph = font[n]
+								lig.clear()
+								lig.addReference(n, (1, 0, 0, 1, 0, 0))
+								if e:
+									e_glyph = font[e]
+									e_dx = (n_glyph.width - e_glyph.width) / 2
+									lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
+								lig.width = n_glyph.width
+								lig.build()
+							except:
+								print(f"Failed to build ligature <{lig_name}>")
 		font.mergeFeature(os.path.join(s,"features.fea"))
 		sideBearing = 75
 		glyphList = []
 		for glyph in font.glyphs():
-			if glyph.isWorthOutputting():
+			if all([
+				glyph.isWorthOutputting(),
+				any([
+					len(glyph.glyphname) > 1,
+					glyph.glyphname == glyph.glyphname.capitalize()
+				])
+			]):
 				glyph.unlinkRef()
 				glyphList.append(glyph)
 		for glyph in glyphList:
 			width = glyph.width
-			glyph.left_side_bearing = sideBearing
-			glyph.right_side_bearing = sideBearing
-			glyph.width = int(width + (sideBearing * 2))
+			#glyph.left_side_bearing = sideBearing
+			#glyph.right_side_bearing = sideBearing
+			glyph.width = int(
+				width #+ (sideBearing * 2)
+			)
 		font.save(os.path.join(s,f"{s}-lig.sfd"))
 		font.generate(os.path.join(s,f"{s}.otf"))
+		for i in [g.glyphname for g in list(font.glyphs())]:
+			print(i)
 for i in [
 	"AbugidaR",
 	"AlphabetD"
 ]:
 	genFont(i)
 	exportGlyphs(i)
-with open("readmeData.json", "r") as f:
-	data = json.load(f)
-readme = "# Planned Conscripts"
-tree = ""
-tree += "\n```mermaid"
-tree += "\nmindmap"
-tree += "\n\t((Conscripts))"
-for con in data:
-	tree += f"\n\t\t{con['type']}_{con['direction'][0]}"
-	for branch in ["state","type","direction","variants","notes"]:
-		try:
-			tree += f"\n\t\t\t((\"`{branch.capitalize()}`\"))"
-			if type(con[branch]) == list:
-				for i in range(len(con[branch])):
-					con[branch][i] = re.sub(r"\n+", "\n" + "\t" * 4, con[branch][i])
-				con[branch] = "`\")\n\t\t\t\t(\"`".join(con[branch])
-			tree += f"\n\t\t\t\t(\"`{con[branch]}`\")"
-		except:
-			continue
-tree += "\n```"
-readme += tree
-list = re.sub(r"```mermaid\nmindmap\n([\s\S]*)\n```", r"\1", tree)
-replacements = {
-	"replace": [
-		r"^\t",
-		r"\(\(?\"?`?([\s\S]*?)`?\"?\)?\)",
-		r"^\t(\b.*\b)",
-		r"(\t+)([A-Za-z*])"
-	],
-	"with": [
-		r"",
-		r"- \1",
-		r"\t- \1",
-		r"\1\t- \2"
-	],
-	"flags":[
-		re.MULTILINE,
-		re.NOFLAG,
-		re.MULTILINE,
-		re.MULTILINE
-	]
-}
-for i in range(len(replacements["replace"])):
-	list = re.sub(
-		replacements["replace"][i],
-		replacements["with"][i],
-		list,
-		flags=replacements["flags"][i] if replacements["flags"][i] else re.NOFLAG
-	)
-readme += list
-with open("README.md", "w") as f:
-	f.write(readme)
