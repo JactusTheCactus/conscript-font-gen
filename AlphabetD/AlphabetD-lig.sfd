@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755461073
+ModificationTime: 1755463982
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -45,17 +45,34 @@ Lookup: 3 0 0 "Alternate Substitution in Latin lookup 0" { "Alternate Substituti
 Lookup: 1 0 0 "'liga' Standard Ligatures in Latin lookup 1" { "'liga' Standard Ligatures in Latin lookup 1 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 2" { "'liga' Standard Ligatures in Latin lookup 2 subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 3" { "'vert' Vertical Alternates in Latin lookup 3 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 4" { "'vert' Vertical Alternates in Latin lookup 4 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 5" { "'vert' Vertical Alternates in Latin lookup 5 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 6" { "'vert' Vertical Alternates in Latin lookup 6 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 7" { "'vert' Vertical Alternates in Latin lookup 7 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 8" { "'vert' Vertical Alternates in Latin lookup 8 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 9" { "'vert' Vertical Alternates in Latin lookup 9 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 10" { "'vert' Vertical Alternates in Latin lookup 10 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 11" { "'vert' Vertical Alternates in Latin lookup 11 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 12" { "'vert' Vertical Alternates in Latin lookup 12 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 13" { "'vert' Vertical Alternates in Latin lookup 13 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 14" { "'vert' Vertical Alternates in Latin lookup 14 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 15" { "'vert' Vertical Alternates in Latin lookup 15 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 16" { "'vert' Vertical Alternates in Latin lookup 16 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 17" { "'vert' Vertical Alternates in Latin lookup 17 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 18" { "'vert' Vertical Alternates in Latin lookup 18 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 19" { "'vert' Vertical Alternates in Latin lookup 19 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vert' Vertical Alternates in Latin lookup 20" { "'vert' Vertical Alternates in Latin lookup 20 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates in Latin lookup 21" { "'vert' Vertical Alternates in Latin lookup 21 subtable"  } ['vert' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033
 Encoding: Custom
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 28 14 6
+WinInfo: 42 14 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -65,7 +82,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 217 146
+BeginChars: 147 147
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -129,7 +146,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" E.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 7 subtable" E.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start E
 EndChar
 
@@ -146,7 +163,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" F.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 7 subtable" F.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start F
 EndChar
 
@@ -163,7 +180,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" H.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 7 subtable" H.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start H
 EndChar
 
@@ -180,7 +197,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" I.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 9 subtable" I.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start I
 EndChar
 
@@ -197,7 +214,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" K.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 9 subtable" K.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start K
 EndChar
 
@@ -214,7 +231,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" L.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 9 subtable" L.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start L
 EndChar
 
@@ -231,7 +248,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" M.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 9 subtable" M.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start M
 EndChar
 
@@ -248,7 +265,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" N.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 11 subtable" N.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start N
 EndChar
 
@@ -265,7 +282,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" O.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 13 subtable" O.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start O
 EndChar
 
@@ -282,7 +299,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" P.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 13 subtable" P.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start P
 EndChar
 
@@ -299,7 +316,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" R.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 13 subtable" R.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start R
 EndChar
 
@@ -316,7 +333,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" S.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 15 subtable" S.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start S
 EndChar
 
@@ -333,7 +350,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" T.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 17 subtable" T.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start T
 EndChar
 
@@ -350,7 +367,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" U.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 19 subtable" U.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U
 EndChar
 
@@ -367,7 +384,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" W.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 19 subtable" W.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start W
 EndChar
 
@@ -384,7 +401,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Y.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 19 subtable" Y.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Y
 EndChar
 
@@ -418,7 +435,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" D.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 5 subtable" D.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start D
 EndChar
 
@@ -435,7 +452,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" G.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 7 subtable" G.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start G
 EndChar
 
@@ -452,7 +469,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" J.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 9 subtable" J.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start J
 EndChar
 
@@ -469,7 +486,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" V.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 19 subtable" V.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start V
 EndChar
 
@@ -486,7 +503,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Z.solo
+Substitution2: "'vert' Vertical Alternates in Latin lookup 21 subtable" Z.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Z
 EndChar
 
@@ -503,7 +520,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Eacute.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Eacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start E Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" E Special
@@ -522,7 +538,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Iacute.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Iacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start I Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" I Special
@@ -541,7 +556,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Oacute.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Oacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start O Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" O Special
@@ -560,7 +574,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Uacute.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Uacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" U Special
@@ -579,7 +592,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Edh.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Edh
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start D Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" D Special
@@ -598,7 +610,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Thorn.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Thorn
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start T Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" T Special
@@ -617,7 +628,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Eng.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Eng
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start N Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" N Special
@@ -636,7 +646,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Esh.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Esh
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start S Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" S Special
@@ -655,7 +664,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Zhed.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Zhed
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Z Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Z Special
@@ -674,7 +682,6 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 3 subtable" Udoubleacute.solo
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start Udoubleacute
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" U Special Special
 Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" Start U Special Special
@@ -1235,6 +1242,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1250,6 +1267,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1265,6 +1292,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1280,6 +1317,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1295,6 +1342,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1310,12 +1367,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 6 subtable" E Special
 EndChar
 
 StartChar: Edh.solo
@@ -1325,12 +1393,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 4 subtable" D Special
 EndChar
 
 StartChar: Eng.solo
@@ -1340,12 +1419,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 10 subtable" N Special
 EndChar
 
 StartChar: Esh.solo
@@ -1355,12 +1445,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 14 subtable" S Special
 EndChar
 
 StartChar: F.solo
@@ -1370,6 +1471,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1385,6 +1496,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1400,6 +1521,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1415,6 +1546,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1430,12 +1571,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 8 subtable" I Special
 EndChar
 
 StartChar: J.solo
@@ -1445,6 +1597,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1460,6 +1622,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1475,6 +1647,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1490,6 +1672,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1505,6 +1697,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1520,6 +1722,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1535,12 +1747,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 12 subtable" O Special
 EndChar
 
 StartChar: P.solo
@@ -1550,6 +1773,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1565,6 +1798,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1580,6 +1823,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1595,6 +1848,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1610,12 +1873,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 16 subtable" T Special
 EndChar
 
 StartChar: U.solo
@@ -1625,6 +1899,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1640,12 +1924,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 18 subtable" U Special
 EndChar
 
 StartChar: Udoubleacute.solo
@@ -1655,12 +1950,23 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 18 subtable" U Special Special
 EndChar
 
 StartChar: V.solo
@@ -1670,6 +1976,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1685,6 +2001,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1700,6 +2026,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1715,6 +2051,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
@@ -1730,16 +2076,52 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
+683.299804688 400 m 25
+ 841.599609375 400 l 25
+ 841.599609375 200 l 25
+ 683.299804688 200 l 29
+ 683.299804688 400 l 25
+158.299804688 400 m 25
+ 316.599609375 400 l 25
+ 316.599609375 200 l 25
+ 158.299804688 200 l 25
+ 158.299804688 400 l 25
 475 600 m 25
  525 600 l 25
  525 0 l 25
  475 0 l 29
  475 600 l 25
 EndSplineSet
+Ligature2: "'vert' Vertical Alternates in Latin lookup 20 subtable" Z Special
+EndChar
+
+StartChar: _.solo
+Encoding: 112 -1 112
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+683.3 400 m 25
+ 841.6 400 l 25
+ 841.6 200 l 25
+ 683.3 200 l 29
+ 683.3 400 l 25
+158.3 400 m 25
+ 316.6 400 l 25
+ 316.6 200 l 25
+ 158.3 200 l 25
+ 158.3 400 l 25
+EndSplineSet
 EndChar
 
 StartChar: A_Emphasis
-Encoding: 183 -1 112
+Encoding: 113 -1 113
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1760,7 +2142,7 @@ EndSplineSet
 EndChar
 
 StartChar: B_Emphasis
-Encoding: 184 -1 113
+Encoding: 114 -1 114
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1781,7 +2163,7 @@ EndSplineSet
 EndChar
 
 StartChar: C_Emphasis
-Encoding: 185 -1 114
+Encoding: 115 -1 115
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1802,7 +2184,7 @@ EndSplineSet
 EndChar
 
 StartChar: D_Emphasis
-Encoding: 186 -1 115
+Encoding: 116 -1 116
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1823,7 +2205,7 @@ EndSplineSet
 EndChar
 
 StartChar: E_Emphasis
-Encoding: 187 -1 116
+Encoding: 117 -1 117
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1844,7 +2226,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eacute_Emphasis
-Encoding: 188 -1 117
+Encoding: 118 -1 118
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1865,7 +2247,7 @@ EndSplineSet
 EndChar
 
 StartChar: Edh_Emphasis
-Encoding: 189 -1 118
+Encoding: 119 -1 119
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1886,7 +2268,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eng_Emphasis
-Encoding: 190 -1 119
+Encoding: 120 -1 120
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1907,7 +2289,7 @@ EndSplineSet
 EndChar
 
 StartChar: Esh_Emphasis
-Encoding: 191 -1 120
+Encoding: 121 -1 121
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1928,7 +2310,7 @@ EndSplineSet
 EndChar
 
 StartChar: F_Emphasis
-Encoding: 192 -1 121
+Encoding: 122 -1 122
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1949,7 +2331,7 @@ EndSplineSet
 EndChar
 
 StartChar: G_Emphasis
-Encoding: 193 -1 122
+Encoding: 123 -1 123
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1970,7 +2352,7 @@ EndSplineSet
 EndChar
 
 StartChar: H_Emphasis
-Encoding: 194 -1 123
+Encoding: 124 -1 124
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1991,7 +2373,7 @@ EndSplineSet
 EndChar
 
 StartChar: I_Emphasis
-Encoding: 195 -1 124
+Encoding: 125 -1 125
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2012,7 +2394,7 @@ EndSplineSet
 EndChar
 
 StartChar: Iacute_Emphasis
-Encoding: 196 -1 125
+Encoding: 126 -1 126
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2033,7 +2415,7 @@ EndSplineSet
 EndChar
 
 StartChar: J_Emphasis
-Encoding: 197 -1 126
+Encoding: 127 -1 127
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2054,7 +2436,7 @@ EndSplineSet
 EndChar
 
 StartChar: K_Emphasis
-Encoding: 198 -1 127
+Encoding: 128 -1 128
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2075,7 +2457,7 @@ EndSplineSet
 EndChar
 
 StartChar: L_Emphasis
-Encoding: 199 -1 128
+Encoding: 129 -1 129
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2096,7 +2478,7 @@ EndSplineSet
 EndChar
 
 StartChar: M_Emphasis
-Encoding: 200 -1 129
+Encoding: 130 -1 130
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2117,7 +2499,7 @@ EndSplineSet
 EndChar
 
 StartChar: N_Emphasis
-Encoding: 201 -1 130
+Encoding: 131 -1 131
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2138,7 +2520,7 @@ EndSplineSet
 EndChar
 
 StartChar: O_Emphasis
-Encoding: 202 -1 131
+Encoding: 132 -1 132
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2159,7 +2541,7 @@ EndSplineSet
 EndChar
 
 StartChar: Oacute_Emphasis
-Encoding: 203 -1 132
+Encoding: 133 -1 133
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2180,7 +2562,7 @@ EndSplineSet
 EndChar
 
 StartChar: P_Emphasis
-Encoding: 204 -1 133
+Encoding: 134 -1 134
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2201,7 +2583,7 @@ EndSplineSet
 EndChar
 
 StartChar: R_Emphasis
-Encoding: 205 -1 134
+Encoding: 135 -1 135
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2222,7 +2604,7 @@ EndSplineSet
 EndChar
 
 StartChar: S_Emphasis
-Encoding: 206 -1 135
+Encoding: 136 -1 136
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2243,7 +2625,7 @@ EndSplineSet
 EndChar
 
 StartChar: T_Emphasis
-Encoding: 207 -1 136
+Encoding: 137 -1 137
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2264,7 +2646,7 @@ EndSplineSet
 EndChar
 
 StartChar: Thorn_Emphasis
-Encoding: 208 -1 137
+Encoding: 138 -1 138
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2285,7 +2667,7 @@ EndSplineSet
 EndChar
 
 StartChar: U_Emphasis
-Encoding: 209 -1 138
+Encoding: 139 -1 139
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2306,7 +2688,7 @@ EndSplineSet
 EndChar
 
 StartChar: Uacute_Emphasis
-Encoding: 210 -1 139
+Encoding: 140 -1 140
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2327,7 +2709,7 @@ EndSplineSet
 EndChar
 
 StartChar: Udoubleacute_Emphasis
-Encoding: 211 -1 140
+Encoding: 141 -1 141
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2348,7 +2730,7 @@ EndSplineSet
 EndChar
 
 StartChar: V_Emphasis
-Encoding: 212 -1 141
+Encoding: 142 -1 142
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2369,7 +2751,7 @@ EndSplineSet
 EndChar
 
 StartChar: W_Emphasis
-Encoding: 213 -1 142
+Encoding: 143 -1 143
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2390,7 +2772,7 @@ EndSplineSet
 EndChar
 
 StartChar: Y_Emphasis
-Encoding: 214 -1 143
+Encoding: 144 -1 144
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2411,7 +2793,7 @@ EndSplineSet
 EndChar
 
 StartChar: Z_Emphasis
-Encoding: 215 -1 144
+Encoding: 145 -1 145
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2432,7 +2814,7 @@ EndSplineSet
 EndChar
 
 StartChar: Zhed_Emphasis
-Encoding: 216 -1 145
+Encoding: 146 -1 146
 Width: 1000
 VWidth: 0
 Flags: HW

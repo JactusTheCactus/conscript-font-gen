@@ -24,6 +24,11 @@
 		Verdana;
 	writing-mode:
 		vertical-lr;
+	font-feature-settings:
+		"vert"
+		1;
+	text-orientation:
+		upright;
 }
 
 body {

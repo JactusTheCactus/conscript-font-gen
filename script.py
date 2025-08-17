@@ -185,18 +185,92 @@ def genFont(s):
 				fea.append(f"\tsub Start {l} by {l};")
 			fea.append("} liga;")
 			fea.append("feature vert {")
-			for n in names:
-				fea.append(f"\tsub {n} by {n}.solo;")
+			listIn = [
+				"A",
+				"B",
+				"C",
+				"D Special",
+				"D",
+				"E Special",
+				"E",
+				"F",
+				"G",
+				"H",
+				"I Special",
+				"I",
+				"J",
+				"K",
+				"L",
+				"M",
+				"N Special",
+				"N",
+				"O Special",
+				"O",
+				"P",
+				"R",
+				"S Special",
+				"S",
+				"T Special",
+				"T",
+				"U Special Special",
+				"U Special",
+				"U",
+				"V",
+				"W",
+				"Y",
+				"Z Special",
+				"Z"
+			]
+			listOut = [
+				"A",
+				"B",
+				"C",
+				"Edh",
+				"D",
+				"Eacute",
+				"E",
+				"F",
+				"G",
+				"H",
+				"Iacute",
+				"I",
+				"J",
+				"K",
+				"L",
+				"M",
+				"Eng",
+				"N",
+				"Oacute",
+				"O",
+				"P",
+				"R",
+				"Esh",
+				"S",
+				"Thorn",
+				"T",
+				"Udoubleacute",
+				"Uacute",
+				"U",
+				"V",
+				"W",
+				"Y",
+				"Zhed",
+				"Z"
+			]
+			for i in range(len(listIn)):
+				fea.append(f"\tsub {listIn[i]} by {listOut[i]}.solo;")
 			fea.append("} vert;")
-			fea.append("feature clig {")
+			"""
+			fea.append("feature calt {")
 			for pre in names:
 				for post in names:
 					for n in names:
 						pass
-						#fea.append(f"\tsub {pre}.solo {n}.solo' {post}.solo by {n}.medi;")
-						#fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
-						#fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
-			fea.append("} clig;")
+						fea.append(f"\tsub {pre}.solo {n}.solo' {post}.solo by {n}.medi;")
+						fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
+						fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
+			fea.append("} calt;")
+			"""
 			fea = "\n".join(fea)
 			with open(os.path.join(s,"features.fea"),"w") as f:
 				f.write(fea)
