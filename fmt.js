@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		.forEach(el => {
 			el.innerHTML = el.innerHTML
 				.split('<br>')
-				.map(line => `^${line}`)
-				.map(line => line.replace(/\^ /, " "))
+				.map(line => line.replace(/ /, " "))
 				.join('<br>');
 		});
 });

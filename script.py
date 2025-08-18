@@ -1,6 +1,4 @@
-import fontforge, json, re, os, shutil
-from contextlib import redirect_stdout, redirect_stderr
-from wurlitzer import sys_pipes
+import fontforge, re, os, shutil
 def flattenList(inputList):
 	return [item for sublist in inputList for item in sublist]
 def exportGlyphs(folder: str):
@@ -19,9 +17,10 @@ def exportGlyphs(folder: str):
 	font = fontforge.open(FONT_FILE)
 	for glyph in filter(bool, [
 		g for g in font.glyphs()
-		if
-			g.isWorthOutputting()
-			and not re.match(r".*_Emphasis",g.glyphname, re.I)
+		if all([
+			g.isWorthOutputting(),
+			not re.match(r".*_Emphasis",g.glyphname, re.I)
+		])
 	]):
 		assert glyph is not None
 		name = glyph.glyphname
@@ -52,7 +51,6 @@ def genFont(s):
 		vowels = "A E Eacute I Iacute O Oacute U Uacute".split()
 		punctuation = "period comma space hyphen question ellipsis start special emphasis".split()
 		letters = consonants + vowels
-		nonC = punctuation + vowels
 		nonV = punctuation + consonants
 		lvn =	"E		I		O		U		D	N	S	T		Z	".split()
 		lvy =	"Eacute	Iacute	Oacute	Uacute	Edh	Eng	Esh	Thorn	Zhed".split()
@@ -148,174 +146,51 @@ def genFont(s):
 			"	P	R	S	Ś	T	Þ	U	Ú	Ű	V	".split(),
 			"	W	Y	Z	Ź							".split()
 		]))
-		baseLetters = sorted(flattenList([
-			"	A	B	C	D	E	F	G	H	I	J	".split(),
-			"	K	L	M	N	O	P	R	S	T	U	".split(),
-			"	V	W	Y	Z							".split()
-		]))
-		specialLettersBase = sorted([
-			flattenList([
-				"	D	E	I	N	O	".split(),
-				"	S	T	U	Z		".split()
-			]),
-			flattenList([
-				"	U	".split()
-			])
-		])
-		specialLetters = sorted([
-			flattenList([
-				"	Edh	Eacute	Iacute	Eng		Oacute	".split(),
-				"	Esh	Thorn	Uacute	Zhed			".split()
-			]),
-			flattenList([
-				"	Udoubleacute	".split()
-			])
-		])
-		names = sorted(flattenList(baseLetters + specialLetters))
 		punctuation = sorted(flattenList([
-			"	Emphasis	Special		Space	Stop	Comma	".split(),
-			"	Question	Ellipsis	Hyphen	Start			".split()
+			"	Special		Space		Stop	Comma	".split(),
+			"	Question	Ellipsis	Hyphen			".split()
 		]))
-		if True:
+		letterList = flattenList([
+				"	A		B				C		Edh		D		".split(),
+				"	Eacute	E				F		G		H		".split(),
+				"	Iacute	I				J		K		L		".split(),
+				"	M		Eng				N		Oacute	O		".split(),
+				"	P		R				Esh		S		Thorn	".split(),
+				"	T		Udoubleacute	Uacute	U		V		".split(),
+				"	W		Y				Zhed	Z				".split()
+			])
+		with open(os.path.join(s,"features.fea"),"w") as f:
 			fea = [
 				"languagesystem DFLT dflt;",
-				"languagesystem latn dflt;"
+				"languagesystem latn dflt;",
+				f"@letters = [ {' '.join(letterList)} ];",
+				f"@lettersLC = [ {' '.join(map(lambda x: x.lower(), letterList))} ];",
+				f"@letters.solo = [ {' '.join(map(lambda x: f'{x}.solo', letterList))} ];",
+				f"@letters.medi = [ {' '.join(map(lambda x: f'{x}.medi', letterList))} ];",
+				f"@letters.init = [ {' '.join(map(lambda x: f'{x}.init', letterList))} ];",
+				f"@letters.fina = [ {' '.join(map(lambda x: f'{x}.fina', letterList))} ];",
+				f"@letters.all = [ {' '.join([
+					"@letters.solo",
+					"@letters.medi",
+					"@letters.init",
+					"@letters.fina"
+				])} ];"
 			]
-			fea.append("feature liga {")
-			for n in names:
-				fea.append(f"\tsub {n.lower()} by {n};")
-			for x in range(len(specialLetters)):
-				for i in ["Start",""]:
-					x = len(specialLetters) - x - 1
-					for y in range(len(specialLetters[x])):
-						fea.append(f"\tsub {' '.join(filter(bool,[i,specialLettersBase[x][y]]))} {' '.join(['Special' for i in range(x+1)])} by {specialLetters[x][y]};")
-					fea.append(f"\tsub {' '.join(sorted([i] + ['Stop' for f in range(3)]))} by Ellipsis;")
-			for l in flattenList(sorted([names + punctuation])):
-				fea.append(f"\tsub Start {l} by {l};")
-			fea.append("} liga;")
 			fea.append("feature vert {")
-			listIn = [
-				"A",
-				"B",
-				"C",
-				"D Special",
-				"D",
-				"E Special",
-				"E",
-				"F",
-				"G",
-				"H",
-				"I Special",
-				"I",
-				"J",
-				"K",
-				"L",
-				"M",
-				"N Special",
-				"N",
-				"O Special",
-				"O",
-				"P",
-				"R",
-				"S Special",
-				"S",
-				"T Special",
-				"T",
-				"U Special Special",
-				"U Special",
-				"U",
-				"V",
-				"W",
-				"Y",
-				"Z Special",
-				"Z"
-			]
-			listOut = [
-				"A",
-				"B",
-				"C",
-				"Edh",
-				"D",
-				"Eacute",
-				"E",
-				"F",
-				"G",
-				"H",
-				"Iacute",
-				"I",
-				"J",
-				"K",
-				"L",
-				"M",
-				"Eng",
-				"N",
-				"Oacute",
-				"O",
-				"P",
-				"R",
-				"Esh",
-				"S",
-				"Thorn",
-				"T",
-				"Udoubleacute",
-				"Uacute",
-				"U",
-				"V",
-				"W",
-				"Y",
-				"Zhed",
-				"Z"
-			]
-			for i in range(len(listIn)):
-				fea.append(f"\tsub {listIn[i]} by {listOut[i]}.solo;")
+			fea.append(f"\tsub @lettersLC by @letters;")
+			for i in range(len('U'.split())):
+				fea.append(f"\tsub {'U'.split()[i]} Special Special by {'Udoubleacute'.split()[i]}.solo;")
+			for i in range(len('D E I N O S T U Z'.split())):
+				fea.append(f"\tsub {'D E I N O S T U Z'.split()[i]} Special by {'Edh Eacute Iacute Eng Oacute Esh Thorn Uacute Zhed'.split()[i]}.solo;")
+			for i in 'A B C D E F G H I J K L M N O P R S T U V W Y Z'.split():
+				fea.append(f"\tsub {i} by {i}.solo;")
+			fea.append(f"\tsub @letters.all @letters.solo' @letters.all by @letters.medi;")
+			fea.append(f"\tsub @letters.solo' @letters.all by @letters.init;")
+			fea.append(f"\tsub @letters.all @letters.solo' by @letters.fina;")
+			fea.append(f"\tsub Stop Stop Stop by Ellipsis;")
 			fea.append("} vert;")
-			fea.append("feature calt {")
-			for pre in names:
-				for post in names:
-					for n in names:
-						fea.append(f"\tsub {pre}.solo {n}.solo' {post}.solo by {n}.medi;")
-						#fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
-						#fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
-			fea.append("} calt;")
 			fea = "\n".join(fea)
-			with open(os.path.join(s,"features.fea"),"w") as f:
-				f.write(fea)
-		for e in ["Emphasis", ""]:
-			for n in names:
-				if n not in font:
-					print(n, "does not exist")
-				else:
-					if any([
-						len(n) > 1,
-						n == n.capitalize()
-					]):
-						lig_name = "_".join(filter(bool, [n, e]))
-						if e:
-							try:
-								lig = font.createChar(-1, lig_name)
-								n_glyph = font[n]
-								lig.clear()
-								lig.addReference(n, (1, 0, 0, 1, 0, 0))
-								if e:
-									e_glyph = font[e]
-									e_dx = (n_glyph.width - e_glyph.width) / 2
-									lig.addReference(e, (1, 0, 0, 1, e_dx, 0))
-								lig.width = n_glyph.width
-								lig.build()
-							except:
-								print(f"Failed to build ligature <{lig_name}>")
-		with open(os.path.join(s,"output.log"), "w") as f:
-			with redirect_stderr(f), sys_pipes():
-				font.mergeFeature(os.path.join(s,"features.fea"))
-		with open(os.path.join(s,"output.log"), "r") as f:
-			output = f.read()
-		with open(os.path.join(s,"output.fmt.log"), "w") as f:
-			f.write(re.sub(
-				r"Reference to a non-existent glyph name on line \d+ of (?:AlphabetD|AbugidaR)/features.fea: (.+)\nNo substitution specified on line \d+ of (?:AlphabetD|AbugidaR)/features.fea",
-				r"\1",
-				output
-			))
-		sideBearing = 75
+			f.write(fea)
 		glyphList = []
 		for glyph in font.glyphs():
 			if all([
@@ -327,10 +202,9 @@ def genFont(s):
 			]):
 				glyph.unlinkRef()
 				glyphList.append(glyph)
+		font.mergeFeature(os.path.join(s,f"features.fea"))
 		font.save(os.path.join(s,f"{s}-lig.sfd"))
 		font.generate(os.path.join(s,f"{s}.otf"))
-		for i in [g.glyphname for g in list(font.glyphs())]:
-			pass#print(i)
 for i in [
 	"AbugidaR",
 	"AlphabetD"
