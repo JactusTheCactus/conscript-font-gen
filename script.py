@@ -1,5 +1,6 @@
 import fontforge, json, re, os, shutil
-from contextlib import redirect_stdout
+from contextlib import redirect_stdout, redirect_stderr
+from wurlitzer import sys_pipes
 def flattenList(inputList):
 	return [item for sublist in inputList for item in sublist]
 def exportGlyphs(folder: str):
@@ -11,9 +12,7 @@ def exportGlyphs(folder: str):
 	shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
 	os.makedirs(OUTPUT_DIR)
 	if folder == "AlphabetD":
-		for i in [
-			"Solo"
-		]:
+		for i in "Solo Init Medi Fina".split():
 			path = os.path.join(OUTPUT_DIR, i)
 			shutil.rmtree(path, ignore_errors=True)
 			os.makedirs(path)
@@ -306,9 +305,16 @@ def genFont(s):
 							except:
 								print(f"Failed to build ligature <{lig_name}>")
 		with open(os.path.join(s,"output.log"), "w") as f:
-			with redirect_stdout(f):
+			with redirect_stderr(f), sys_pipes():
 				font.mergeFeature(os.path.join(s,"features.fea"))
-				print("TEST")
+		with open(os.path.join(s,"output.log"), "r") as f:
+			output = f.read()
+		with open(os.path.join(s,"output.fmt.log"), "w") as f:
+			f.write(re.sub(
+				r"Reference to a non-existent glyph name on line \d+ of (?:AlphabetD|AbugidaR)/features.fea: (.+)\nNo substitution specified on line \d+ of (?:AlphabetD|AbugidaR)/features.fea",
+				r"\1",
+				output
+			))
 		sideBearing = 75
 		glyphList = []
 		for glyph in font.glyphs():

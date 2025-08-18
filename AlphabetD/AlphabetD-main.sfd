@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755462320
+ModificationTime: 1755495456
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -61,7 +61,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 113 113
+BeginChars: 216 116
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -1092,6 +1092,59 @@ SplineSet
 158.3 400 m 25
  316.6 400 l 25
  316.6 200 l 25
+ 158.3 200 l 25
+ 158.3 400 l 25
+EndSplineSet
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: _.init
+Encoding: 113 -1 113
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+525 400 m 25
+ 841.6 400 l 25
+ 841.6 200 l 25
+ 525 200 l 25
+ 525 400 l 25
+EndSplineSet
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: _.medi
+Encoding: 114 -1 114
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+525 400 m 29
+ 841.6 400 l 25
+ 841.6 200 l 25
+ 525 200 l 25
+ 525 400 l 29
+158.3 400 m 25
+ 475 400 l 25
+ 475 200 l 25
+ 158.3 200 l 25
+ 158.3 400 l 25
+EndSplineSet
+Refer: 0 95 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: _.fina
+Encoding: 115 -1 115
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+158.3 400 m 25
+ 475 400 l 25
+ 475 200 l 25
  158.3 200 l 25
  158.3 400 l 25
 EndSplineSet

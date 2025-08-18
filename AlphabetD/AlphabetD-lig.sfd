@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755494370
+ModificationTime: 1755495620
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -61,7 +61,7 @@ Grid
  1200 790 l 1024
 EndSplineSet
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 147 147
+BeginChars: 250 150
 
 StartChar: _BASE
 Encoding: 24 95 0
@@ -1964,8 +1964,73 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: A_Emphasis
+StartChar: _.init
 Encoding: 113 -1 113
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+525 400 m 25
+ 841.6 400 l 25
+ 841.6 200 l 25
+ 525 200 l 25
+ 525 400 l 25
+EndSplineSet
+EndChar
+
+StartChar: _.medi
+Encoding: 114 -1 114
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+525 400 m 29
+ 841.6 400 l 25
+ 841.6 200 l 25
+ 525 200 l 25
+ 525 400 l 29
+158.3 400 m 25
+ 475 400 l 25
+ 475 200 l 25
+ 158.3 200 l 25
+ 158.3 400 l 25
+EndSplineSet
+EndChar
+
+StartChar: _.fina
+Encoding: 115 -1 115
+Width: 1000
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+475 600 m 25
+ 525 600 l 25
+ 525 0 l 25
+ 475 0 l 29
+ 475 600 l 25
+158.3 400 m 25
+ 475 400 l 25
+ 475 200 l 25
+ 158.3 200 l 25
+ 158.3 400 l 25
+EndSplineSet
+EndChar
+
+StartChar: A_Emphasis
+Encoding: 216 -1 116
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -1986,7 +2051,7 @@ EndSplineSet
 EndChar
 
 StartChar: B_Emphasis
-Encoding: 114 -1 114
+Encoding: 217 -1 117
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2007,7 +2072,7 @@ EndSplineSet
 EndChar
 
 StartChar: C_Emphasis
-Encoding: 115 -1 115
+Encoding: 218 -1 118
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2028,7 +2093,7 @@ EndSplineSet
 EndChar
 
 StartChar: D_Emphasis
-Encoding: 116 -1 116
+Encoding: 219 -1 119
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2049,7 +2114,7 @@ EndSplineSet
 EndChar
 
 StartChar: E_Emphasis
-Encoding: 117 -1 117
+Encoding: 220 -1 120
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2070,7 +2135,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eacute_Emphasis
-Encoding: 118 -1 118
+Encoding: 221 -1 121
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2091,7 +2156,7 @@ EndSplineSet
 EndChar
 
 StartChar: Edh_Emphasis
-Encoding: 119 -1 119
+Encoding: 222 -1 122
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2112,7 +2177,7 @@ EndSplineSet
 EndChar
 
 StartChar: Eng_Emphasis
-Encoding: 120 -1 120
+Encoding: 223 -1 123
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2133,7 +2198,7 @@ EndSplineSet
 EndChar
 
 StartChar: Esh_Emphasis
-Encoding: 121 -1 121
+Encoding: 224 -1 124
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2154,7 +2219,7 @@ EndSplineSet
 EndChar
 
 StartChar: F_Emphasis
-Encoding: 122 -1 122
+Encoding: 225 -1 125
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2175,7 +2240,7 @@ EndSplineSet
 EndChar
 
 StartChar: G_Emphasis
-Encoding: 123 -1 123
+Encoding: 226 -1 126
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2196,7 +2261,7 @@ EndSplineSet
 EndChar
 
 StartChar: H_Emphasis
-Encoding: 124 -1 124
+Encoding: 227 -1 127
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2217,7 +2282,7 @@ EndSplineSet
 EndChar
 
 StartChar: I_Emphasis
-Encoding: 125 -1 125
+Encoding: 228 -1 128
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2238,7 +2303,7 @@ EndSplineSet
 EndChar
 
 StartChar: Iacute_Emphasis
-Encoding: 126 -1 126
+Encoding: 229 -1 129
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2259,7 +2324,7 @@ EndSplineSet
 EndChar
 
 StartChar: J_Emphasis
-Encoding: 127 -1 127
+Encoding: 230 -1 130
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2280,7 +2345,7 @@ EndSplineSet
 EndChar
 
 StartChar: K_Emphasis
-Encoding: 128 -1 128
+Encoding: 231 -1 131
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2301,7 +2366,7 @@ EndSplineSet
 EndChar
 
 StartChar: L_Emphasis
-Encoding: 129 -1 129
+Encoding: 232 -1 132
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2322,7 +2387,7 @@ EndSplineSet
 EndChar
 
 StartChar: M_Emphasis
-Encoding: 130 -1 130
+Encoding: 233 -1 133
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2343,7 +2408,7 @@ EndSplineSet
 EndChar
 
 StartChar: N_Emphasis
-Encoding: 131 -1 131
+Encoding: 234 -1 134
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2364,7 +2429,7 @@ EndSplineSet
 EndChar
 
 StartChar: O_Emphasis
-Encoding: 132 -1 132
+Encoding: 235 -1 135
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2385,7 +2450,7 @@ EndSplineSet
 EndChar
 
 StartChar: Oacute_Emphasis
-Encoding: 133 -1 133
+Encoding: 236 -1 136
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2406,7 +2471,7 @@ EndSplineSet
 EndChar
 
 StartChar: P_Emphasis
-Encoding: 134 -1 134
+Encoding: 237 -1 137
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2427,7 +2492,7 @@ EndSplineSet
 EndChar
 
 StartChar: R_Emphasis
-Encoding: 135 -1 135
+Encoding: 238 -1 138
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2448,7 +2513,7 @@ EndSplineSet
 EndChar
 
 StartChar: S_Emphasis
-Encoding: 136 -1 136
+Encoding: 239 -1 139
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2469,7 +2534,7 @@ EndSplineSet
 EndChar
 
 StartChar: T_Emphasis
-Encoding: 137 -1 137
+Encoding: 240 -1 140
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2490,7 +2555,7 @@ EndSplineSet
 EndChar
 
 StartChar: Thorn_Emphasis
-Encoding: 138 -1 138
+Encoding: 241 -1 141
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2511,7 +2576,7 @@ EndSplineSet
 EndChar
 
 StartChar: U_Emphasis
-Encoding: 139 -1 139
+Encoding: 242 -1 142
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2532,7 +2597,7 @@ EndSplineSet
 EndChar
 
 StartChar: Uacute_Emphasis
-Encoding: 140 -1 140
+Encoding: 243 -1 143
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2553,7 +2618,7 @@ EndSplineSet
 EndChar
 
 StartChar: Udoubleacute_Emphasis
-Encoding: 141 -1 141
+Encoding: 244 -1 144
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2574,7 +2639,7 @@ EndSplineSet
 EndChar
 
 StartChar: V_Emphasis
-Encoding: 142 -1 142
+Encoding: 245 -1 145
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2595,7 +2660,7 @@ EndSplineSet
 EndChar
 
 StartChar: W_Emphasis
-Encoding: 143 -1 143
+Encoding: 246 -1 146
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2616,7 +2681,7 @@ EndSplineSet
 EndChar
 
 StartChar: Y_Emphasis
-Encoding: 144 -1 144
+Encoding: 247 -1 147
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2637,7 +2702,7 @@ EndSplineSet
 EndChar
 
 StartChar: Z_Emphasis
-Encoding: 145 -1 145
+Encoding: 248 -1 148
 Width: 1000
 VWidth: 0
 Flags: HW
@@ -2658,7 +2723,7 @@ EndSplineSet
 EndChar
 
 StartChar: Zhed_Emphasis
-Encoding: 146 -1 146
+Encoding: 249 -1 149
 Width: 1000
 VWidth: 0
 Flags: HW
