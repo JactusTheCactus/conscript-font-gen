@@ -1,4 +1,5 @@
 import fontforge, json, re, os, shutil
+from contextlib import redirect_stdout
 def flattenList(inputList):
 	return [item for sublist in inputList for item in sublist]
 def exportGlyphs(folder: str):
@@ -9,6 +10,13 @@ def exportGlyphs(folder: str):
 	OUTPUT_DIR = os.path.join(folder,"exports")
 	shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
 	os.makedirs(OUTPUT_DIR)
+	if folder == "AlphabetD":
+		for i in [
+			"Solo"
+		]:
+			path = os.path.join(OUTPUT_DIR, i)
+			shutil.rmtree(path, ignore_errors=True)
+			os.makedirs(path)
 	font = fontforge.open(FONT_FILE)
 	for glyph in filter(bool, [
 		g for g in font.glyphs()
@@ -32,8 +40,10 @@ def exportGlyphs(folder: str):
 				except:
 					nameList[n] = f"_{nameList[n][1:].capitalize()}"
 			name = "_".join(nameList).replace("__","_")
-			#print(name)
-			glyph.export(os.path.join(OUTPUT_DIR, f"{name}.svg"))
+			nameSplit = name.split(".")
+			name = "".join(nameSplit[:1]) if nameSplit[1:] else name
+			OUTPUT = re.sub(r"[/\\]\.",".",os.path.join(OUTPUT_DIR, *map(lambda x: x.capitalize(), nameSplit[1:]), f"{name}.svg"))
+			glyph.export(OUTPUT)
 def genFont(s):
 	if not s:
 		print(f"genFont():\n\tInvalid Input <{s}>")
@@ -260,17 +270,14 @@ def genFont(s):
 			for i in range(len(listIn)):
 				fea.append(f"\tsub {listIn[i]} by {listOut[i]}.solo;")
 			fea.append("} vert;")
-			"""
 			fea.append("feature calt {")
 			for pre in names:
 				for post in names:
 					for n in names:
-						pass
 						fea.append(f"\tsub {pre}.solo {n}.solo' {post}.solo by {n}.medi;")
-						fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
-						fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
+						#fea.append(f"\tsub {pre}.solo {n}.solo' by {n}.init;")
+						#fea.append(f"\tsub {n}.solo' {post}.solo by {n}.fina;")
 			fea.append("} calt;")
-			"""
 			fea = "\n".join(fea)
 			with open(os.path.join(s,"features.fea"),"w") as f:
 				f.write(fea)
@@ -298,7 +305,10 @@ def genFont(s):
 								lig.build()
 							except:
 								print(f"Failed to build ligature <{lig_name}>")
-		font.mergeFeature(os.path.join(s,"features.fea"))
+		with open(os.path.join(s,"output.log"), "w") as f:
+			with redirect_stdout(f):
+				font.mergeFeature(os.path.join(s,"features.fea"))
+				print("TEST")
 		sideBearing = 75
 		glyphList = []
 		for glyph in font.glyphs():
@@ -311,13 +321,6 @@ def genFont(s):
 			]):
 				glyph.unlinkRef()
 				glyphList.append(glyph)
-		for glyph in glyphList:
-			width = glyph.width
-			#glyph.left_side_bearing = sideBearing
-			#glyph.right_side_bearing = sideBearing
-			glyph.width = int(
-				width #+ (sideBearing * 2)
-			)
 		font.save(os.path.join(s,f"{s}-lig.sfd"))
 		font.generate(os.path.join(s,f"{s}.otf"))
 		for i in [g.glyphname for g in list(font.glyphs())]:
