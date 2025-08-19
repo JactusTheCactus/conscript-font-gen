@@ -37,5 +37,6 @@ jobs:
         git pull
         git switch --force gh-pages
         git add docs/
+        git status
         git push
         git commit -m "Auto-commit" || echo "No changes to commit"
