@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.16)  19 AUG 2025 00:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.16)  19 AUG 2025 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,8 +851,7 @@ Package fontspec Info: Font family 'AlphabetD(0)' created for font 'AlphabetD'
 Package glossaries Info: Writing glossary file main.glo on input line 19.
  (./glossary.tex)) (./title.tex) (./commands.tex
 \l_tmpc_int=\count352
-) (./variables.tex))
-No file main.aux.
+) (./variables.tex)) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -866,7 +865,7 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
 .
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -940,9 +939,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 3.
 Package hyperref Info: Link coloring ON on input line 3.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 (./doc.tex (./head.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
@@ -957,47 +953,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 \openout3 = `main.xdy'.
 
-]
-No file main.toc.
+] (./main.toc
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-) (./body.tex [2]
-
-LaTeX Warning: Reference `AlD' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AbR' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AbR' on page 3 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AlD' on page 3 undefined on input line 4.
+)
+(./body.tex [2]
+Overfull \hbox (5.35168pt too wide) in paragraph at lines 3--5
+[][]\TU/segoe-ui(0)/m/n/20.74 sections 1[][] and [][]2[][]; [][]\TU/lmtt/m/n/20
+.74 <Abugida [Unnamed]>[][] \TU/segoe-ui(0)/m/n/20.74 & [][]\TU/lmtt/m/n/20.74 
+<Alphabet
+ []
 
 [3]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <29.86> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 7.
- (./AbugidaR/main.tex
-
-LaTeX Warning: Reference `AbR:G' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AbR:V' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AbR:C' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AbR:C' on page 4 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AbR:V' on page 4 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AbR:G' on page 4 undefined on input line 4.
-
-[4] [5] (./AbugidaR/consonants.tex
+ (./AbugidaR/main.tex [4] [5] (./AbugidaR/consonants.tex
 LaTeX Font Info:    Trying to load font information for OML+segoe-ui(0) on inpu
 t line 6.
 LaTeX Font Info:    No file OMLsegoe-ui(0).fd. on input line 6.
@@ -1007,58 +981,15 @@ LaTeX Font Warning: Font shape `OML/segoe-ui(0)/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead on input line 6.
 
 ) [6] (./AbugidaR/vowels.tex) [7] (./AbugidaR/grammar.tex)) [8]
-(./AlphabetD/main.tex
+(./AlphabetD/main.tex [9] [10] (./AlphabetD/consonants.tex) [11]
+(./AlphabetD/vowels.tex) [12] (./AlphabetD/grammar.tex) [13]
+(./AlphabetD/plan.tex))) (./foot.tex [14] [15] (./feedback.tex) [16]
+(./main.gls
+Overfull \hbox (19.96811pt too wide) in paragraph at lines 30--30
+[]\TU/segoe-ui(0)/m/n/20.74 A writing system where Consonants & Vow-
+ []
 
-LaTeX Warning: Reference `AlD:P' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AlD:G' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AlD:V' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AlD:C' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `AlD:C' on page 9 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AlD:V' on page 9 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AlD:G' on page 9 undefined on input line 4.
-
-
-LaTeX Warning: Reference `AlD:P' on page 9 undefined on input line 4.
-
-[9] [10] (./AlphabetD/consonants.tex) [11] (./AlphabetD/vowels.tex) [12]
-(./AlphabetD/grammar.tex) [13] (./AlphabetD/plan.tex))) (./foot.tex [14]
-
-LaTeX Warning: Reference `glossary' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `feedback' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `feedback' on page 15 undefined on input line 4.
-
-
-LaTeX Warning: Reference `glossary' on page 15 undefined on input line 4.
-
-[15] (./feedback.tex
-
-LaTeX Warning: Reference `AbR' on page 1 undefined on input line 1.
-
-
-LaTeX Warning: Reference `AbR' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Reference `AbR' on page 1 undefined on input line 3.
-
-) [16]
-No file main.gls.
-)) [17] (./main.aux)
+))) [17] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1067,19 +998,13 @@ L3 programming layer <2024-01-22>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 24155 strings out of 474878
- 478759 string characters out of 5762516
+ 24194 strings out of 474878
+ 479364 string characters out of 5762516
  1925627 words of memory out of 5000000
- 45743 multiletter control sequences out of 15000+600000
- 567531 words of font info for 112 fonts, out of 8000000 for 9000
+ 45766 multiletter control sequences out of 15000+600000
+ 570647 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,13n,99p,2373b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

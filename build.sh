@@ -112,7 +112,7 @@ phpBuild() {
 		errorColour "Failed to build $(errorHighlight Pages)!"
 		exit 1
 	else
-		cp */*.otf docs/
+		cp */*.otf docs/ > /dev/null 2>&1
 	fi
 }
 main() {
@@ -131,6 +131,4 @@ main() {
 	done
 	echo
 }
-#main -py
-main -php
-#main -latex
+main -php -py -latex
