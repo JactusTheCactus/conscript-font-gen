@@ -34,7 +34,7 @@ jobs:
 
     - name: Commit changes
       run: |
-        git add .
         git checkout gh-pages
+        git add .
         git commit -m "Auto-commit: update from script" || echo "No changes to commit"
         git push
