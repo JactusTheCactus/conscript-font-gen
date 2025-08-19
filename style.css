@@ -12,6 +12,11 @@
 		url("AlphabetD/AlphabetD.otf") format("opentype");
 }
 
+.Latin {
+	font-family:
+		Verdana;
+}
+
 .AbugidaR {
 	font-family:
 		AbugidaR,
@@ -29,6 +34,11 @@
 		1;
 	text-orientation:
 		upright;
+}
+
+.AbugidaR,
+.AlphabetD {
+	white-space: pre;
 }
 
 body {
@@ -91,12 +101,6 @@ iframe {
 		Arial;
 }
 
-.ipa::before,
-.ipa::after {
-	content:
-		"/";
-}
-
 th {
 	text-align:
 		center;
@@ -111,7 +115,7 @@ th {
 		center;
 }
 
-.table tr:nth-child(odd) td {
+.table tr td {
 	border-bottom:
 		5px solid #000;
 }
@@ -119,13 +123,4 @@ th {
 .table tr th {
 	border:
 		5px solid #000;
-}
-
-@media print {
-	.page-break {
-		break-before: page;
-		page-break-before: always;
-		border: 0;
-		height: 0;
-	}
 }
