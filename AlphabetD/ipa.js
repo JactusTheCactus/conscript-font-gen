@@ -164,6 +164,7 @@ const G = {
 					array.forEach(letter => {
 						const td = document.createElement("td")
 						td.className = "AlphabetD"
+						td.style = "white-space: pre;"
 						td.innerText = letter.script
 						tr.appendChild(td)
 					})
@@ -221,6 +222,7 @@ const G = {
 					array.forEach(letter => {
 						const td = document.createElement("td")
 						td.className = "AlphabetD"
+						td.style = "white-space: pre;"
 						td.innerText = letter.script
 						tr.appendChild(td)
 					})
@@ -278,6 +280,7 @@ const G = {
 					array.forEach(letter => {
 						const td = document.createElement("td")
 						td.className = "AlphabetD"
+						td.style = "white-space: pre;"
 						td.innerText = letter.script
 						tr.appendChild(td)
 					})
