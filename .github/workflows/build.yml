@@ -34,8 +34,8 @@ jobs:
 
     - name: Commit changes
       run: |
+        git pull
         git add docs/
-        git pull origin
         git switch --force gh-pages
         git commit -m "Auto-commit" || echo "No changes to commit"
         git push
