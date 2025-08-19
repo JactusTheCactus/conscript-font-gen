@@ -76,7 +76,6 @@ laTeXBuild() {
 		for EXT in "${POST[@]}"; do
 			rm -f *."$EXT" > /dev/null 2>&1
 		done
-		#code "main.pdf"
 	fi
 }
 pythonBuild() {
