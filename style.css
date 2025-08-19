@@ -20,15 +20,15 @@
 
 .AlphabetD {
 	font-family:
-		/*AlphabetD,*/
+		AlphabetD,
 		Verdana;
-	/*writing-mode:
+	writing-mode:
 		vertical-lr;
 	font-feature-settings:
 		"vert"
 		1;
 	text-orientation:
-		upright;*/
+		upright;
 }
 
 body {
