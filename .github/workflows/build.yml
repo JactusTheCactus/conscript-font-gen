@@ -34,14 +34,14 @@ jobs:
 
     - name: Commit changes
       run: |
+        echo ADD
+        git add docs/
+
         echo PULL
         git pull
 
         echo SWITCH
         git switch --force gh-pages
-        
-        echo ADD
-        git add docs/
         
         echo STATUS
         git status
