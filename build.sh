@@ -59,13 +59,16 @@ MakeGloss() {
 		return 1
 	fi
 }
+LaTeXBuilds() {
+	XeTeX && MakeGloss && XeTeX
+}
 laTeXBuild() {
 	echoColour "Building $(echoHighlight PDF)..."
 	cd LaTeX
 	for EXT in "${PRE[@]}"; do
 		rm -f *."$EXT" > /dev/null 2>&1
 	done
-	if ! XeTeX && MakeGloss && XeTeX; then
+	if ! LaTeXBuilds; then
 		errorColour "Something went wrong"
 		errorColour "Please check the $(errorHighlight Logs)!"
 		exit 1
@@ -128,6 +131,6 @@ main() {
 	done
 	echo
 }
-main -py
+#main -py
 main -php
-main -latex
+#main -latex
