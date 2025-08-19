@@ -2,8 +2,8 @@
 <html>
 
 <head>
-	<link href="../../style.css" rel="stylesheet">
-	<script src="../../fmt.js"></script>
+	<link href="../style.css" rel="stylesheet">
+	<script src="../fmt.js"></script>
 	<?php
 	$data = [
 		"C" => [
