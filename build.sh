@@ -108,6 +108,9 @@ phpBuild() {
 	if ! phpBuilds; then
 		errorColour "Failed to build $(errorHighlight Pages)!"
 		exit 1
+	else
+		cp AbugidaR/AbugidaR.otf docs/AbugidaR
+		cp AlphabetD/AlphabetD.otf docs/AlphabetD
 	fi
 }
 main() {
