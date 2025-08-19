@@ -131,4 +131,4 @@ main() {
 	done
 	echo
 }
-main -php -py -latex
+main -php #-py #-latex
