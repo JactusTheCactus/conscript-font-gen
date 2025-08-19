@@ -36,15 +36,15 @@ jobs:
       run: |
         echo ADD
         git add docs/
+        
+        echo STATUS
+        git status
 
         echo PULL
         git pull
 
         echo SWITCH
         git switch --force gh-pages
-        
-        echo STATUS
-        git status
         
         echo PUSH
         git push
