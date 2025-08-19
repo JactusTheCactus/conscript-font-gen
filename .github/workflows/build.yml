@@ -36,6 +36,6 @@ jobs:
       run: |
         git fetch origin
         git switch --force gh-pages
-        git add docs/*
+        git add docs
         git commit -m "Auto-commit" || echo "No changes to commit"
         git push
