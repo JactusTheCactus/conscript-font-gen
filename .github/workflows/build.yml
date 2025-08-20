@@ -41,12 +41,12 @@ jobs:
         PUSH=false
         COMMIT=true
         
-        if PULL; then
+        if $PULL; then
           echo "=========="
           echo "<PULL>"
           git pull
         fi
-        if SWITCH; then
+        if $SWITCH; then
           echo "=========="
           echo "<SWITCH>"
           git switch --force gh-pages
