@@ -45,7 +45,8 @@ jobs:
           echo "No Changes To Commit ;-;"
         else
           git commit -m "Update Pages"
-          git pull.rebase origin main
+          git config pull.rebase true
+          git pull origin main
           git push origin gh-pages
         fi
         git status
