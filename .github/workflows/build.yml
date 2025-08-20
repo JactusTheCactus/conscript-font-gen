@@ -21,7 +21,7 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         find . -not -type d -not -path docs -exec rm -rf {} +
-        mv docs/* ./
+        #mv docs/* ./
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
