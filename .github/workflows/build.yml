@@ -26,6 +26,7 @@ jobs:
         shopt -s dotglob extglob
         rm -rf !(docs|.git)
         mv docs/* ./
+        rm -rf docs
         git add .
         silent "git commit -m 'Update Pages'"
         silent "git push origin gh-pages --force"
