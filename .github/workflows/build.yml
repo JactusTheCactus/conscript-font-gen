@@ -35,19 +35,19 @@ jobs:
     - name: Commit changes
       run: |
         echo ADD
-        git add docs/
+        git add docs/*
         
         echo STATUS
         git status
 
-        echo PULL
-        git pull
+        #echo PULL
+        #git pull
 
-        echo SWITCH
-        git switch --force gh-pages
+        #echo SWITCH
+        #git switch --force gh-pages
         
-        echo PUSH
-        git push
+        #echo PUSH
+        #git push
         
-        echo COMMIT
-        git commit -m "Auto-commit" || echo "No changes to commit"
+        #echo COMMIT
+        #git commit -m "Auto-commit" || echo "No changes to commit"
