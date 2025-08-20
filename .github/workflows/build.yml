@@ -23,11 +23,11 @@ jobs:
         shopt -s dotglob extglob
         rm -rf !(docs|.git)
         mv docs/* ./
-        echo X
-        git add .
         echo ADD
-        git commit -m "Update Pages"
+        git add .
         echo COMMIT
-        git push origin gh-pages --force
+        git commit -m "Update Pages"
         echo PUSH
+        git push origin gh-pages --force
+        echo TREE
         tree --noreport --dirsfirst -Fa
