@@ -26,5 +26,8 @@ jobs:
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
-        echo ==========
+        files=(+(*))
         dir +(*)
+        for DIR in "${files[@]}"; do
+          dir $DIR
+        done
