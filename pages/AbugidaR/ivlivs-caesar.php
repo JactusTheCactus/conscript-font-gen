@@ -3,7 +3,8 @@
 
 <head>
 	<link href="../style.css" rel="stylesheet">
-	<script src="../fmt.js"></script>
+	<script src="../fmt.js">
+	</script>
 	<?php
 	$data = [
 		"AbugidaR" => [
@@ -87,15 +88,14 @@
 <body>
 	<h1>
 		<i>Julius Caesar</i>
-		<br>
-		Act III, Scene II
-		<br>
+		<br>Act III, Scene II<br>
 		(Lines <code>73</code>&ndash;<code>107</code>)
 	</h1>
 	<hr>
 	<?php
-	foreach(["AbugidaR","Latin"] as $x) {
-		echo "<h2>$x</h2><p class='$x'>".join("<br>", $data[$x])."<p>";
+	foreach (["AbugidaR", "Latin"] as $x) {
+		echo "<h2>$x</h2><p class='$x'>" .
+			join("<br>", $data[$x]) . "<p>";
 	};
 	?>
 </body>

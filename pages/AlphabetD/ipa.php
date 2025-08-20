@@ -59,9 +59,7 @@
 <body>
 	<table class="table" id="example">
 		<tr>
-			<th colspan=100%>
-				<a href="#example">Example</a>
-			</th>
+			<th colspan=100%><a href="#example">Example</a></th>
 		</tr>
 		<tr>
 			<td class="AlphabetD">Alfubet Di;.</td>
@@ -78,12 +76,10 @@
 			<?php
 			foreach ($data["C"] as $i => $c) {
 				echo "<td>" .
-					"<span class='AlphabetD'>$c[0]</span>"
-					. "<hr>" .
-					"⟨$c[1]⟩"
-					. "<br>" .
-					"<span class='ipa'>/$c[2]/</span>"
-					. "</td>";
+					"<span class='AlphabetD'>$c[0]</span>" .
+					"<hr>⟨$c[1]⟩<br>" .
+					"<span class='ipa'>/$c[2]/</span>" .
+					"</td>";
 				if (($i + 1) % 5 == 0) {
 					echo "</tr><tr>";
 				}
@@ -99,12 +95,10 @@
 			<?php
 			foreach ($data["V"] as $i => $v) {
 				echo "<td>" .
-					"<span class='AlphabetD'>$v[0]</span>"
-					. "<hr>" .
-					"⟨$v[1]⟩"
-					. "<br>" .
-					"<span class='ipa'>/$v[2]/</span>"
-					. "</td>";
+					"<span class='AlphabetD'>$v[0]</span>" .
+					"<hr>⟨$v[1]⟩<br>" .
+					"<span class='ipa'>/$v[2]/</span>" .
+					"</td>";
 				if (($i + 1) % 5 == 0) {
 					echo "</tr><tr>";
 				}
@@ -120,12 +114,10 @@
 			<?php
 			foreach ($data["G"] as $i => $g) {
 				echo "<td>" .
-					"<span class='AlphabetD'>$g[0]</span>"
-					. "<hr>" .
-					"⟨$g[1]⟩"
-					. "<br>" .
-					"<span class='ipa'>$g[2]</span>"
-					. "</td>";
+					"<span class='AlphabetD'>$g[0]</span>" .
+					"<hr>⟨$g[1]⟩<br>" .
+					"<span class='ipa'>$g[2]</span>" .
+					"</td>";
 				if (($i + 1) % 3 == 0) {
 					echo "</tr><tr>";
 				}

@@ -94,8 +94,8 @@
 	</h1>
 	<hr>
 	<?php
-	foreach(["AlphabetD","Latin"] as $x) {
-		echo "<h2>$x</h2><p class='$x'>".join("<br>", $data[$x])."<p>";
+	foreach (["AlphabetD", "Latin"] as $x) {
+		echo "<h2>$x</h2><p class='$x'>" . join("<br>", $data[$x]) . "<p>";
 	};
 	?>
 </body>
