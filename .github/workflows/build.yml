@@ -20,15 +20,11 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-    - name: Update gh-pages branch
+    - name: Deploy to gh-pages (force overwrite)
       run: |
-        git fetch origin gh-pages || true
-        git checkout gh-pages || git checkout --orphan gh-pages
-        git reset --hard origin/gh-pages || true
+        git checkout --orphan gh-pages
+        rm -rf ./*
+        cp -r docs/* ./
         git add .
-        if git diff --cached --quiet; then
-          echo "No Changes To Commit ;-;"
-        else
-          git commit -m "Update Pages"
-          git push origin gh-pages
-        fi
+        git commit -m "Update Pages"
+        git push origin gh-pages --force
