@@ -33,5 +33,5 @@ jobs:
           echo
         }
         BREAK
-        tree
+        tree -a
         BREAK
