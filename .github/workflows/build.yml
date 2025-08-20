@@ -22,16 +22,11 @@ jobs:
         silent() {
           echo "$1" > /dev/null 2>&1
         }
-        CMDS=(
-          "git checkout --orphan gh-pages"
-          "shopt -s dotglob extglob"
-          "rm -rf !(docs|.git)"
-          "mv docs/* ./"
-          "git add ."
-          "git commit -m 'Update Pages'"
-          "git push origin gh-pages --force"
-        )
-        for CMD in "${CMDS[@]}"; do
-          silent "$CMD"
-        done
+        silent "git checkout --orphan gh-pages"
+        shopt -s dotglob extglob
+        rm -rf !(docs|.git)
+        mv docs/* ./
+        git add .
+        silent "git commit -m 'Update Pages'"
+        silent "git push origin gh-pages --force"
         tree --dirsfirst -F
