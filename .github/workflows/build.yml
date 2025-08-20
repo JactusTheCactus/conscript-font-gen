@@ -33,5 +33,5 @@ jobs:
         BREAK
         for DIR in "${files[@]}"; do
           dir $DIR
+          BREAK
         done
-        BREAK
