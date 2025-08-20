@@ -34,15 +34,9 @@ jobs:
 
     - name: Commit changes
       run: |
-        git pull
-        git switch --force gh-pages
-        #git rm -rf .
-        #cp -r docs/* .
-        git add .
-        if git diff --cached --quiet; then
-          echo "No Changes To Commit ;-;"
-        else
-          git commit -m "Deploy Docs From Main"
-          git push origin gh-pages --force
-        fi
+        cd docs
+        git init
+        git add --all
+        git commit -m "Deploy Docs From Main @ ${{github.sha}}"
+        git push --force origin HEAD:gh-pages
         git status
