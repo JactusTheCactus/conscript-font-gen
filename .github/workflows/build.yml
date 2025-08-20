@@ -33,5 +33,5 @@ jobs:
           echo
         }
         BREAK
-        tree -a -i --noreport -F --dirsfirst -C
+        tree --noreport --dirsfirst -Fa
         BREAK
