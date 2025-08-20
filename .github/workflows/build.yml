@@ -11,7 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Run Build
-      run: ./build.sh -php
+      run: ./build.sh -W
     - name: Configure Git
       run: |
         git config --global init.defaultBranch main

@@ -9,9 +9,7 @@
 				"cwd": "${workspaceFolder}"
 			},
 			"args": [
-				"-php",
-				"-py",
-				"-latex"
+				"-A"
 			],
 			"problemMatcher": [],
 			"group": {

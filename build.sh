@@ -120,16 +120,40 @@ phpBuild() {
 	fi
 }
 main() {
+    args=()
+    for arg in "$@"; do
+        if [[ "$arg" =~ ^-([a-zA-Z]{2,})$ ]]; then
+            for ((i=0; i<${#BASH_REMATCH[1]}; i++)); do
+                args+=("-${BASH_REMATCH[1]:i:1}")
+            done
+        else
+            args+=("$arg")
+        fi
+    done
+    set -- "${args[@]}"
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
-			-main)
-				echo"<!DOCTYPE html><html><head><link href=style.css rel=stylesheet></head><body><ul><li><a href='PHP/index.html'>PHP</a></li></ul></body></html>" > index.html;;
-			-py)
+			# Individual Builds
+			-y|--py)
 				pythonBuild;;
-			-php)
+			-h|--php)
 				phpBuild;;
-			-latex)
+			-l|--latex)
 				laTeXBuild;;
+			# Group Builds
+			-W|--web)
+				echo "<!DOCTYPE html><html><head><link href='PHP/style.css' rel='stylesheet'></head><body><ul>" > index.html
+				WEB=(
+					PHP
+				)
+				for I in "${WEB[@]}"; do
+					echo "<li><a href='$I/index.html'>$I</a></li>" >> index.html
+				done
+				echo "</ul></body></html>" >> index.html
+				main -h;;
+			-A|--all)
+				main -yWl;;
+			# Fallback
 			*)
 				errorColour "Unknown Argument $(errorHighlight $1)";;
 		esac
