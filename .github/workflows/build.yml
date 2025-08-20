@@ -31,7 +31,9 @@ jobs:
           echo ==========
         }
         BREAK
-        for DIR in "${files[@]}"; do
-          dir $DIR
+        shopt -s nullglob
+        DIR=(*)   # fills array with files in current directory
+        for FILE in "${DIR[@]}"; do
+          echo "$FILE"
           BREAK
         done
