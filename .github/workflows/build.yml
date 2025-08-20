@@ -21,7 +21,7 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         shopt -s extglob #&& shopt -s dotglob
-        rm -rf !(docs)
+        find . -mindepth 1 -not -name "docs" -delete
         shopt -u extglob #&& shopt -u dotglob
         mv docs/* ./
         git add .
