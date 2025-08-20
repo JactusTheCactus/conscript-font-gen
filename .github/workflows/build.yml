@@ -34,22 +34,29 @@ jobs:
 
     - name: Commit changes
       run: |
-        echo "=========="
-        echo "<PULL>"
-        git pull
-        echo "=========="
-        echo "<SWITCH>"
-        git switch --force gh-pages
-        echo "=========="
-        echo "<ADD>"
+        PULL=true
+        SWITCH=true
+        ADD=true
+        STATUS=true
+        PUSH=false
+        COMMIT=true
+        
+        if PULL; then
+          echo "=========="
+          echo "<PULL>"
+          git pull
+        fi
+        if SWITCH; then
+          echo "=========="
+          echo "<SWITCH>"
+          git switch --force gh-pages
+        fi
+        echo "==========" && echo "<ADD>"
         git add docs/*
-        echo "=========="
-        echo "<STATUS>"
+        echo "==========" && echo "<STATUS>"
         git status
-        echo "=========="
-        #echo "<PUSH>"
+        #echo "==========" && echo "<PUSH>"
         #git push
-        echo "=========="
-        #echo "<COMMIT>"
+        #echo "==========" && echo "<COMMIT>"
         #git commit -m "Auto-commit" || echo "No changes to commit"
         echo "=========="
