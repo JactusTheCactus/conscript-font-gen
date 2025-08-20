@@ -26,8 +26,6 @@ jobs:
         git checkout --orphan gh-pages
         echo ADD
         git add docs/
-        echo STATUS
-        git status
         echo COMMIT
         git commit -m "Update Pages"
         echo PUSH
