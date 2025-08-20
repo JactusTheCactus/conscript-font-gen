@@ -100,6 +100,7 @@ phpBuilds() {
 		mkdir -p $dir
 		mkdir -p $dir/AbugidaR
 		mkdir -p $dir/AlphabetD
+		cp docs/* $dir/
 		if ! php pages/$php > $dir/$html; then
 			errorColour "Could not compile $(errorHighlight $php)"
 		else
