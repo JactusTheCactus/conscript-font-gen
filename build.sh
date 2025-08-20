@@ -86,7 +86,6 @@ pythonBuild() {
 	fi
 }
 phpFiles=(
-	404
 	index
 	AbugidaR/ipa
 	AbugidaR/ivlivs-caesar
