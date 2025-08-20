@@ -28,16 +28,10 @@ jobs:
         git push origin gh-pages --force
         DIRS=(+(*))
         BREAK() {
-          echo ==========
+          local n=${1:-10}
+          printf '=%.0s' $(seq 1 "$n")
+          echo
         }
         BREAK
         tree
         BREAK
-        shopt -s nullglob
-        for DIR in "${DIRS[@]}"; do
-          dir $DIR
-          for FILE in "${DIR[@]}"; do
-            dir $FILE
-          done
-          BREAK
-        done
