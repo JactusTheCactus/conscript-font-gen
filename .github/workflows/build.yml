@@ -19,14 +19,11 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
     - name: Deploy
       run: |
-        silent() {
-          echo "$1" > /dev/null 2>&1
-        }
-        silent "git checkout --orphan gh-pages"
+        git checkout --orphan gh-pages
         shopt -s dotglob extglob
         rm -rf !(PHP|.git)
         echo "<!DOCTYPE html><html><head><link href="style.css" rel="stylesheet"></head><body><ul><li><a href='PHP/index.html'>PHP</a></li></ul></body></html>" > index.html
         git add .
-        silent "git commit -m 'Update Pages'"
-        silent "git push origin gh-pages --force"
+        git commit -m "Update Pages"
+        git push origin gh-pages --force
         tree --dirsfirst -F
