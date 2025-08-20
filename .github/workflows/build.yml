@@ -34,7 +34,6 @@ jobs:
 
     - name: Commit changes
       run: |
-        #git config pull.rebase true
         rm -rf /tmp/docs-build
         mkdir -p /tmp/docs-build
         cp -r docs/* /tmp/docs-build/
@@ -46,7 +45,7 @@ jobs:
           echo "No Changes To Commit ;-;"
         else
           git commit -m "Update Pages"
-          git pull origin main
+          git pull --rebase origin main
           git push origin gh-pages
         fi
         git status
