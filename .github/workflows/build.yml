@@ -22,6 +22,7 @@ jobs:
         git checkout --orphan gh-pages
         shopt -s extglob
         rm -rf !(docs)
+        shopt -u extglob
         mv docs/* ./
         git add .
         git commit -m "Update Pages"
