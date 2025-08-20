@@ -20,9 +20,7 @@ jobs:
     - name: Deploy to gh-pages (force overwrite)
       run: |
         git checkout --orphan gh-pages
-        shopt -s extglob #&& shopt -s dotglob
-        find . -mindepth 1 -not -name "docs" -delete
-        shopt -u extglob #&& shopt -u dotglob
+        find . -mindepth 1 -not -type d -not -path ./docs -exec rm -rf {} +
         mv docs/* ./
         git add .
         git commit -m "Update Pages"
