@@ -37,7 +37,7 @@ jobs:
         git pull
         git switch --force gh-pages
         git rm -rf .
-        copy -r docs/* .
+        cp -r docs/* .
         git add .
         if git diff --cached --quiet; then
           echo "No Changes To Commit ;-;"
