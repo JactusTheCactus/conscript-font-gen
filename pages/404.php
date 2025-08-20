@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+<link href="style.css" rel="stylesheet">
+</head>
 <body>
 <div style="text-align:center;">
 <h1>Oops!</h1>
