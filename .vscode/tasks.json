@@ -8,6 +8,11 @@
 			"options": {
 				"cwd": "${workspaceFolder}"
 			},
+			"args": [
+				"-php",
+				//"-py",
+				//"-latex"
+			],
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",

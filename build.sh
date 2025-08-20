@@ -130,4 +130,4 @@ main() {
 	done
 	echo
 }
-main -php #-py #-latex
+main "$@"

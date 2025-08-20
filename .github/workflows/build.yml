@@ -11,7 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Run Build
-      run: ./build.sh
+      run: ./build.sh -php
     - name: Configure Git
       run: |
         git config --global init.defaultBranch main
@@ -20,7 +20,6 @@ jobs:
     - name: Deploy to gh-pages (force overwrite)
       run: |
         git checkout --orphan gh-pages
-        #git checkout gh-pages
         git rm -rf --cached .
         git add docs/
         git commit -m "Update Pages"
