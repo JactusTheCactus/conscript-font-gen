@@ -34,6 +34,9 @@ jobs:
 
     - name: Commit changes
       run: |
+        echo SWITCH
+        git switch --force gh-pages
+
         echo ADD
         git add docs/*
         
@@ -42,9 +45,6 @@ jobs:
 
         #echo PULL
         #git pull
-
-        #echo SWITCH
-        #git switch --force gh-pages
         
         #echo PUSH
         #git push
