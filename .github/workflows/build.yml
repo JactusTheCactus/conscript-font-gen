@@ -34,6 +34,9 @@ jobs:
 
     - name: Commit changes
       run: |
+        echo PULL
+        git pull
+        
         echo SWITCH
         git switch --force gh-pages
 
@@ -43,9 +46,6 @@ jobs:
         echo STATUS
         git status
 
-        #echo PULL
-        #git pull
-        
         #echo PUSH
         #git push
         
