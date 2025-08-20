@@ -34,7 +34,7 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config pull.rebase true
+        #git config pull.rebase true
         rm -rf /tmp/docs-build
         mkdir -p /tmp/docs-build
         cp -r docs/* /tmp/docs-build/
