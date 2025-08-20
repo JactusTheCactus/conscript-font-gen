@@ -96,7 +96,7 @@ phpBuilds() {
 	for file in "${phpFiles[@]}"; do
 		php=$file.php
 		html=$file.html
-		if ! php pages/$php > docs/$html; then
+		if ! php pages/$php > PHP/$html; then
 			errorColour "Could not compile $(errorHighlight $php)"
 		else
 			if [ "$(cat pages/$php)" == "" ]; then
@@ -111,7 +111,7 @@ phpBuild() {
 		errorColour "Failed to build $(errorHighlight Pages)!"
 		exit 1
 	else
-		cp */*.otf docs/ > /dev/null 2>&1
+		cp */*.otf PHP/ > /dev/null 2>&1
 	fi
 }
 main() {
