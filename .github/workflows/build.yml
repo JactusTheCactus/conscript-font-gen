@@ -21,7 +21,7 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         shopt -s dotglob extglob
-        echo !(docs|.git)
+        dir !(docs|.git)
         if false; then
           mv docs/* ./
           git add .
