@@ -40,7 +40,6 @@ jobs:
         STATUS=true
         PUSH=false
         COMMIT=true
-        
         if $PULL; then
           echo "=========="
           echo "<PULL>"
@@ -51,12 +50,24 @@ jobs:
           echo "<SWITCH>"
           git switch --force gh-pages
         fi
-        echo "==========" && echo "<ADD>"
-        git add docs/*
-        echo "==========" && echo "<STATUS>"
-        git status
-        #echo "==========" && echo "<PUSH>"
-        #git push
-        #echo "==========" && echo "<COMMIT>"
-        #git commit -m "Auto-commit" || echo "No changes to commit"
+        if $ADD; then
+          echo "=========="
+          echo "<ADD>"
+          git add docs/*
+        fi
+        if $STATUS; then
+          echo "=========="
+          echo "<STATUS>"
+          git status
+        fi
+        if $PUSH; then
+          echo "=========="
+          echo "<PUSH>"
+          git push
+        fi
+        if $COMMIT; then
+          echo "=========="
+          echo "<COMMIT>"
+          git commit -m "Auto-commit" || echo "No changes to commit"
+        fi
         echo "=========="
