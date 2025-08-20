@@ -31,6 +31,8 @@ jobs:
           echo ==========
         }
         BREAK
+        tree
+        BREAK
         shopt -s nullglob
         for DIR in "${DIRS[@]}"; do
           dir $DIR
