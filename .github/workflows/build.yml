@@ -23,15 +23,11 @@ jobs:
         shopt -s dotglob extglob
         rm -rf !(docs|.git)
         mv docs/* ./
+        echo X
         git add .
+        echo ADD
         git commit -m "Update Pages"
+        echo COMMIT
         git push origin gh-pages --force
-        DIRS=(+(*))
-        BREAK() {
-          local n=${1:-10}
-          printf '=%.0s' $(seq 1 "$n")
-          echo
-        }
-        BREAK
+        echo PUSH
         tree --noreport --dirsfirst -Fa
-        BREAK
