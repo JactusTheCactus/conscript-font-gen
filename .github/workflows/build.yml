@@ -23,7 +23,6 @@ jobs:
     - name: Deploy to gh-pages (force overwrite)
       run: |
         git checkout --orphan gh-pages
-        #cp -r docs/* ./
-        git add .
+        git add docs/*
         git commit -m "Update Pages"
         git push origin gh-pages --force
