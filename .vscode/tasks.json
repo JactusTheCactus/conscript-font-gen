@@ -10,8 +10,8 @@
 			},
 			"args": [
 				"-php",
-				//"-py",
-				//"-latex"
+				"-py",
+				"-latex"
 			],
 			"problemMatcher": [],
 			"group": {
