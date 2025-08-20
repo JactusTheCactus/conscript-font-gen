@@ -21,10 +21,8 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         shopt -s extglob
-        #git rm -rf --cached !(docs)
         rm -rf !(docs)
-        cp -r docs/* ./
-        rm -rf docs
+        mv docs/* ./
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
