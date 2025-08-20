@@ -94,9 +94,11 @@ phpFiles=(
 )
 phpBuilds() {
 	for file in "${phpFiles[@]}"; do
+		dir=PHP
 		php=$file.php
 		html=$file.html
-		if ! php pages/$php > PHP/$html; then
+		mkdir -p $dir
+		if ! php pages/$php > $dir/$html; then
 			errorColour "Could not compile $(errorHighlight $php)"
 		else
 			if [ "$(cat pages/$php)" == "" ]; then
