@@ -4,22 +4,18 @@ on:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
     - name: Run Build
       run: ./build.sh
-
     - name: Configure Git
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
     - name: Deploy to gh-pages (force overwrite)
       run: |
         echo CHECKOUT
