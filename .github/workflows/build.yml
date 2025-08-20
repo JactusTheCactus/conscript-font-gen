@@ -33,6 +33,6 @@ jobs:
         BREAK
         shopt -s nullglob
         for FILE in "${FILES[@]}"; do
-          echo "$FILE"
+          dir $FILE
           BREAK
         done
