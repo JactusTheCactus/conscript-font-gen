@@ -19,11 +19,14 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
     - name: Deploy
       run: |
-        git checkout --orphan gh-pages > /dev/null 2>&1
+        silent() {
+          echo "$1 > /dev/null 2>&1"
+        }
+        silent "git checkout --orphan gh-pages"
         shopt -s dotglob extglob
         rm -rf !(docs|.git)
         mv docs/* ./
         git add .
-        git commit -m "Update Pages" > /dev/null 2>&1
-        git push origin gh-pages --force > /dev/null 2>&1
+        silent "git commit -m 'Update Pages'"
+        silent "git push origin gh-pages --force"
         tree --dirsfirst -F
