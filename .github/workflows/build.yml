@@ -25,8 +25,7 @@ jobs:
         silent "git checkout --orphan gh-pages"
         shopt -s dotglob extglob
         rm -rf !(PHP|.git)
-        mv PHP/* ./
-        rm -rf PHP
+        echo "" > index.html
         git add .
         silent "git commit -m 'Update Pages'"
         silent "git push origin gh-pages --force"
