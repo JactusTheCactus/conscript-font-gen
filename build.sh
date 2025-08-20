@@ -122,6 +122,8 @@ phpBuild() {
 main() {
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
+			#-main)
+				#echo"<!DOCTYPE html><html><head><link href=style.css rel=stylesheet></head><body><ul><li><a href='PHP/index.html'>PHP</a></li></ul></body></html>" > main/index.html;;
 			-py)
 				pythonBuild;;
 			-php)
