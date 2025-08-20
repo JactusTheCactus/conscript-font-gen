@@ -30,4 +30,3 @@ jobs:
         echo PUSH
         git push origin gh-pages --force
         tree --noreport --dirsfirst -F
-        tree --noreport --dirsfirst
