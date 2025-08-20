@@ -12,7 +12,7 @@ PRE=(
 )
 KEEP=(
 	pdf
-	log
+	#log
 )
 POST=()
 for ITEM in "${PRE[@]}"; do
