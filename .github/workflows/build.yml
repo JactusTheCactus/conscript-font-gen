@@ -17,10 +17,10 @@ jobs:
         git config --global init.defaultBranch main
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    - name: Deploy to gh-pages (force overwrite)
+    - name: Deploy
       run: |
         git checkout --orphan gh-pages
-        find . -not -type d -not -path "./docs" -not -path "./.git" -exec echo {} \;
+        find . -not -type d -not -path ./docs -not -path ./.git -exec echo {} \;
         #mv docs/* ./
         #git add .
         git commit -m "Update Pages"
