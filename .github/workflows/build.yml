@@ -19,9 +19,8 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
     - name: Deploy to gh-pages (force overwrite)
       run: |
-        echo "<=-=>"
-        #git checkout --orphan gh-pages
-        git checkout gh-pages
+        git checkout --orphan gh-pages
+        #git checkout gh-pages
         git rm -rf --cached .
         git add docs/
         git commit -m "Update Pages"
