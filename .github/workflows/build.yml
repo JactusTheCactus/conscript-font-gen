@@ -29,4 +29,4 @@ jobs:
         git commit -m "Update Pages"
         echo PUSH
         git push origin gh-pages --force
-        tree --noreport --dirsfirst -F
+        tree --dirsfirst -F
