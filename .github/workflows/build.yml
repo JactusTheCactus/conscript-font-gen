@@ -34,47 +34,15 @@ jobs:
 
     - name: Commit changes
       run: |
-        #!/bin/bash
-        pull() {
-          echo "=========="
-          echo "<PULL>"
-          git pull
-        }
-        switch() {
-          echo "=========="
-          echo "<SWITCH>"
-          git switch --force gh-pages
-        }
-        add() {
-          echo "=========="
-          echo "<ADD>"
-          git add docs/*
-        }
-        status() {
-          echo "=========="
-          echo "<STATUS>"
-          git status
-        }
-        push() {
-          echo "=========="
-          echo "<PUSH>"
-          git push
-        }
-        commit() {
-          echo "=========="
-          echo "<COMMIT>"
-          git commit -m "Auto-commit" || echo "No changes to commit"
-        }
-        build() {
-          pull
-          switch
-          add
-          status
-          push
-          commit
-        }
-        main() {
-          build
-          echo "=========="
-        }
-        main
+        git pull
+        git switch --force gh-pages
+        git rm -rf .
+        copy -r docs/* .
+        git add .
+        if git diff --cached --quiet; then
+          echo "No Changes To Commit ;-;"
+        else
+          git commit -m "Deploy Docs From Main"
+          git push origin gh-pages --force
+        fi
+        git status
