@@ -31,9 +31,9 @@ jobs:
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
-    - name: Log
+    - name: Tree
       run: |
         shopt -s extglob globstar
         rm -rf **/*.+(js|txt)
-        rm -rf **/_app/!(**/assets/*)
+        #rm -rf **/_app/!(**/assets/*)
         tree --dirsfirst -F
