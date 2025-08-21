@@ -42,7 +42,9 @@ jobs:
           local dir="$1"
           for entry in "$dir"/*; do
             [ -e "$entry" ] || continue
-            if [[ "$entry" == "site/SVELTE/_app/immutable/assets" ]]; then
+            if [[ "$entry" == "site/SVELTE/_app/immutable" ]]; then
+              continue
+            elif [[ "$entry" == "site/SVELTE/_app/immutable/assets" ]]; then
               continue
             fi
             echo "$entry"
