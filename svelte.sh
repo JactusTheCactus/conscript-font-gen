@@ -1,1 +1,0 @@
-cd SVELTE && npm run dev -- --open

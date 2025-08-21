@@ -1,0 +1,20 @@
+.
+├── +layout.js
+├── +layout.svelte
+├── +page.svelte
+├── AbR
+│   ├── ipa
+│   │   └── +page.svelte
+│   └── ivlivs-caesar
+│       └── +page.svelte
+├── AbugidaR
+│   └── +page.svelte
+├── AlD
+│   ├── ipa
+│   │   └── +page.svelte
+│   └── ivlivs-caesar
+│       └── +page.svelte
+└── AlphabetD
+    └── +page.svelte
+
+9 directories, 9 files

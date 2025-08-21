@@ -45,24 +45,24 @@ errorHighlight() {
 genericError() {
 	errorColour "ERROR! ;-;"
 }
-XeTeX() {
-	xelatex -interaction=nonstopmode "main.tex" > /dev/null 2>&1
-	if [ $? -ne 0 ]; then
-		genericError
-		return 1
-	fi
-}
-MakeGloss() {
-	makeglossaries main > /dev/null 2>&1
-	if [ $? -ne 0 ]; then
-		genericError
-		return 1
-	fi
-}
-LaTeXBuilds() {
-	XeTeX && MakeGloss && XeTeX
-}
 laTeXBuild() {
+	LaTeXBuilds() {
+		XeTeX() {
+			xelatex -interaction=nonstopmode "main.tex" > /dev/null 2>&1
+			if [ $? -ne 0 ]; then
+				genericError
+				return 1
+			fi
+		}
+		MakeGloss() {
+			makeglossaries main > /dev/null 2>&1
+			if [ $? -ne 0 ]; then
+				genericError
+				return 1
+			fi
+		}
+		XeTeX && MakeGloss && XeTeX
+	}
 	echoColour "Building $(echoHighlight PDF)..."
 	cd LaTeX
 	for EXT in "${PRE[@]}"; do
@@ -85,38 +85,60 @@ pythonBuild() {
 		exit 1
 	fi
 }
-phpFiles=(
-	index
-	AbugidaR/ipa
-	AbugidaR/ivlivs-caesar
-	AlphabetD/ipa
-	AlphabetD/ivlivs-caesar
-)
-phpBuilds() {
-	for file in "${phpFiles[@]}"; do
-		dir=PHP
-		php=$file.php
-		html=$file.html
-		mkdir -p $dir
-		mkdir -p $dir/AbugidaR
-		mkdir -p $dir/AlphabetD
-		cp docs/* $dir/
-		if ! php pages/$php > $dir/$html; then
-			errorColour "Could not compile $(errorHighlight $php)"
-		else
-			if [ "$(cat pages/$php)" == "" ]; then
-				errorColour "$(errorHighlight $php) is Empty!"
-			fi
-		fi
-	done
-}
 phpBuild() {
-	echoColour "Building $(echoHighlight Pages)..."
+	phpBuilds() {
+		phpFiles=(
+			index
+			AbugidaR/ipa
+			AbugidaR/ivlivs-caesar
+			AlphabetD/ipa
+			AlphabetD/ivlivs-caesar
+		)
+		for file in "${phpFiles[@]}"; do
+			dir=site/PHP
+			php=$file.php
+			html=$file.html
+			mkdir -p $dir
+			mkdir -p $dir/AbugidaR
+			mkdir -p $dir/AlphabetD
+			cp docs/* $dir/
+			if ! php pages/$php > $dir/$html; then
+				errorColour "Could not compile $(errorHighlight $php)"
+			else
+				if [ "$(cat pages/$php)" == "" ]; then
+					errorColour "$(errorHighlight $php) is Empty!"
+				fi
+			fi
+		done
+	}
+	echoColour "Building $(echoHighlight "PHP Pages")..."
 	if ! phpBuilds; then
-		errorColour "Failed to build $(errorHighlight Pages)!"
+		errorColour "Failed to build $(errorHighlight "PHP Pages")!"
 		exit 1
 	else
-		cp */*.otf PHP/ > /dev/null 2>&1
+		cp */*.otf site/PHP/ > /dev/null 2>&1
+	fi
+}
+svelteRun() {
+	svelteBuild() {
+		PROJECT=SVELTE
+		cp docs/style.css $PROJECT/src/lib/assets
+		cp AbugidaR/AbugidaR.otf $PROJECT/src/lib/assets
+		cp AlphabetD/AlphabetD.otf $PROJECT/src/lib/assets
+		(
+			cd $PROJECT
+			rm -rf $PROJECT/build
+			npm run build #> /dev/null 2>&1
+		)
+		rm -rf site/$PROJECT
+		mkdir site/$PROJECT > /dev/null 2>&1
+		cp -r $PROJECT/build/* site/$PROJECT
+	}
+	echoColour "Building $(echoHighlight "Svelte Site")..."
+	(cd SVELTE/src/routes&&tree)>tree.txt
+	if ! svelteBuild; then
+		errorColour "Failed to build $(errorHighlight "Svelte Site")!"
+		exit 1
 	fi
 }
 main() {
@@ -131,6 +153,7 @@ main() {
         fi
     done
     set -- "${args[@]}"
+	mkdir -p site
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
 			# Individual Builds
@@ -140,17 +163,20 @@ main() {
 				phpBuild;;
 			-l|--latex)
 				laTeXBuild;;
+			-s|--svelte)
+				svelteRun;;
 			# Group Builds
 			-W|--web)
 				echo "<!DOCTYPE html><html><head><link href='PHP/style.css' rel='stylesheet'></head><body><ul>" > index.html
 				WEB=(
 					PHP
+					SVELTE
 				)
 				for I in "${WEB[@]}"; do
-					echo "<li><a href='$I/index.html'>$I</a></li>" >> index.html
+					echo "<li><a href='site/$I/index.html'>$I</a></li>" >> index.html
 				done
 				echo "</ul></body></html>" >> index.html
-				main -h;;
+				main -hs;;
 			-A|--all)
 				main -yWl;;
 			# Fallback

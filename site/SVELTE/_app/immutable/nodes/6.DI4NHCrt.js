@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/CyzMXyXL.js";import{f as p,a as r}from"../chunks/Dy9I_PE6.js";var t=p("<code>AlphabetD.IPA</code>");function n(o){var a=t();r(o,a)}export{n as component};

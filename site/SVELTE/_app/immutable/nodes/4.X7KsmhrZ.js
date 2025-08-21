@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/CyzMXyXL.js";import{f as r,a as e}from"../chunks/Dy9I_PE6.js";var p=r("<code>AbugidaR.IvlivsCaesar</code>");function c(o){var a=p();e(o,a)}export{c as component};
