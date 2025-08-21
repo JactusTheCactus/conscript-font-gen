@@ -27,10 +27,9 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         shopt -s extglob dotglob
-        tree
         rm -rf !(index.html|site|.git)
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
-        rm -rf *(**/*.svg)
+        #rm -rf *(**/*.svg)
         tree --dirsfirst -F
