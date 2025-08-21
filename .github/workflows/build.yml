@@ -51,6 +51,8 @@ jobs:
                   echo "$entry"
                 fi
               fi
+            else
+              echo "$entry"
             fi
             if [ -d "$entry" ]; then
               list_files "$entry"
