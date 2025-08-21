@@ -34,5 +34,6 @@ jobs:
     - name: Tree
       run: |
         shopt -s extglob globstar
+        echo **/_app
         echo **/_app/!(immutable/assets)
         tree --dirsfirst -F
