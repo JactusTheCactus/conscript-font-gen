@@ -35,6 +35,7 @@ jobs:
       run: |
         shopt -s extglob globstar
         rm -rf **/*.+(js|txt)
-        echo **/_app/!(immutable/assets/*)
-        rm -rf **/_app/!(immutable/assets/*)
+        DEL=**/_app/!(immutable/assets)
+        echo $DEL
+        rm -rf $DEL
         tree --dirsfirst -F
