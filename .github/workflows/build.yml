@@ -33,7 +33,13 @@ jobs:
         git push origin gh-pages --force
     - name: Tree
       run: |
+        bar() {
+          echo "=========="
+        }
         shopt -s extglob globstar
+        bar
         echo site/SVELTE/_app/!(immutable/assets)
+        bar
         echo site/SVELTE/_app/!(immutable/assets)/*
+        bar
         tree --dirsfirst -F
