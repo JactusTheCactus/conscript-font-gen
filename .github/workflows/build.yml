@@ -34,5 +34,5 @@ jobs:
     - name: Tree
       run: |
         shopt -s extglob globstar
-        echo **/_app
+        echo site/SVELTE/_app/**/assets
         tree --dirsfirst -F
