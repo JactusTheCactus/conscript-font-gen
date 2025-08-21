@@ -38,6 +38,8 @@ jobs:
         }
         shopt -s extglob globstar
         bar
-        find site/SVELTE/_app/ -path site/SVELTE/_app/immutable/assets -prune -o -print
+        find site/SVELTE/_app/ -path site/SVELTE/_app/immutable/assets -prune -o -print | while IFS= read -r file; do
+          echo "$file"
+        done
         bar
         tree --dirsfirst -F
