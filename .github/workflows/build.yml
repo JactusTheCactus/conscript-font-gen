@@ -31,5 +31,7 @@ jobs:
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
+    - name: Log
+      run: |
         rm -rf +(.js)
         tree --dirsfirst -F
