@@ -51,11 +51,11 @@ jobs:
             if [ -d "$entry" ]; then
               if [[ "$entry" != "$DIR/$SUBDIR1/$SUBDIR2" ]]; then
                 if [[ "$entry" != "$DIR/$SUBDIR1" ]]; then
-                  echo "$entry"
+                  rm -rf "$entry"
                 fi
               fi
             else
-              echo "$entry"
+              rm -rf "$entry"
             fi
             if [ -d "$entry" ]; then
               list_files "$entry"
