@@ -51,6 +51,6 @@ jobs:
             fi
           done
         }
-        list_files "site/SVELTE/_app/"
+        list_files "site/SVELTE/_app"
         bar
         tree --dirsfirst -F
