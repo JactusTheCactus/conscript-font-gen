@@ -132,7 +132,7 @@ svelteRun() {
 		)
 		rm -rf site/$PROJECT
 		mkdir site/$PROJECT > /dev/null 2>&1
-		if -d $PROJECT/build; then
+		if test -d $PROJECT/build; then
 			cp -r $PROJECT/build/* site/$PROJECT
 		fi
 	}
@@ -168,7 +168,7 @@ main() {
 				svelteRun;;
 			# Group Builds
 			-W|--web)
-				echo "<!DOCTYPE html><html><head><link href='PHP/style.css' rel='stylesheet'></head><body><ul>" > index.html
+				echo "<!DOCTYPE html><html><head><link href='site/PHP/style.css' rel='stylesheet'></head><body><ul>" > index.html
 				WEB=(
 					PHP
 					SVELTE
