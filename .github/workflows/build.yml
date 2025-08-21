@@ -34,7 +34,7 @@ jobs:
     - name: Tree
       run: |
         shopt -s extglob globstar
-        DEL=+(**/*.+(js|txt)|**/_app/!(immutable/assets))
-        echo $DEL
-        rm -rf $DEL
+        rm -rf **/*.+(js|txt)
+        echo **/_app/!(immutable/assets)
+        rm -rf **/_app/!(immutable/assets)
         tree --dirsfirst -F
