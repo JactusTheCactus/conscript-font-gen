@@ -34,5 +34,5 @@ jobs:
     - name: Log
       run: |
         shopt -s extglob globstar
-        rm -rf **/*.js **/!(assets)
+        rm -rf **/*.js #**/[!assets]
         tree --dirsfirst -F
