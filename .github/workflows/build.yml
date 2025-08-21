@@ -38,9 +38,6 @@ jobs:
         }
         shopt -s extglob globstar
         bar
-        for f in site/SVELTE/_app/*; do
-          [[ "$f" == "site/SVELTE/_app/immutable/assets" ]] && continue
-          echo "$f"
-        done
+        find dir/ -path dir/subdir -prune -o -print
         bar
         tree --dirsfirst -F
