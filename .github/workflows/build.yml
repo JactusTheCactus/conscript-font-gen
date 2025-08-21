@@ -38,6 +38,6 @@ jobs:
         }
         shopt -s extglob globstar
         bar
-        find dir/ -path dir/subdir -prune -o -print
+        find site/SVELTE/_app/ -path site/SVELTE/_app/immutable/assets -prune -o -print
         bar
         tree --dirsfirst -F
