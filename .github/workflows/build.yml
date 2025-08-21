@@ -33,5 +33,6 @@ jobs:
         git push origin gh-pages --force
     - name: Log
       run: |
+        shopt -s globstar
         rm -rf **/*.js
         tree --dirsfirst -F
