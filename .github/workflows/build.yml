@@ -38,6 +38,6 @@ jobs:
         }
         shopt -s extglob globstar
         bar
-        echo site/SVELTE/_app/**/!(immutable/assets)
+        echo site/SVELTE/_app/**/!(immutable/assets/*)
         bar
         tree --dirsfirst -F
