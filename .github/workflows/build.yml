@@ -35,4 +35,5 @@ jobs:
       run: |
         shopt -s extglob globstar
         echo site/SVELTE/_app/!(immutable/assets)
+        echo site/SVELTE/_app/!(immutable/assets)/*
         tree --dirsfirst -F
