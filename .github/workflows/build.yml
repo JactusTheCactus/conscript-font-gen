@@ -10,6 +10,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts
+        cache: npm
     - name: Run Build
       run: ./build.sh -W
     - name: Configure Git
@@ -20,10 +25,10 @@ jobs:
     - name: Deploy
       run: |
         git checkout --orphan gh-pages
-        shopt -s dotglob extglob
+        npm install -D @sveltejs/adapter-static
+        shopt -s extglob
         tree
-        rm -rf !(index.html|site|.git)
-        tree
+        rm -rf !(index.html|site)
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
