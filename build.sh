@@ -135,7 +135,6 @@ svelteRun() {
 		cp -r $PROJECT/build/* site/$PROJECT
 	}
 	echoColour "Building $(echoHighlight "Svelte Site")..."
-	(cd SVELTE/src/routes&&tree)>tree.txt
 	if ! svelteBuild; then
 		errorColour "Failed to build $(errorHighlight "Svelte Site")!"
 		exit 1
