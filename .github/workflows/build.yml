@@ -45,6 +45,7 @@ jobs:
             if [[ "$entry" == "site/SVELTE/_app/immutable" ]]; then
               continue
             else if [[ "$entry" == "site/SVELTE/_app/immutable/assets" ]]; then
+              continue
             fi
             echo "$entry"
             if [ -d "$entry" ]; then
