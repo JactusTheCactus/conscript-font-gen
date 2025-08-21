@@ -132,7 +132,9 @@ svelteRun() {
 		)
 		rm -rf site/$PROJECT
 		mkdir site/$PROJECT > /dev/null 2>&1
-		cp -r $PROJECT/build/* site/$PROJECT
+		if -d $PROJECT/build; then
+			cp -r $PROJECT/build/* site/$PROJECT
+		fi
 	}
 	echoColour "Building $(echoHighlight "Svelte Site")..."
 	if ! svelteBuild; then
