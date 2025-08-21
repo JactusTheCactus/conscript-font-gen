@@ -33,6 +33,5 @@ jobs:
         git push origin gh-pages --force
     - name: Log
       run: |
-        shopt -s extglob
         rm -rf *.js
         tree --dirsfirst -F
