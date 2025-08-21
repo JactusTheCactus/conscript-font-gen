@@ -1,4 +1,1 @@
-PROJECT=SVELTE
-npx degit sveltejs/template $PROJECT
-cd $PROJECT
-npm install
+cd SVELTE && npm run dev -- --open
