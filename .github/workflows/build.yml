@@ -34,6 +34,7 @@ jobs:
     - name: Tree
       run: |
         shopt -s extglob globstar
+        echo **/*.+(js|txt)
         rm -rf **/*.+(js|txt)
         echo **/_app/!(immutable/assets)
         rm -rf **/_app/!(immutable/assets)
