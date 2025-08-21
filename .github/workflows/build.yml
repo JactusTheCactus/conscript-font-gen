@@ -32,5 +32,5 @@ jobs:
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
-        rm -rf *(*.svg)
+        rm -rf *(**/*.svg)
         tree --dirsfirst -F
