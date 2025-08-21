@@ -38,8 +38,19 @@ jobs:
         }
         shopt -s extglob globstar
         bar
-        find site/SVELTE/_app/ -path site/SVELTE/_app/immutable/assets -prune -o -print | while IFS= read -r file; do
-          echo "$file"
-        done
+        list_files() {
+          local dir="site/SVELTE/_app/"
+          for entry in "$dir"/*; do
+            [ -e "$entry" ] || continue
+            if [[ "$entry" == "site/SVELTE/_app/immutable/assets" ]]; then
+              continue
+            fi
+            echo "$entry"
+            if [ -d "$entry" ]; then
+              list_files "$entry"
+            fi
+          done
+        }
+        list_files
         bar
         tree --dirsfirst -F
