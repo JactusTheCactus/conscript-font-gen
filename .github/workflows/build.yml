@@ -21,7 +21,9 @@ jobs:
       run: |
         git checkout --orphan gh-pages
         shopt -s dotglob extglob
+        tree
         rm -rf !(index.html|site|.git)
+        tree
         git add .
         git commit -m "Update Pages"
         git push origin gh-pages --force
