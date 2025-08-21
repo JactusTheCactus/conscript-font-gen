@@ -39,7 +39,7 @@ jobs:
         shopt -s extglob globstar
         bar
         list_files() {
-          local dir="site/SVELTE/_app/"
+          local dir="$1"
           for entry in "$dir"/*; do
             [ -e "$entry" ] || continue
             if [[ "$entry" == "site/SVELTE/_app/immutable/assets" ]]; then
@@ -51,6 +51,6 @@ jobs:
             fi
           done
         }
-        list_files
+        list_files "site/SVELTE/_app/"
         bar
         tree --dirsfirst -F
