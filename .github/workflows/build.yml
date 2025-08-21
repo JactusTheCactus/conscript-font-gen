@@ -15,7 +15,7 @@ jobs:
       with:
         node-version: lts/*
         cache: npm
-    - run: npm install
+    - run: npm ci
     - name: Run Build
       run: ./build.sh -W
     - name: Configure Git
@@ -26,7 +26,6 @@ jobs:
     - name: Deploy
       run: |
         git checkout --orphan gh-pages
-        npm install -D @sveltejs/adapter-static
         shopt -s extglob
         tree
         rm -rf !(index.html|site)
