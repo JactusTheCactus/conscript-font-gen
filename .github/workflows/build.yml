@@ -33,5 +33,5 @@ jobs:
         git push origin gh-pages --force
     - name: Log
       run: |
-        rm -rf *.js
+        rm -rf **/*.js
         tree --dirsfirst -F
