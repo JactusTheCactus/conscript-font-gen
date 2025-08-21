@@ -34,5 +34,5 @@ jobs:
     - name: Log
       run: |
         shopt -s globstar
-        rm -rf **/*.js **/_app
+        rm -rf **/*.js **/_app/[!*.otf]
         tree --dirsfirst -F
