@@ -34,5 +34,5 @@ jobs:
     - name: Log
       run: |
         shopt -s extglob
-        rm -rf +(.js)
+        rm -rf *.js
         tree --dirsfirst -F
