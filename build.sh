@@ -124,6 +124,11 @@ vueBuild() {
 		cd $DIR
 		npm install > /dev/null 2>&1
 		npm run build > /dev/null 2>&1
+		mkdir -p IN
+		mkdir -p OUT
+		#mv * OUT
+		#mv OUT/dist/* IN
+		#rm -rf dist
 	}
 	if ! vueBuilds; then
 		errorColour "Failed to build $(errorHighlight "Vue Site")!"
