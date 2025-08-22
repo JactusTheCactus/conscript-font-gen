@@ -22,6 +22,7 @@ table {
 }
 
 .AbugidaR::before {
-	content: "^"
+	content:
+		"^"
 }
 </style>
