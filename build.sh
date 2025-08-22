@@ -123,6 +123,7 @@ vueBuild() {
 	echoColour "Building $(echoHighlight "Vue Site")..."
 	vueBuilds() {
 		DIR=VUE
+		cp assets/* $DIR/src/assets
 		cd $DIR
 		npm install > /dev/null 2>&1
 		npm run build > /dev/null 2>&1
@@ -176,7 +177,7 @@ main() {
 					echo "<li><a href='$I/OUT/index.html'>$I</a></li>" >> index.html
 				done
 				echo "</ul></body></html>" >> index.html
-				main -h;;
+				main -hv;;
 			-A|--all)
 				main -yWl;;
 			# Fallback
