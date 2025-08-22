@@ -1,5 +1,5 @@
 <template>
 	<div id="app">
-		<code>AbR_IvlivsCaesar</code>
+		<pre><code>$ ExampleText</code></pre>
 	</div>
 </template>

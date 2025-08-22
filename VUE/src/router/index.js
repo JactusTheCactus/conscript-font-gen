@@ -42,7 +42,7 @@ const routes = [
 		meta: {
 			title: [
 				"AbR",
-				"Ivlivs Caesar"
+				"Example Text"
 			].join(divider)
 		}
 	},
@@ -75,7 +75,7 @@ const routes = [
 		meta: {
 			title: [
 				"AlD",
-				"Ivlivs Caesar"
+				"Example Text"
 			].join(divider)
 		}
 	}
