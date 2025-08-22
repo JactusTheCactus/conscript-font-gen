@@ -1,4 +1,6 @@
 #!/bin/bash
+DEV_VUE=false
+source ./dev.sh
 PRE=(
 	aux
 	glg
@@ -124,8 +126,10 @@ vueBuild() {
 		cd $DIR
 		npm install > /dev/null 2>&1
 		npm run build > /dev/null 2>&1
-		echoColour "Running $(echoHighlight "Vue Site")..."
-		#npm run dev #> /dev/null 2>&1
+		if $DEV_VUE; then
+			echoColour "Running $(echoHighlight "Vue Site")..."
+			npm run dev > /dev/null 2>&1
+		fi
 	}
 	if ! vueBuilds; then
 		errorColour "Failed to build $(errorHighlight "Vue Site")!"
