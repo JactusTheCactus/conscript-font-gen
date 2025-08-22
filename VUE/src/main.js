@@ -6,3 +6,7 @@ import router from './router';
 createApp(App)
 	.use(router)
 	.mount('#app')
+
+router.afterEach((to) => {
+	document.title = to.meta.title || 'My Conscripts';
+});

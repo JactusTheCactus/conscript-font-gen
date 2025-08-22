@@ -1,3 +1,5 @@
 <template>
-	<code>AlD_IvlivsCaesar</code>
+	<div id="app">
+		<code>AlD_IvlivsCaesar</code>
+	</div>
 </template>

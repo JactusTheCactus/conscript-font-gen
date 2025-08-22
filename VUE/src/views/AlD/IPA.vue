@@ -1,3 +1,5 @@
 <template>
-	<code>AlD_IPA</code>
+	<div id="app">
+		<code>AlD_IPA</code>
+	</div>
 </template>

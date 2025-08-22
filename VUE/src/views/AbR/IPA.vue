@@ -1,3 +1,5 @@
 <template>
-	<code>AbR_IPA</code>
+	<div id="app">
+		<code>AbR_IPA</code>
+	</div>
 </template>

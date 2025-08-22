@@ -6,6 +6,7 @@ import AbR_IvlivsCaesar from '../views/AbR/IvlivsCaesar.vue';
 import AlD from '../views/AlD.vue';
 import AlD_IPA from '../views/AlD/IPA.vue';
 import AlD_IvlivsCaesar from '../views/AlD/IvlivsCaesar.vue';
+const divider = " | ";
 const routes = [
 	{
 		path: '/',
@@ -15,32 +16,68 @@ const routes = [
 	{
 		path: '/AbR',
 		name: 'AbR',
-		component: AbR
+		component: AbR,
+		meta: {
+			title: [
+				"AbR",
+				"Home"
+			].join(divider)
+		}
 	},
 	{
 		path: '/AbR/IPA',
 		name: 'AbR_IPA',
-		component: AbR_IPA
+		component: AbR_IPA,
+		meta: {
+			title: [
+				"AbR",
+				"IPA"
+			].join(divider)
+		}
 	},
 	{
 		path: '/AbR/IvlivsCaesar',
 		name: 'AbR_IvlivsCaesar',
-		component: AbR_IvlivsCaesar
+		component: AbR_IvlivsCaesar,
+		meta: {
+			title: [
+				"AbR",
+				"Ivlivs Caesar"
+			].join(divider)
+		}
 	},
 	{
 		path: '/AlD',
 		name: 'AlD',
-		component: AlD
+		component: AlD,
+		meta: {
+			title: [
+				"AlD",
+				"Home"
+			].join(divider)
+		}
 	},
 	{
 		path: '/AlD/IPA',
 		name: 'AlD_IPA',
-		component: AlD_IPA
+		component: AlD_IPA,
+		meta: {
+			title: [
+				"AlD",
+				"IPA"
+			].join(divider)
+		}
 	},
 	{
 		path: '/AlD/IvlivsCaesar',
 		name: 'AlD_IvlivsCaesar',
-		component: AlD_IvlivsCaesar
+		component: AlD_IvlivsCaesar,
+		meta: {
+			title: [
+				"AlD",
+				"Ivlivs Caesar"
+			].join(divider)
+		}
 	}
 ];
 const router = createRouter({

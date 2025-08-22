@@ -1,3 +1,5 @@
 <template>
-	<code>AbR_IvlivsCaesar</code>
+	<div id="app">
+		<code>AbR_IvlivsCaesar</code>
+	</div>
 </template>
