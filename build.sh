@@ -125,7 +125,7 @@ vueBuild() {
 		npm install > /dev/null 2>&1
 		npm run build > /dev/null 2>&1
 		echoColour "Running $(echoHighlight "Vue Site")..."
-		npm run dev #> /dev/null 2>&1
+		#npm run dev #> /dev/null 2>&1
 	}
 	if ! vueBuilds; then
 		errorColour "Failed to build $(errorHighlight "Vue Site")!"
