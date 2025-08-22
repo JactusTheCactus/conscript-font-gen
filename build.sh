@@ -86,6 +86,7 @@ pythonBuild() {
 	fi
 }
 phpBuild() {
+	dir=PHP
 	phpBuilds() {
 		phpFiles=(
 			index
@@ -95,19 +96,13 @@ phpBuild() {
 			AlphabetD/ivlivs-caesar
 		)
 		for file in "${phpFiles[@]}"; do
-			dir=site/PHP
 			php=$file.php
 			html=$file.html
 			mkdir -p $dir
-			mkdir -p $dir/AbugidaR
-			mkdir -p $dir/AlphabetD
-			cp docs/* $dir/
-			if ! php pages/$php > $dir/$html; then
+			mkdir -p $dir/OUT/AbugidaR
+			mkdir -p $dir/OUT/AlphabetD
+			if ! php $dir/IN/$php > $dir/OUT/$html; then
 				errorColour "Could not compile $(errorHighlight $php)"
-			else
-				if [ "$(cat pages/$php)" == "" ]; then
-					errorColour "$(errorHighlight $php) is Empty!"
-				fi
 			fi
 		done
 	}
@@ -116,29 +111,22 @@ phpBuild() {
 		errorColour "Failed to build $(errorHighlight "PHP Pages")!"
 		exit 1
 	else
-		cp */*.otf site/PHP/ > /dev/null 2>&1
+		rm -rf $dir/OUT/assets > /dev/null 2>&1
+		mkdir -p PHP/OUT/assets > /dev/null 2>&1
+		cp */*.otf PHP/OUT/assets > /dev/null 2>&1
+		cp assets/* PHP/OUT/assets > /dev/null 2>&1
 	fi
 }
-svelteRun() {
-	svelteBuild() {
-		PROJECT=SVELTE
-		cp docs/style.css $PROJECT/src/lib/assets
-		cp AbugidaR/AbugidaR.otf $PROJECT/src/lib/assets
-		cp AlphabetD/AlphabetD.otf $PROJECT/src/lib/assets
-		(
-			cd $PROJECT
-			rm -rf $PROJECT/build
-			npm run build #> /dev/null 2>&1
-		)
-		rm -rf site/$PROJECT
-		mkdir site/$PROJECT > /dev/null 2>&1
-		if test -d $PROJECT/build; then
-			cp -r $PROJECT/build/* site/$PROJECT
-		fi
+vueBuild() {
+	echoColour "Building $(echoHighlight "Vue Site")..."
+	vueBuilds() {
+		DIR=VUE
+		cd $DIR
+		npm install > /dev/null 2>&1
+		npm run build > /dev/null 2>&1
 	}
-	echoColour "Building $(echoHighlight "Svelte Site")..."
-	if ! svelteBuild; then
-		errorColour "Failed to build $(errorHighlight "Svelte Site")!"
+	if ! vueBuilds; then
+		errorColour "Failed to build $(errorHighlight "Vue Site")!"
 		exit 1
 	fi
 }
@@ -154,7 +142,13 @@ main() {
         fi
     done
     set -- "${args[@]}"
-	mkdir -p site
+	FONT_DIRS=(
+		AbugidaR
+		AlphabetD
+	)
+	for DIR in "${FONT_DIRS[@]}"; do
+		cp $DIR/*.otf assets > /dev/null 2>&1
+	done
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
 			# Individual Builds
@@ -164,20 +158,20 @@ main() {
 				phpBuild;;
 			-l|--latex)
 				laTeXBuild;;
-			-s|--svelte)
-				svelteRun;;
+			-v|--vue)
+				vueBuild;;
 			# Group Builds
 			-W|--web)
-				echo "<!DOCTYPE html><html><head><link href='site/PHP/style.css' rel='stylesheet'></head><body><ul>" > index.html
+				echo "<!DOCTYPE html><html><head><link href='assets/style.css' rel='stylesheet'></head><body><ul>" > index.html
 				WEB=(
 					PHP
-					SVELTE
+					VUE
 				)
 				for I in "${WEB[@]}"; do
-					echo "<li><a href='site/$I/index.html'>$I</a></li>" >> index.html
+					echo "<li><a href='$I/OUT/index.html'>$I</a></li>" >> index.html
 				done
 				echo "</ul></body></html>" >> index.html
-				main -hs;;
+				main -v;;
 			-A|--all)
 				main -yWl;;
 			# Fallback
@@ -186,6 +180,6 @@ main() {
 		esac
 		shift
 	done
-	echo
 }
 main "$@"
+echo

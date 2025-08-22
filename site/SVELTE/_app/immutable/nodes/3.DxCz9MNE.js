@@ -1,1 +1,0 @@
-import"../chunks/DsnmJJEf.js";import"../chunks/CyzMXyXL.js";import{f as r,a as p}from"../chunks/Dy9I_PE6.js";var t=r("<code>AbugidaR.IPA</code>");function d(o){var a=t();p(o,a)}export{d as component};
