@@ -124,11 +124,8 @@ vueBuild() {
 		cd $DIR
 		npm install > /dev/null 2>&1
 		npm run build > /dev/null 2>&1
-		mkdir -p IN
-		mkdir -p OUT
-		#mv * OUT
-		#mv OUT/dist/* IN
-		#rm -rf dist
+		echoColour "Running $(echoHighlight "Vue Site")..."
+		npm run dev #> /dev/null 2>&1
 	}
 	if ! vueBuilds; then
 		errorColour "Failed to build $(errorHighlight "Vue Site")!"
@@ -170,13 +167,12 @@ main() {
 				echo "<!DOCTYPE html><html><head><link href='assets/style.css' rel='stylesheet'></head><body><ul>" > index.html
 				WEB=(
 					PHP
-					VUE
 				)
 				for I in "${WEB[@]}"; do
 					echo "<li><a href='$I/OUT/index.html'>$I</a></li>" >> index.html
 				done
 				echo "</ul></body></html>" >> index.html
-				main -v;;
+				main -h;;
 			-A|--all)
 				main -yWl;;
 			# Fallback

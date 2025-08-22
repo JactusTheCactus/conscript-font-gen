@@ -1,47 +1,31 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
+<!-- App.vue -->
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+	<div id="app">
+		<nav>
+			<router-link to="/">Home</router-link>
+		</nav>
+		<router-view />
+	</div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+
+<script setup>
+// nothing special needed here if you’re just adding a link
+</script>
+
+<style>
+nav {
+	padding: 1rem;
+	background: #f5f5f5;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+nav a {
+	margin-right: 1rem;
+	text-decoration: none;
+	color: #42b983;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav a.router-link-exact-active {
+	font-weight: bold;
 }
 </style>
