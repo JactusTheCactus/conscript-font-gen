@@ -1,3 +1,5 @@
+@import './main.css';
+
 @font-face {
 	font-family:
 		AbugidaR;
@@ -23,6 +25,10 @@
 		Verdana;
 }
 
+.AbugidaR:not(.pre)::before {
+	content: "^"
+}
+
 .AlphabetD {
 	font-family:
 		AlphabetD,
@@ -41,9 +47,22 @@
 	white-space: pre;
 }
 
+.ipa {
+	font-family:
+		Arial;
+}
+
+.ipa::before {
+	content: "/"
+}
+
+.ipa::after {
+	content: "/"
+}
+
 body {
 	font-size:
-		25pt;
+		20px;
 	font-family:
 		Verdana;
 	background-color:
@@ -94,11 +113,6 @@ iframe {
 		none;
 	margin-bottom:
 		20px;
-}
-
-.ipa {
-	font-family:
-		Arial;
 }
 
 th {
