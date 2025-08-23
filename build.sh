@@ -90,38 +90,6 @@ pythonBuild() {
 		exit 1
 	fi
 }
-phpBuild() {
-	dir=PHP
-	phpBuilds() {
-		phpFiles=(
-			index
-			AbugidaR/ipa
-			AbugidaR/ivlivs-caesar
-			AlphabetD/ipa
-			AlphabetD/ivlivs-caesar
-		)
-		for file in "${phpFiles[@]}"; do
-			php=$file.php
-			html=$file.html
-			mkdir -p $dir
-			mkdir -p $dir/OUT/AbugidaR
-			mkdir -p $dir/OUT/AlphabetD
-			if ! php $dir/IN/$php > $dir/OUT/$html; then
-				errorColour "Could not compile $(errorHighlight $php)"
-			fi
-		done
-	}
-	echoColour "Building $(echoHighlight "PHP Pages")..."
-	if ! phpBuilds; then
-		errorColour "Failed to build $(errorHighlight "PHP Pages")!"
-		exit 1
-	else
-		rm -rf $dir/OUT/assets > /dev/null 2>&1
-		mkdir -p PHP/OUT/assets > /dev/null 2>&1
-		cp */*.otf PHP/OUT/assets > /dev/null 2>&1
-		cp assets/* PHP/OUT/assets > /dev/null 2>&1
-	fi
-}
 vueBuild() {
 	echoColour "Building $(echoHighlight "Vue Site")..."
 	vueBuilds() {
@@ -162,27 +130,14 @@ main() {
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
 			# Individual Builds
-			-y|--py)
+			-p|--py)
 				pythonBuild;;
-			-h|--php)
-				phpBuild;;
 			-l|--latex)
 				laTeXBuild;;
 			-v|--vue)
 				vueBuild;;
-			# Group Builds
-			-W|--web)
-				echo "<!DOCTYPE html><html><head><link href='assets/style.css' rel='stylesheet'></head><body><ul>" > index.html
-				WEB=(
-					PHP
-				)
-				for I in "${WEB[@]}"; do
-					echo "<li><a href='$I/OUT/index.html'>$I</a></li>" >> index.html
-				done
-				echo "</ul></body></html>" >> index.html
-				main -hv;;
 			-A|--all)
-				main -yWl;;
+				main -plv;;
 			# Fallback
 			*)
 				errorColour "Unknown Argument $(errorHighlight $1)";;
