@@ -9,7 +9,7 @@
 				"cwd": "${workspaceFolder}"
 			},
 			"args": [
-				"-v"//"-W"
+				"-v"
 			],
 			"problemMatcher": [],
 			"group": {

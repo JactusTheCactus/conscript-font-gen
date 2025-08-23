@@ -82,8 +82,10 @@ laTeXBuild() {
 }
 pythonBuild() {
 	echoColour "Building $(echoHighlight Fonts)..."
-	#if ! python3 script.py > /dev/null 2>&1; then
-	if ! python3 script.py; then
+	pythonBuilds() {
+		python3 script.py #> /dev/null 2>&1
+	}
+	if ! pythonBuilds; then
 		errorColour "Failed to build $(errorHighlight Fonts)!"
 		exit 1
 	fi
