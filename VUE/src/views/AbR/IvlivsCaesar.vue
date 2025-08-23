@@ -1,5 +1,5 @@
 <template>
 	<div id="app">
-		<pre><code>$ ExampleText</code></pre>
+		<span class="AbugidaR">D;u' kwi'k,bra'o;n fo'ks ju'mpt o;'vur d;u' le;'zi; do'g...</span>
 	</div>
 </template>
