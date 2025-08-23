@@ -132,7 +132,7 @@ vueBuild() {
 		npm run build > /dev/null 2>&1
 		if $DEV_VUE; then
 			echoColour "Running $(echoHighlight "Vue Site")..."
-			npm run dev > /dev/null 2>&1
+			npm run dev
 		fi
 	}
 	if ! vueBuilds; then
