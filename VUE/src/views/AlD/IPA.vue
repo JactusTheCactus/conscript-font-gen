@@ -21,109 +21,113 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						B
+						<code>Bb</code>
 						<br />
 						<span class="AlphabetD">B</span>
 						<br />
 						<span class="ipa">b</span>
 					</td>
 					<td>
-						C
+						<code>Cc</code>
 						<br />
 						<span class="AlphabetD">C</span>
 						<br />
 						<span class="ipa">t&#865;&#x0283;</span>
 					</td>
 					<td>
-						D
+						<code>Dd</code>
 						<br />
 						<span class="AlphabetD">D</span>
 						<br />
 						<span class="ipa">d</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						&ETH;
+						<code>&ETH;&eth;</code>
 						<br />
 						<span class="AlphabetD">D;</span>
 						<br />
 						<span class="ipa">ð</span>
 					</td>
 					<td>
-						F
+						<code>Ff</code>
 						<br />
 						<span class="AlphabetD">F</span>
 						<br />
 						<span class="ipa">f</span>
 					</td>
-				</tr>
-				<tr>
 					<td>
-						G
+						<code>Gg</code>
 						<br />
 						<span class="AlphabetD">G</span>
 						<br />
 						<span class="ipa">g</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						H
+						<code>Hh</code>
 						<br />
 						<span class="AlphabetD">H</span>
 						<br />
 						<span class="ipa">h</span>
 					</td>
 					<td>
-						J
+						<code>Jj</code>
 						<br />
 						<span class="AlphabetD">J</span>
 						<br />
 						<span class="ipa">d&#865;&#x0292;</span>
 					</td>
 					<td>
-						K
+						<code>Kk</code>
 						<br />
 						<span class="AlphabetD">K</span>
 						<br />
 						<span class="ipa">k</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						L
+						<code>Ll</code>
 						<br />
 						<span class="AlphabetD">L</span>
 						<br />
 						<span class="ipa">l</span>
 					</td>
-				</tr>
-				<tr>
 					<td>
-						M
+						<code>Mm</code>
 						<br />
 						<span class="AlphabetD">M</span>
 						<br />
 						<span class="ipa">m</span>
 					</td>
 					<td>
-						N
+						<code>Nn</code>
 						<br />
 						<span class="AlphabetD">N</span>
 						<br />
 						<span class="ipa">n</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						&ENG;
+						<code>&ENG;&eng;</code>
 						<br />
 						<span class="AlphabetD">N;</span>
 						<br />
 						<span class="ipa">&eng;</span>
 					</td>
 					<td>
-						P
+						<code>Pp</code>
 						<br />
 						<span class="AlphabetD">P</span>
 						<br />
 						<span class="ipa">p</span>
 					</td>
 					<td>
-						R
+						<code>Rr</code>
 						<br />
 						<span class="AlphabetD">R</span>
 						<br />
@@ -132,65 +136,67 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						S
+						<code>Ss</code>
 						<br />
 						<span class="AlphabetD">S</span>
 						<br />
 						<span class="ipa">s</span>
 					</td>
 					<td>
-						&Sacute;
+						<code>&Sacute;&sacute;</code>
 						<br />
 						<span class="AlphabetD">S;</span>
 						<br />
 						<span class="ipa">&#x0283;</span>
 					</td>
 					<td>
-						T
+						<code>Tt</code>
 						<br />
 						<span class="AlphabetD">T</span>
 						<br />
 						<span class="ipa">t</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						&THORN;
+						<code>&THORN;&thorn;</code>
 						<br />
 						<span class="AlphabetD">T;</span>
 						<br />
 						<span class="ipa">&#x03B8;</span>
 					</td>
 					<td>
-						V
+						<code>Vv</code>
 						<br />
 						<span class="AlphabetD">V</span>
 						<br />
 						<span class="ipa">v</span>
 					</td>
-				</tr>
-				<tr>
 					<td>
-						W
+						<code>Ww</code>
 						<br />
 						<span class="AlphabetD">W</span>
 						<br />
 						<span class="ipa">w</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						Y
+						<code>Yy</code>
 						<br />
 						<span class="AlphabetD">Y</span>
 						<br />
 						<span class="ipa">j</span>
 					</td>
 					<td>
-						Z
+						<code>Zz</code>
 						<br />
 						<span class="AlphabetD">Z</span>
 						<br />
 						<span class="ipa">z</span>
 					</td>
 					<td>
-						&Zacute;
+						<code>&Zacute;&zacute;</code>
 						<br />
 						<span class="AlphabetD">Z;</span>
 						<br />
@@ -207,72 +213,76 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						A
+						<code>Aa</code>
 						<br />
 						<span class="AlphabetD">A</span>
 						<br />
 						<span class="ipa">&#x0252;</span>
 					</td>
 					<td>
-						E
+						<code>Ee</code>
 						<br />
 						<span class="AlphabetD">E</span>
 						<br />
 						<span class="ipa">&#x025b;</span>
 					</td>
 					<td>
-						&Eacute;
+						<code>&Eacute;&eacute;</code>
 						<br />
 						<span class="AlphabetD">E;</span>
 						<br />
 						<span class="ipa">e</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						I
+						<code>Ii</code>
 						<br />
 						<span class="AlphabetD">I</span>
 						<br />
 						<span class="ipa">&#x026a;</span>
 					</td>
 					<td>
-						&Iacute;
+						<code>&Iacute;&iacute;</code>
 						<br />
 						<span class="AlphabetD">I;</span>
 						<br />
 						<span class="ipa">i</span>
 					</td>
-				</tr>
-				<tr>
 					<td>
-						O
+						<code>Oo</code>
 						<br />
 						<span class="AlphabetD">O</span>
 						<br />
 						<span class="ipa">&#x0254;</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						&Oacute;
+						<code>&Oacute;&oacute;</code>
 						<br />
 						<span class="AlphabetD">O;</span>
 						<br />
 						<span class="ipa">o</span>
 					</td>
 					<td>
-						U
+						<code>Uu</code>
 						<br />
 						<span class="AlphabetD">U</span>
 						<br />
 						<span class="ipa">&#x0259;</span>
 					</td>
 					<td>
-						&Uacute;
+						<code>&Uacute;&uacute;</code>
 						<br />
 						<span class="AlphabetD">U;</span>
 						<br />
 						<span class="ipa">u</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						&#x0170;
+						<code>&#x0170;&#x0171;</code>
 						<br />
 						<span class="AlphabetD">U;;</span>
 						<br />
@@ -289,44 +299,37 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						&#x2423;
-						<br />
-						<span class="AlphabetD pre">&#x20;</span>
-						<br/>
-						<i>[SPACE]</i>
-					</td>
-					<td>
-						,
+						<code>,</code>
 						<br />
 						<span class="AlphabetD">,</span>
 						<br />
 						<i>[COMMA]</i>
 					</td>
 					<td>
-						?
+						<code>?</code>
 						<br />
 						<span class="AlphabetD">?</span>
 						<br />
 						<i>[QUESTION]</i>
 					</td>
-				</tr>
-				<tr>
 					<td>
-						.
+						<code>.</code>
 						<br />
 						<span class="AlphabetD">.</span>
 						<br />
 						<i>[STOP]</i>
 					</td>
+				</tr>
+				<tr>
 					<td>
-						...
+						<code>...</code>
 						<br />
 						<span class="AlphabetD">...</span>
 						<br />
 						<i>[ELLIPSIS]</i>
 					</td>
 					<td>
-						&ndash;
+						<code>&ndash;</code>
 						<br />
 						<span class="AlphabetD">-</span>
 						<br />
