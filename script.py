@@ -143,7 +143,7 @@ def genFont(s):
 		letters = sorted(flattenList([
 			"	A	B	C	D	Ð	E	É	F	G	H	".split(),
 			"	I	Í	J	K	L	M	N	Ŋ	O	Ó	".split(),
-			"	P	R	S	Ś	T	Þ	U	Ú	Ű	V	".split(),
+			"	P	R	S	Ś	T	Þ	U	Ú	ǓV	".split(),
 			"	W	Y	Z	Ź							".split()
 		]))
 		punctuation = sorted(flattenList([
@@ -156,7 +156,7 @@ def genFont(s):
 				"	Iacute	I				J		K		L		".split(),
 				"	M		Eng				N		Oacute	O		".split(),
 				"	P		R				Esh		S		Thorn	".split(),
-				"	T		Udoubleacute	Uacute	U		V		".split(),
+				"	T		Uhacek	Uacute	U		V		".split(),
 				"	W		Y				Zhed	Z				".split()
 			])
 		with open(os.path.join(s,"features.fea"),"w") as f:
@@ -179,7 +179,7 @@ def genFont(s):
 			fea.append("feature vert {")
 			fea.append(f"\tsub @lettersLC by @letters;")
 			for i in range(len('U'.split())):
-				fea.append(f"\tsub {'U'.split()[i]} Special Special by {'Udoubleacute'.split()[i]}.solo;")
+				fea.append(f"\tsub {'U'.split()[i]} Special Special by {'Uhacek'.split()[i]}.solo;")
 			for i in range(len('D E I N O S T U Z'.split())):
 				fea.append(f"\tsub {'D E I N O S T U Z'.split()[i]} Special by {'Edh Eacute Iacute Eng Oacute Esh Thorn Uacute Zhed'.split()[i]}.solo;")
 			for i in 'A B C D E F G H I J K L M N O P R S T U V W Y Z'.split():
