@@ -375,8 +375,8 @@ Fore
 Refer: 32 346 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Udoubleacute
-Encoding: 34 368 34
+StartChar: Uhacek
+Encoding: 34 467 34
 Width: 1000
 Flags: HW
 LayerCount: 2
@@ -745,7 +745,7 @@ Refer: 0 95 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: udoubleacute
-Encoding: 75 369 75
+Encoding: 75 468 75
 Width: 1000
 Flags: HW
 LayerCount: 2
