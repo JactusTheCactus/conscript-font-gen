@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1755327341
-ModificationTime: 1755934494
+ModificationTime: 1756243387
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -53,23 +53,23 @@ MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: coverage "'vert' Vertical Alternates in Latin lookup 3 contextual 2" 0 0 0 1
  1 1 0
-  Coverage: 281 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
-  BCoverage: 1127 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Udoubleacute.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Udoubleacute.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Udoubleacute.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
+  Coverage: 275 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
+  BCoverage: 1103 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Uhacek.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Uhacek.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Uhacek.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
  1
   SeqLookup: 0 "Single Substitution lookup 6"
 EndFPST
 ChainSub2: coverage "'vert' Vertical Alternates in Latin lookup 3 contextual 1" 0 0 0 1
  1 0 1
-  Coverage: 281 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
-  FCoverage: 1127 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Udoubleacute.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Udoubleacute.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Udoubleacute.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
+  Coverage: 275 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
+  FCoverage: 1103 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Uhacek.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Uhacek.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Uhacek.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
  1
   SeqLookup: 0 "Single Substitution lookup 5"
 EndFPST
 ChainSub2: coverage "'vert' Vertical Alternates in Latin lookup 3 contextual 0" 0 0 0 1
  1 1 1
-  Coverage: 281 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
-  BCoverage: 1127 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Udoubleacute.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Udoubleacute.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Udoubleacute.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
-  FCoverage: 1127 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Udoubleacute.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Udoubleacute.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Udoubleacute.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
+  Coverage: 275 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo
+  BCoverage: 1103 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Uhacek.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Uhacek.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Uhacek.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
+  FCoverage: 1103 A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Uhacek.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Uhacek.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Uhacek.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina
  1
   SeqLookup: 0 "Single Substitution lookup 4"
 EndFPST
@@ -627,8 +627,8 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Udoubleacute
-Encoding: 34 368 34
+StartChar: Uhacek
+Encoding: 34 467 34
 Width: 1000
 Flags: HW
 LayerCount: 2
@@ -1132,8 +1132,8 @@ EndSplineSet
 Substitution2: "'vert' Vertical Alternates in Latin lookup 0 subtable" Zhed
 EndChar
 
-StartChar: udoubleacute
-Encoding: 75 369 75
+StartChar: uhacek
+Encoding: 75 468 75
 Width: 1000
 Flags: HW
 LayerCount: 2
@@ -1145,7 +1145,7 @@ SplineSet
  475 0 l 29
  475 600 l 25
 EndSplineSet
-Substitution2: "'vert' Vertical Alternates in Latin lookup 0 subtable" Udoubleacute
+Substitution2: "'vert' Vertical Alternates in Latin lookup 0 subtable" Uhacek
 EndChar
 
 StartChar: A.solo
@@ -1940,7 +1940,7 @@ Substitution2: "Single Substitution lookup 4 subtable" Uacute.medi
 Ligature2: "'vert' Vertical Alternates in Latin lookup 1 subtable" U Special
 EndChar
 
-StartChar: Udoubleacute.solo
+StartChar: Uhacek.solo
 Encoding: 104 -1 104
 Width: 1000
 Flags: HW
@@ -1963,9 +1963,9 @@ SplineSet
  475 200 l 29
  475 398 l 25
 EndSplineSet
-Substitution2: "Single Substitution lookup 6 subtable" Udoubleacute.fina
-Substitution2: "Single Substitution lookup 5 subtable" Udoubleacute.init
-Substitution2: "Single Substitution lookup 4 subtable" Udoubleacute.medi
+Substitution2: "Single Substitution lookup 6 subtable" Uhacek.fina
+Substitution2: "Single Substitution lookup 5 subtable" Uhacek.init
+Substitution2: "Single Substitution lookup 4 subtable" Uhacek.medi
 Ligature2: "'vert' Vertical Alternates in Latin lookup 1 subtable" U Special Special
 EndChar
 
@@ -2900,7 +2900,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Udoubleacute.medi
+StartChar: Uhacek.medi
 Encoding: 142 -1 142
 Width: 1000
 Flags: HW
@@ -3570,7 +3570,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Udoubleacute.init
+StartChar: Uhacek.init
 Encoding: 174 -1 174
 Width: 1000
 Flags: HW
@@ -4250,7 +4250,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: Udoubleacute.fina
+StartChar: Uhacek.fina
 Encoding: 208 -1 208
 Width: 1000
 Flags: HW

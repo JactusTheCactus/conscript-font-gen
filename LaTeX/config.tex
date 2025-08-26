@@ -1,28 +1,31 @@
 \setmainfont{segoe-ui}[
-	Path = segoe-ui/,
-	Extension = .ttf,
-	UprightFont = *,
-	BoldFont = *-b,
-	ItalicFont = *-i,
-	BoldItalicFont = *-bi
+	Path=segoe-ui/,
+	Extension=.ttf,
+	UprightFont=*,
+	BoldFont=*-b,
+	ItalicFont=*-i,
+	BoldItalicFont=*-bi
 ]
 \newfontfamily\AbugidaR{AbugidaR}[
-	Path = ../AbugidaR/,
-	Extension = .otf,
-	UprightFont = *
+	Path=../AbugidaR/,
+	Extension=.otf,
+	UprightFont=*
 ]
+\newenvironment{AbRBlock}{\AbugidaR}{}
 \newfontfamily\AlphabetD{AlphabetD}[
-	Path = ../AlphabetD/,
-	Extension = .otf,
-	UprightFont = *
+	Path=../AlphabetD/,
+	Extension=.otf,
+	UprightFont=*,
+	RawFeature={+vert}
 ]
+\newenvironment{AlDBlock}{\AlphabetD}{}
 \makeglossaries
 \input{glossary}
 \setlist[itemize]{
-	itemsep = 0pt,
-	parsep = 0pt
+	itemsep=0pt,
+	parsep=0pt
 }
 \setlist[enumerate]{
-	itemsep = 0pt,
-	parsep = 0pt
+	itemsep=0pt,
+	parsep=0pt
 }

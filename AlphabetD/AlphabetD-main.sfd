@@ -744,7 +744,7 @@ Fore
 Refer: 0 95 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: udoubleacute
+StartChar: uhacek
 Encoding: 75 468 75
 Width: 1000
 Flags: HW
@@ -1005,7 +1005,7 @@ Fore
 Refer: 110 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Udoubleacute.solo
+StartChar: Uhacek.solo
 Encoding: 104 -1 104
 Width: 1000
 Flags: HW
@@ -1385,7 +1385,7 @@ Fore
 Refer: 112 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Udoubleacute.medi
+StartChar: Uhacek.medi
 Encoding: 142 -1 142
 Width: 1000
 Flags: HW
@@ -1673,7 +1673,7 @@ Fore
 Refer: 111 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Udoubleacute.init
+StartChar: Uhacek.init
 Encoding: 174 -1 174
 Width: 1000
 Flags: HW
@@ -1979,7 +1979,7 @@ Fore
 Refer: 113 -1 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: Udoubleacute.fina
+StartChar: Uhacek.fina
 Encoding: 208 -1 208
 Width: 1000
 Flags: HW

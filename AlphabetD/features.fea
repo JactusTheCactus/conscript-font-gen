@@ -1,15 +1,15 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
-@letters = [ A B C Edh D Eacute E F G H Iacute I J K L M Eng N Oacute O P R Esh S Thorn T Udoubleacute Uacute U V W Y Zhed Z ];
-@lettersLC = [ a b c edh d eacute e f g h iacute i j k l m eng n oacute o p r esh s thorn t udoubleacute uacute u v w y zhed z ];
-@letters.solo = [ A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Udoubleacute.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo ];
-@letters.medi = [ A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Udoubleacute.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi ];
-@letters.init = [ A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Udoubleacute.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init ];
-@letters.fina = [ A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Udoubleacute.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina ];
+@letters = [ A B C Edh D Eacute E F G H Iacute I J K L M Eng N Oacute O P R Esh S Thorn T Uhacek Uacute U V W Y Zhed Z ];
+@lettersLC = [ a b c edh d eacute e f g h iacute i j k l m eng n oacute o p r esh s thorn t uhacek uacute u v w y zhed z ];
+@letters.solo = [ A.solo B.solo C.solo Edh.solo D.solo Eacute.solo E.solo F.solo G.solo H.solo Iacute.solo I.solo J.solo K.solo L.solo M.solo Eng.solo N.solo Oacute.solo O.solo P.solo R.solo Esh.solo S.solo Thorn.solo T.solo Uhacek.solo Uacute.solo U.solo V.solo W.solo Y.solo Zhed.solo Z.solo ];
+@letters.medi = [ A.medi B.medi C.medi Edh.medi D.medi Eacute.medi E.medi F.medi G.medi H.medi Iacute.medi I.medi J.medi K.medi L.medi M.medi Eng.medi N.medi Oacute.medi O.medi P.medi R.medi Esh.medi S.medi Thorn.medi T.medi Uhacek.medi Uacute.medi U.medi V.medi W.medi Y.medi Zhed.medi Z.medi ];
+@letters.init = [ A.init B.init C.init Edh.init D.init Eacute.init E.init F.init G.init H.init Iacute.init I.init J.init K.init L.init M.init Eng.init N.init Oacute.init O.init P.init R.init Esh.init S.init Thorn.init T.init Uhacek.init Uacute.init U.init V.init W.init Y.init Zhed.init Z.init ];
+@letters.fina = [ A.fina B.fina C.fina Edh.fina D.fina Eacute.fina E.fina F.fina G.fina H.fina Iacute.fina I.fina J.fina K.fina L.fina M.fina Eng.fina N.fina Oacute.fina O.fina P.fina R.fina Esh.fina S.fina Thorn.fina T.fina Uhacek.fina Uacute.fina U.fina V.fina W.fina Y.fina Zhed.fina Z.fina ];
 @letters.all = [ @letters.solo @letters.medi @letters.init @letters.fina ];
 feature vert {
 	sub @lettersLC by @letters;
-	sub U Special Special by Udoubleacute.solo;
+	sub U Special Special by Uhacek.solo;
 	sub D Special by Edh.solo;
 	sub E Special by Eacute.solo;
 	sub I Special by Iacute.solo;
