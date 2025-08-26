@@ -1,16 +1,23 @@
-.PHONY: build all
-DEV_VUE=false
+.PHONY: all build dev
+DEV_VUE = false
+ASSETS := $(wildcard assets/*)
+VUE_ASSETS := $(patsubst assets/%, VUE/src/assets/%, $(ASSETS))
 -include dev.mk
-all:
-	-clear
+all :
+ifeq ($(DEV_VUE),true)
+	make dev
+else 
 	make build
-build: VUE/*
-	echo "Building Vue Site..."
-	cp assets/* VUE/src/assets
-	cd VUE
-	npm install
+endif
+build : $(wildcard VUE/src/**/*) $(VUE_ASSETS)
+	-clear
+	cd VUE && \
+	npm install && \
 	npm run build
-	if $(DEV_VUE); then
-		echo "Running Vue Site..."
-		npm run dev
-	fi
+dev : build
+	-clear
+	cd VUE && \
+	npm run dev
+VUE/src/assets/% : assets/%
+	mkdir -p $(dir $@)
+	cp $< $@
