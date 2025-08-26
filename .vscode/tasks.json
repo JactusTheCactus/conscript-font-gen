@@ -4,13 +4,10 @@
 		{
 			"label": "Build",
 			"type": "shell",
-			"command": "${workspaceFolder}/build.sh",
+			"command": "make",
 			"options": {
 				"cwd": "${workspaceFolder}"
 			},
-			"args": [
-				"-v"
-			],
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
