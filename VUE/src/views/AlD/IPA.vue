@@ -282,7 +282,7 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						<code>&#x0170;&#x0171;</code>
+						<code>&#x01d3;&#x01d4;</code>
 						<br />
 						<span class="AlphabetD">U;;</span>
 						<br />
