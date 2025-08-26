@@ -219,6 +219,8 @@ tr * {
 						<br />
 						<span class="ipa">&#x0252;</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>Ee</code>
 						<br />
@@ -226,6 +228,8 @@ tr * {
 						<br />
 						<span class="ipa">&#x025b;</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>&Eacute;&eacute;</code>
 						<br />
@@ -242,6 +246,8 @@ tr * {
 						<br />
 						<span class="ipa">&#x026a;</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>&Iacute;&iacute;</code>
 						<br />
@@ -249,6 +255,8 @@ tr * {
 						<br />
 						<span class="ipa">i</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>Oo</code>
 						<br />
@@ -265,6 +273,8 @@ tr * {
 						<br />
 						<span class="ipa">o</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>Uu</code>
 						<br />
@@ -272,6 +282,8 @@ tr * {
 						<br />
 						<span class="ipa">&#x0259;</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>&Uacute;&uacute;</code>
 						<br />
@@ -295,6 +307,8 @@ tr * {
 						<pre class="AbugidaR pre">&#x20;</pre>
 						<i>[SPACE]</i>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>,</code>
 						<br />
@@ -302,6 +316,8 @@ tr * {
 						<br />
 						<i>[COMMA]</i>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>?</code>
 						<br />
@@ -318,6 +334,8 @@ tr * {
 						<br />
 						<i>[STOP]</i>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>...</code>
 						<br />
@@ -325,6 +343,8 @@ tr * {
 						<br />
 						<i>[ELLIPSIS]</i>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>&ndash;</code>
 						<br />
