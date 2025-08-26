@@ -143,7 +143,7 @@ def genFont(s):
 		letters = sorted(flattenList([
 			"	A	B	C	D	Ð	E	É	F	G	H	".split(),
 			"	I	Í	J	K	L	M	N	Ŋ	O	Ó	".split(),
-			"	P	R	S	Ś	T	Þ	U	Ú	ǓV	".split(),
+			"	P	R	S	Ś	T	Þ	U	Ú	Ǔ	V	".split(),
 			"	W	Y	Z	Ź							".split()
 		]))
 		punctuation = sorted(flattenList([
