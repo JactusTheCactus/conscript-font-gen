@@ -4,7 +4,7 @@
 		<table>
 			<tr>
 				<th><router-link to="AbR">AbugidaR</router-link></th>
-				<th><router-link to="AlD">AlphabetD</router-link></th>
+				<th><router-link to="AlD">AlphabetD</router-link><sup>[WIP]</sup></th>
 			</tr>
 			<tr>
 				<td>
