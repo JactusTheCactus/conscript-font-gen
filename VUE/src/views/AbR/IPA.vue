@@ -168,6 +168,13 @@ tr * {
 						<br />
 						<span class="ipa">&#x0283;</span>
 					</td>
+					<td>
+						<code>&Zacute;&zacute;</code>
+						<br />
+						<span class="AbugidaR">Z;</span>
+						<br />
+						<span class="ipa">&#x0292;</span>
+					</td>
 				</tr>
 				<tr>
 					<td>
@@ -199,13 +206,6 @@ tr * {
 						<span class="AbugidaR">T;</span>
 						<br />
 						<span class="ipa">&#x03B8;</span>
-					</td>
-					<td>
-						<code>&Zacute;&zacute;</code>
-						<br />
-						<span class="AbugidaR">Z;</span>
-						<br />
-						<span class="ipa">&#x0292;</span>
 					</td>
 				</tr>
 			</table>
