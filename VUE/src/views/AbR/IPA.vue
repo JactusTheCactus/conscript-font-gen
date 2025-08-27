@@ -40,6 +40,13 @@ tr * {
 						<span class="ipa">t&#865;&#x0283;</span>
 					</td>
 					<td>
+						<code>Jj</code>
+						<br />
+						<span class="AbugidaR">J</span>
+						<br />
+						<span class="ipa">d&#865;&#x0292;</span>
+					</td>
+					<td>
 						<code>Bb</code>
 						<br />
 						<span class="AbugidaR">B</span>
@@ -78,13 +85,6 @@ tr * {
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<code>Jj</code>
-						<br />
-						<span class="AbugidaR">J</span>
-						<br />
-						<span class="ipa">d&#865;&#x0292;</span>
-					</td>
 					<td>
 						<code>Kk</code>
 						<br />
