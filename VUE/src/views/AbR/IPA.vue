@@ -63,6 +63,13 @@ tr * {
 				</tr>
 				<tr>
 					<td>
+						<code>Ll</code>
+						<br />
+						<span class="AbugidaR">L</span>
+						<br />
+						<span class="ipa">l</span>
+					</td>
+					<td>
 						<code>Ff</code>
 						<br />
 						<span class="AbugidaR">F</span>
@@ -101,13 +108,6 @@ tr * {
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<code>Ll</code>
-						<br />
-						<span class="AbugidaR">L</span>
-						<br />
-						<span class="ipa">l</span>
-					</td>
 					<td>
 						<code>Mm</code>
 						<br />
