@@ -171,18 +171,18 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						<code>&THORN;&thorn;</code>
-						<br />
-						<span class="AbugidaR">T;</span>
-						<br />
-						<span class="ipa">&#x03B8;</span>
-					</td>
-					<td>
 						<code>Ww</code>
 						<br />
 						<span class="AbugidaR">W</span>
 						<br />
 						<span class="ipa">w</span>
+					</td>
+					<td>
+						<code>&THORN;&thorn;</code>
+						<br />
+						<span class="AbugidaR">T;</span>
+						<br />
+						<span class="ipa">&#x03B8;</span>
 					</td>
 				</tr>
 				<tr>
