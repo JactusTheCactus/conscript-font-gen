@@ -138,6 +138,8 @@ tr * {
 						<br />
 						<span class="ipa">p</span>
 					</td>
+				</tr>
+				<tr>
 					<td>
 						<code>Rr</code>
 						<br />
@@ -145,8 +147,6 @@ tr * {
 						<br />
 						<span class="ipa">&#x0279;</span>
 					</td>
-				</tr>
-				<tr>
 					<td>
 						<code>Ss</code>
 						<br />
