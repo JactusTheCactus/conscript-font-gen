@@ -177,13 +177,6 @@ tr * {
 						<br />
 						<span class="ipa">t</span>
 					</td>
-					<td>
-						<code>&THORN;&thorn;</code>
-						<br />
-						<span class="AbugidaR">T;</span>
-						<br />
-						<span class="ipa">&#x03B8;</span>
-					</td>
 				</tr>
 				<tr>
 					<td>
@@ -192,6 +185,13 @@ tr * {
 						<span class="AbugidaR">Y</span>
 						<br />
 						<span class="ipa">j</span>
+					</td>
+					<td>
+						<code>&THORN;&thorn;</code>
+						<br />
+						<span class="AbugidaR">T;</span>
+						<br />
+						<span class="ipa">&#x03B8;</span>
 					</td>
 					<td>
 						<code>Zz</code>
