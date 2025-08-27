@@ -63,18 +63,18 @@ tr * {
 				</tr>
 				<tr>
 					<td>
-						<code>&ETH;&eth;</code>
-						<br />
-						<span class="AbugidaR">D;</span>
-						<br />
-						<span class="ipa">ð</span>
-					</td>
-					<td>
 						<code>Ff</code>
 						<br />
 						<span class="AbugidaR">F</span>
 						<br />
 						<span class="ipa">f</span>
+					</td>
+					<td>
+						<code>&ETH;&eth;</code>
+						<br />
+						<span class="AbugidaR">D;</span>
+						<br />
+						<span class="ipa">ð</span>
 					</td>
 					<td>
 						<code>Gg</code>
