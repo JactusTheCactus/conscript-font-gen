@@ -122,6 +122,13 @@ tr * {
 						<br />
 						<span class="ipa">n</span>
 					</td>
+					<td>
+						<code>Pp</code>
+						<br />
+						<span class="AbugidaR">P</span>
+						<br />
+						<span class="ipa">p</span>
+					</td>
 				</tr>
 				<tr>
 					<td>
@@ -130,13 +137,6 @@ tr * {
 						<span class="AbugidaR">N;</span>
 						<br />
 						<span class="ipa">&eng;</span>
-					</td>
-					<td>
-						<code>Pp</code>
-						<br />
-						<span class="AbugidaR">P</span>
-						<br />
-						<span class="ipa">p</span>
 					</td>
 				</tr>
 				<tr>
