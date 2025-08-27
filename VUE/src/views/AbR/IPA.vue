@@ -33,18 +33,18 @@ tr * {
 						<span class="ipa">h</span>
 					</td>
 					<td>
-						<code>Bb</code>
-						<br />
-						<span class="AbugidaR">B</span>
-						<br />
-						<span class="ipa">b</span>
-					</td>
-					<td>
 						<code>Cc</code>
 						<br />
 						<span class="AbugidaR">C</span>
 						<br />
 						<span class="ipa">t&#865;&#x0283;</span>
+					</td>
+					<td>
+						<code>Bb</code>
+						<br />
+						<span class="AbugidaR">B</span>
+						<br />
+						<span class="ipa">b</span>
 					</td>
 					<td>
 						<code>Dd</code>
