@@ -138,6 +138,13 @@ tr * {
 						<br />
 						<span class="ipa">&eng;</span>
 					</td>
+					<td>
+						<code>Ss</code>
+						<br />
+						<span class="AbugidaR">S</span>
+						<br />
+						<span class="ipa">s</span>
+					</td>
 				</tr>
 				<tr>
 					<td>
@@ -146,13 +153,6 @@ tr * {
 						<span class="AbugidaR">R</span>
 						<br />
 						<span class="ipa">&#x0279;</span>
-					</td>
-					<td>
-						<code>Ss</code>
-						<br />
-						<span class="AbugidaR">S</span>
-						<br />
-						<span class="ipa">s</span>
 					</td>
 					<td>
 						<code>&Sacute;&sacute;</code>
