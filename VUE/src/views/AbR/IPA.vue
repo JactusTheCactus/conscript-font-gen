@@ -20,6 +20,11 @@ tr * {
 					<th colspan=3>Consonants</th>
 				</tr>
 				<tr>
+					<th>Unpaired</th>
+					<th>Voiceless</th>
+					<th>Voiced</th>
+				</tr>
+				<tr>
 					<td>
 						<code>Bb</code>
 						<br />
