@@ -26,6 +26,13 @@ tr * {
 				</tr>
 				<tr>
 					<td>
+						<code>Hh</code>
+						<br />
+						<span class="AbugidaR">H</span>
+						<br />
+						<span class="ipa">h</span>
+					</td>
+					<td>
 						<code>Bb</code>
 						<br />
 						<span class="AbugidaR">B</span>
@@ -71,13 +78,6 @@ tr * {
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<code>Hh</code>
-						<br />
-						<span class="AbugidaR">H</span>
-						<br />
-						<span class="ipa">h</span>
-					</td>
 					<td>
 						<code>Jj</code>
 						<br />
