@@ -69,13 +69,6 @@ tr * {
 						<br />
 						<span class="ipa">v</span>
 					</td>
-					<td>
-						<code>&ETH;&eth;</code>
-						<br />
-						<span class="AbugidaR">D;</span>
-						<br />
-						<span class="ipa">ð</span>
-					</td>
 				</tr>
 				<tr>
 					<td>
@@ -206,6 +199,13 @@ tr * {
 						<span class="AbugidaR">T;</span>
 						<br />
 						<span class="ipa">&#x03B8;</span>
+					</td>
+					<td>
+						<code>&ETH;&eth;</code>
+						<br />
+						<span class="AbugidaR">D;</span>
+						<br />
+						<span class="ipa">ð</span>
 					</td>
 				</tr>
 			</table>
