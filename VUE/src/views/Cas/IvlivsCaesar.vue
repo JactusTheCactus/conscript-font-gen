@@ -2,10 +2,10 @@
 	<div id="app">
 		<table>
 			<tr>
-				<th>AlphabetD</th>
+				<th>Cascadic</th>
 			</tr>
 			<tr>
-				<td class="AlphabetD">frendz,ro;minz,kuncri;men,lend mi; yo;r i;rz.<br />
+				<td class="Cascadic">frendz,ro;minz,kuncri;men,lend mi; yo;r i;rz.<br />
 					ai; kum tu; beri; si;zur,not tu; pre;z him.<br />
 					ðu i;vul ðat men du; livz aftur ðem.<br />
 					ðu gud iz oft intured wiþ ðe;r bo;nz-<br />

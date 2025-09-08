@@ -8,7 +8,7 @@ tr * {
 		<section>
 			<table>
 				<tr>
-					<th>AlphabetD</th>
+					<th>Cascadic</th>
 				</tr>
 			</table>
 		</section>
@@ -23,21 +23,21 @@ tr * {
 					<td>
 						<code>Bb</code>
 						<br />
-						<span class="AlphabetD">B</span>
+						<span class="Cascadic">B</span>
 						<br />
 						<span class="ipa">b</span>
 					</td>
 					<td>
 						<code>Cc</code>
 						<br />
-						<span class="AlphabetD">C</span>
+						<span class="Cascadic">C</span>
 						<br />
 						<span class="ipa">t&#865;&#x0283;</span>
 					</td>
 					<td>
 						<code>Dd</code>
 						<br />
-						<span class="AlphabetD">D</span>
+						<span class="Cascadic">D</span>
 						<br />
 						<span class="ipa">d</span>
 					</td>
@@ -46,21 +46,21 @@ tr * {
 					<td>
 						<code>&ETH;&eth;</code>
 						<br />
-						<span class="AlphabetD">D;</span>
+						<span class="Cascadic">D;</span>
 						<br />
 						<span class="ipa">ð</span>
 					</td>
 					<td>
 						<code>Ff</code>
 						<br />
-						<span class="AlphabetD">F</span>
+						<span class="Cascadic">F</span>
 						<br />
 						<span class="ipa">f</span>
 					</td>
 					<td>
 						<code>Gg</code>
 						<br />
-						<span class="AlphabetD">G</span>
+						<span class="Cascadic">G</span>
 						<br />
 						<span class="ipa">g</span>
 					</td>
@@ -69,21 +69,21 @@ tr * {
 					<td>
 						<code>Hh</code>
 						<br />
-						<span class="AlphabetD">H</span>
+						<span class="Cascadic">H</span>
 						<br />
 						<span class="ipa">h</span>
 					</td>
 					<td>
 						<code>Jj</code>
 						<br />
-						<span class="AlphabetD">J</span>
+						<span class="Cascadic">J</span>
 						<br />
 						<span class="ipa">d&#865;&#x0292;</span>
 					</td>
 					<td>
 						<code>Kk</code>
 						<br />
-						<span class="AlphabetD">K</span>
+						<span class="Cascadic">K</span>
 						<br />
 						<span class="ipa">k</span>
 					</td>
@@ -92,21 +92,21 @@ tr * {
 					<td>
 						<code>Ll</code>
 						<br />
-						<span class="AlphabetD">L</span>
+						<span class="Cascadic">L</span>
 						<br />
 						<span class="ipa">l</span>
 					</td>
 					<td>
 						<code>Mm</code>
 						<br />
-						<span class="AlphabetD">M</span>
+						<span class="Cascadic">M</span>
 						<br />
 						<span class="ipa">m</span>
 					</td>
 					<td>
 						<code>Nn</code>
 						<br />
-						<span class="AlphabetD">N</span>
+						<span class="Cascadic">N</span>
 						<br />
 						<span class="ipa">n</span>
 					</td>
@@ -115,21 +115,21 @@ tr * {
 					<td>
 						<code>&ENG;&eng;</code>
 						<br />
-						<span class="AlphabetD">N;</span>
+						<span class="Cascadic">N;</span>
 						<br />
 						<span class="ipa">&eng;</span>
 					</td>
 					<td>
 						<code>Pp</code>
 						<br />
-						<span class="AlphabetD">P</span>
+						<span class="Cascadic">P</span>
 						<br />
 						<span class="ipa">p</span>
 					</td>
 					<td>
 						<code>Rr</code>
 						<br />
-						<span class="AlphabetD">R</span>
+						<span class="Cascadic">R</span>
 						<br />
 						<span class="ipa">&#x0279;</span>
 					</td>
@@ -138,21 +138,21 @@ tr * {
 					<td>
 						<code>Ss</code>
 						<br />
-						<span class="AlphabetD">S</span>
+						<span class="Cascadic">S</span>
 						<br />
 						<span class="ipa">s</span>
 					</td>
 					<td>
 						<code>&Sacute;&sacute;</code>
 						<br />
-						<span class="AlphabetD">S;</span>
+						<span class="Cascadic">S;</span>
 						<br />
 						<span class="ipa">&#x0283;</span>
 					</td>
 					<td>
 						<code>Tt</code>
 						<br />
-						<span class="AlphabetD">T</span>
+						<span class="Cascadic">T</span>
 						<br />
 						<span class="ipa">t</span>
 					</td>
@@ -161,21 +161,21 @@ tr * {
 					<td>
 						<code>&THORN;&thorn;</code>
 						<br />
-						<span class="AlphabetD">T;</span>
+						<span class="Cascadic">T;</span>
 						<br />
 						<span class="ipa">&#x03B8;</span>
 					</td>
 					<td>
 						<code>Vv</code>
 						<br />
-						<span class="AlphabetD">V</span>
+						<span class="Cascadic">V</span>
 						<br />
 						<span class="ipa">v</span>
 					</td>
 					<td>
 						<code>Ww</code>
 						<br />
-						<span class="AlphabetD">W</span>
+						<span class="Cascadic">W</span>
 						<br />
 						<span class="ipa">w</span>
 					</td>
@@ -184,21 +184,21 @@ tr * {
 					<td>
 						<code>Yy</code>
 						<br />
-						<span class="AlphabetD">Y</span>
+						<span class="Cascadic">Y</span>
 						<br />
 						<span class="ipa">j</span>
 					</td>
 					<td>
 						<code>Zz</code>
 						<br />
-						<span class="AlphabetD">Z</span>
+						<span class="Cascadic">Z</span>
 						<br />
 						<span class="ipa">z</span>
 					</td>
 					<td>
 						<code>&Zacute;&zacute;</code>
 						<br />
-						<span class="AlphabetD">Z;</span>
+						<span class="Cascadic">Z;</span>
 						<br />
 						<span class="ipa">&#x0292;</span>
 					</td>
@@ -215,7 +215,7 @@ tr * {
 					<td>
 						<code>Aa</code>
 						<br />
-						<span class="AlphabetD">A</span>
+						<span class="Cascadic">A</span>
 						<br />
 						<span class="ipa">&#x0252;</span>
 					</td>
@@ -224,7 +224,7 @@ tr * {
 					<td>
 						<code>Ee</code>
 						<br />
-						<span class="AlphabetD">E</span>
+						<span class="Cascadic">E</span>
 						<br />
 						<span class="ipa">&#x025b;</span>
 					</td>
@@ -233,7 +233,7 @@ tr * {
 					<td>
 						<code>&Eacute;&eacute;</code>
 						<br />
-						<span class="AlphabetD">E;</span>
+						<span class="Cascadic">E;</span>
 						<br />
 						<span class="ipa">e</span>
 					</td>
@@ -242,7 +242,7 @@ tr * {
 					<td>
 						<code>Ii</code>
 						<br />
-						<span class="AlphabetD">I</span>
+						<span class="Cascadic">I</span>
 						<br />
 						<span class="ipa">&#x026a;</span>
 					</td>
@@ -251,7 +251,7 @@ tr * {
 					<td>
 						<code>&Iacute;&iacute;</code>
 						<br />
-						<span class="AlphabetD">I;</span>
+						<span class="Cascadic">I;</span>
 						<br />
 						<span class="ipa">i</span>
 					</td>
@@ -260,7 +260,7 @@ tr * {
 					<td>
 						<code>Oo</code>
 						<br />
-						<span class="AlphabetD">O</span>
+						<span class="Cascadic">O</span>
 						<br />
 						<span class="ipa">&#x0254;</span>
 					</td>
@@ -269,7 +269,7 @@ tr * {
 					<td>
 						<code>&Oacute;&oacute;</code>
 						<br />
-						<span class="AlphabetD">O;</span>
+						<span class="Cascadic">O;</span>
 						<br />
 						<span class="ipa">o</span>
 					</td>
@@ -278,7 +278,7 @@ tr * {
 					<td>
 						<code>Uu</code>
 						<br />
-						<span class="AlphabetD">U</span>
+						<span class="Cascadic">U</span>
 						<br />
 						<span class="ipa">&#x0259;</span>
 					</td>
@@ -287,7 +287,7 @@ tr * {
 					<td>
 						<code>&Uacute;&uacute;</code>
 						<br />
-						<span class="AlphabetD">U;</span>
+						<span class="Cascadic">U;</span>
 						<br />
 						<span class="ipa">u</span>
 					</td>
@@ -296,7 +296,7 @@ tr * {
 					<td>
 						<code>&#x01d3;&#x01d4;</code>
 						<br />
-						<span class="AlphabetD">U;;</span>
+						<span class="Cascadic">U;;</span>
 						<br />
 						<span class="ipa">&#x028a;</span>
 					</td>
@@ -313,7 +313,7 @@ tr * {
 					<td>
 						<code>,</code>
 						<br />
-						<span class="AlphabetD">,</span>
+						<span class="Cascadic">,</span>
 						<br />
 						<i>[COMMA]</i>
 					</td>
@@ -322,7 +322,7 @@ tr * {
 					<td>
 						<code>?</code>
 						<br />
-						<span class="AlphabetD">?</span>
+						<span class="Cascadic">?</span>
 						<br />
 						<i>[QUESTION]</i>
 					</td>
@@ -331,7 +331,7 @@ tr * {
 					<td>
 						<code>.</code>
 						<br />
-						<span class="AlphabetD">.</span>
+						<span class="Cascadic">.</span>
 						<br />
 						<i>[STOP]</i>
 					</td>
@@ -340,7 +340,7 @@ tr * {
 					<td>
 						<code>...</code>
 						<br />
-						<span class="AlphabetD">...</span>
+						<span class="Cascadic">...</span>
 						<br />
 						<i>[ELLIPSIS]</i>
 					</td>
@@ -349,7 +349,7 @@ tr * {
 					<td>
 						<code>&ndash;</code>
 						<br />
-						<span class="AlphabetD">-</span>
+						<span class="Cascadic">-</span>
 						<br />
 						<i>[DASH]</i>
 					</td>

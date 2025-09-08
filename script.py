@@ -9,7 +9,7 @@ def exportGlyphs(folder: str):
 	OUTPUT_DIR = os.path.join(folder,"exports")
 	shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
 	os.makedirs(OUTPUT_DIR)
-	if folder == "AlphabetD":
+	if folder == "Cascadic":
 		for i in "Solo Init Medi Fina".split():
 			path = os.path.join(OUTPUT_DIR, i)
 			shutil.rmtree(path, ignore_errors=True)
@@ -138,7 +138,7 @@ def genFont(s):
 			glyph.width = int(width + (sideBearing * 2))
 		font.save(os.path.join(s,"AbugidaR-lig.sfd"))
 		font.generate(os.path.join(s,"AbugidaR.otf"))
-	elif s == "AlphabetD":
+	elif s == "Cascadic":
 		font = fontforge.open(os.path.join(s,f"{s}-main.sfd"))
 		letters = sorted(flattenList([
 			"	A	B	C	D	Ð	E	É	F	G	H	".split(),
@@ -207,7 +207,7 @@ def genFont(s):
 		font.generate(os.path.join(s,f"{s}.otf"))
 for i in [
 	"AbugidaR",
-	"AlphabetD"
+	"Cascadic"
 ]:
 	genFont(i)
 	exportGlyphs(i)

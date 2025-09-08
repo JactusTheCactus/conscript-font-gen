@@ -9,9 +9,9 @@
 
 @font-face {
 	font-family:
-		AlphabetD;
+		Cascadic;
 	src:
-		url("AlphabetD.otf") format("opentype");
+		url("Cascadic.otf") format("opentype");
 }
 
 .Latin {
@@ -29,9 +29,9 @@
 	content: "^"
 }
 
-.AlphabetD {
+.Cascadic {
 	font-family:
-		AlphabetD,
+		Cascadic,
 		Verdana;
 	writing-mode:
 		vertical-lr;
@@ -43,7 +43,7 @@
 }
 
 .AbugidaR,
-.AlphabetD {
+.Cascadic {
 	white-space: pre;
 }
 
@@ -62,11 +62,13 @@
 
 body {
 	font-size:
-		20px;
+		20pt;
 	font-family:
 		Verdana;
 	background-color:
 		#fff;
+	color:
+		#000;
 	font-weight:
 		bold;
 	overflow-x:

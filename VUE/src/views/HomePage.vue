@@ -4,14 +4,14 @@
 		<table>
 			<tr>
 				<th><router-link to="AbR">AbugidaR</router-link></th>
-				<th><router-link to="AlD">AlphabetD</router-link><sup>[WIP]</sup></th>
+				<th><router-link to="Cas">Cascadic</router-link><sup>[WIP]</sup></th>
 			</tr>
 			<tr>
 				<td>
 					<span class="AbugidaR">Abu;gi;'da.</span>
 				</td>
 				<td>
-					<span class="AlphabetD">Alfubet.</span>
+					<span class="Cascadic">Kaskadik.</span>
 				</td>
 			</tr>
 		</table>

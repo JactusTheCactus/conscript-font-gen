@@ -3,9 +3,9 @@ import Home from '../views/HomePage.vue';
 import AbR from '../views/AbR.vue';
 import AbR_IPA from '../views/AbR/IPA.vue';
 import AbR_IvlivsCaesar from '../views/AbR/IvlivsCaesar.vue';
-import AlD from '../views/AlD.vue';
-import AlD_IPA from '../views/AlD/IPA.vue';
-import AlD_IvlivsCaesar from '../views/AlD/IvlivsCaesar.vue';
+import Cas from '../views/Cas.vue';
+import Cas_IPA from '../views/Cas/IPA.vue';
+import Cas_IvlivsCaesar from '../views/Cas/IvlivsCaesar.vue';
 const divider = " | ";
 const routes = [
 	{
@@ -47,34 +47,34 @@ const routes = [
 		}
 	},
 	{
-		path: '/AlD',
-		name: 'AlD',
-		component: AlD,
+		path: '/Cas',
+		name: 'Cas',
+		component: Cas,
 		meta: {
 			title: [
-				"AlD",
+				"Cas",
 				"Home"
 			].join(divider)
 		}
 	},
 	{
-		path: '/AlD/IPA',
-		name: 'AlD_IPA',
-		component: AlD_IPA,
+		path: '/Cas/IPA',
+		name: 'Cas_IPA',
+		component: Cas_IPA,
 		meta: {
 			title: [
-				"AlD",
+				"Cas",
 				"IPA"
 			].join(divider)
 		}
 	},
 	{
-		path: '/AlD/IvlivsCaesar',
-		name: 'AlD_IvlivsCaesar',
-		component: AlD_IvlivsCaesar,
+		path: '/Cas/IvlivsCaesar',
+		name: 'Cas_IvlivsCaesar',
+		component: Cas_IvlivsCaesar,
 		meta: {
 			title: [
-				"AlD",
+				"Cas",
 				"Example Text"
 			].join(divider)
 		}
