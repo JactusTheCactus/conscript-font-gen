@@ -1,8 +1,5 @@
 const C = "Consonant";
-const nC = ["Null",C].join(" ");/*
-* Consonant symbol with no phonetic meaning
-	* Only used when a consonant `GLYPH` is necessary, but the `PHONEME` is not
-*/
+const nC = ["Null",C].join(" ");// Consonant symbol with no phonetic meaning. Only used when a consonant GLYPH is necessary, but the PHONEME is not
 const V = "Vowel";
 const CV = [C,V].join("+");
 const nCV = [nC,V].join("+");
