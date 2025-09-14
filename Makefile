@@ -1,13 +1,16 @@
-.PHONY: all build dev gloss python vue xetex
+.PHONY: all build dev gloss js python vue xetex
 DEV_VUE = false
 ASSETS := $(wildcard assets/*)
 VUE_ASSETS := $(patsubst assets/%, VUE/src/assets/%, $(ASSETS))
+JS_DIR := fontCode
 -include dev.mk
 all : build
-ifeq ($(DEV_VUE),true)
-	@make dev
-endif
-build : python vue#python latex vue
+#ifeq ($(DEV_VUE),true)
+#	@make dev
+#endif
+build : js#python latex vue
+js :
+	@node $(JS_DIR)/script.js
 python : script.py AbugidaR/* Cascadic/*
 	@python3 script.py
 	@cp AbugidaR/AbugidaR.otf assets && \

@@ -1,26 +1,27 @@
 {
-  "name": "conscript-font-gen",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JactusTheCactus/conscript-font-gen.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JactusTheCactus/conscript-font-gen/issues"
-  },
-  "homepage": "https://github.com/JactusTheCactus/conscript-font-gen#readme",
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.9"
-  }
+	"name": "conscript-font-gen",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JactusTheCactus/conscript-font-gen.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JactusTheCactus/conscript-font-gen/issues"
+	},
+	"homepage": "https://github.com/JactusTheCactus/conscript-font-gen#readme",
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.9"
+	}
 }
