@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Stratic;
+  src: url("/stratic.otf") format("opentype"); }
+body {
+  font-size: 20pt;
+  font-family: Consolas; }
+  body li:nth-child(2) {
+    font-family: Stratic, Consolas; }
+
+/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,9 @@ all : build
 #endif
 build : js#python latex vue
 js :
-	@node $(JS_DIR)/script.js
+	@clear
+	@sass style.scss style.css
+	@node --trace-uncaught $(JS_DIR)/script.js
 python : script.py AbugidaR/* Cascadic/*
 	@python3 script.py
 	@cp AbugidaR/AbugidaR.otf assets && \

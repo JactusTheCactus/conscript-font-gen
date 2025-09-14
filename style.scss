@@ -1,0 +1,30 @@
+$defFont: Consolas;
+$neoFont: Stratic;
+
+@mixin font-face($name) {
+	@font-face {
+		font-family: $name;
+		src: url("/#{to-lower-case($name)}.otf") format("opentype");
+	}
+}
+
+@mixin font($main: null) {
+
+	@if $main ==null {
+		font-family: $defFont;
+	}
+	@else {
+		font-family: $main, $defFont;
+	}
+}
+
+@include font-face($neoFont);
+
+body {
+	font-size: 20pt;
+	@include font();
+
+	li:nth-child(2) {
+		@include font($neoFont)
+	}
+}
