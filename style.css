@@ -4,7 +4,8 @@
 body {
   font-size: 20pt;
   font-family: Consolas; }
-  body li:nth-child(2) {
+  body li:nth-child(2),
+  body .stratic {
     font-family: Stratic, Consolas; }
 
 /*# sourceMappingURL=style.css.map */

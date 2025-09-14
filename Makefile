@@ -1,8 +1,12 @@
 .PHONY: all build dev gloss js python vue xetex
+SHELL := /bin/bash
 DEV_VUE = false
 ASSETS := $(wildcard assets/*)
 VUE_ASSETS := $(patsubst assets/%, VUE/src/assets/%, $(ASSETS))
-JS_DIR := fontCode
+JS_DIR := openTypeJS
+PYTHON := python3
+VENV := vEnv
+VENV_ACTIVATE := source $(VENV)/bin/activate
 -include dev.mk
 all : build
 #ifeq ($(DEV_VUE),true)
@@ -13,6 +17,10 @@ js :
 	@clear
 	@sass style.scss style.css
 	@node --trace-uncaught $(JS_DIR)/script.js
+	@$(VENV_ACTIVATE) && \
+	spot -t fea stratic.fea
+#	@$(VENV_ACTIVATE) && \
+	makeotf -f stratic.otf -ff stratic.fea -o straticOut.otf
 python : script.py AbugidaR/* Cascadic/*
 	@python3 script.py
 	@cp AbugidaR/AbugidaR.otf assets && \
