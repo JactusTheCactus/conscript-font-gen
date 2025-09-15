@@ -1,10 +1,12 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
-
-lookup spaceToStop {
-	sub space space by stop;
-} spaceToStop;
-
+@upperC = [B C D F G H J K L M N P R S T V W X Y Z];
+@upperV = [A E I O U];
+@lowerC = [b c d f g h j k l m n p r s t v w x y z];
+@lowerV = [a e i o u];
+@upper = [@upperC @upperV];
+@lower = [@lowerC @lowerV];
 feature liga {
-	lookup spaceToStop;
+	sub stop stop stop by ellipsis;
+	sub @lower by @upper;
 } liga;

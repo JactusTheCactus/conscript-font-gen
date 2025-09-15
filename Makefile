@@ -1,4 +1,4 @@
-.PHONY: all build dev gloss js python vue xetex
+.PHONY: all build clean dev gloss js python vue xetex
 SHELL := /bin/bash
 DEV_VUE = false
 ASSETS := $(wildcard assets/*)
@@ -7,20 +7,21 @@ JS_DIR := openTypeJS
 PYTHON := python3
 VENV := vEnv
 VENV_ACTIVATE := source $(VENV)/bin/activate
--include dev.mk
-all : build
-#ifeq ($(DEV_VUE),true)
-#	@make dev
-#endif
+ABG := stratic
+#-include dev.mk
+all : build clean
+ifeq ($(DEV_VUE),true)
+	@make dev
+endif
 build : js#python latex vue
 js :
-	@clear
 	@sass style.scss style.css
 	@node --trace-uncaught $(JS_DIR)/script.js
-	@$(VENV_ACTIVATE) && \
-	spot -t fea stratic.fea
-#	@$(VENV_ACTIVATE) && \
-	makeotf -f stratic.otf -ff stratic.fea -o straticOut.otf
+	-@$(VENV_ACTIVATE) && \
+	fonttools feaLib \
+	-o $(ABG).otf \
+	$(ABG).fea \
+	$(ABG).otf
 python : script.py AbugidaR/* Cascadic/*
 	@python3 script.py
 	@cp AbugidaR/AbugidaR.otf assets && \
@@ -57,3 +58,8 @@ dev :
 VUE/src/assets/% : assets/%
 	@mkdir -p $(dir $@)
 	@cp $< $@
+clean :
+	@rm -rf $(wildcard \
+		.sass-cache \
+		*.css.map \
+	)
