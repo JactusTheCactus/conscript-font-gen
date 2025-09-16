@@ -2,11 +2,19 @@ import { writeToFile } from "./utility.js"
 function JSONfmt(object) {
 	return JSON.stringify(object, null, "\t")
 }
-function newNode(node = "", type = "leaf") {
-	switch (type) {
+/**
+ * 
+ * @param {string} node 
+ * @param {"leaf"|"branch"} type 
+ * @returns 
+ */
+function newNode(type = "leaf", node = "", children = []) {
+	switch (type.toLowerCase()) {
 		case "branch": // With children
-			// Not yet implemented, so is currently identical to a Leaf
-			return node
+			return [
+				node,
+				children
+			]
 		case "leaf": // No children
 			return node
 	}
@@ -16,12 +24,10 @@ function newLanguage(native = "N/A", latin = "", desc = "", reconstructed = fals
 		latin = native
 	}
 	const prefix = reconstructed ? "*" : "";
-	return {
-		[prefix + native]: {
-			Romanization: latin,
-			Description: desc
-		}
-	}
+	return newNode("branch", prefix + native, [
+		`Romanization : ${latin}`,
+		`Description : ${desc}`
+	])
 };
 function newCulture(native = "", latin = "", desc = "") {
 	return newLanguage(native, latin, desc)
@@ -33,50 +39,50 @@ const mindmap = {
 				"Śraka'ska culture splinters": {
 					"The Śra'ta & Kaskada cultures independently invent Śra'tik & Kaskadik writing": {
 						"Śra'ta": [
-							"Śra'ta loses the /ʊ/ sound, merging it into /ə/",
-							"The Śra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves"
+							newNode("leaf", "Śra'ta loses the /ʊ/ sound, merging it into /ə/"),
+							newNode("leaf", "The Śra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves")
 						],
 						"Kaskada": [
-							newNode("The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree", "leaf")
+							newNode("leaf", "The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree")
 						]
 					}
 				}
 			}
 		}
 	},
-	"Cultures": {
+	"Cultures": [
 		...newCulture(
-			"Śraka'ska",
-			"Stracasca",
-			"The culture that would later become Śra'ta & Kaskada"
+			newNode("leaf", "Śraka'ska"),
+			newNode("leaf", "Stracasca"),
+			newNode("leaf", "The culture that would later become Śra'ta & Kaskada")
 		),
 		...newCulture(
-			"Śra'ta",
-			"Strata"
+			newNode("leaf", "Śra'ta"),
+			newNode("leaf", "Strata")
 		),
 		...newCulture(
-			"Kaskada",
-			"Cascada"
+			newNode("leaf", "Kaskada"),
+			newNode("leaf", "Cascada")
 		)
-	},
-	"Languages": {
+	],
+	"Languages": [
 		...newLanguage(
-			"Śraka'skik",
-			"Stracascic",
-			"The reconstructed language & writing of the Śraka'ska people",
-			true
+			newNode("leaf", "Śraka'skik"),
+			newNode("leaf", "Stracascic"),
+			newNode("leaf", "The reconstructed language & writing of the Śraka'ska people"),
+			newNode("leaf", true)
 		),
 		...newLanguage(
-			"Śra'tik",
-			"Stratic",
-			"The language & writing of the Śra'ta people"
+			newNode("leaf", "Śra'tik"),
+			newNode("leaf", "Stratic"),
+			newNode("leaf", "The language & writing of the Śra'ta people")
 		),
 		...newLanguage(
-			"Kaskadik",
-			"Cascadic",
-			"The language & writing of the Kaskada people"
+			newNode("leaf", "Kaskadik"),
+			newNode("leaf", "Cascadic"),
+			newNode("leaf", "The language & writing of the Kaskada people")
 		)
-	}
+	]
 };
 const output = [
 	":::mermaid",

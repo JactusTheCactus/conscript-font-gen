@@ -13,20 +13,22 @@ mindmap
 							The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree
 	Cultures
 		Śraka'ska
-			Romanization: Stracasca
-			Description: The culture that would later become Śra'ta & Kaskada
+			Romanization : Stracasca
+			Description : The culture that would later become Śra'ta & Kaskada
 		Śra'ta
-			Romanization: Strata
+			Romanization : Strata
+			Description : 
 		Kaskada
-			Romanization: Cascada
+			Romanization : Cascada
+			Description : 
 	Languages
 		*Śraka'skik
-			Romanization: Stracascic
-			Description: The reconstructed language & writing of the Śraka'ska people
+			Romanization : Stracascic
+			Description : The reconstructed language & writing of the Śraka'ska people
 		Śra'tik
-			Romanization: Stratic
-			Description: The language & writing of the Śra'ta people
+			Romanization : Stratic
+			Description : The language & writing of the Śra'ta people
 		Kaskadik
-			Romanization: Cascadic
-			Description: The language & writing of the Kaskada people
+			Romanization : Cascadic
+			Description : The language & writing of the Kaskada people
 :::
