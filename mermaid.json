@@ -1,65 +1,95 @@
-[
-	"((*))",
-	[
-		"Timeline",
-		[
-			"Śraka'ska culture emerges",
-			[
-				"Śraka'skik language evolves",
-				[
-					"Śraka'ska culture splinters",
-					[
-						"The Śra'ta & Kaskada cultures independently invent Śra'tik & Kaskadik writing",
-						[
-							"Śra'ta",
-							[
-								"Śra'ta loses the /ʊ/ sound, merging it into /ə/",
-								"The Śra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves"
-							],
-							"Kaskada",
-							[
-								"The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree"
+{
+	"label": "((*))",
+	"children": [
+		{
+			"label": "Timeline",
+			"children": [
+				{
+					"label": "Śraka'ska culture emerges",
+					"children": [
+						{
+							"label": "Śraka'skik language evolves",
+							"children": [
+								{
+									"label": "Śraka'ska culture splinters",
+									"children": [
+										{
+											"label": "The Śra'ta & Kaskada cultures independently invent Śra'tik & Kaskadik writing",
+											"children": [
+												{
+													"label": "Śra'ta",
+													"children": [
+														"Śra'ta loses the /ʊ/ sound, merging it into /ə/",
+														"The Śra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves"
+													]
+												},
+												{
+													"label": "Kaskada",
+													"children": [
+														"The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree"
+													]
+												}
+											]
+										}
+									]
+								}
 							]
-						]
+						}
 					]
-				]
+				}
 			]
-		],
-		"Cultures",
-		[
-			"Śraka'ska",
-			[
-				"Romanization : Stracasca",
-				"Description : The culture that would later become Śra'ta & Kaskada"
-			],
-			"Śra'ta",
-			[
-				"Romanization : Strata",
-				"Description : "
-			],
-			"Kaskada",
-			[
-				"Romanization : Cascada",
-				"Description : "
+		},
+		{
+			"label": "Cultures",
+			"children": [
+				{
+					"label": "Śraka'ska",
+					"children": [
+						"Romanization : Stracasca",
+						"Description : The culture that would later become Śra'ta & Kaskada"
+					]
+				},
+				{
+					"label": "Śra'ta",
+					"children": [
+						"Romanization : Strata",
+						"Description : "
+					]
+				},
+				{
+					"label": "Kaskada",
+					"children": [
+						"Romanization : Cascada",
+						"Description : "
+					]
+				}
 			]
-		],
-		"Languages",
-		[
-			"*Śraka'skik",
-			[
-				"Romanization : Stracascic",
-				"Description : The reconstructed language & writing of the Śraka'ska people"
-			],
-			"Śra'tik",
-			[
-				"Romanization : Stratic",
-				"Description : The language & writing of the Śra'ta people"
-			],
-			"Kaskadik",
-			[
-				"Romanization : Cascadic",
-				"Description : The language & writing of the Kaskada people"
+		},
+		{
+			"label": "Languages",
+			"children": [
+				{
+					"label": "*Śraka'skik",
+					"children": [
+						"Romanization : Stracascic",
+						"Description : The reconstructed language & writing of the Śraka'ska people"
+					]
+				},
+				{
+					"label": "Śra'tik",
+					"children": [
+						"Romanization : Stratic",
+						"Description : The language & writing of the Śra'ta people"
+					]
+				},
+				{
+					"label": "Kaskadik",
+					"children": [
+						"Romanization : Cascadic",
+						"Description : The language & writing of the Kaskada people"
+					]
+				}
 			]
-		]
+		}
 	]
-]
+}
