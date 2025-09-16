@@ -17,10 +17,8 @@ mindmap
 			Description : The culture that would later become Śra'ta & Kaskada
 		Śra'ta
 			Romanization : Strata
-			Description : 
 		Kaskada
 			Romanization : Cascada
-			Description : 
 	Languages
 		*Śraka'skik
 			Romanization : Stracascic
