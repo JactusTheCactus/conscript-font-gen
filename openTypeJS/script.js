@@ -1,5 +1,6 @@
 import fs from "fs";
 import opentype from "opentype.js";
+import { } from "./../utility.js"
 class GlyphPath extends opentype.Path {
 	moveTo(x, y) {
 		super.moveTo(x, y);
@@ -257,18 +258,31 @@ function newGlyph(name, coords = [], unicode = null) {
 				[500, 250],
 				[0, 100],
 				[0, 0],
-				[600,200],
-				[600,300],
-				[100,500],
-				[600,500]
+				[600, 200],
+				[600, 300],
+				[100, 500],
+				[600, 500]
 			]
 		], 82);
 		newGlyph("S", [
 			[
-				[]
+				[0, 0],
+				[500, 250],
+				[0, 250],
+				[0, 350],
+				[500, 600],
+				[600, 600],
+				[100, 350],
+				[600, 350],
+				[600, 250],
+				[100, 0]
 			]
 		], 83);
-		newGlyph("T", [], 84);
+		newGlyph("T", [
+			[
+				[0, 0]
+			]
+		], 84);
 		newGlyph("U", [], 85);
 		newGlyph("V", [], 86);
 		newGlyph("W", [], 87);

@@ -1,73 +1,141 @@
+import { writeToFile } from "./openTypeJS/utility.js";
+const acute = "\u0301";
+const hacek = "\u030c";
+const blank = "\u25cc";
+const char = {
+	d: "\u00d0",
+	e: `E${acute}`,
+	i: `I${acute}`,
+	n: "\u014a",
+	o: `O${acute}`,
+	s: `S${acute}`,
+	t: "\u00de",
+	u1: `U${acute}`,
+	u2: `U${hacek}`,
+	z: `Z${acute}`
+};
 const C = "Consonant";
-const nC = ["Null",C].join(" ");// Consonant symbol with no phonetic meaning. Only used when a consonant GLYPH is necessary, but the PHONEME is not
+/**
+ * @param {string} nC
+ * Consonant symbol with no phonetic meaning
+ * Only used when a consonant **GLYPH** is necessary, but the **PHONEME** is not
+ */
+const nC = `Null ${C}`;
 const V = "Vowel";
-const CV = [C,V].join("+");
-const nCV = [nC,V].join("+");
-const LtR = [
+const CV = `${C} + ${V}`;
+const nCV = `${nC} + ${V}`;
+function aToB(a, b) {
+	return [
+		a,
+		b
+	].join("-to-")
+};
+const LtR = aToB(
 	"Left",
 	"Right"
-].join("-to-");
-const TtB = [
+);
+const TtB = aToB(
 	"Top",
 	"Bottom"
-].join("-to-");
+);
 class Neography {
+	/**
+	 * @class A neography
+	 * @param {string} n Neography name
+	 * @param {string} T Script type
+	 * @param {string} d Writing direction
+	 * @param {string} l Language
+	 * @param {*} p Punctuation
+	 * @param {string[]} t Different glyph types
+	 * @param {string[]} P Glyph positional variants
+	 * @param {string[]} g Glyphs
+	 */
 	constructor(
 		n = "NEO_NAME",
 		T = "NEO_TYPE",
 		d = "NEO_DIR",
 		l = "NEO_LANG",
+		p = ["NEO_PUNC"],
 		t = ["NEO_VAR_TYPES"],
-		p = ["NEO_VAR_POS"],
+		P = ["NEO_VAR_POS"],
 		g = ["NEO_GLYPHS"]
 	) {
 		this.name = n;
 		this.type = T;
 		this.direction = d;
 		this.language = l;
+		this.punctuation = p;
 		this.variants = {
 			types: t,
-			positions: p
+			positions: P
 		};
 		this.glyphs = g;
 	}
+	getData() {
+		return {
+			name: this.name,
+			type: this.type,
+			direction: this.direction,
+			language: this.language,
+			punctuation: this.punctuation,
+			variants: {
+				types: this.variants.types,
+				positions: this.variants.positions
+			},
+			glyphs: this.glyphs
+		}
+	}
 };
-let struct = [];
+const struct = [];
 struct.push(new Neography(
 	"Stratic",
 	"Abugida",
 	LtR,
 	"en-CA",
 	[
-		C,
-		CV,
-		nCV
+		"Space ( )",
+		"Stop (.)",
+		"Ellipsis (...)",
+		"Comma (,)",
+		"Question (?)",
+		"Emphasis (')"
 	],
+	[C, CV, nCV],
 	["solo"],
-	[
-		"A B C D Ð", // A B C D Eth
-		"E É F G H", // E EACUTE F G H
-		"I Í J K L", // I IACUTE J K L
-		"M N Ŋ O Ó", // M N ENG O OACUTE
-		"P R S Ś T", // P R S ESH T
-		"Þ U Ú V W", // THORN U UACUTE V W
-		"X Y Z Ź" // X Y Z ZHED
-	].join(" ").split(" ")
+	`
+	A			B			C			D			${char.d}
+	E			${char.e}	F			G			H
+	I			${char.i}	J			K			L
+	M			N			${char.n}	O			${char.o}
+	P			R			S			${char.s}	T
+	${char.t}	U			${char.u1}	V			W
+	X			Y			Z			${char.z}
+	`.trim().split(/\s+/)
 ))
 struct.push(new Neography(
 	"Cascadic",
 	"Alphabet",
 	TtB,
 	"en-CA",
-	[C,V],
-	"solo init medi fina".split(" "),
 	[
-		"A B C D Ð", // A B C D ETH
-		"E É F G H", // E EACUTE F G H
-		"I Í J K L", // I IACUTE J K L
-		"M N Ŋ O Ó", // M N ENG O OACUTE
-		"P R S Ś T", // P R S ESH T
-		"Þ U Ú Ǔ V", // THORN U UACUTE UHACEK V
-		"W Y Z Ź" // W Y Z ZHED
-	].join(" ").split(" ")
+		"Space ( )",
+		"Stop (.)",
+		"Ellipsis (...)",
+		"Comma (,)",
+		"Question (?)"
+	],
+	[C, V],
+	["solo", "init", "medi", "fina"],
+	`
+	A			B			C			D			${char.d}
+	E			${char.e}	F			G			H
+	I			${char.i}	J			K			L
+	M			N			${char.n}	O			${char.o}
+	P			R			S			${char.s}	T
+	${char.t}	U			${char.u1}	${char.u2}	V
+	W			Y			Z			${char.z}
+	`.trim().split(/\s+/)
 ));
+struct.forEach(i => {
+	writeToFile(`neo_${i.name}.json`, "o", JSON.stringify(i.getData()))
+});
