@@ -107,12 +107,58 @@ function filterObj(input) {
 		return input;
 	}
 }
-const [acute, hacek, eth, eng, thorn] = ["\u0301", "\u030c", "\u00d0", "\u014a", "\u00de"].map(i => i.lower());
-const lidin = `Li'${eth}in`;
-const dodur = `Do'${eth}ur`;
-const timur = `Ti'${acute}mur`;
-const doliti = `Do'liti${acute}`;
-const [M, F, N] = [true, false, null];
+function split(string, n, joiner) {
+	return [
+		string.slice(0, n),
+		joiner,
+		string.slice(n)
+	].join("")
+}
+const [
+	acute,
+	hacek,
+	eth,
+	eng,
+	thorn
+] = [
+	"\u0301",
+	"\u030c",
+	"\u00d0",
+	"\u014a",
+	"\u00de"
+]
+	.map(i => i.lower());
+const [
+	lidin,
+	dodur,
+	timur
+] = [
+	`Li'${eth}in`,
+	`Do'${eth}ur`,
+	`Ti${acute}'mur`
+]
+	.map(i => i.capitalize());
+const doliti = split(
+	[dodur, lidin, timur]
+		.map(i => i
+			.normalize()
+			.slice(0, 2)
+		)
+		.join("")
+		.capitalize(),
+	2,
+	"'"
+);
+const [
+	M,
+	F,
+	N
+] = [
+	true,
+	false,
+	null
+]
+	.map(i => i);
 /**
  * @typedef {{label:string,children:Array<Node>}} Node
  * @param {string} name 
@@ -361,12 +407,6 @@ writeToFile("log.json", "o", JSONfmt(filterObj({
 		.at(-1)
 		.children
 })));
-String.prototype.normalization = function (composition, compatability) {
-	return this.normalize(["NF",
-		compatability ? "K" : "",
-		composition ? "C" : "D"
-	].join(""))
-}
 writeToFile("mermaid.md", "o",
 	mindmap.children.map(i => {
 		const block = "`";
@@ -383,5 +423,5 @@ writeToFile("mermaid.md", "o",
 	})
 		.filter(Boolean)
 		.join("\n")
-		.normalization(false, true)
+		.normalize()
 );
