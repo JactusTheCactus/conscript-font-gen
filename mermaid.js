@@ -15,6 +15,9 @@ String.prototype.capitalize = function () {
 		return ""
 	}
 }
+function isStr(input) { return typeof input === "string" }
+function isArr(input) { return Array.isArray(input) }
+function isObj(input) { return typeof input === "object" }
 function JSONfmt(object) { return JSON.stringify(object, null, "\t") }
 function newNode(label = "", children = []) { return { label, children } }
 function newLeaf(label, data) { return [label, data].join(" : ") }
@@ -61,8 +64,8 @@ function newDeity(
 }
 function treeToText(node, depth = 0) {
 	const indent = '\t'.repeat(depth);
-	let result = indent + (typeof node === "string" ? node : node.label) + "\n";
-	if (typeof node !== "string" && node.children) {
+	let result = indent + (isStr(node) ? node : node.label) + "\n";
+	if (!isStr(node) && node.children) {
 		for (const child of node.children) {
 			result += treeToText(child, depth + 1);
 		}
@@ -93,31 +96,21 @@ function comma(...arr) {
 	}
 	return arr.join()
 }
-function arraysToObjects(input) {
-	if (Array.isArray(input)) {
-		return Object.fromEntries(input.map((v, i) => {
-			return [
-				i,
-				arraysToObjects(v)
-			]
-		}));
-	} else if (input && typeof input === "object") {
-		return Object.fromEntries(
-			Object.entries(input).map(([k, v]) => {
-				return [
-					k,
-					arraysToObjects(v)
-				]
-			})
-		);
+function filterObj(input) {
+	if (isArr(input)) {
+		if (input.filter(Boolean).length) {
+			return input.map(i => filterObj(i))
+		}
+	} else if (isObj(input)) {
+		return Object.fromEntries(Object.entries(input).map(([k, v]) => [k, filterObj(v)]))
 	} else {
 		return input;
 	}
 }
-const [acute, hacek, edh, eng, thorn] = ["\u0301", "\u030c", "\u00d0", "\u014a", "\u00de"].map(i => i.lower());
-const lidin = `Li'${edh}in`;
-const dodur = `Do'${edh}ur`;
-const timur = `Ti${acute}mur`;
+const [acute, hacek, eth, eng, thorn] = ["\u0301", "\u030c", "\u00d0", "\u014a", "\u00de"].map(i => i.lower());
+const lidin = `Li'${eth}in`;
+const dodur = `Do'${eth}ur`;
+const timur = `Ti'${acute}mur`;
 const doliti = `Do'liti${acute}`;
 const [M, F, N] = [true, false, null];
 /**
@@ -129,7 +122,7 @@ const [M, F, N] = [true, false, null];
  * @returns {Node}
  */
 function newDeityNode(name, sex, domain, children = []) {
-	if (Array.isArray(domain)) {
+	if (isArr(domain)) {
 		domain = join(domain)
 	}
 	domain = [true, false].includes(sex)
@@ -277,7 +270,7 @@ const mindmap = newNode("((*))", [
 		)
 	]),
 	newNode("Genealogy", [
-		newDeityNode(`Li'${edh}in`, F, "Life", [
+		newDeityNode(`Li'${eth}in`, F, "Life", [
 			newDeityNode("E'ldur", M, "Energy", [
 				newDeityNode(`Do${acute}'rin`, F, "Creatures", [
 					newDeityNode(`Ski'mz${acute}ur`, M, "Monsters", [
@@ -285,9 +278,9 @@ const mindmap = newNode("((*))", [
 						newDeityNode(`Pu${acute}'kin`, F, "Demons")
 					]),
 					newDeityNode("Dyu'r", M, "Animals", [
-						newDeityNode("Do'lin", F, "AirAnimals"),
-						newDeityNode(`Yo${acute}'rdin`, F, "LandAnimals"),
-						newDeityNode(`S${acute}o${acute}'dur`, M, "SeaAnimals")
+						newDeityNode("Do'lin", F, "Air Animals"),
+						newDeityNode(`Yo${acute}'rdin`, F, "Land Animals"),
+						newDeityNode(`S${acute}o${acute}'dur`, M, "Sea Animals")
 					])
 				]),
 				newDeityNode("Ga'ldin", F, "Magic", [
@@ -301,8 +294,8 @@ const mindmap = newNode("((*))", [
 					])
 				])
 			]),
-			newDeityNode(`Bra'${edh}ur`, M, "Fire", [
-				newDeityNode(`Stri${acute}${edh}ur`, M, "War", [
+			newDeityNode(`Bra'${eth}ur`, M, "Fire", [
+				newDeityNode(`Stri${acute}${eth}ur`, M, "War", [
 					newDeityNode(`Ekspre'${eng}ur`, M, "Explosives", [
 						newDeityNode("Bi'sur", M, "Firearms"),
 						newDeityNode(`Spri'${eng}ur`, M, "Bombs")
@@ -315,9 +308,9 @@ const mindmap = newNode("((*))", [
 				newDeityNode(`Fo${acute}'rmur`, M, "Warmth")
 			]),
 			newDeityNode("Va'din", F, "Water", [
-				newDeityNode(`Fri'${edh}in`, F, "Peace", [
+				newDeityNode(`Fri'${eth}in`, F, "Peace", [
 					newDeityNode("La'kbin", F, "Healing", [
-						newDeityNode(`Sku'r${edh}in`, F, "Surgery"),
+						newDeityNode(`Sku'r${eth}in`, F, "Surgery"),
 						newDeityNode("Me'cur", M, "Medicine")
 					]),
 					newDeityNode("Ko'gur", M, "Art", [
@@ -328,7 +321,7 @@ const mindmap = newNode("((*))", [
 				newDeityNode("Fu'rlin", F, "Travel")
 			])
 		]),
-		newDeityNode(`Do'${edh}ur`, M, "Death", [
+		newDeityNode(`Do'${eth}ur`, M, "Death", [
 			newDeityNode(`Yo${acute}'dur`, M, "Earth", [
 				newDeityNode("Fye'lur", M, "Mountains", [
 					newDeityNode("Fe'lkilur", M, "Volcanoes", [
@@ -350,7 +343,7 @@ const mindmap = newNode("((*))", [
 					]),
 					newDeityNode("Efki'min", F, "Chemistry", [
 						newDeityNode(`Si${acute}'rilur`, M, "Acids"),
-						newDeityNode(`U'pgo${edh}in`, F, "Discovery")
+						newDeityNode(`U'pgo${eth}in`, F, "Discovery")
 					])
 				])
 			])
@@ -362,14 +355,12 @@ const mindmap = newNode("((*))", [
 		])
 	])
 ]);
-writeToFile("log.json", "o", JSONfmt(
-	arraysToObjects(
-		mindmap
-			.children
-			.at(-1)
-			.children
-	)
-));
+writeToFile("log.json", "o", JSONfmt(filterObj({
+	[doliti]: mindmap
+		.children
+		.at(-1)
+		.children
+})));
 String.prototype.normalization = function (composition, compatability) {
 	return this.normalize(["NF",
 		compatability ? "K" : "",

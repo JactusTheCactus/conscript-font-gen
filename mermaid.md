@@ -18,14 +18,14 @@ mindmap
 ((*))
 	Śraka'ska
 		Romanized : Stracasca
-		Followers of Do'ður, Li'ðin & Tímur
+		Followers of Do'ður, Li'ðin & Ti'́mur
 		Description : The culture that would later become Śra'ta & Kaskada
 	Śra'ta
 		Romanized : Strata
-		Followers of Do'ður & Tímur
+		Followers of Do'ður & Ti'́mur
 	Kaskada
 		Romanized : Cascada
-		Followers of Li'ðin & Tímur
+		Followers of Li'ðin & Ti'́mur
 ```
 # Languages
 ```mermaid
@@ -52,14 +52,14 @@ mindmap
 	Li'ðin
 		Goddess of Life, Creation & Growth
 		Wife of Do'ður
-		Sister of Tímur
+		Sister of Ti'́mur
 		Foremother of 34
-	Tímur
+	Ti'́mur
 		God of Time, Fate & Destiny
 		Brother of Li'ðin
 		Forefather of 3
 	The Do'lití
-		The pantheon containing Do'ður, Li'ðin, Tímur & their descendants
+		The pantheon containing Do'ður, Li'ðin, Ti'́mur & their descendants
 ```
 # Genealogy
 ```mermaid
@@ -72,9 +72,9 @@ mindmap
 					(**O'ditur**<br>*God of Undead*)
 					(**Pú'kin**<br>*Goddess of Demons*)
 				**Dyu'r**<br>*God of Animals*
-					(**Do'lin**<br>*Goddess of AirAnimals*)
-					(**Yó'rdin**<br>*Goddess of LandAnimals*)
-					(**Śó'dur**<br>*God of SeaAnimals*)
+					(**Do'lin**<br>*Goddess of Air Animals*)
+					(**Yó'rdin**<br>*Goddess of Land Animals*)
+					(**Śó'dur**<br>*God of Sea Animals*)
 			**Ga'ldin**<br>*Goddess of Magic*
 				**O'pfin**<br>*Goddess of Invention*
 					(**Gré'ndur**<br>*God of Intelligence*)
