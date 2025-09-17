@@ -1,0 +1,256 @@
+{
+	"0": {
+		"label": "**Li'ðin**<br>*Goddess of Life*",
+		"children": {
+			"0": {
+				"label": "**E'ldur**<br>*God of Energy*",
+				"children": {
+					"0": {
+						"label": "**Dó'rin**<br>*Goddess of Creatures*",
+						"children": {
+							"0": {
+								"label": "**Ski'mźur**<br>*God of Monsters*",
+								"children": {
+									"0": {
+										"label": "(**O'ditur**<br>*God of Undead*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Pú'kin**<br>*Goddess of Demons*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**Dyu'r**<br>*God of Animals*",
+								"children": {
+									"0": {
+										"label": "(**Do'lin**<br>*Goddess of AirAnimals*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Yó'rdin**<br>*Goddess of LandAnimals*)",
+										"children": {}
+									},
+									"2": {
+										"label": "(**Śó'dur**<br>*God of SeaAnimals*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					},
+					"1": {
+						"label": "**Ga'ldin**<br>*Goddess of Magic*",
+						"children": {
+							"0": {
+								"label": "**O'pfin**<br>*Goddess of Invention*",
+								"children": {
+									"0": {
+										"label": "(**Gré'ndur**<br>*God of Intelligence*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Sko'pkin**<br>*Goddess of Creativity*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**O'nlegur**<br>*God of Construction*",
+								"children": {
+									"0": {
+										"label": "(**Sþi'nur**<br>*God of Carpentry*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**A'rktin**<br>*Goddess of Architecture*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"1": {
+				"label": "**Bra'ður**<br>*God of Fire*",
+				"children": {
+					"0": {
+						"label": "**Stríður**<br>*God of War*",
+						"children": {
+							"0": {
+								"label": "**Ekspre'ŋur**<br>*God of Explosives*",
+								"children": {
+									"0": {
+										"label": "(**Bi'sur**<br>*God of Firearms*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Spri'ŋur**<br>*God of Bombs*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**Stre'fnur**<br>*God of Strategy*",
+								"children": {
+									"0": {
+										"label": "(**Ka'rtlin**<br>*Goddess of Cartography*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**No'kvur**<br>*God of Precision*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					},
+					"1": {
+						"label": "(**Fó'rmur**<br>*God of Warmth*)",
+						"children": {}
+					}
+				}
+			},
+			"2": {
+				"label": "**Va'din**<br>*Goddess of Water*",
+				"children": {
+					"0": {
+						"label": "**Fri'ðin**<br>*Goddess of Peace*",
+						"children": {
+							"0": {
+								"label": "**La'kbin**<br>*Goddess of Healing*",
+								"children": {
+									"0": {
+										"label": "(**Sku'rðin**<br>*Goddess of Surgery*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Me'cur**<br>*God of Medicine*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**Ko'gur**<br>*God of Art*",
+								"children": {
+									"0": {
+										"label": "(**Ri'stilin**<br>*Goddess of Carving*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Mó'lin**<br>*Goddess of Paint*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					},
+					"1": {
+						"label": "(**Fu'rlin**<br>*Goddess of Travel*)",
+						"children": {}
+					}
+				}
+			}
+		}
+	},
+	"1": {
+		"label": "**Do'ður**<br>*God of Death*",
+		"children": {
+			"0": {
+				"label": "**Yó'dur**<br>*God of Earth*",
+				"children": {
+					"0": {
+						"label": "**Fye'lur**<br>*God of Mountains*",
+						"children": {
+							"0": {
+								"label": "**Fe'lkilur**<br>*God of Volcanoes*",
+								"children": {
+									"0": {
+										"label": "(**Ra'vin**<br>*Goddess of Lava*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Braí'nur**<br>*God of Burning*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**Hé'lin**<br>*Goddess of Caves*",
+								"children": {
+									"0": {
+										"label": "(**Fre'kur**<br>*God of Fear*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Pu'rlin**<br>*Goddess of Wealth*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					},
+					"1": {
+						"label": "(**Ke'nur**<br>*God of Canyons,Cliffs*)",
+						"children": {}
+					}
+				}
+			},
+			"1": {
+				"label": "**Lú'din**<br>*Goddess of Air*",
+				"children": {
+					"0": {
+						"label": "**Pa'tin**<br>*Goddess of Plants*",
+						"children": {
+							"0": {
+								"label": "**Gólge'min**<br>*Goddess of Alchemy*",
+								"children": {
+									"0": {
+										"label": "(**Ku'fnur**<br>*God of Artifacts*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**Pí'kin**<br>*Goddess of Potions*)",
+										"children": {}
+									}
+								}
+							},
+							"1": {
+								"label": "**Efki'min**<br>*Goddess of Chemistry*",
+								"children": {
+									"0": {
+										"label": "(**Sí'rilur**<br>*God of Acids*)",
+										"children": {}
+									},
+									"1": {
+										"label": "(**U'pgoðin**<br>*Goddess of Discovery*)",
+										"children": {}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"2": {
+		"label": "**Tí'mur**<br>*God of Time*",
+		"children": {
+			"0": {
+				"label": "(**Kwe'lin**<br>*Weaver of Fate*)",
+				"children": {}
+			},
+			"1": {
+				"label": "(**Ha'din**<br>*Writer of Fate*)",
+				"children": {}
+			},
+			"2": {
+				"label": "(**Ne'tur**<br>*Trimmer of Fate*)",
+				"children": {}
+			}
+		}
+	}
+}

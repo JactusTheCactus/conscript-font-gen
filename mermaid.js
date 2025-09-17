@@ -49,7 +49,7 @@ function newDeity(
 	extra = []
 ) {
 	return newNode(name, [
-		domains?.length ? `God${!sex ? "dess" : ""} of ${join(domains)}` : "",
+		domains?.length ? `God${!sex ? "dess" : ""} of ${join(...domains)}` : "",
 		...Object.entries(relations).map(([k, v]) => {
 			return [k, String(v)]
 				.map(i => i.capitalize())
@@ -75,7 +75,9 @@ function treeToText(node, depth = 0) {
 	}
 	return result;
 }
-function join(arr = [], joinMain = ", ", joinLast = " & ") {
+function join(...arr) {
+	const joinMain = ", ";
+	const joinLast = " & ";
 	if (arr.length > 1) {
 		return [
 			arr.slice(0, -1).join(joinMain),
@@ -84,13 +86,37 @@ function join(arr = [], joinMain = ", ", joinLast = " & ") {
 	}
 	return arr.join()
 }
-const acute = "\u0301";
-const hacek = "\u030c";
-const edh = "\u00d0";
-const eng = "\u014a";
-const thorn = "\u00de";
-const lidin = `Li'${edh.lower()}in`;
-const dodur = `Do'${edh.lower()}ur`;
+function comma(...arr) {
+	const joiner = ", ";
+	if (arr.length > 1) {
+		return arr.join(joiner)
+	}
+	return arr.join()
+}
+function arraysToObjects(input) {
+	if (Array.isArray(input)) {
+		return Object.fromEntries(input.map((v, i) => {
+			return [
+				i,
+				arraysToObjects(v)
+			]
+		}));
+	} else if (input && typeof input === "object") {
+		return Object.fromEntries(
+			Object.entries(input).map(([k, v]) => {
+				return [
+					k,
+					arraysToObjects(v)
+				]
+			})
+		);
+	} else {
+		return input;
+	}
+}
+const [acute, hacek, edh, eng, thorn] = ["\u0301", "\u030c", "\u00d0", "\u014a", "\u00de"].map(i => i.lower());
+const lidin = `Li'${edh}in`;
+const dodur = `Do'${edh}ur`;
 const timur = `Ti${acute}mur`;
 const doliti = `Do'liti${acute}`;
 const [M, F, N] = [true, false, null];
@@ -124,14 +150,35 @@ const mindmap = newNode("((*))", [
 	newNode("Timeline", [
 		newNode(`S${acute}raka'ska culture emerges`, [
 			newNode(`S${acute}raka'skik language evolves`, [
-				newNode(`S${acute}raka'ska culture gradually splits into ${join([`S${acute}ra'ta`, "Kaskada"])}`, [
-					newNode(`The S${acute}ra'ta & Kaskada cultures independently invent S${acute}ra'tik & Kaskadik writing`, [
+				newNode(`S${acute}raka'ska culture gradually splits into ${join(
+					`S${acute}ra'ta`,
+					"Kaskada"
+				)}`, [
+					newNode(`The ${join(
+						`S${acute}ra'ta`,
+						"Kaskada"
+					)} cultures independently invent ${join(
+						`S${acute}ra'tik`,
+						"Kaskadik"
+					)} writing`, [
 						newNode(`S${acute}ra'ta`, [
-							`S${acute}ra'ta loses the /ʊ/ sound, merging it into /ə/`,
-							`The S${acute}ra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves`
+							comma(
+								`S${acute}ra'ta loses the /ʊ/ sound`,
+								"merging it into /ə/"
+							),
+							comma(
+								`The S${acute}ra'tik`,
+								"Having much easier access to stone",
+								"write straight shapes",
+								"with angles, but no curves"
+							)
 						]),
 						newNode("Kaskada", [
-							"The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree"
+							comma(
+								"The Kaskada",
+								"living in a more wooded area",
+								"develop a system that is written along the grain of a tree"
+							)
 						])
 					])
 				])
@@ -142,7 +189,10 @@ const mindmap = newNode("((*))", [
 		newCulture(`S${acute}raka'ska`,
 			"Stracasca",
 			[dodur, lidin, timur],
-			`The culture that would later become S${acute}ra'ta & Kaskada`
+			`The culture that would later become ${join(
+				`S${acute}ra'ta`,
+				"Kaskada"
+			)}`
 		),
 		newCulture(`S${acute}ra'ta`,
 			"Strata",
@@ -156,16 +206,25 @@ const mindmap = newNode("((*))", [
 	newNode("Languages", [
 		newLanguage(`S${acute}raka'skik`,
 			"Stracascic",
-			`The reconstructed language & writing of the S${acute}raka'ska people`,
+			`The reconstructed ${join(
+				"language",
+				"writing"
+			)} of the S${acute}raka'ska people`,
 			true
 		),
 		newLanguage(`S${acute}ra'tik`,
 			"Stratic",
-			`The language & writing of the S${acute}ra'ta people`
+			`The ${join(
+				"language",
+				"writing"
+			)} of the S${acute}ra'ta people`
 		),
 		newLanguage("Kaskadik",
 			"Cascadic",
-			"The language & writing of the Kaskada people"
+			`The ${join(
+				"language",
+				"writing"
+			)} of the Kaskada people`
 		)
 	]),
 	newNode("Deities", [
@@ -208,12 +267,12 @@ const mindmap = newNode("((*))", [
 			{},
 			[],
 			[
-				`The pantheon containing ${join([
+				`The pantheon containing ${join(
 					dodur,
 					lidin,
 					timur,
 					"their descendants"
-				])}`
+				)}`
 			]
 		)
 	]),
@@ -303,30 +362,28 @@ const mindmap = newNode("((*))", [
 		])
 	])
 ]);
+writeToFile("log.json", "o", JSONfmt(
+	arraysToObjects(
+		mindmap
+			.children
+			.at(-1)
+			.children
+	)
+))
 writeToFile("mermaid.md", "o",
 	mindmap.children.map(i => {
 		const title = i.label;
 		const tree = i.children;
-		if ([
-			//"Timeline",
-			//"Cultures",
-			//"Languages",
-			//"Deities",
-			//"Genealogy",
-		].includes(title)) {
-			return
-		} else {
-			return [
-				`# ${title}`,
-				":::mermaid",
-				"mindmap",
-				treeToText(newNode("((*))", tree)),
-				":::"
-			]
-				.join("\n")
-				.normalize()
-		}
+		return [
+			`# ${title}`,
+			":::mermaid",
+			"mindmap",
+			treeToText(newNode("((*))", tree)),
+			":::"
+		]
+			.join("\n")
 	})
 		.filter(Boolean)
 		.join("\n")
+		.normalize("NFKC")
 );

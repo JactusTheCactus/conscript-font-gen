@@ -109,7 +109,7 @@ mindmap
 				**Hé'lin**<br>*Goddess of Caves*
 					(**Fre'kur**<br>*God of Fear*)
 					(**Pu'rlin**<br>*Goddess of Wealth*)
-			(**Ke'nur**<br>*God of Canyons #38; Cliffs*)
+			(**Ke'nur**<br>*God of Canyons,Cliffs*)
 		**Lú'din**<br>*Goddess of Air*
 			**Pa'tin**<br>*Goddess of Plants*
 				**Gólge'min**<br>*Goddess of Alchemy*
