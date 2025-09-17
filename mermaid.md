@@ -1,5 +1,5 @@
 # Timeline
-:::mermaid
+```mermaid
 mindmap
 ((*))
 	Śraka'ska culture emerges
@@ -11,9 +11,9 @@ mindmap
 						The Śra'tik, Having much easier access to stone, write straight shapes, with angles, but no curves
 					Kaskada
 						The Kaskada, living in a more wooded area, develop a system that is written along the grain of a tree
-:::
+```
 # Cultures
-:::mermaid
+```mermaid
 mindmap
 ((*))
 	Śraka'ska
@@ -26,9 +26,9 @@ mindmap
 	Kaskada
 		Romanized : Cascada
 		Followers of Li'ðin & Tímur
-:::
+```
 # Languages
-:::mermaid
+```mermaid
 mindmap
 ((*))
 	*Śraka'skik
@@ -40,9 +40,9 @@ mindmap
 	Kaskadik
 		Romanized : Cascadic
 		Description : The language & writing of the Kaskada people
-:::
+```
 # Deities
-:::mermaid
+```mermaid
 mindmap
 ((*))
 	Do'ður
@@ -60,9 +60,9 @@ mindmap
 		Forefather of 3
 	The Do'lití
 		The pantheon containing Do'ður, Li'ðin, Tímur & their descendants
-:::
+```
 # Genealogy
-:::mermaid
+```mermaid
 mindmap
 ((*))
 	**Li'ðin**<br>*Goddess of Life*
@@ -122,4 +122,4 @@ mindmap
 		(**Kwe'lin**<br>*Weaver of Fate*)
 		(**Ha'din**<br>*Writer of Fate*)
 		(**Ne'tur**<br>*Trimmer of Fate*)
-:::
+```

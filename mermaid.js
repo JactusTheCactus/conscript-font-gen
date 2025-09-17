@@ -369,21 +369,28 @@ writeToFile("log.json", "o", JSONfmt(
 			.at(-1)
 			.children
 	)
-))
+));
+String.prototype.normalization = function (composition, compatability) {
+	return this.normalize(["NF",
+		compatability ? "K" : "",
+		composition ? "C" : "D"
+	].join(""))
+}
 writeToFile("mermaid.md", "o",
 	mindmap.children.map(i => {
+		const block = "`";
 		const title = i.label;
 		const tree = i.children;
 		return [
 			`# ${title}`,
-			":::mermaid",
+			`${block.repeat(3)}mermaid`,
 			"mindmap",
 			treeToText(newNode("((*))", tree)),
-			":::"
+			block.repeat(3)
 		]
 			.join("\n")
 	})
 		.filter(Boolean)
 		.join("\n")
-		.normalize("NFD")
+		.normalization(false, true)
 );
