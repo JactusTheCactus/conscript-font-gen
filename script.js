@@ -136,6 +136,4 @@ struct.push(new Neography(
 	W			Y			Z			${char.z}
 	`.trim().split(/\s+/)
 ));
-struct.forEach(i => {
-	writeToFile(`neo_${i.name}.json`, "o", JSON.stringify(i.getData()))
-});
+struct.forEach(i => writeToFile(`neo_${i.name}.json`, "o", JSON.stringify(i.getData())));

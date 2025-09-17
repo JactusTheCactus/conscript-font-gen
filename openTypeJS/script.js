@@ -326,6 +326,6 @@ let stratic = (new opentype.Font({
 	descender: 0,
 	glyphs: glyphList
 }));
-fs.writeFileSync("stratic.otf",
+fs.writeFileSync("fonts/stratic/font.otf",
 	Buffer.from(stratic.toArrayBuffer())
 );

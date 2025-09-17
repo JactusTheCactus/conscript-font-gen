@@ -7,7 +7,8 @@ JS_DIR := openTypeJS
 PYTHON := python3
 VENV := vEnv
 VENV_ACTIVATE := source $(VENV)/bin/activate
-ABG := stratic
+FONTS := fonts
+ABG := $(FONTS)/stratic
 #-include dev.mk
 all : build clean
 ifeq ($(DEV_VUE),true)
@@ -19,9 +20,9 @@ js :
 	@node --trace-uncaught $(JS_DIR)/script.js
 	-@$(VENV_ACTIVATE) && \
 	fonttools feaLib \
-	-o $(ABG).otf \
-	$(ABG).fea \
-	$(ABG).otf
+	-o $(ABG)/font.otf \
+	$(ABG)/features.fea \
+	$(ABG)/font.otf
 python : script.py AbugidaR/* Cascadic/*
 	@python3 script.py
 	@cp AbugidaR/AbugidaR.otf assets && \
@@ -63,3 +64,7 @@ clean :
 		.sass-cache \
 		*.css.map \
 	)
+
+mermaid :
+	@clear
+	@node mermaid.js
