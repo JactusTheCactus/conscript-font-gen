@@ -385,5 +385,5 @@ writeToFile("mermaid.md", "o",
 	})
 		.filter(Boolean)
 		.join("\n")
-		.normalize("NFKC")
+		.normalize("NFD")
 );
