@@ -114,19 +114,7 @@ function split(string, n, joiner) {
 		string.slice(n)
 	].join("")
 }
-const [
-	acute,
-	hacek,
-	eth,
-	eng,
-	thorn
-] = [
-	"\u0301",
-	"\u030c",
-	"\u00d0",
-	"\u014a",
-	"\u00de"
-]
+const [acute, hacek, eth, eng, thorn] = ["\u0301", "\u030c", "\u00d0", "\u014a", "\u00de"]
 	.map(i => i.lower());
 const [
 	lidin,
